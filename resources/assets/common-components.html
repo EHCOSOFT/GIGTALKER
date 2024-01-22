@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="common-wrap">
+        <header class="header">
+            <h1>공통검포넌트</h1>
+        </header>
+        <section class="common-body">
+            <aside>
+                <ul>
+                    <li>
+                        <a href="#">Button</a>
+                    </li>
+                    <li>
+                        <a href="#">Modal</a>
+                    </li>
+                    <li>
+                        <a href="#">Input</a>
+                    </li>
+                    <li>
+                        <a href="#">Tab</a>
+                    </li>
+                    <li>
+                        <a href="#table">Table</a>
+                    </li>
+                    <li>
+                        <a href="#pagination">Pagination</a>
+                    </li>
+                </ul>
+            </aside>
+            <section class="common-element">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>BUTTON</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-mini btn-success">BUTTON</button>
+                                    <button type="button" class="btn btn-mini btn-info">BUTTON</button>
+                                    <button type="button" class="btn btn-mini btn-warning">BUTTON</button>
+                                    <button type="button" class="btn btn-mini btn-black">BUTTON</button>
+                                    <button type="button" class="btn btn-mini btn-gray">BUTTON</button>
+                                    <button type="button" class="btn btn-mini btn-outline-gray">BUTTON</button>
+                                    <button type="button" class="btn btn-mini btn-error">BUTTON</button>
+                                    <button type="button" class="btn btn-mini btn-primary">BUTTON</button>
+                                    <button type="button" class="btn btn-mini btn-secondary">BUTTON</button>
+                                    <button type="button" class="btn btn-mini btn-outline-secondary">BUTTON</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" disabled>BUTTON</button>
+                                    <button type="button" class="btn btn-md btn-outline-secondary" disabled>BUTTON</button>
+                                    <button type="button" class="btn btn-md w-200 btn-outline-secondary" disabled>BUTTON</button>
+                                    <button type="button" class="btn btn-lg btn-outline-secondary" disabled>BUTTON</button>
+                                    <button type="button" class="btn btn-xl btn-outline-secondary" disabled>BUTTON</button>
+                                </div>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>MODAL</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ss-btn-group">
+                                    <button type="button" class="btn btn-sm btn-primary open-modal"
+                                        data-modal-id="confirmModal">confirmModal</button>
+                                    <button type="button" class="btn btn-sm btn-primary open-modal"
+                                        data-modal-id="contentModal">contentModal</button>
+                                    <button type="button" class="btn btn-sm btn-primary open-modal"
+                                        data-modal-id="fullScreenModal">fullScreenModal</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Input(text)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-wrap">
+                                    <div class="input-group">
+                                        <label for="">Text Field</label>
+                                        <input type="text" id="text01" placeholder="Placeholder">
+                                    </div>
+
+                                    <div class="input-group error">
+                                        <label for="">Text Field(Error)</label>
+                                        <input type="text" id="text02" placeholder="Placeholder">
+                                        <p class="error-msg">Error description</p>
+                                    </div>
+
+                                    <div class="input-group">
+                                        <label for="">Text Field(Disabled)</label>
+                                        <input type="text" id="text03" disabled placeholder="Placeholder">
+                                    </div>
+
+                                    <div class="input-group">
+                                        <label for="">Text Field</label>
+                                        <div class="input-area">
+                                            <input type="text" id="text01" placeholder="Placeholder">
+                                            <button type="button" class="btn btn-sm btn-primary">버튼명</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Input(Checkbox)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="check-wrap">
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk">
+                                        <label for="chk">기본</label>
+                                    </div>
+
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk02" checked>
+                                        <label for="chk02">기본 checked</label>
+                                    </div>
+
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk03">
+                                        <label for="chk03">기본 Focus / Hover</label>
+                                    </div>
+
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk04" disabled>
+                                        <label for="chk04">기본 Disabled</label>
+                                    </div>
+
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk05" disabled checked>
+                                        <label for="chk05">기본 Check + Disabled</label>
+                                    </div>
+
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk06" class="intermediate" checked>
+                                        <label for="chk06">기본 Check + intermediate</label>
+                                    </div>
+
+                                    <div class="check-group">
+                                        <input type="checkbox" id="chk07" class="intermediate" checked disabled>
+                                        <label for="chk07">기본 Check + Disabled + intermediate</label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Input(Radio)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="radio-wrap">
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio01">
+                                        <label for="radio01">기본</label>
+                                    </div>
+
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio02" checked>
+                                        <label for="radio02">기본</label>
+                                    </div>
+
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio03" disabled>
+                                        <label for="radio03">기본 Disabled</label>
+                                    </div>
+
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio04" disabled checked>
+                                        <label for="radio04">기본 Check + Disabled</label>
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Input(datepicker)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="date-group">
+                                    <!-- <h2>날짜</h2> -->
+                                    <div class="date-wrap">
+                                        <input type="date" placeholder="시작일">
+                                        <span>-</span>
+                                        <input type="date" placeholder="시작일">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>input(textarea)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ss-input-group textarea">
+                                    <label for="">텍스트(여러줄)</label>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="텍스트를 입력해주세요"></textarea>
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- 
+                        <tr>
+                            <td class="pt-4">
+                                <div class="file-group">
+                                    <h2>파일첨부</h2>
+                                    <label for="fileupload">버튼명</label>
+                                    <input type="file" id="fileupload" />
+                                    <span>* 반드시 양식 파일을 이용해 주세요.</span>
+                                </div>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>dropdown(selectbox)</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="dropdown-group">
+                                    <h2>dropdown</h2>
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button" data-target="drop01">
+                                            <span class="placeholder">Select an option</span>
+                                        </button>
+                                        <ul id="drop01" class="dropdown-list">
+                                            <li>옵션 1</li>
+                                            <li>옵션 2</li>
+                                            <li>옵션 3</li>
+                                            <li>옵션 4</li>
+                                            <li>옵션 5</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button disabled" data-target="drop01">
+                                            <span class="placeholder">Select an option</span>
+                                        </button>
+                                        <ul id="drop01" class="dropdown-list">
+                                            <li>옵션 1</li>
+                                            <li>옵션 2</li>
+                                            <li>옵션 3</li>
+                                            <li>옵션 4</li>
+                                            <li>옵션 5</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="pt-4">
+                                <div class="dropdown-group type2">
+                                    <h2>dropdown(type2)</h2>
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button" data-target="drop03">
+                                            <span class="placeholder">Select an option</span>
+                                        </button>
+                                        <ul id="drop03" class="dropdown-list">
+                                            <li>옵션 1</li>
+                                            <li>옵션 2</li>
+                                            <li>옵션 3</li>
+                                            <li>옵션 4</li>
+                                            <li>옵션 5</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>searchbox</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-search">
+                                    <input type="text" placeholder="Placeholder">
+                                    <button type="button">
+                                        <i class="ico i-search"></i>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-search">
+                                    <input type="text" placeholder="Placeholder">
+                                    <button type="button">
+                                        <i class="ico i-search"></i>
+                                    </button>
+                                    <i class="ico i-clear"></i>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="input-search md">
+                                    <input type="text" placeholder="Placeholder">
+                                    <button type="button">
+                                        <i class="ico i-search-b"></i>
+                                    </button>
+                                    <i class="ico i-clear"></i>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>card</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="ss-card-wrap">
+                                    <div class="ss-card">
+                                        <div class="ss-card-header">
+                                            <h3>유의사항</h3>
+                                        </div>
+                                        <div class="ss-card-body">
+                                            <p>구매하신 상품은 결제 완료 후 링크 정보가 발급됩니다.<br>해당 영역에서는 사용안내 정보를 표시합니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>page depth</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="depth-group">
+                                    <ul>
+                                        <li><a href="#"><i class="ico i-home"></i></a></li>
+                                        <li><i class="ico i-chevron-right"></i></li>
+                                        <li><a href="#">마이페이지</a></li>
+                                        <li><i class="ico i-chevron-right"></i></li>
+                                        <li><a href="#">내정보</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="pagination">
+                    <tbody>
+                        <tr>
+                            <td>pagination</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="pagination">
+                                    <ul>
+                                        <li class="prev"><a href=""><i class="ico i-arrow-left"></i></a></li>
+                                        <li class="active"><a href="">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li class="next"><a href=""><i class="ico i-arrow-right"></i></a></li>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="product">
+                    <tbody>
+                        <tr>
+                            <td>product</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="product-wrap">
+                                    <div class="product-group">
+                                        <div class="product-img"
+                                            style="background: url(img/sample/sample02.png) center; background-size: cover;">
+                                        </div>
+                                        <ul class="product-tag">
+                                            <li>동영상</li>
+                                        </ul>
+                                        <h5 class="product-name">영어강사 조의석의 영어 길라잡이 A to Z</h5>
+                                        <p class="product-price">99,000원</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pt-4">
+                                <div class="product-wrap">
+                                    <div class="product-group row">
+                                        <div class="product-img"
+                                            style="background: url(img/sample/sample02.png) center; background-size: cover;">
+                                        </div>
+                                        <div class="product-info">
+                                            <ul class="product-tag">
+                                                <li class="mint">ONLY 공선</li>
+                                                <li>동영상</li>
+                                            </ul>
+                                            <h5 class="product-name">영어강사 조의석의 영어 길라잡이 A to Z</h5>
+                                            <p class="product-price">99,000원</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="tab">
+                    <tbody>
+                        <tr>
+                            <td>tab</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="custom-tabs" id="custom-tabs">
+                                    <div class="custom-tab">Tab 1</div>
+                                    <div class="custom-tab">Tab 2</div>
+                                    <div class="custom-tab">Tab 3</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="pt-4">
+                                <div class="tabs">
+                                    <ul class="tab-list">
+                                        <li class="tab-button active" data-target="viewProduct">작성 가능한 리뷰 (12)</li>
+                                        <li class="tab-button" data-target="cartList">내가 작성한 리뷰 (3)</li>
+                                        <li class="tab-button" data-target="cartList">내가 작성한 리뷰 (3)</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+        </section>
+    </div>
+
+    <!-- S:confirmModal -->
+    <div id="confirmModal" class="ss-modal-wrap confirm-modal">
+        <div class="ss-modal-content">
+            <div class="ss-modal-body">
+                <p>저장하시겠습니까?</p>
+            </div>
+            <div class="ss-modal-footer">
+                <div class="ss-btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-gray btn-modal-close">취소</button>
+                    <button type="button" class="btn btn-sm btn-primary">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E:confirmModal -->
+
+    <!-- S:contentModal -->
+    <div id="contentModal" class="ss-modal-wrap content-modal">
+        <div class="ss-modal-inner">
+            <div class="ss-modal-content">
+                <div class="ss-modal-header">
+                    <h3 class="ss-modal-title">비밀번호 재설정</h3>
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="ss-modal-body">
+                    <p>저장하시겠습니까?</p>
+                </div>
+                <div class="ss-modal-footer">
+                    <div class="ss-btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-sm btn-primary">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E:contentModal -->
+
+    <!-- S:fullScreenModal -->
+    <div id="fullScreenModal" class="ss-modal-wrap full-screen-modal">
+        <div class="ss-modal-inner">
+            <div class="ss-modal-content">
+                <div class="ss-modal-header">
+                    <h3 class="ss-modal-title">비밀번호 재설정</h3>
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="ss-modal-body">
+                    <p>저장하시겠습니까?</p>
+                </div>
+                <div class="ss-modal-footer">
+                    푸터
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E:fullScreenModal -->
+
+
+
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
