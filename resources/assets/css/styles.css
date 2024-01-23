@@ -3,6 +3,7 @@
 @import url(swiper.css);
 @import url(common.css);
 @import url(ico.css);
+@import url(modal.css);
 
 
 /*
@@ -12,9 +13,287 @@
  * Dependency : libs/swiper-bundle.min.css   
  *
  * SUMMARY:
- * 01) 회원가입
+ * 01) 메인
  */
 
 /* **************************************** *
- * 회원가입
+ * 메인
  * **************************************** */
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.section00 {
+    background: #F5F5F5;
+    padding: 24px 0;
+}
+
+.section01 {
+    background: #6B79FF;
+    height: 526px;
+}
+
+.section01 .container {
+    height: 100%;
+}
+
+.section01 .row {
+    align-items: center;
+    height: 100%;
+}
+
+.section01 img {
+    margin: 0 auto;
+    width: 524px;
+}
+
+.section01 h1 {
+    color: var(--gt-write);
+    font-size: 42px;
+    line-height: 50px;
+}
+
+.section01 p {
+    color: var(--gt-write);
+    font-size: 15px;
+    margin: 16px 0 40px 0;
+}
+
+.section01 button {
+    background: #5C42FF;
+    border-radius: 6px;
+    color: var(--gt-write);
+    font-size: 15px;
+    font-weight: bold;
+    height: 50px;
+    width: 154px;
+}
+
+.section02 h3 span {
+    color: var(--gt-success);
+}
+.section02 ul {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 56px;
+    margin: 56px 0 0 0;
+}
+
+.section02 ul li {
+    width: calc(100% / 7);
+}
+
+.section02 ul li a {
+    align-items: center;
+    color: var(--gt-black-01);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.section02 img {
+    width: 68px;
+}
+
+.section03 .swiper-wrap {
+    margin: 24px 0 0 0;
+    position: relative;
+}
+
+.section04 {
+    background: var(--gt-primary-bg);
+    padding: 60px 0;
+}
+
+.section04 h1 {
+    color: var(--gt-gray-01);
+    font-size: 30px;
+}
+
+.section04 p {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-lg);
+    margin: 12px 0 28px 0;
+}
+
+.section04 dl {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 20px 0 0 0;
+}
+
+.section04 dt {
+    color: var(--gt-gray-01);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.section04 dd {
+    color: #74767C;
+    font-size: var(--gt-text-md);
+}
+
+.section04 img {
+    width: 100%;
+}
+
+.section05 .swiper-wrap {
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.section06 {
+    padding: 30px 0 0 0;
+}
+
+.section06 h3 {
+    text-align: center;
+}
+
+.section06 p {
+    color: var(--gt-gray-03);
+    font-size: var(--gt-text-lg);
+    margin: 4px 0 0 0;
+    text-align: center;
+}
+
+.section06 ul {
+    display: flex;
+    gap: 20px;
+    margin: 30px 0 0 0;
+}
+
+.section06 ul li {
+    width: calc((100% / 4) - 15px);
+}
+
+.section06 .item-box {
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    height: 224px;
+    padding: 24px 28px;
+}
+
+.section06 .item-box.bg01 {
+    background: #FFF1DA;
+}
+
+.section06 .item-box.bg02 {
+    background: #FFE5E5;
+}
+
+.section06 .item-box.bg03 {
+    background: #DAFAFC;
+}
+
+.section06 .item-box.bg04 {
+    background: #E2EDFF;
+}
+
+
+.section06 .item-box h5 {
+    color: var(--gt-gray-01);
+}
+
+.section06 .item-box img {
+    margin: auto 0 0 auto;
+    width: 80px;
+}
+
+.section07 {
+    padding: 0 0 100px 0;
+}
+
+.section07 .col-6 {
+    position: relative;
+}
+
+.section07 .col-6:last-child {
+    padding-left: 68px;
+}
+
+.section07 .col-6:first-child {
+    border-right: 1px solid var(--gt-gray-05);
+    padding-right: 68px;
+}
+
+.main-notice-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 36px 0 0 0;
+}
+
+.main-notice-list li {
+    align-items: center;
+    color: var(--gt-gray-03);
+    font-size: var(--gt-text-lg);
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.main-notice-list li span {
+    color: var(--gt-gray-01);
+    font-size: 18px;
+    font-weight: bold;
+    overflow: hidden;
+    line-height: 27px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.section07 p {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-lg);
+    margin: 16px 0 0 0;
+}
+
+.section07 .btn-group {
+    margin: 52px 0 0 0;
+}
+
+.section07 button {
+    display: flex;
+    flex-wrap: wrap;
+    height: 62px;
+    width: 174px;
+}
+
+.section07 button p {
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-lg);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: left;
+}
+
+.section07 button p span {
+    color: var(--gt-gray-01);
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.qrcode {
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+}
+
+.qrcode img {
+    width: 128px;
+}
+
+.qrcode p {
+    color: var(--gt-gray-03);
+    font-size: 15px;
+    margin: 0;
+}

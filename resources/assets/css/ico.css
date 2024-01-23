@@ -4,3 +4,87 @@
     background-size: cover !important;
     display: inline-block;
 }
+
+.i-search-p {
+    background: url(../img/ico/i-search-p.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-language {
+    background: url(../img/ico/i-language.png);
+    height: 24px;
+    width: 24px;
+}
+
+.i-catagory {
+    background: url(../img/ico/i-catagory.png);
+    height: 12px;
+    width: 12px;
+}
+
+.i-modal-close {
+    background: url(../img/ico/i-modal-close.png);
+    height: 22px;
+    width: 22px;
+}
+
+.i-star {
+    background: url(../img/ico/i-star.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-top {
+    background: url(../img/ico/i-top.png);
+    height: 18px;
+    width: 18px;
+}
+
+.i-pro {
+    background: url(../img/ico/i-pro.png);
+    height: 18px;
+    width: 18px;
+}
+
+.i-google {
+    background: url(../img/ico/i-google.png);
+    height: 28px;
+    width: 28px;
+}
+
+.i-apple {
+    background: url(../img/ico/i-apple.png);
+    height: 28px;
+    width: 28px;
+}
+
+.i-heart {
+    background: url(../img/ico/i-heart.png);
+    height: 24px;
+    width: 24px;
+}
+
+.i-chat {
+    background: url(../img/ico/i-chat.png);
+    height: 24px;
+    width: 24px;
+}
+
+.i-alarm {
+    background: url(../img/ico/i-alarm.png);
+    height: 24px;
+    width: 24px;
+}
+
+.i-trash {
+    background: url(../img/ico/i-trash.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-set {
+    background: url(../img/ico/i-set.png);
+    height: 20px;
+    width: 20px;
+}
