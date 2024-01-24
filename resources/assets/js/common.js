@@ -80,6 +80,11 @@ $(document).ready(function () {
     $(".alarm-wrap").mouseleave(function () {
         $(this).hide();
     });
+    // .btn-alarm-close 시 li 위에 p로 금일, 이전 날짜를 표시하는 구간이
+    // 있는데 해당 부분은 어떤식으로 해야할지 고민이 필요
+    $('.btn-alarm-close').on('click', function () {
+        $(this).closest('li').hide();
+    });
 
     // 상단 카테고리 이벤트
     $(".all-catagory").click(function () {
@@ -89,6 +94,7 @@ $(document).ready(function () {
     $(".all-catagory-wrap").mouseleave(function () {
         $(this).hide();
     });
+
 
     // 버튼 이벤트
     $(".btn-heart").click(function () {

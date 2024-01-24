@@ -4,7 +4,9 @@
     font-family: 'NotoSansKR';
     font-weight: 700;
     font-display: swap;
-    src: local('Pretendard Bold'), url('../font/NotoSans-Bold.woff2') format('woff2'), url('../font/NotoSans-Bold.woff') format('woff');
+    src: local('NotoSansKR Bold'),
+        url('../font/NotoSans-Bold.woff2') format('woff2'),
+        url('../font/NotoSans-Bold.woff') format('woff');
 }
 
 
@@ -12,7 +14,9 @@
     font-family: 'NotoSansKR';
     font-weight: 400;
     font-display: swap;
-    src: local('Pretendard Regular'), url('../font/NotoSans-Regular.woff2') format('woff2'), url('../font/NotoSans-Regular.woff') format('woff');
+    src: local('NotoSansKR Regular'),
+        url('../font/NotoSans-Regular.woff2') format('woff2'),
+        url('../font/NotoSans-Regular.woff') format('woff');
 }
 
 :root {
@@ -566,6 +570,15 @@ button:focus {
     background-size: cover;
 }
 
+.btn-alarm-close {
+    background: url(../img/ico/i-x-g.png);
+    background-size: cover;
+    border: 0;
+    height: 16px;
+    padding: 0;
+    width: 16px;
+}
+
 /* **************************************** *
  * MODAL
  * **************************************** */
@@ -646,10 +659,6 @@ button:focus {
 
 .gt-modal-footer .gt-btn-group {
     justify-content: flex-end;
-}
-
-.gt-modal-footer button {
-    height: 40px;
 }
 
 /* modal size */
@@ -1545,6 +1554,55 @@ h3.title {
     align-items: center;
     display: flex;
     cursor: pointer;
+}
+
+.alarm-body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 24px 0 0 0;
+}
+
+.alarm-item p {
+    color: var(--gt-black-01);
+    font-size: 15px;
+    margin: 0 0 12px 0;
+}
+
+.alarm-item ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.alarm-area {
+    align-items: flex-start;
+    display: flex;
+}
+
+.alarm-area img {
+    border-radius: 100px;
+    flex: 0 0 auto;
+    height: 32px;
+    margin: 0 12px 0 0;
+    width: 32px;
+}
+
+.alarm-area h3 {
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-md);
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.alarm-area h3 span {
+    color: var(--gt-gray-03);
+    font-size: var(--gt-text-sm);
+}
+
+.alarm-area button {
+    flex: 0 0 auto;
+    margin: 0 0 0 24px;
 }
 
 .header-catagory {

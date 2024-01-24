@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $("#languageModal").append(languageModal()); // 언어설정
+    $("#alarmAllDelModal").append(alarmAllDelModal()); // 알림 전체삭제
     
 
     function languageModal() {
@@ -26,6 +27,32 @@ $(document).ready(function () {
         </div>
         `;
     }
+
+    function alarmAllDelModal() {
+        return `
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content gt-modal-mini">
+                <div class="gt-modal-header">
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close-g"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <h6>알림 전체 삭제</h6>
+                    <p>알림을 전체 삭제하시겠습니까?<br>
+                        삭제후에는 복구되지 않습니다.</p>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-sm btn-primary">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        `;
+    }
+
 
     
 });

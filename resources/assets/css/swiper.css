@@ -43,12 +43,12 @@
 }
 
 .swiper-button-prev {
-    left: var(--swiper-navigation-sides-offset,-58px);
+    left: var(--swiper-navigation-sides-offset, -58px);
     right: auto;
 }
 
 .swiper-button-next {
-    right: var(--swiper-navigation-sides-offset,-58px);
+    right: var(--swiper-navigation-sides-offset, -58px);
     left: auto;
 }
 
@@ -97,4 +97,53 @@
     color: var(--gt-write);
 }
 
-/* .main-service-swiper-02 */
+/* .main-visual-swiper */
+.main-visual-swiper {
+    position: relative;
+}
+
+.main-visual-swiper .swiper-slide {
+    border-radius: 12px;
+    height: 240px;
+    width: 100%;
+}
+
+.main-visual-swiper .slide01 {
+    background: url(../img/sample/sample-03.png);
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.main-visual-swiper .swiper-button-next {
+    right: 16px;
+}
+
+.main-visual-swiper .swiper-button-prev {
+    left: 16px;
+}
+
+.main-visual-swiper .swiper-button-next,
+.main-visual-swiper .swiper-button-prev {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.main-visual-swiper .swiper-button-next::after,
+.main-visual-swiper .swiper-button-prev::after {
+    color: var(--gt-write);
+}
+
+.main-visual-swiper .swiper-pagination {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    bottom: 16px;
+    color: var(--gt-write);
+    font-size: var(--gt-text-md);
+    font-weight: bold;
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    left: auto;
+    right: 20px;
+    width: 56px;
+}

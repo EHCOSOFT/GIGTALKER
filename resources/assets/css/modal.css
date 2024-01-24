@@ -36,3 +36,32 @@
     left: 0;
     width: 16px;
 }
+
+/* alert-modal */
+.alert-modal .gt-modal-content {
+    padding: 16px 16px 20px 16px;
+}
+
+.alert-modal .gt-modal-header button {
+    margin: 0 0 0 auto;
+}
+
+.alert-modal .gt-modal-body {
+    margin: 12px 0 0 0;
+}
+
+.alert-modal .gt-modal-body p {
+    color: var(--gt-gray-02);
+    font-size: var(--gt-text-md);
+    margin: 8px 0 0 0;
+}
+
+.alert-modal .gt-modal-footer {
+    margin: 40px 0 0 0;
+    padding: 0;
+}
+
+.alert-modal .gt-modal-footer button {
+    font-size: var(--gt-text-md);
+    width: calc((100% / 2) - 4px);
+}
