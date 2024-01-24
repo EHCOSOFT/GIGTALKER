@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/* language-modal */
+.language-modal .gt-modal-content {
+    width: 350px;
+}
+
+.language-modal .gt-modal-body {
+    margin: 24px 0 0 0;
+}
+
+.languge-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.languge-list li {
+    align-items: center;
+    color: var(--gt-gray--02);
+    cursor: pointer;
+    display: flex;
+    font-size: var(--gt-text-md);
+    padding: 0 0 0 20px;
+    position: relative;
+    text-align: left;
+}
+
+.languge-list li.check::before {
+    background: url(../img/ico/i-check-g.png);
+    background-size: cover;
+    content: '';
+    display: inline-block;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    width: 16px;
+}

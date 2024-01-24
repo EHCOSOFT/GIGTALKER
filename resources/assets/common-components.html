@@ -61,11 +61,16 @@
                         <tr>
                             <td>
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary" disabled>BUTTON</button>
-                                    <button type="button" class="btn btn-md btn-outline-secondary" disabled>BUTTON</button>
-                                    <button type="button" class="btn btn-md w-200 btn-outline-secondary" disabled>BUTTON</button>
-                                    <button type="button" class="btn btn-lg btn-outline-secondary" disabled>BUTTON</button>
-                                    <button type="button" class="btn btn-xl btn-outline-secondary" disabled>BUTTON</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"
+                                        disabled>BUTTON</button>
+                                    <button type="button" class="btn btn-md btn-outline-secondary"
+                                        disabled>BUTTON</button>
+                                    <button type="button" class="btn btn-md w-200 btn-outline-secondary"
+                                        disabled>BUTTON</button>
+                                    <button type="button" class="btn btn-lg btn-outline-secondary"
+                                        disabled>BUTTON</button>
+                                    <button type="button" class="btn btn-xl btn-outline-secondary"
+                                        disabled>BUTTON</button>
                                 </div>
                             </td>
 
@@ -79,13 +84,13 @@
                         </tr>
                         <tr>
                             <td>
-                                <div class="ss-btn-group">
+                                <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-primary open-modal"
-                                        data-modal-id="confirmModal">confirmModal</button>
+                                        data-modal-id="alertModal">alertModal</button>
                                     <button type="button" class="btn btn-sm btn-primary open-modal"
                                         data-modal-id="contentModal">contentModal</button>
                                     <button type="button" class="btn btn-sm btn-primary open-modal"
-                                        data-modal-id="fullScreenModal">fullScreenModal</button>
+                                        data-modal-id="confirmModal">confirmModal</button>
                                 </div>
                             </td>
                         </tr>
@@ -429,34 +434,43 @@
                         <tr>
                             <td>
                                 <div class="product-wrap">
-                                    <div class="product-group">
-                                        <div class="product-img"
-                                            style="background: url(img/sample/sample02.png) center; background-size: cover;">
+                                    <button class="btn-heart"></button>
+                                    <div class="product-img" style="background: url(img/sample/sample-01.png);"></div>
+                                    <div class="product-info">
+                                        <div class="info-top">
+                                            <a href="#" class="user off"><img src="img/sample/sample-02.png"
+                                                    alt="">Shane A</a>
+                                            <span class="user-level">TOP</span>
                                         </div>
-                                        <ul class="product-tag">
-                                            <li>동영상</li>
-                                        </ul>
-                                        <h5 class="product-name">영어강사 조의석의 영어 길라잡이 A to Z</h5>
-                                        <p class="product-price">99,000원</p>
+                                        <h5 class="product-name">고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다. 고급스러운 홈페이지 같은 네이버 고급스러운
+                                            홈페이지 같은 네이버</h5>
+                                        <p class="product-review"><i class="ico i-star"></i>4.8 <span>(268)</span></p>
+                                        <h6 class="product-price">4,000 원~</h6>
                                     </div>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-                            <td class="pt-4">
-                                <div class="product-wrap">
-                                    <div class="product-group row">
-                                        <div class="product-img"
-                                            style="background: url(img/sample/sample02.png) center; background-size: cover;">
-                                        </div>
-                                        <div class="product-info">
-                                            <ul class="product-tag">
-                                                <li class="mint">ONLY 공선</li>
-                                                <li>동영상</li>
-                                            </ul>
-                                            <h5 class="product-name">영어강사 조의석의 영어 길라잡이 A to Z</h5>
-                                            <p class="product-price">99,000원</p>
-                                        </div>
+                            <td>
+                                <div class="product-info">
+                                    <div class="info-top">
+                                        <a href="#" class="user off"><img src="img/sample/sample-02.png" alt="">Shane
+                                            A</a>
+                                        <span class="user-level">TOP</span>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="info-top">
+                                        <a href="#" class="user on"><img src="img/sample/sample-02.png" alt="">Shane
+                                            A</a>
+                                        <span class="user-level"><i class="ico i-top"></i>TOP</span>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="info-top">
+                                        <a href="#" class="user on"><img src="img/sample/sample-02.png" alt="">Shane
+                                            A</a>
+                                        <span class="user-level"><i class="ico i-pro"></i>PRO</span>
                                     </div>
                                 </div>
                             </td>
@@ -496,37 +510,22 @@
         </section>
     </div>
 
-    <!-- S:confirmModal -->
-    <div id="confirmModal" class="ss-modal-wrap confirm-modal">
-        <div class="ss-modal-content">
-            <div class="ss-modal-body">
-                <p>저장하시겠습니까?</p>
-            </div>
-            <div class="ss-modal-footer">
-                <div class="ss-btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-gray btn-modal-close">취소</button>
-                    <button type="button" class="btn btn-sm btn-primary">확인</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- E:confirmModal -->
 
-    <!-- S:contentModal -->
-    <div id="contentModal" class="ss-modal-wrap content-modal">
-        <div class="ss-modal-inner">
-            <div class="ss-modal-content">
-                <div class="ss-modal-header">
-                    <h3 class="ss-modal-title">비밀번호 재설정</h3>
+    <!-- S : alertModal -->
+    <div id="alertModal" class="gt-modal-wrap alert-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content gt-modal-mini">
+                <div class="gt-modal-header">
+                    <h3 class="gt-modal-title">비밀번호 재설정</h3>
                     <button type="button" class="btn-modal-close">
                         <i class="ico i-modal-close"></i>
                     </button>
                 </div>
-                <div class="ss-modal-body">
+                <div class="gt-modal-body">
                     <p>저장하시겠습니까?</p>
                 </div>
-                <div class="ss-modal-footer">
-                    <div class="ss-btn-group">
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-gray btn-modal-close">취소</button>
                         <button type="button" class="btn btn-sm btn-primary">확인</button>
                     </div>
@@ -534,28 +533,55 @@
             </div>
         </div>
     </div>
-    <!-- E:contentModal -->
+    <!-- E : alertModal -->
 
-    <!-- S:fullScreenModal -->
-    <div id="fullScreenModal" class="ss-modal-wrap full-screen-modal">
-        <div class="ss-modal-inner">
-            <div class="ss-modal-content">
-                <div class="ss-modal-header">
-                    <h3 class="ss-modal-title">비밀번호 재설정</h3>
+    <!-- S: contentModal -->
+    <div id="contentModal" class="gt-modal-wrap content-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content gt-modal-sm">
+                <div class="gt-modal-header">
+                    <h3 class="gt-modal-title">비밀번호 재설정</h3>
                     <button type="button" class="btn-modal-close">
                         <i class="ico i-modal-close"></i>
                     </button>
                 </div>
-                <div class="ss-modal-body">
+                <div class="gt-modal-body">
                     <p>저장하시겠습니까?</p>
                 </div>
-                <div class="ss-modal-footer">
-                    푸터
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-sm btn-primary">확인</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- E:fullScreenModal -->
+    <!-- E: contentModal -->
+
+    <!-- S: confirmModal -->
+    <div id="confirmModal" class="gt-modal-wrap confirm-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content gt-modal-md">
+                <div class="gt-modal-header">
+                    <h3 class="gt-modal-title">비밀번호 재설정</h3>
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <p>저장하시겠습니까?</p>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-sm btn-primary">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E: confirmModal -->
 
 
 

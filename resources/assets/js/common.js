@@ -1,417 +1,101 @@
 $(document).ready(function () {
-    $("#ss-header").append(Header());
-    $("#ss-footer").append(Footer());
+    $("#header").append(Header());
+    $("#footer").append(Footer());
 
     function Header() {
         return `
-    <div class="ss-header-top">
-                <div class="container">
-                    <a href="#" class="ss-header-logo">공선마켓</a>
-                    <div class="ss-header-nav pc">
-                        <ul>
-                            <li class="menu-item"><a href="#">동영상</a>
-                                <div class="depth-02">
-                                    <ul>
-                                        <li class="depth"><a href="#">초등</a>
-                                            <!-- 추가 서브메뉴 -->
-                                            <div class="depth-03">
-                                                <ul>
-                                                    <li class="depth"><a href="#">국어</a></li>
-                                                    <li class="depth"><a href="#">영어</a></li>
-                                                    <li class="depth"><a href="#">수학</a></li>
-                                                    <li class="depth"><a href="#">사회</a></li>
-                                                    <li class="depth"><a href="#">과학</a></li>
-                                                    <li class="depth"><a href="#">제2외국어</a></li>
-                                                    <li class="depth"><a href="#">논술</a></li>
-                                                    <li class="depth"><a href="#">예체능</a></li>
-                                                    <li class="depth"><a href="#">비교과</a></li>
-                                                    <li class="depth"><a href="#">종합</a></li>
-                                                    <li class="depth"><a href="#">주산</a></li>
-                                                    <li class="depth"><a href="#">기타</a></li>
-                                                    <li class="depth"><a href="#">창의력</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="depth"><a href="#">중등</a></li>
-                                        <li class="depth"><a href="#">고등</a></li>
-                                        <li class="depth"><a href="#">초중고</a></li>
-                                        <li class="depth"><a href="#">초중</a></li>
-                                        <li class="depth"><a href="#">중고</a></li>
-                                        <li class="depth"><a href="#">수험생</a></li>
-                                        <li class="depth"><a href="#">입시생</a></li>
-                                        <!-- 추가적인 서브메뉴 항목을 필요한 만큼 추가하세요 -->
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="menu-item"><a href="#">온라인 교재</a></li>
-                            <li class="menu-item"><a href="#">프로그램</a></li>
-                            <li class="menu-item"><a href="#">기타</a></li>
-                        </ul>
-                    </div>
-                    <ul class="ss-header-i">
-                        <li class="ss-header-search">
-                            <i class="ico i-search-w"></i>
-                        </li>
-                        <li class="btn-header-search-del">
-                            <i class="ico i-x-w"></i>
-                        </li>
-                        <li class="ss-header-cart">
-                            <i class="ico i-cart-w"></i>
-                        </li>
-                        <!-- <li>
-                            <button type="button" class="btn-md btn-outline-write">로그인</button>
-                        </li> -->
-                        <!-- 로그인 시-->
-                        <li>
-                            <div class="header-user-dropdown">
-                                <div class="dropdown-list-wrap">
-                                    <button class="dropdown-button" data-target="header-user-dropdown">
-                                        <i class="ico i-user-w"></i>
-                                    </button>
-                                    <ul id="header-user-dropdown" class="dropdown-list">
-                                        <li>마이페이지</li>
-                                        <li>구매내역</li>
-                                        <hr>
-                                        <li>로그아웃</li>
-                                    </ul>
-                                    <ul class="dropdown-info">
-                                        <p>공부선배학원 대치점</p>
-                                        <h6>Studysenior@academy.com</h6>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="ss-header-nav mo flex">
-                <div class="container">
-                    <ul>
-                        <li><a href="#">동영상</a></li>
-                        <li><a href="#">온라인 교재</a></li>
-                        <li><a href="#">프로그램</a></li>
-                        <li><a href="#">기타</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- 검색 영역 -->
-            <div class="ss-header-wrap-bg">
-                <div class="ss-header-search-wrap">
-                    <div class="header-search-top">
-                        <div class="input-search md">
-                            <input type="text" placeholder="상품명을 입력해보세요." id="commonSearch" name="commonSearch">
-                            <button type="button">
-                                <i class="ico i-search-b"></i>
-                            </button>
-                            <i class="ico i-clear"></i>
-                        </div>
-                    </div>
-
-                    <div class="header-search-area">
-                        <!-- 최근 검색어 -->
-                        <div class="header-search-recent">
-                            <div class="recent-area">
-                                <h6>최근 검색어<a href="#">최근 검색어 지우기</a></h6>
-                                <!-- 검색 내역이 없을 때-->
-                                <!-- <p>검색 내역이 없습니다.</p> -->
-
-                                <!-- 검색 내역이 있을 때 : 최대 10개까지-->
-                                <ul class="keyword-search-list">
-                                    <li>출결관리 시스템dfadfadfad<button type="button" class="btn-keyword-del"></button></li>
-                                    <li>출결관리 시스템fadfadfadfadfdfadfa<button type="button"
-                                            class="btn-keyword-del"></button></li>
-                                    <li>출결관리 시스템dfad<button type="button" class="btn-keyword-del"></button></li>
-                                    <li>출결관리 시스템<button type="button" class="btn-keyword-del"></button></li>
-                                    <li>출결관리 시스템dafadddfadfadfadfa<button type="button"
-                                            class="btn-keyword-del"></button></li>
-                                    <li>출결관리 시스템adfadafadfadf<button type="button" class="btn-keyword-del"></button>
-                                    </li>
-                                    <li>출결관리 시스템<button type="button" class="btn-keyword-del"></button></li>
-                                    <li>출결관리 시스템<button type="button" class="btn-keyword-del"></button></li>
-                                    <li>출결관리 시스템dfadfa<button type="button" class="btn-keyword-del"></button></li>
-                                    <li>출결관리 시스템adfa<button type="button" class="btn-keyword-del"></button></li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <!-- 인기 검색어 -->
-                        <div class="header-search-recent b-0">
-                            <div class="recent-area">
-                                <h6>인기 검색어<span>2023.10.10 21:32 기준</span></h6>
-                                <ul class="keyword-ranking">
-                                    <li><span>1</span>출결관리 시스템</li>
-                                    <li><span>2</span>출결관리 시스템</li>
-                                    <li><span>3</span>출결관리 시스템</li>
-                                    <li><span>4</span>출결관리 시스템</li>
-                                    <li><span>5</span>출결관리 시스템</li>
-                                    <li><span>6</span>출결관리 시스템</li>
-                                    <li><span>7</span>출결관리 시스템</li>
-                                    <li><span>8</span>출결관리 시스템</li>
-                                    <li><span>9</span>출결관리 시스템</li>
-                                    <li><span>10</span>출결관리 시스템</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 검색하였을 경우 -->
-                    <!-- <div class="header-search-result-wrap"> -->
-                    <!-- 다중선택 및 단일선택 여부 체크 : 관련 js 이벤트 작업 완료 -->
-                    <!-- <ul class="header-search-result-category">
-                            <li class="active">전체 20</li>
-                            <li>동영상 5</li>
-                            <li>온라인 교재(E-book) 12</li>
-                            <li>프로그램</li>
-                            <li>기타</li>
-                        </ul>
-                        <div class="header-search-product-wrap">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="product-wrap">
-                                        <div class="product-group">
-                                            <div class="product-img"
-                                                style="background: url(img/sample/sample02.png) center; background-size: cover;">
-                                            </div>
-                                            <ul class="product-tag">
-                                                <li>동영상</li>
-                                            </ul>
-                                            <h5 class="product-name">영어강사 조의석의 영어 길라잡이 A to Z 영어강사 조의석의 영어 길라잡이 A to Z
-                                            </h5>
-                                            <p class="product-price">99,000원</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="product-wrap">
-                                        <div class="product-group">
-                                            <div class="product-img"
-                                                style="background: url(img/sample/sample02.png) center; background-size: cover;">
-                                            </div>
-                                            <ul class="product-tag">
-                                                <li>동영상</li>
-                                            </ul>
-                                            <h5 class="product-name">영어강사 조의석의 영어 길라잡이 A to Z</h5>
-                                            <p class="product-price">99,000원</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="product-wrap">
-                                        <div class="product-group">
-                                            <div class="product-img"
-                                                style="background: url(img/sample/sample02.png) center; background-size: cover;">
-                                            </div>
-                                            <ul class="product-tag">
-                                                <li>동영상</li>
-                                            </ul>
-                                            <h5 class="product-name">영어강사 조의석의 영어 길라잡이 A to Z</h5>
-                                            <p class="product-price">99,000원</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="product-wrap">
-                                        <div class="product-group">
-                                            <div class="product-img"
-                                                style="background: url(img/sample/sample02.png) center; background-size: cover;">
-                                            </div>
-                                            <ul class="product-tag">
-                                                <li>동영상</li>
-                                            </ul>
-                                            <h5 class="product-name">영어강사 조의석의 영어 길라잡이 A to Z</h5>
-                                            <p class="product-price">99,000원</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="product-wrap">
-                                        <div class="product-group">
-                                            <div class="product-img"
-                                                style="background: url(img/sample/sample02.png) center; background-size: cover;">
-                                            </div>
-                                            <ul class="product-tag">
-                                                <li>동영상</li>
-                                            </ul>
-                                            <h5 class="product-name">영어강사 조의석의 영어 길라잡이 A to Z</h5>
-                                            <p class="product-price">99,000원</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="product-wrap">
-                                        <div class="product-group">
-                                            <div class="product-img"
-                                                style="background: url(img/sample/sample02.png) center; background-size: cover;">
-                                            </div>
-                                            <ul class="product-tag">
-                                                <li>동영상</li>
-                                            </ul>
-                                            <h5 class="product-name">영어강사 조의석</h5>
-                                            <p class="product-price">99,000원</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="product-wrap">
-                                        <div class="product-group">
-                                            <div class="product-img"
-                                                style="background: url(img/sample/sample02.png) center; background-size: cover;">
-                                            </div>
-                                            <ul class="product-tag">
-                                                <li>동영상</li>
-                                            </ul>
-                                            <h5 class="product-name">영어강사 조의석의</h5>
-                                            <p class="product-price">99,000원</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!-- 검색결과가 없을 경우 -->
-                    <!-- <div class="header-search-result-none">
-                        <i class="ico i-information"></i>
-                        <p>"<span>상품명</span>" 검색 결과가 없습니다.</p>
-                    </div> -->
-
-                </div>
-            </div>
+        
     `;
     }
 
     function Footer() {
         return `
-    <!-- s:모바일 -->
-            <div class="container mo">
-                <h2>공선마켓</h2>
-                <p><span>공부선배는 한달에 4명씩 심장병 어린이 수술비를 지원합니다.</span></p>
-                <ul>
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#">개인(위치)정보취급방침</a></li>
-                    <li><a href="#">고객센터</a></li>
-                    <li><a href="#">이용가이드</a></li>
-                </ul>
-                <div class="footer-info">
-                    <p>(주)공부선배 대표자 : 이용운｜사업자 등록번호 : 261-81-23776</p>
-                    <p>서울특별시 강남구 봉은사로5길6 코너빌딩 3층｜대표전화 : 02-777-0001</p>
-                    <p>통신판매번호 : 제 2015-서울강남-00971호</p>
-                    <p>고객센터 : help@studysenior.com｜제휴제안 : winwin@studysenior.com</p>
-                    <p>학원설립 운영등록번호 : 제14064호 공부선배원격학원</p>
-                    <p>신고기관명 : 서울특별시 강남서초교육지원청</p>
-                </div>
-                <ul class="footer-ico">
-                    <li><a href="#"><i class="ico i-blog"></i></a></li>
-                    <li><a href="#"><i class="ico i-instar"></i></a></li>
-                    <li><a href="#"><i class="ico i-facebook"></i></a></li>
-                </ul>
-                <h6>Copyright ©studysenior. All Rights Reserved.</h6>
+        <div class="footer-top">
+        <div class="container">
+            <div class="footer-top-left">
+                <img src="img/logo.png" alt="GIGTALKER">
+                <p>10:00~17:00 (점심시간 12:00~13:30)<br>
+                    주말, 공휴일 휴무</p>
+                <button type="button" class="btn">1:1 문의하기</button>
+                <h6>긱토커는 서비스 중개 플랫폼입니다.<br>작업 의뢰는 전문가에게 직접 문의해 주세요.</h6>
             </div>
-            <!-- e:모바일 -->
-
-            <!-- s:PC -->
-            <div class="container pc">
-                <div class="row">
-                    <div class="col-4">
-                        <h2>공선마켓</h2>
-                        <div class="footer-info">
-                            <p>(주)공부선배 대표자 : 이용운｜사업자 등록번호 : 261-81-23776</p>
-                            <p>서울특별시 강남구 봉은사로5길6 코너빌딩 3층｜대표전화 : 02-777-0001</p>
-                            <p>통신판매번호 : 제 2015-서울강남-00971호</p>
-                            <p>고객센터 : help@studysenior.com｜제휴제안 : winwin@studysenior.com</p>
-                            <p>학원설립 운영등록번호 : 제14064호 공부선배원격학원</p>
-                            <p>신고기관명 : 서울특별시 강남서초교육지원청</p>
-                        </div>
-                        <ul class="footer-ico">
-                            <li><a href="#"><i class="ico i-blog"></i></a></li>
-                            <li><a href="#"><i class="ico i-instar"></i></a></li>
-                            <li><a href="#"><i class="ico i-facebook"></i></a></li>
-                        </ul>
-                        <h6>Copyright ©studysenior. All Rights Reserved.</h6>
-                    </div>
-                    <div class="col-4">
-                        <ul>
-                            <li><a href="#">이용약관</a></li>
-                            <li><a href="#">개인(위치)정보취급방침</a></li>
-                            <li><a href="#">고객센터</a></li>
-                            <li><a href="#">이용가이드</a></li>
-                        </ul>
-                        <ul class="footer-desc">
-                            <li><span>-</span>공부선배는 한달에 4명씩 심장병 어린이 수술비를 지원합니다.</li>
-                            <li><span>-</span>KB에스크로 서비스 : 안전거래를 위해 현금 등으로 결제시
-                                공부선배에서 가입한 서비스를 이용하실 수 있습니다.</li>
-                        </ul>
-                        <a href="#" class="service-check">서비스 가입확인</a>
-                    </div>
-                    <div class="col-2">
-                        <h3>모바일 앱<button type="button">설치하기</button></h3>
-                        <p class="app-info">모바일 앱을 통해 공부선배를 언제 어디서든 손쉽게 
-                            만나보세요. 스마트폰으로도 편리하게 이용하실 수 
-                            있습니다.</p>
-                    </div>
-                </div>
+            <div class="footer-top-right">
+                <dl>
+                    <dt>소개</dt>
+                    <dd><a href="#">긱톡커란?</a></dd>
+                    <dd><a href="#">전문가신청안내</a></dd>
+                    <dd><a href="#">사용 가이드</a></dd>
+                </dl>
+                <dl>
+                    <dt>내활동</dt>
+                    <dd><a href="#">맞춤주문내역</a></dd>
+                    <dd><a href="#">구매내역</a></dd>
+                    <dd><a href="#">구매후기</a></dd>
+                    <dd><a href="#">채팅목록</a></dd>
+                </dl>
+                <dl>
+                    <dt>소개</dt>
+                    <dd><a href="#">전문가 센터</a></dd>
+                    <dd><a href="#">고객요청서</a></dd>
+                    <dd><a href="#">판매관리</a></dd>
+                    <dd><a href="#">내 상품관리</a></dd>
+                    <dd><a href="#">광고관리</a></dd>
+                </dl>
             </div>
-            <!-- e:PC -->
+        </div>
+    </div>
+    <div class="footer-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">전문가 이용약관</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">자주 묻는 질문</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-info">
+        <div class="container">
+            <h5>긱톡커는 전문가중개시스템의 제공자로서 통신판매의 당사자가 아닙니다. 상품의 판매, 상담 내용을 포함하여 용역 및 강의의 이행, 환불 등 상품과 관련한 의무와 책임은 각
+                판매자에게 있습니다.<br>
+                또한 긱톡커는 본 플랫폼 외부에서 이루어진 상담 등으로 인하여 발생한 문제에 대해서도 마찬가지로 책임을 지지 않습니다.</h5>
+            <h6>사업자등록증 : <span>548-87-01652</span> 통신판매업신고번호 : <span>제2020-서울마포-0190호</span> 이메일문의 : <span>help@joohan.kr</span><br>
+                (주)이엠케이미디어 <span>서울시 마포구 독막로 262 신영빌딩 6층</span> 취업정보제공사업신청 : <span>서울서부제2020-15호</span> 대표전화 <span>010-4889-0513</span>
+            </h6>
+            <p>©gigtalker. All rights reserved.</p>
+        </div>
+    </div>
     `;
     }
-    // header
 
-    // S : -- 20240108 -- 수정 및 추가 --
-    // 상단 유저 프로필 호버 이벤트
-    $(".ss-header-search").click(function (e) {
-        if (!$(e.target).is(".btn-keyword-del, .btn-keyword-del *")) {
-            e.stopPropagation(); // Stop click events from propagating to parents
-            $(".ss-header-search").hide();
-            $(".ss-header-search-wrap").fadeIn();
-            $(".ss-header-wrap-bg").fadeIn();
-            $(".btn-header-search-del").show();
-            $("body").css("overflow", "hidden");
-    
-            $(".dropdown-button").removeClass("active");
-            $(".dropdown-list").hide();
-        }
+
+    // -------------- HEADER --------------
+
+    // 상단 알림 이벤트
+    $(".btn-alarm").click(function () {
+        $(".alarm-wrap").show();
     });
-
-    // 상단 : 검색영역 닫기 이벤트
-    $(".btn-header-search-del").click(function () {
-        $(".ss-header-wrap-bg").hide();
-        $(".ss-header-search-wrap").hide();
-        $(".ss-header-search").show();
+    // 마우스가 .alarm-wrap 밖으로 나가면 hide()
+    $(".alarm-wrap").mouseleave(function () {
         $(this).hide();
-        $("body").css("overflow", "auto");
     });
 
-    // 다른 영역을 클릭할 때 검색영역 닫기
-    $(document).on("click", function (e) {
-        console.log('123141');
-        if (!$(e.target).closest('.ss-header-search-wrap').length && !$(e.target).hasClass('btn-keyword-del')) {
-            $(".ss-header-wrap-bg").hide();
-            $(".ss-header-search-wrap").hide();
-            $(".ss-header-search").show();
-            $(".btn-header-search-del").hide();
-            $("body").css("overflow", "auto");
-        }
+    // 상단 카테고리 이벤트
+    $(".all-catagory").click(function () {
+        $(".all-catagory-wrap").show();
+    });
+    // 마우스가 .all-catagory-wrap 밖으로 나가면 hide()
+    $(".all-catagory-wrap").mouseleave(function () {
+        $(this).hide();
     });
 
-    // 상단 유저 프로필 호버 이벤트
-    $(".header-user-dropdown .dropdown-button").on({
-        mouseenter: function () {
-            // 호버 시 .dropdown-info 표시
-            $(".dropdown-info").show();
-        },
-        mouseleave: function () {
-            // 호버를 떠나면 .dropdown-info 숨김
-            $(".dropdown-info").hide();
-        },
+    // 버튼 이벤트
+    $(".btn-heart").click(function () {
+        $(this).toggleClass("active");
     });
 
-    $(".header-user-dropdown .dropdown-list li").click(function () {
-        $("#header-user-dropdown").hide();
-        $(".dropdown-button").removeClass("active");
-    });
-
+    // -------------- MAIN --------------
 
     // 드롭다운 버튼 클릭 시 드롭다운 리스트 토글
     $(".dropdown-button").click(function (e) {
@@ -460,12 +144,12 @@ $(document).ready(function () {
         $("body").css("overflow", "hidden");
     });
     // 모달 닫기 버튼 및 모달 바깥 영역 클릭 이벤트
-    $(".btn-modal-close, .ss-modal-wrap").click(function () {
-        $(".ss-modal-wrap").removeClass("active");
+    $(".btn-modal-close, .gt-modal-wrap").click(function () {
+        $(".gt-modal-wrap").removeClass("active");
         $("body").css("overflow", "auto");
     });
     // 모달 내부 클릭 시 닫기 방지
-    $(".ss-modal-content").click(function (e) {
+    $(".gt-modal-content").click(function (e) {
         e.stopPropagation();
     });
 
