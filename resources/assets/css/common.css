@@ -515,7 +515,7 @@ button:focus {
 
 .btn-black {
     background: var(--gt-black-03);
-    color: var(--gt-write);
+    color: var(--gt-write) !important;
 }
 
 .btn-black:disabled {
@@ -863,12 +863,14 @@ h3.title {
 .input-group {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .input-area {
     align-items: center;
     display: flex;
     gap: 8px;
+    position: relative;
 }
 
 .input-area span {
@@ -881,23 +883,18 @@ h3.title {
 
 .input-group label {
     color: #5C5D62;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
     margin: 0 0 12px 0;
     text-align: left;
 }
 
-.input-group label span {
-    color: #FF6421;
-    margin: 0 0 0 4px;
-}
-
 .input-group input[type=text],
-.input-group input[type=pagtword] {
+.input-group input[type=password] {
     background: var(--gt-write);
-    border: 1px solid var(--gt-gray-04);
+    border: 1px solid var(--gt-gray-05);
     border-radius: 6px;
-    color: var(--gt-gray-02);
+    color: var(--gt-gray-01);
     font-size: 14px;
     font-weight: 400;
     height: 50px;
@@ -906,16 +903,85 @@ h3.title {
     width: 100%;
 }
 
+.input-group input[type=text]:focus,
+.input-group input[type=password]:focus {
+    border: 1px solid var(--gt-gray-03);
+}
+
 .input-group input[type=text]::placeholder,
-.input-group input[type=pagtword]::placeholder {
+.input-group input[type=password]::placeholder {
     color: var(--gt-gray-04);
 }
 
 .input-group input[type=text]:disabled,
-.input-group input[type=pagtword]:disabled {
+.input-group input[type=password]:disabled {
     background: var(--gt-write);
     border: 1px solid var(--gt-gray-05);
     color: var(--gt-gray-04);
+}
+
+.input-group p {
+    align-items: center;
+    color: var(--gt-gray-04);
+    display: flex;
+    font-size: var(--gt-text-sm);
+    justify-content: space-between;
+    margin: 4px 0 0 0;
+}
+
+.input-group p span {
+    color: var(--gt-gray-03);
+    font-size: var(--gt-text-mn);
+}
+
+/* md */
+.input-group.md input[type=text],
+.input-group.md input[type=password] {
+    font-size: var(--gt-text-lg);
+    height: 55px;
+    padding: 0 20px;
+}
+
+/* input error */
+.input-group.error input[type=text],
+.input-group.error input[type=password] {
+    border: 1px solid var(--gt-error);
+}
+
+.input-group.error p {
+    color: var(--gt-error);
+}
+
+/* input sucess */
+.input-group.success input[type=text],
+.input-group.success input[type=password] {
+    border: 1px solid var(--gt-success);
+}
+
+.input-group.success p {
+    color: var(--gt-success);
+}
+
+/* input sucess */
+.input-group.warning input[type=text],
+.input-group.warning input[type=password] {
+    border: 1px solid var(--gt-warning);
+}
+
+.input-group.warning p {
+    color: var(--gt-warning);
+}
+
+/* input pw icon */
+.input-group .btn-pw-eyes {
+    background: url(../img/ico/i-eyes-on.png);
+    background-size: cover;
+    border: 0;
+    height: 26px;
+    padding: 0;
+    position: absolute;
+    right: 16px;
+    width: 26px;
 }
 
 /* search */
@@ -970,19 +1036,10 @@ h3.title {
 .check-group label {
     align-items: center;
     cursor: pointer;
-    color: #191A1C;
-    font-size: 15px;
-    font-weight: 500;
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-md);
     display: flex;
     gap: 8px;
-}
-
-.check-group label .egtential {
-    color: #D7463E;
-}
-
-.check-group label .select {
-    color: #828286;
 }
 
 .check-group label b {
@@ -1000,43 +1057,45 @@ h3.title {
     content: '';
     display: inline-block;
     flex: 0 0 auto;
-    height: 18px;
-    transition: box-shadow 0.3s ease;
-    width: 18px;
+    height: 20px;
+    transition: all 0.3s ease;
+    width: 20px;
+}
+
+.check-group input[type=checkbox]:checked+label {
+    color: var(--gt-secondary);
+    text-decoration: line-through;
+}
+
+.check-group input[type=checkbox]:checked:disabled+label {
+    color: var(--gt-gray-04);
+    text-decoration: none;
 }
 
 .check-group input[type=checkbox]:checked+label::before {
     background: url(../img/ico/i-checkbox-checked.png);
     background-size: cover;
     border: 0;
+    transition: all 0.3s ease;
 }
 
 .check-group input[type=checkbox]:hover+label::before,
 .check-group input[type=checkbox]:focus+label::before {
-    border-radius: 4px;
-    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #3B5AAB;
-    transition: box-shadow 0.3s ease;
+    background: url(../img/ico/i-checkbox-active.png);
+    background-size: cover;
+    transition: all 0.3s ease;
+}
+
+.check-group input[type=checkbox]:checked:hover+label::before,
+.check-group input[type=checkbox]:checked:focus+label::before {
+    background: url(../img/ico/i-checkbox-checked.png);
+    background-size: cover;
+    transition: all 0.3s ease;
 }
 
 .check-group input[type=checkbox]:disabled+label::before,
-.check-group input[type=checkbox]:disabled:hover+label::before {
+.check-group input[type=checkbox]:checked:disabled+label::before {
     background: url(../img/ico/i-checkbox-disabled.png);
-    background-size: cover;
-    box-shadow: none;
-}
-
-.check-group input[type=checkbox]:disabled:checked+label::before {
-    background: url(../img/ico/i-checkbox-checked-disabled.png);
-    background-size: cover;
-}
-
-.check-group input.intermediate:checked+label::before {
-    background: url(../img/ico/i-checkbox-checked-intermediate.png);
-    background-size: cover;
-}
-
-.check-group input.intermediate:checked:disabled+label::before {
-    background: url(../img/ico/i-checkbox-checked-intermediate-disabled.png);
     background-size: cover;
 }
 
@@ -1605,6 +1664,69 @@ h3.title {
     margin: 0 0 0 24px;
 }
 
+.dropdown-group .header-user .dropdown-button {
+    border: 0;
+    border-radius: 0;
+    height: auto;
+    padding: 0 16px 0 0;
+}
+
+.dropdown-group .header-user .dropdown-button::after {
+    background: url(../img/ico/i-arrow-down.png);
+    background-size: cover;
+    content: '';
+    display: inline-block;
+    height: 12px;
+    right: 0;
+    width: 12px;
+}
+
+.dropdown-group .header-user .dropdown-button:hover {
+    border: 0;
+}
+
+.dropdown-group .header-user .dropdown-button.active {
+    border: 0;
+    box-shadow: unset;
+}
+
+.dropdown-group .header-user .dropdown-list {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 8px 12px;
+    top: 40px;
+    right: 0;
+    width: 132px;
+}
+
+.dropdown-group .header-user .dropdown-list li {
+    height: auto;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.dropdown-group .header-user .dropdown-list li:hover {
+    background: none;
+}
+
+.dropdown-group .header-user .dropdown-list li:active {
+    background: none;
+}
+
+.dropdown-group .header-user .dropdown-list li:last-child {
+    margin: 0;
+}
+
+.dropdown-group .header-user .dropdown-list li a {
+    align-items: center;
+    color: var(--gt-gray-02);
+    display: flex;
+    gap: 4px;
+}
+
+.dropdown-group .header-user .dropdown-list hr {
+    margin: 0 0 10px 0;
+}
+
 .header-catagory {
     border-top: 1px solid var(--gt-gray-04);
     border-bottom: 1px solid var(--gt-gray-05);
@@ -1917,7 +2039,7 @@ h3.title {
     justify-content: space-between;
 }
 
-.product-info .user {
+.user {
     align-items: center;
     color: var(--gt-gray-01);
     font-size: var(--gt-text-sm);
@@ -1927,7 +2049,7 @@ h3.title {
     position: relative;
 }
 
-.product-info .user.off::before {
+.user.off::before {
     background: var(--gt-gray-05);
     border: 1px solid var(--gt-write);
     border-radius: 100px;
@@ -1941,7 +2063,7 @@ h3.title {
     z-index: 1;
 }
 
-.product-info .user.on::before {
+.user.on::before {
     background: var(--gt-success);
     border: 1px solid var(--gt-write);
     border-radius: 100px;
@@ -1955,14 +2077,47 @@ h3.title {
     z-index: 1;
 }
 
-.product-info .user img {
+.user img {
     border-radius: 100px;
     height: 24px;
     position: relative;
     width: 24px;
 }
 
-.product-info .user-level {
+.user.md.off::before {
+    background: var(--gt-gray-05);
+    border: 1px solid var(--gt-write);
+    border-radius: 100px;
+    content: '';
+    display: inline-block;
+    height: 12px;
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    width: 12px;
+    z-index: 1;
+}
+
+.user.md.on::before {
+    background: var(--gt-success);
+    border: 1px solid var(--gt-write);
+    border-radius: 100px;
+    content: '';
+    display: inline-block;
+    height: 12px;
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    width: 12px;
+    z-index: 1;
+}
+
+.user.md img {
+    height: 36px;
+    width: 36px;
+}
+
+.user-level {
     align-items: center;
     color: var(--gt-gray-01);
     display: flex;

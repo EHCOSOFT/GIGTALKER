@@ -117,6 +117,8 @@ ul li {
     padding: 4px 12px;
 }
 
-.table_base tbody td.ta_l {
+.table_base tbody td:last-child,
+.table_base tbody td:nth-child(8),
+.table_base tbody td:nth-child(7) {
     text-align: left;
 }

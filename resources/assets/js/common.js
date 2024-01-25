@@ -4,7 +4,200 @@ $(document).ready(function () {
 
     function Header() {
         return `
-        
+        <div class="header-top">
+                <div class="container">
+                    <a href="메인.html" class="header-logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="input-search">
+                        <input type="text" placeholder="어떤 전문가를 찾으시나요?">
+                        <button type="submit">
+                            <i class="ico i-search-p"></i>
+                        </button>
+                    </div>
+                    <ul class="header-top-right">
+                        <li class="on"><button type="button" class="btn-alarm"><i class="ico i-alarm"></i></button>
+                            <div class="alarm-wrap">
+                                <div class="alarm-top">
+                                    <h6>알림</h6>
+                                    <ul>
+                                        <li class="open-modal" data-modal-id="alarmAllDelModal"><i
+                                                class="ico i-trash"></i></li>
+                                        <li><i class="ico i-set"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="alarm-body">
+                                    <div class="alarm-item">
+                                        <p>오늘</p>
+                                        <ul>
+                                            <li>
+                                                <div class="alarm-area">
+                                                    <img src="img/sample/sample-02.png" alt="">
+                                                    <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
+                                                        있습니다.<br><span>2023.11.16. 13:00</span></h3>
+                                                    <button type="button" class="btn-alarm-close"></button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="alarm-item">
+                                        <p>이전</p>
+                                        <ul>
+                                            <li>
+                                                <div class="alarm-area">
+                                                    <img src="img/sample/sample-02.png" alt="">
+                                                    <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
+                                                        있습니다.<br><span>2023.11.16. 13:00</span></h3>
+                                                    <button type="button" class="btn-alarm-close"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="alarm-area">
+                                                    <img src="img/sample/sample-02.png" alt="">
+                                                    <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
+                                                        있습니다.<br><span>2023.11.16. 13:00</span></h3>
+                                                    <button type="button" class="btn-alarm-close"></button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="on"><a href="#"><i class="ico i-chat"></i></a></li>
+                        <li class="on"><a href="#"><i class="ico i-heart"></i></a></li>
+                        <li class="language open-modal" data-modal-id="languageModal"><i class="ico i-language"></i>한국어
+                        </li>
+                        <li class="on"><a href="#"><b>구매관리</b></a></li>
+                        <li>
+                            <div class="dropdown-group">
+                                <div class="dropdown-list-wrap header-user">
+                                    <button class="dropdown-button" data-target="headerUserMenu">
+                                        <!-- on and off -->
+                                        <span href="#" class="user md off">
+                                            <img src="img/sample/sample-02.png" alt="">
+                                        </span>
+                                    </button>
+                                    <ul id="headerUserMenu" class="dropdown-list">
+                                        <li><a href="#">프로필 관리</a></li>
+                                        <li><a href="#">계정정보</a></li>
+                                        <li><a href="#">구매관리</a></li>
+                                        <li><a href="#">마이페이지</a></li>
+                                        <hr>
+                                        <li><a href="#">전문가센터</a></li>
+                                        <li><a href="#">판매관리</a></li>
+                                        <li><a href="#"><i class="ico i-logout"></i>로그아웃</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-catagory">
+                <div class="container">
+                    <ul>
+                        <li class="all-catagory"><i class="ico i-catagory"></i>전체카테고리</li>
+                        <li><a href="#">홈서비스</a></li>
+                        <li><a href="#">비자/유학</a></li>
+                        <li><a href="#">법률/세금</a></li>
+                        <li><a href="#">여행/공항픽업</a></li>
+                        <li><a href="#">휴대폰개통</a></li>
+                        <li><a href="#">대학/강의</a></li>
+                        <li><a href="#">해외배송</a></li>
+                        <li><a href="#">번역/통역</a></li>
+                        <li><a href="#">메디컬</a></li>
+                        <li><a href="#">문서/디자인</a></li>
+                        <li><a href="#">기타</a></li>
+                    </ul>
+                    <div class="all-catagory-wrap">
+                        <div class="all-catagory-area">
+                            <dl>
+                                <dt><a href="#">생활서비스 (400)</a></dt>
+                                <dd><a href="#">이사 (30)</a></dd>
+                                <dd><a href="#">청소 (30)</a></dd>
+                                <dd><a href="#">집수리 (30)</a></dd>
+                                <dd><a href="#">인테리어 (30)</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">유학/이민 (400)</a></dt>
+                                <dd><a href="#">비자발급 (30)</a></dd>
+                                <dd><a href="#">대학유학 (30)</a></dd>
+                                <dd><a href="#">어학민 (30)</a></dd>
+                                <dd><a href="#">이민 (30)</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">세무/법무 (400)</a></dt>
+                                <dd><a href="#">세무,회계 (30)</a></dd>
+                                <dd><a href="#">법률 (30)</a></dd>
+                                <dd><a href="#">노무상담 (30)</a></dd>
+                                <dd><a href="#">특허,상표 (30)</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">학습/취업 (400)</a></dt>
+                                <dd><a href="#">취업/이력서 (30)</a></dd>
+                                <dd><a href="#">컴퓨터,코딩 (30)</a></dd>
+                                <dd><a href="#">뷰티/미용 (30)</a></dd>
+                                <dd><a href="#">학생레슨 (30)</a></dd>
+                                <dd><a href="#">취미레슨 (30)</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">문서/번역 (400)</a></dt>
+                                <dd><a href="#">번역 (30)</a></dd>
+                                <dd><a href="#">통역 (30)</a></dd>
+                                <dd><a href="#">논문 (30)</a></dd>
+                                <dd><a href="#">카피/글쓰기 (30)</a></dd>
+                                <dd><a href="#">스토리/기획 (30)</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">디자인 (400)</a></dt>
+                                <dd><a href="#">로고/브랜드 (30)</a></dd>
+                                <dd><a href="#">인쇄홍보물 (30)</a></dd>
+                                <dd><a href="#">웹/앱 디자인 (30)</a></dd>
+                                <dd><a href="#">제품디자인 (30)</a></dd>
+                                <dd><a href="#">건축디자인 (30)</a></dd>
+                                <dd><a href="#">기타 디자인 (30)</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">비지니스 (400)</a></dt>
+                                <dd><a href="#">언롱홍보 (30)</a></dd>
+                                <dd><a href="#">시장조사 (30)</a></dd>
+                                <dd><a href="#">쇼핑몰 (30)</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">메디컬 (400)</a></dt>
+                                <dd><a href="#">의료관광 (30)</a></dd>
+                                <dd><a href="#">성형수술 (30)</a></dd>
+                                <dd><a href="#">모발이식 (30)</a></dd>
+                                <dd><a href="#">치과 (30)</a></dd>
+                                <dd><a href="#">피부과 (30)</a></dd>
+                                <dd><a href="#">안과 (30)</a></dd>
+                                <dd><a href="#">한방병원 (30)</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">상담 (400)</a></dt>
+                                <dd><a href="#">심리상담 (30)</a></dd>
+                                <dd><a href="#">비즈니스상담 (30)</a></dd>
+                                <dd><a href="#">부동산컨설팅 (30)</a></dd>
+                                <dd><a href="#">금융상담 (30)</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">프로그램 개발 (400)</a></dt>
+                                <dd><a href="#">웹개발 (30)</a></dd>
+                                <dd><a href="#">앱개발 (30)</a></dd>
+                                <dd><a href="#">소프트웨어 개발 (30)</a></dd>
+                                <dd><a href="#">AI 개발 (30)</a></dd>
+                                <dd><a href="#">기타 개발 (30)</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#">기타 (400)</a></dt>
+                                <dd><a href="#">기타 (30)</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
     `;
     }
 
@@ -124,24 +317,7 @@ $(document).ready(function () {
         }
     });
 
-    // E : -- 20240108 -- 수정 및 추가 --
-
-    // 20240108 수정 이후 문제가 생긴 이벤트 (수정완료)
-    // 상단 : 최근검색어 삭제 버튼 이벤트
-    $(".btn-keyword-del").click(function () {
-        console.log("click");
-        $(this).parent("li").remove();
-    });
-
-    // 상단 : 검색했을 경우 카테고리 클릭 이벤트
-    $(".header-search-result-category li").click(function () {
-        // 단일선택
-        // $(this).addClass("active");
-        // $(this).siblings().removeClass("active");
-
-        // 다중선택
-        $(this).toggleClass("active");
-    });
+    // -------------- COMMON --------------
 
     // 모달 열기 버튼 클릭 이벤트
     $(".open-modal").click(function () {
@@ -193,101 +369,38 @@ $(document).ready(function () {
     $("#idFind").show();
     $("#imgUpload").show();
 
-    // 입력란에서 텍스트가 입력될 때 "x" 아이콘을 보여줌
-    $("input[type='text']").on("input", function () {
-        var inputText = $(this).val();
-        if (inputText.length > 0) {
-            $(".i-clear").show();
-        } else {
-            $(".i-clear").hide();
-        }
-    });
-
-    // "x" 아이콘을 클릭하면 입력 내용을 지움
-    $(".i-clear").click(function () {
-        $("input[type='text']").val("");
-        $(this).hide();
-    });
 
     // custom-tabs
     $(".custom-tab").click(function () {
         $(this).toggleClass("selected");
     });
 
-    // 상세페이지 상단, 하단 이벤트
-    const $scrollUpButton = $("#scrollUpButton");
-    const $scrollDownButton = $("#scrollDownButton");
+    // 비밀번호 숨기기/보이기
+    // 비밀번호 입력란과 비밀번호 표시 버튼 선택
+    var passwordInput = $('#pwInput');
+    var showPasswordBtn = $('.btn-pw-eyes');
 
-    function handleScroll() {
-        const scrollPosition = $(window).scrollTop();
-        const windowHeight = $(window).height();
-        const documentHeight = $(document).height();
+    // 비밀번호 표시 버튼을 클릭했을 때
+    showPasswordBtn.click(function() {
+        // 입력된 텍스트가 있는지 확인
+        if (passwordInput.val().trim() !== '') {
+            // 비밀번호 입력란의 type 속성을 토글
+            var type = passwordInput.attr('type') === 'password' ? 'text' : 'password';
+            passwordInput.attr('type', type);
 
-        if (scrollPosition < windowHeight / 2) {
-            // 최상단에 도달했을 때
-            $scrollUpButton.addClass("disabled");
-            $scrollDownButton.removeClass("disabled");
-        } else if (
-            scrollPosition + windowHeight >=
-            documentHeight - windowHeight / 2
-        ) {
-            // 최하단에 도달했을 때
-            $scrollUpButton.removeClass("disabled");
-            $scrollDownButton.addClass("disabled");
-        } else {
-            // 중간 부분에 위치할 때
-            $scrollUpButton.removeClass("disabled");
-            $scrollDownButton.removeClass("disabled");
+            // 현재 상태에 따라 버튼 배경 이미지 변경
+            if (type === 'password') {
+                showPasswordBtn.css('background-image', 'url("img/ico/i-eyes-on.png")');
+            } else {
+                showPasswordBtn.css('background-image', 'url("img/ico/i-eyes-off.png")');
+            }
         }
-    }
-
-    function scrollToTop() {
-        // 최상단으로 스크롤
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-    }
-
-    function scrollToBottom() {
-        // 최하단으로 스크롤
-        $("html, body").animate({ scrollTop: $(document).height() }, "slow");
-    }
-
-    // 버튼 클릭 이벤트 핸들러 등록
-    $scrollUpButton.click(scrollToTop);
-    $scrollDownButton.click(scrollToBottom);
-
-    // 페이지 로드 시 초기 스크롤 위치 확인
-    handleScroll();
-
-    // 스크롤 이벤트에 핸들러 등록
-    $(window).scroll(handleScroll);
-
-    //20231212 #admin-menu 이벤트 추가
-    $('#admin-menu > li > a').click(function (e) {
-        e.preventDefault(); // 기본 링크 이벤트를 막습니다.
-
-        // 클릭한 메뉴의 다음에 오는 ul 요소
-        var submenu = $(this).next('ul');
-
-        // 다른 모든 ul 요소를 숨김
-        $('#admin-menu > li > ul').not(submenu).slideUp();
-
-        // 현재 메뉴에 active 클래스를 추가하고 다른 메뉴에서 제거
-        $(this).parent().addClass('active').siblings().removeClass('active');
-
-        // ul이 보이는지 여부를 확인하고 그에 따라 슬라이드 토글
-        submenu.slideToggle();
     });
 
-    // #admin-menu > li > ul > li 클릭 시
-    $('#admin-menu > li > ul > li').click(function (e) {
-        e.preventDefault(); // 기본 링크 이벤트를 막습니다.
-
-        // 현재 클릭한 li에 active 클래스를 추가하고 다른 li에서 제거
-        $(this).addClass('active').siblings().removeClass('active');
-    });
 
 });
 
+// 모달 애니메이션 이벤트
 class MobilePopup {
     constructor(popupId) {
         this.popupId = popupId;
@@ -318,9 +431,3 @@ class MobilePopup {
         }, 300);
     }
 }
-
-$(document).ready(function () {
-    const gradePopup = new MobilePopup('gradePopup');
-    const productCategoryPopup = new MobilePopup('productCategoryPopup');
-    const popuperiodPopupp2 = new MobilePopup('periodPopup');
-});

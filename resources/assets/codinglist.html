@@ -21,14 +21,14 @@
                     <ul>
                         <li>전체: <i>0</i>건</li>
                         <li>진행중: <i class="orange">1</i>건(0%)</li>
-                        <li>완료: <i class="blue">0</i>건(0%)</li>
+                        <li>완료: <i class="blue">2</i>건(0%)</li>
                         <li>보류: <i class="grey">0</i>건(0%)</li>
                         <li>제외: <i class="grey">0</i>건(0%)</li>
                     </ul>
                 </div>
             </div>
             <div class="table_base">
-                <table>
+                <table id="publishingTable">
                     <caption>퍼블리싱 리스트</caption>
 
                     <thead>
@@ -60,37 +60,52 @@
                             <td>Page</td>
                             <td class="ta_l"><a href="common-components.html">common-components.html</a></td>
                         </tr>
-                        <tr>
-                            <td>1</td>
-                            <td class="blue">완료</td>
-                            <td>2024-01-22</td>
-                            <td>2024-01-23</td>
-                            <td></td>
-                            <td>공통</td>
-                            <td class="ta_l">메인_로그아웃</td>
-                            <td></td>
-                            <td>김선우</td>
-                            <td>Page</td>
-                            <td class="ta_l"><a href="메인_로그아웃.html">메인_로그아웃.html</a></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td class="orange">진행중</td>
-                            <td>2024-01-23</td>
-                            <td>-</td>
-                            <td></td>
-                            <td></td>
-                            <td class="ta_l">메인_로그인</td>
-                            <td></td>
-                            <td>김선우</td>
-                            <td>Page</td>
-                            <td class="ta_l"><a href="메인_로그인.html">메인_로그인.html</a></td>
-                        </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
+    <script src="lib/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            var rowCount = 0;
+
+            function addRow(data) {
+                rowCount++;
+                var newRow = $('<tr></tr>');
+
+                newRow.append('<td>' + rowCount + '</td>');
+
+                $.each(data, function (index, item) {
+                    var cell = $('<td></td>');
+                    if (index === 0) {
+                        if (item === '진행중') {
+                            cell.addClass('orange');
+                        } else if (item === '완료') {
+                            cell.addClass('blue');
+                        }
+                    }
+                    if (index === data.length - 1) {
+                        cell.html(item);
+                    } else {
+                        cell.text(item);
+                    }
+                    newRow.append(cell);
+                });
+
+                $('#publishingTable tbody').append(newRow);
+            }
+            addRow(['완료', '2024-01-22', '2024-01-23', '', '메인', '메인_로그아웃', 'Modal : 언어설정', '김선우', 'Page', '<a href="메인_로그아웃.html">메인_로그아웃.html</a>']);
+            addRow(['완료', '2024-01-23', '2024-01-25', '', '메인', '메인_로그인', 'Modal : 언어설정, 알림 전체삭제', '김선우', 'Page', '<a href="메인_로그인.html">메인_로그인.html</a>']);
+            addRow(['완료', '2024-01-25', '2024-01-25', '', '회원가입', '회원가입', '', '김선우', 'Page', '<a href="회원가입.html">회원가입.html</a>']);
+            addRow(['완료', '2024-01-25', '2024-01-25', '', '회원가입', '회원가입_이메일', '', '김선우', 'Page', '<a href="회원가입_이메일.html">회원가입_이메일.html</a>']);
+            addRow(['완료', '2024-01-25', '2024-01-25', '', '기타', '기타_이용약관', '', '김선우', 'Page', '<a href="기타_이용약관.html">기타_이용약관.html</a>']);
+            addRow(['완료', '2024-01-25', '2024-01-25', '', '기타', '기타_개인정보보호정책', '', '김선우', 'Page', '<a href="기타_개인정보보호정책.html">기타_개인정보보호정책.html</a>']);
+            addRow(['완료', '2024-01-25', '2024-01-25', '', '기타', '기타_전문가이용약관', '', '김선우', 'Page', '<a href="기타_전문가이용약관.html">기타_전문가이용약관.html</a>']);
+        });
+    </script>
 </body>
+
 
 </html>
