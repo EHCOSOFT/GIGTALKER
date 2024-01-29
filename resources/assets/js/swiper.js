@@ -23,9 +23,32 @@ var mainServiceSwiper02 = new Swiper(".main-service-swiper-02", {
   }
 });
 
-var mainVisualSwiper = new Swiper(".main-visual-swiper", {
+var mainServiceSwiper02 = new Swiper(".main-service-swiper-03", {
   slidesPerView: 4,
   spaceBetween: 20, // 슬라이드 여백
+  slidesOffsetAfter: 0, // 왼쪽 여백
+  slidesOffsetBefore: 0, // 오른쪽 여백
+  navigation: {
+    nextEl: ".swiper-button-next-03",
+    prevEl: ".swiper-button-prev-03",
+  }
+});
+
+
+var mainServiceSwiper02 = new Swiper(".main-service-swiper-04", {
+  slidesPerView: 4,
+  spaceBetween: 20, // 슬라이드 여백
+  slidesOffsetAfter: 0, // 왼쪽 여백
+  slidesOffsetBefore: 0, // 오른쪽 여백
+  navigation: {
+    nextEl: ".swiper-button-next-04",
+    prevEl: ".swiper-button-prev-04",
+  }
+});
+
+var mainVisualSwiper = new Swiper(".main-visual-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 0, // 슬라이드 여백
   slidesOffsetAfter: 0, // 왼쪽 여백
   slidesOffsetBefore: 0, // 오른쪽 여백
   autoplay: {

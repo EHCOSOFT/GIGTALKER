@@ -88,3 +88,39 @@
     height: 20px;
     width: 20px;
 }
+
+.i-modal-close-g {
+    background: url(../img/ico/i-x-g.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-arrow-down {
+    background: url(../img/ico/i-arrow-down.png);
+    height: 12px;
+    width: 12px;
+}
+
+.i-logout {
+    background: url(../img/ico/i-logout.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-google-logo {
+    background: url(../img/ico/i-google-logo.png);
+    height: 28px;
+    width: 28px;
+}
+
+.i-mail {
+    background: url(../img/ico/i-mail.png);
+    height: 28px;
+    width: 28px;
+}
+
+.i-back {
+    background: url(../img/ico/i-back.png);
+    height: 16px;
+    width: 16px;
+}
