@@ -14,8 +14,9 @@
  *
  * SUMMARY:
  * 01) 메인
- * 02) 회원가입
- * 03) 기타_이용약관, 개인정보 보호정책, 전문가 이용약관
+ * 02) 회원가입, 로그인
+ * 03) 기타
+ * 04) 안내화면
  */
 
 /* **************************************** *
@@ -344,11 +345,11 @@
 }
 
 /* **************************************** *
- * 회원가입
+ * 회원가입, 로그인
  * **************************************** */
 .join-wrap {
     background: #F8F8F8;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .join-wrap .container {
@@ -356,7 +357,7 @@
 }
 
 .join-wrap .join-area {
-    padding: 96px 0 0 0;
+    padding: 80px 0;
     text-align: center;
 }
 
@@ -406,7 +407,7 @@
 .join-wrap .btn-group button {
     border: 1px solid #999;
     color: #333;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     height: 60px;
     position: relative;
@@ -433,6 +434,7 @@
 
 .join-wrap .join-bottom h6 a {
     color: var(--gt-gray-01);
+    text-decoration: underline;
 }
 
 /* 회원가입_이메일 */
@@ -469,8 +471,56 @@
     gap: 12px;
 }
 
+/* 회원가입_프로필시작 */
+.input-group.residence {
+    position: relative;
+}
+
+.input-group.residence .i-residence {
+    background: url(../img/ico/i-residence.png);
+    background-size: cover;
+    bottom: 14px;
+    height: 24px;
+    position: absolute;
+    right: 16px;
+    width: 24px;
+}
+
+.input-group.number .input-area {
+    position: relative;
+}
+
+.input-group.number button {
+    background: var(--gt-write);
+    border-radius: 6px;
+    border: 1px solid var(--gt-gray-05);
+    font-size: var(--gt-text-sm);
+    height: 38px;
+    position: absolute;
+    right: 7px;
+    transition: all .5s;
+    width: 96px;
+}
+
+.input-group.number button:focus,
+.input-group.number button:active {
+    border: 1px solid var(--gt-gray-03);
+    transition: all .5s;
+}
+
+.country-code {
+    color: var(--gt-gray-04) !important;
+    font-size: var(--gt-text-lg);
+    position: absolute;
+    left: 16px;
+}
+
+.input-country input {
+    padding: 0 16px 0 60px !important;
+}
+
 /* **************************************** *
-* 기타_이용약관, 개인정보 보호정책, 전문가 이용약관
+* 기타(이용약관, 개인정보 보호정책, 전문가 이용약관)
 * **************************************** */
 .terms-wrap {
     margin: 32px 0 200px 0;
@@ -519,4 +569,400 @@
 
 .terms-wrap ul li strong.fs-13 {
     font-size: var(--gt-text-sm);
+}
+
+/* 프로필 시작하기 */
+.join-wrap .join-top h5 {
+    font-size: var(--gt-text-lg);
+    font-weight: 400;
+    margin: 20px 0 40px 0;
+    text-align: center;
+}
+
+.join-wrap .join-top h5 b {
+    font-weight: 500;
+}
+
+.code-resend {
+    font-size: var(--gt-text-md);
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+/* **************************************** *
+ * 안내화면
+ * **************************************** */
+.s-header {
+    align-items: center;
+    display: flex;
+    height: 100px;
+    position: absolute;
+    width: 100%;
+}
+
+.s-header .container {
+    align-items: center;
+    display: flex;
+    max-width: 1000px;
+}
+
+.s-header .s-header-logo {
+    display: flex;
+    margin: 0 52px 0 0;
+}
+
+.s-header img {
+    height: 36px;
+}
+
+.s-header ul {
+    display: flex;
+    gap: 52px;
+}
+
+.s-header ul li a {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.s-header ul li a:active,
+.s-header ul li a:focus,
+.s-header ul li.active a {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: underline;
+}
+
+.s-main h2 {
+    color: var(--gt-black-01);
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    margin: 0 0 20px 0;
+}
+
+.s-main h6 {
+    color: var(--gt-gray-02);
+    font-size: var(--gt-text-lg);
+    font-weight: 500;
+}
+
+.s-main img {
+    width: 100%;
+}
+
+.s-section00 {
+    align-items: center;
+    background: #5132A6;
+    display: flex;
+    height: 600px;
+}
+
+.s-section00 .container {
+    max-width: 1000px;
+}
+
+.s-section00 .row {
+    align-items: center;
+}
+
+.s-section00 h1 {
+    color: var(--gt-write);
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.s-section00 p {
+    color: var(--gt-write);
+    font-size: var(--gt-text-lg);
+    margin: 16px 0 32px 0;
+}
+
+.s-section00 .btn-group {
+    gap: 12px;
+}
+
+.s-section00 .btn-group button {
+    font-size: var(--gt-text-lg);
+    font-weight: bold;
+    height: 46px;
+    width: 118px;
+}
+
+.s-section00 .btn-group button:first-child {
+    background: var(--gt-write);
+    border: 1px solid var(--gt-write);
+    color: #8437DD;
+}
+
+.s-section00 .btn-group button:last-child {
+    background: none;
+    border: 1px solid var(--gt-write);
+    color: var(--gt-write);
+}
+
+.s-section00 img {
+    max-width: 486px;
+}
+
+.s-section01 {
+    align-items: center;
+    display: flex;
+    height: 600px;
+}
+
+.s-section01.h-500 {
+    height: 500px;
+}
+
+.s-section01 .container {
+    max-width: 1000px;
+}
+
+.s-section01 .row {
+    align-items: center;
+    height: 100%;
+}
+
+.s-section01 .col-6 {
+    display: flex;
+    height: 600px;
+}
+
+.s-section01.h-500 .col-6 {
+    height: 500px;
+}
+
+.s-section01 .img-02 {
+    max-width: 450px;
+}
+
+.s-section01 .img-03 {
+    max-width: 438px;
+}
+
+.s-section01.bg-gray {
+    background: #f8f8f8;
+}
+
+.s-section01 a {
+    color: #8437DD;
+    font-size: var(--gt-text-lg);
+    margin: 20px 0 0 0;
+}
+
+.s-section02 {
+    background: #F4F7FF;
+    padding: 100px 0;
+}
+
+.s-section02 .container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    max-width: 1000px;
+}
+
+.s-section02 h1 {
+    color: var(--gt-black-01);
+    font-size: 42px;
+    text-align: center;
+}
+
+.s-section02 .row {
+    align-items: center;
+}
+
+.s-section02 .img-04 {
+    max-width: 488px;
+}
+
+.s-section02 .right {
+    padding: 0 0 0 80px;
+}
+
+.s-section03 {
+    padding: 100px 0;
+}
+
+.s-section03 .container {
+    max-width: 1000px;
+}
+
+.s-section03 ul {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0 0 0;
+}
+
+.s-section03 ul li {
+    border-top: 1px solid var(--gt-black-01);
+    padding: 20px 0;
+}
+
+.s-section03 ul li dl {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.s-section03 ul>li dt {
+    color: var(--gt-gray-01);
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 33px;
+}
+
+.s-section03 ul li dd {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-lg);
+}
+
+.s-section03 ul li dd span {
+    color: var(--gt-secondary);
+}
+
+.s-section03 ul li dd h6 {
+    font-weight: bold;
+    padding: 20px 0 0 0;
+}
+
+.s-section03 ul.ls-disc {
+    list-style: disc;
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+.s-section03 ul.ls-disc li {
+    border: 0;
+    list-style: disc;
+    padding: 0;
+}
+
+.s-section04 {
+    background: #15004F;
+}
+
+.s-section04 .btn-group button:first-child {
+    color: #373EDD;
+}
+
+.s-section05 {
+    padding: 80px 0;
+}
+
+.s-section05 h1 {
+    color: var(--gt-black-01);
+    font-size: 42px;
+    text-align: center;
+}
+
+.s-section05 p {
+    color: var(--gt-black-01);
+    font-size: 16px;
+    line-height: 26px;
+    margin: 16px 0 8px 0;
+    text-align: center;
+}
+
+.s-section05 h6 {
+    color: #8437DD;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.s-section05 .step {
+    display: flex;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+    max-width: 800px;
+}
+
+.s-section05 .step li {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: calc(100% / 3);
+}
+
+.s-section05 .step li::after {
+    background: url(../img/ico/i-arrow-right-lg.png);
+    content: '';
+    display: inline-block;
+    height: 120px;
+    position: absolute;
+    right: -60px;
+    top: -30px;
+    width: 120px;
+}
+
+.s-section05 .step li:last-child::after {
+    display: none;
+}
+
+.s-section05 .step span {
+    align-items: center;
+    background: #1A71F2;
+    border-radius: 100px;
+    color: var(--gt-write);
+    font-size: var(--gt-text-lg);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    height: 52px;
+    width: 52px;
+}
+
+.s-section05 .step h3 {
+    font-size: var(--gt-text-lg);
+    line-height: 24px;
+    margin: 16px 0 8px 0;
+}
+
+.s-section05 .step p {
+    color: #74767C;
+    font-size: var(--gt-text-sm);
+    line-height: 21px;
+    margin: 0;
+}
+
+/* 전문가 자격조건 */
+.s-section06 {
+    background: #F8F8F8;
+    padding: 80px 0;
+}
+
+.s-section06 .container {
+    max-width: 800px;
+}
+
+.s-section06 .row {
+    align-items: center;
+}
+
+.s-section06 h2 {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.s-section06 p {
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-lg);
+    margin: 0 0 12px 0;
+}
+
+.s-section06 button {
+    background: var(--gt-write);
+    border: 1px solid var(--gt-black-01);
+    border-radius: 12px;
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-lg);
+    font-weight: bold;
+    height: 46px;
+    width: 132px;
 }

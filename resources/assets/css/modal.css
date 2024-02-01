@@ -65,3 +65,127 @@
     font-size: var(--gt-text-md);
     width: calc((100% / 2) - 4px);
 }
+
+/* phone-modal */
+.phone-modal .btn-group {
+    gap: 16px;
+    justify-content: center;
+    margin: 0 0 28px 0;
+}
+
+.phone-modal .btn-group button {
+    font-size: var(--gt-text-lg);
+    font-weight: bold;
+    width: calc(50% - 8px);
+}
+
+.phone-modal .gt-modal-body {
+    padding: 60px 0 0 0;
+}
+
+.phone-modal .gt-modal-body h1 {
+    font-size: 30px;
+    text-align: left;
+}
+
+.phone-modal .gt-modal-body h6 {
+    font-size: var(--gt-text-lg);
+    font-weight: 400;
+    margin: 8px 0 0 0;
+    text-align: left;
+}
+
+.phone-modal .gt-modal-body h5 {
+    margin: 28px 0 40px 0;
+    text-align: center;
+}
+
+.phone-modal .gt-modal-body h3 {
+    color: var(--gt-gray-02);
+    text-align: center;
+}
+
+.phone-modal .number-group {
+    margin: 20px 0 52px 0;
+}
+
+.phone-modal .number-group input {
+    border: 1px solid var(--gt-gray-04);
+    font-size: 24px;
+    height: 76px;
+    width: 76px;
+}
+
+.phone-modal .input-wrap {
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+.phone-modal .gt-modal-body p {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-md);
+    text-align: left;
+}
+
+.phone-modal .gt-modal-body p a {
+    text-decoration: underline;
+}
+
+.country-code {
+    color: var(--gt-gray-04) !important;
+    font-size: var(--gt-text-lg);
+    position: absolute;
+    left: 16px;
+}
+
+.input-country input {
+    padding: 0 16px 0 60px !important;
+}
+
+/* 계정생성 완료 */
+.create-account-modal .gt-modal-content {
+    padding: 60px;
+}
+
+.create-account-modal .gt-modal-body h1 {
+    color: var(--gt-gray-01);
+    font-size: 24px;
+    margin: 20px 0 48px 0;
+}
+
+.create-account-list {
+    display: flex;
+    gap: 32px;
+}
+
+.create-account-list li {
+    text-align: left;
+    width: calc(50% - 16px);
+}
+
+.create-account-list li a {
+    border: 1px solid #cccccc;
+    display: flex;
+    flex-direction: column;
+    height: 146px;
+    padding: 16px 24px;
+    width: 100%;
+}
+
+.create-account-list li a:hover,
+.create-account-list li a:active,
+.create-account-list li a:focus {
+    border: 1px solid var(--gt-black-01);
+}
+
+.create-account-list li h6 {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-lg);
+    margin: auto 0 0 0;
+}
+
+.create-account-list li p {
+    color: #74767C;
+    font-size: var(--gt-text-sm);
+    margin: 4px 0 0 0;
+}

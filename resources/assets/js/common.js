@@ -397,6 +397,28 @@ $(document).ready(function () {
         }
     });
 
+    // input(number) 인증코드 입력 시 다음으로 next
+    $('.input-code').on('input', function () {
+        var currentInput = $(this);
+        var nextInput = currentInput.next('.input-code');
+
+        if (currentInput.val().length === 1) {
+            if (nextInput.length > 0) {
+                nextInput.focus();
+            }
+        }
+    });
+
+    // 한자리 입력
+    $('.input-code').on('keypress', function (e) {
+        var key = String.fromCharCode(e.which);
+        var regex = /^[0-9]$/;
+
+        if (!regex.test(key)) {
+            e.preventDefault();
+        }
+    });
+
 
 });
 
