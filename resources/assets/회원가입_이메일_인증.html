@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- S : HEADER -->
+        <!-- <header class="header" id="header"></header> -->
+        <!-- E : HEADER -->
+
+        <div class="join-wrap">
+            <div class="container">
+                <div class="join-area">
+                    <a href="#" class="join-logo"><img src="img/logo.png" alt=""></a>
+                    <div class="join email">
+                        <div class="join-top">
+                            <h3>이메일을 확인하세요</h3>
+                            <h5>poweraustin@naver.com 으로 이메일로<br>전송된 인증 코드를 입력하세요</h5>
+                            <div class="input-wrap">
+                                <div class="number-group">
+                                    <input type="text" maxlength="1" class="input-code" pattern="[0-9]">
+                                    <input type="text" maxlength="1" class="input-code" pattern="[0-9]">
+                                    <input type="text" maxlength="1" class="input-code" pattern="[0-9]">
+                                    <input type="text" maxlength="1" class="input-code" pattern="[0-9]">
+                                    <input type="text" maxlength="1" class="input-code" pattern="[0-9]">
+                                    <input type="text" maxlength="1" class="input-code" pattern="[0-9]">
+                                </div>
+                                <a href="#" class="code-resend">코드 재전송</a>
+                            </div>
+
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-black open-modal"
+                                    data-modal-id="createAccountModal">코드제출</button>
+                            </div>
+                        </div>
+                        <div class="join-bottom">
+                            <h6>긱톡커에 가입함으로써 귀하는 주한의 <a href="#">서비스 약관</a>에 동의 하고 당사로부터 이메일을 받는 데 동의하게 됩니다. 당사가 귀하의 개인
+                                데이터를 어떻게 사용하는지 알아보려면 개인 <a href="#">정보 보호정책</a>을 읽어보시기 바랍니다 .</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- S: createAccountModal -->
+        <div id="createAccountModal" class="gt-modal-wrap content-modal create-account-modal">
+            <div class="gt-modal-inner">
+                <div class="gt-modal-content gt-modal-xl">
+                    <div class="gt-modal-body">
+                        <h1>홍길동, 계정이 생성되었습니다.<br>주한에는 무슨 일로 오셨나요?</h1>
+                        <ul class="create-account-list">
+                            <li>
+                                <a href="#">
+                                    <h6>서비스 구매</h6>
+                                    <p>전문가 리스트 페이지로<br>
+                                        이동합니다.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h6>전문가 등록</h6>
+                                    <p>전문가 등록페이지로<br>
+                                        이동합니다.</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- E: createAccountModal  -->
+
+        <!-- S : FOOTER -->
+        <!-- <footer class="footer" id="footer"></footer> -->
+        <!-- E : FOOTER -->
+    </div>
+
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>
