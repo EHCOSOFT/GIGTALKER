@@ -1,6 +1,8 @@
 $(document).ready(function () {
     $("#header").append(Header());
     $("#footer").append(Footer());
+    $("#footer-top").append(FooterTop());
+    $("#footer-bottom").append(FooterBot());
 
     function Header() {
         return `
@@ -204,7 +206,7 @@ $(document).ready(function () {
     function Footer() {
         return `
         <div class="footer-top">
-        <div class="container">
+            <div class="container">
             <div class="footer-top-left">
                 <img src="img/logo.png" alt="GIGTALKER">
                 <p>10:00~17:00 (점심시간 12:00~13:30)<br>
@@ -262,6 +264,71 @@ $(document).ready(function () {
     `;
     }
 
+    function FooterTop() {
+        return `
+        <div class="footer-top">
+        <div class="container">
+            <div class="footer-top-left">
+                <img src="img/logo.png" alt="GIGTALKER">
+                <p>10:00~17:00 (점심시간 12:00~13:30)<br>
+                    주말, 공휴일 휴무</p>
+                <button type="button" class="btn">1:1 문의하기</button>
+                <h6>긱토커는 서비스 중개 플랫폼입니다.<br>작업 의뢰는 전문가에게 직접 문의해 주세요.</h6>
+            </div>
+            <div class="footer-top-right">
+                <dl>
+                    <dt>소개</dt>
+                    <dd><a href="#">긱톡커란?</a></dd>
+                    <dd><a href="#">전문가신청안내</a></dd>
+                    <dd><a href="#">사용 가이드</a></dd>
+                </dl>
+                <dl>
+                    <dt>내활동</dt>
+                    <dd><a href="#">맞춤주문내역</a></dd>
+                    <dd><a href="#">구매내역</a></dd>
+                    <dd><a href="#">구매후기</a></dd>
+                    <dd><a href="#">채팅목록</a></dd>
+                </dl>
+                <dl>
+                    <dt>소개</dt>
+                    <dd><a href="#">전문가 센터</a></dd>
+                    <dd><a href="#">고객요청서</a></dd>
+                    <dd><a href="#">판매관리</a></dd>
+                    <dd><a href="#">내 상품관리</a></dd>
+                    <dd><a href="#">광고관리</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    `;
+    }
+
+    function FooterBot() {
+        return `
+        <div class="footer-nav">
+        <div class="container">
+            <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">전문가 이용약관</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">자주 묻는 질문</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-info">
+        <div class="container">
+            <h5>긱톡커는 전문가중개시스템의 제공자로서 통신판매의 당사자가 아닙니다. 상품의 판매, 상담 내용을 포함하여 용역 및 강의의 이행, 환불 등 상품과 관련한 의무와 책임은 각
+                판매자에게 있습니다.<br>
+                또한 긱톡커는 본 플랫폼 외부에서 이루어진 상담 등으로 인하여 발생한 문제에 대해서도 마찬가지로 책임을 지지 않습니다.</h5>
+            <h6>사업자등록증 : <span>548-87-01652</span> 통신판매업신고번호 : <span>제2020-서울마포-0190호</span> 이메일문의 : <span>help@joohan.kr</span><br>
+                (주)이엠케이미디어 <span>서울시 마포구 독막로 262 신영빌딩 6층</span> 취업정보제공사업신청 : <span>서울서부제2020-15호</span> 대표전화 <span>010-4889-0513</span>
+            </h6>
+            <p>©gigtalker. All rights reserved.</p>
+        </div>
+    </div>
+    `;
+    }
 
     // -------------- HEADER --------------
 
@@ -333,6 +400,20 @@ $(document).ready(function () {
     // 모달 내부 클릭 시 닫기 방지
     $(".gt-modal-content").click(function (e) {
         e.stopPropagation();
+    });
+
+    // 아코디언
+    $(".accordion-header").click(function () {
+        // 현재 클릭된 아코디언 아이템
+        var accordionItem = $(this).parent();
+
+        // 다른 아코디언 아이템에서는 content를 닫음
+        $(".accordion-item").not(accordionItem).find(".accordion-content").slideUp();
+        $(".accordion-item").not(accordionItem).removeClass("active");
+
+        // 현재 클릭된 아코디언 아이템의 content를 토글
+        accordionItem.find(".accordion-content").slideToggle();
+        accordionItem.toggleClass("active");
     });
 
     // 드롭다운 리스트 항목 클릭 시 이벤트 핸들러
@@ -417,6 +498,43 @@ $(document).ready(function () {
         if (!regex.test(key)) {
             e.preventDefault();
         }
+    });
+
+    $(".product-img").hover(
+        function () {
+            $(".swiper-button-next, .swiper-button-prev", this).stop().fadeTo(300, 1).css("visibility", "visible");
+        },
+        function () {
+            $(".swiper-button-next, .swiper-button-prev", this).stop().fadeTo(300, 0, function() {
+                $(this).css("visibility", "hidden");
+            });
+        }
+    );
+
+    // 검색리스트 이벤트
+    // 검색리스트 광고 hover 이벤트
+    $(".btn-ad").hover(
+        function () {
+            // 마우스가 올라갔을 때
+            $(this).siblings(".ad-info-area").css("display", "flex");
+        },
+        function () {
+            // 마우스가 벗어났을 때
+            $(this).siblings(".ad-info-area").css("display", "none");
+        }
+    );
+
+    // 정렬기준
+    $(".dropdown-group.array li").click(function () {
+        // 클릭한 li에 .check 클래스 추가
+        $(this).addClass("check");
+        // 클릭한 li의 형제 요소들에서 .check 클래스 제거
+        $(this).siblings().removeClass("check");
+        // 클릭한 li의 텍스트를 버튼 안에 넣기
+        var selectedText = $(this).text();
+        $(".dropdown-group.array .dropdown-button span").text(selectedText);
+        // 드롭다운 숨기기 (선택한 후 자동으로 숨기려면 필요)
+        $(".dropdown-group.array .dropdown-list").hide();
     });
 
 

@@ -63,3 +63,55 @@ var mainVisualSwiper = new Swiper(".main-visual-swiper", {
     type: "fraction",
   }
 });
+
+var productImgSwiper = new Swiper(".product-img-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 0, // 슬라이드 여백
+  slidesOffsetAfter: 0, // 왼쪽 여백
+  slidesOffsetBefore: 0, // 오른쪽 여백
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  }
+});
+
+
+
+var productDetailImgSwiper01 = new Swiper(".product-detila-img-swiper-01", {
+  spaceBetween: 14,
+  slidesPerView: 5,
+  freeMode: true,
+  watchSlidesProgress: true,
+  navigation: {
+    nextEl: ".product-detail-swiper-01-next",
+    prevEl: ".product-detail-swiper-01-prev",
+  },
+});
+
+var productDetailImgSwiper02 = new Swiper(".product-detila-img-swiper-02", {
+  spaceBetween: 0,
+  navigation: {
+    nextEl: ".product-detail-swiper-02-next",
+    prevEl: ".product-detail-swiper-02-prev",
+  },
+  thumbs: {
+    swiper: productDetailImgSwiper01,
+  },
+});
+
+var productReviewSwiper = new Swiper(".product-review-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 0, // 슬라이드 여백
+  slidesOffsetAfter: 0, // 왼쪽 여백
+  slidesOffsetBefore: 0, // 오른쪽 여백
+  navigation: {
+    nextEl: ".swiper-review-button-next",
+    prevEl: ".swiper-review-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  }
+});

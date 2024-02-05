@@ -91,6 +91,8 @@
                                         data-modal-id="contentModal">contentModal</button>
                                     <button type="button" class="btn btn-sm btn-primary open-modal"
                                         data-modal-id="confirmModal">confirmModal</button>
+                                    <button type="button" class="btn btn-sm btn-primary open-modal"
+                                        data-modal-id="completeModal">completeModal</button>
                                 </div>
                             </td>
                         </tr>
@@ -228,6 +230,21 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr>
+                            <td>
+                                <div class="check-wrap">
+                                    <div class="check-group type2">
+                                        <input type="checkbox" id="chk00">
+                                        <label for="chk00">기본</label>
+                                    </div>
+
+                                    <div class="check-group type2">
+                                        <input type="checkbox" id="chk04" disabled>
+                                        <label for="chk04">기본 Disabled</label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
                 <table>
@@ -244,7 +261,7 @@
                                     </div>
 
                                     <div class="radio-group">
-                                        <input type="radio" id="radio02" checked>
+                                        <input type="radio" id="radio02">
                                         <label for="radio02">기본</label>
                                     </div>
 
@@ -252,12 +269,6 @@
                                         <input type="radio" id="radio03" disabled>
                                         <label for="radio03">기본 Disabled</label>
                                     </div>
-
-                                    <div class="radio-group">
-                                        <input type="radio" id="radio04" disabled checked>
-                                        <label for="radio04">기본 Check + Disabled</label>
-                                    </div>
-
                                 </div>
                             </td>
                         </tr>
@@ -310,23 +321,22 @@
                         </tr>
                         <tr>
                             <td>
-                                <div class="ss-input-group textarea">
+                                <div class="input-group textarea">
                                     <label for="">텍스트(여러줄)</label>
                                     <textarea name="" id="" cols="30" rows="10" placeholder="텍스트를 입력해주세요"></textarea>
                                 </div>
                             </td>
                         </tr>
-                        <!-- 
+
                         <tr>
                             <td class="pt-4">
                                 <div class="file-group">
-                                    <h2>파일첨부</h2>
-                                    <label for="fileupload">버튼명</label>
+                                    <h2>첨부파일</h2>
+                                    <label for="fileupload"><span>파일 추가</span> 또는 파일을 여기로 드래그</label>
                                     <input type="file" id="fileupload" />
-                                    <span>* 반드시 양식 파일을 이용해 주세요.</span>
                                 </div>
                             </td>
-                        </tr> -->
+                        </tr>
                     </tbody>
                 </table>
                 <table>
@@ -337,6 +347,20 @@
                         <tr>
                             <td>
                                 <div class="select-group">
+                                    <h6>Label</h6>
+                                    <select name="" id="">
+                                        <option value="한국어" selected="selected">한국어</option>
+                                        <option value="한국어">한국어</option>
+                                        <option value="한국어">한국어</option>
+                                        <option value="한국어">한국어</option>
+                                        <option value="한국어">한국어</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="select-group type2">
                                     <h6>Label</h6>
                                     <select name="" id="">
                                         <option value="한국어" selected="selected">한국어</option>
@@ -413,21 +437,20 @@
                         <tr>
                             <td>
                                 <div class="input-search">
-                                    <input type="text" placeholder="Placeholder">
-                                    <button type="button">
-                                        <i class="ico i-search"></i>
+                                    <input type="text" placeholder="어떤 전문가를 찾으시나요?">
+                                    <button type="submit">
+                                        <i class="ico i-search-p"></i>
                                     </button>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <div class="input-search">
+                                <div class="input-search type2">
                                     <input type="text" placeholder="Placeholder">
-                                    <button type="button">
+                                    <button type="submit">
                                         <i class="ico i-search"></i>
                                     </button>
-                                    <i class="ico i-clear"></i>
                                 </div>
                             </td>
                         </tr>
@@ -478,10 +501,10 @@
                                 <div class="depth-group">
                                     <ul>
                                         <li><a href="#"><i class="ico i-home"></i></a></li>
-                                        <li><i class="ico i-chevron-right"></i></li>
-                                        <li><a href="#">마이페이지</a></li>
-                                        <li><i class="ico i-chevron-right"></i></li>
-                                        <li><a href="#">내정보</a></li>
+                                        <li>/</li>
+                                        <li><a href="#">디자인</a></li>
+                                        <li>/</li>
+                                        <li><a href="#">로고디자인</a></li>
                                     </ul>
                                 </div>
                             </td>
@@ -498,10 +521,18 @@
                             <td>
                                 <div class="pagination">
                                     <ul>
-                                        <li class="prev"><a href=""><i class="ico i-arrow-left"></i></a></li>
+                                        <li class="prev"><a href=""><i class="ico i-page-prev"></i></a></li>
                                         <li class="active"><a href="">1</a></li>
                                         <li><a href="">2</a></li>
-                                        <li class="next"><a href=""><i class="ico i-arrow-right"></i></a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">5</a></li>
+                                        <li><a href="">6</a></li>
+                                        <li><a href="">7</a></li>
+                                        <li><a href="">8</a></li>
+                                        <li><a href="">9</a></li>
+                                        <li><a href="">10</a></li>
+                                        <li class="next"><a href=""><i class="ico i-page-next"></i></a></li>
                                         </li>
                                     </ul>
                                 </div>
@@ -519,16 +550,34 @@
                             <td>
                                 <div class="product-wrap">
                                     <button class="btn-heart"></button>
-                                    <div class="product-img" style="background: url(img/sample/sample-01.png);"></div>
+                                    <div class="swiper-wrap product-img">
+                                        <div class="swiper product-img-swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
                                     <div class="product-info">
                                         <div class="info-top">
                                             <a href="#" class="user off"><img src="img/sample/sample-02.png"
-                                                    alt="">Shane A</a>
+                                                    alt="">Shane
+                                                A</a>
                                             <span class="user-level">TOP</span>
                                         </div>
-                                        <h5 class="product-name">고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다. 고급스러운 홈페이지 같은 네이버 고급스러운
-                                            홈페이지 같은 네이버</h5>
-                                        <p class="product-review"><i class="ico i-star"></i>4.8 <span>(268)</span></p>
+                                        <h5 class="product-name">고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다. 고급스러운 홈페이지 같은 네이버
+                                            고급스러운 홈페이지 같은 네이버</h5>
+                                        <p class="product-review"><i class="ico i-star"></i>4.8 <span>(268)</span>
+                                        </p>
                                         <h6 class="product-price">4,000 원~</h6>
                                     </div>
                                 </div>
@@ -584,6 +633,36 @@
                                         <li class="tab-button" data-target="cartList">내가 작성한 리뷰 (3)</li>
                                         <li class="tab-button" data-target="cartList">내가 작성한 리뷰 (3)</li>
                                     </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="accordion">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="accordion-item">
+                                    <h6 class="accordion-header">Section 1</h6>
+                                    <div class="accordion-content">
+                                        <p>Content for Section 1</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table id="etc">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="detail-etc">
+                                    <button type="button" class="btn-pink-heart"><i class="ico i-heart-pink"></i>109</button>
+                                    <button type="button" class="btn-heart"><i class="ico i-heart-blue"></i></button>
+                                    <button type="button" class="btn-share open-modal" data-modal-id="shareModal"><i
+                                            class="ico i-share-blue"></i></button>
                                 </div>
                             </td>
                         </tr>
@@ -668,10 +747,32 @@
     </div>
     <!-- E: confirmModal -->
 
+    <!-- S : completeModal :: 제출완료 -->
+    <div id="completeModal" class="gt-modal-wrap complete-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+                <div class="gt-modal-body">
+                    <img class="ico-complete" src="img/ico/i-complete-check.png" alt="">
+                    <h1>제출완료</h1>
+                    <p>작성하신 1:1문의가 제출이 완료되었습니다.<br>
+                        담당자가 확인후 빠른시간내에 답변드리도록 하겠습니다.</p>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-primary btn-modal-close">확인</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : cCompleteModal -->
 
 
 
+    <script src="lib/swiper-bundle.min.js"></script>
     <script src="lib/jquery.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/common.js"></script>
 </body>
 
