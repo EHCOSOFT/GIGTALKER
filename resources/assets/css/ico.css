@@ -124,3 +124,130 @@
     height: 16px;
     width: 16px;
 }
+
+.i-home {
+    background: url(../img/ico/i-home.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-page-next {
+    background: url(../img/ico/i-page-next.png);
+    height: 36px;
+    width: 36px;
+}
+
+.i-page-prev {
+    background: url(../img/ico/i-page-next.png);
+    transform: rotate(180deg);
+    height: 36px;
+    width: 36px;
+}
+
+.i-info {
+    background: url(../img/ico/i-info.png);
+    height: 12px;
+    width: 12px;
+}
+
+.i-search {
+    background: url(../img/ico/i-search.png);
+    height: 18px;
+    width: 18px;
+}
+
+.i-heart-pink {
+    background: url(../img/ico/i-heart-p.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-heart-blue {
+    background: url(../img/ico/i-heart-blue.png);
+    height: 24px;
+    width: 24px;
+}
+
+.i-share-blue {
+    background: url(../img/ico/i-share.png);
+    height: 24px;
+    width: 24px;
+}
+
+.i-facebook {
+    background: url(../img/ico/i-facebook.png);
+    height: 40px;
+    width: 40px;
+}
+
+.i-linkedln {
+    background: url(../img/ico/i-linkedln.png);
+    height: 40px;
+    width: 40px;
+}
+
+.i-twitter {
+    background: url(../img/ico/i-twitter.png);
+    height: 40px;
+    width: 40px;
+}
+
+.i-kakaotalk {
+    background: url(../img/ico/i-kakaotalk.png);
+    height: 40px;
+    width: 40px;
+}
+
+.i-linkshare {
+    background: url(../img/ico/i-linkshare.png);
+    height: 40px;
+    width: 40px;
+}
+
+.i-heart-g {
+    background: url(../img/ico/i-heart-g.png);
+    height: 14px;
+    width: 14px;
+}
+
+.i-time {
+    background: url(../img/ico/i-time.png);
+    height: 14px;
+    width: 14px;
+}
+
+.i-detail-time {
+    background: url(../img/ico/i-detail-time.png);
+    height: 18px;
+    width: 18px;
+}
+
+.i-detail-edit {
+    background: url(../img/ico/i-detail-edit.png);
+    height: 18px;
+    width: 18px;
+}
+
+.i-detail-dialog {
+    background: url(../img/ico/i-dialog.png);
+    height: 18px;
+    width: 18px;
+}
+
+.i-detail-as {
+    background: url(../img/ico/i-as.png);
+    height: 18px;
+    width: 18px;
+}
+
+.i-check-orange {
+    background: url(../img/ico/i-check-orange.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-play {
+    background: url(../img/ico/i-play.png);
+    height: 20px;
+    width: 20px;
+}

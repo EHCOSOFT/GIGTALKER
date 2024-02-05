@@ -189,3 +189,62 @@
     font-size: var(--gt-text-sm);
     margin: 4px 0 0 0;
 }
+
+/* share-modal */
+.share-modal .gt-modal-body {
+    padding: 52px 0;
+}
+
+.share-modal .gt-modal-content {
+    border-radius: 6px;
+}
+
+.share-list {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin: 32px 0 0 0;
+}
+
+.share-list li a {
+    align-items: center;
+    color: #74767C;
+    font-size: var(--gt-text-mn);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+}
+
+/* complete modal */
+.complete-modal .gt-modal-content {
+    width: 440px;
+}
+
+.complete-modal .gt-modal-body {
+    margin: 0 0 20px 0;
+}
+.complete-modal .gt-modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.complete-modal button {
+    width: 300px;
+}
+
+.ico-complete {
+    height: 80px;
+    width: 80px;
+}
+
+.complete-modal h1 {
+    font-size: 24px;
+}
+
+.complete-modal p {
+    color: var(--gt-black-01);
+    font-size: 13px;
+    font-weight: 400;
+    margin: 8px 0 0 0;
+}

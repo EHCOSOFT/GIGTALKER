@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- S : HEADER -->
+        <header class="header" id="header"></header>
+        <!-- E : HEADER -->
+
+        <div class="content">
+            <div class="cont-area">
+                <div class="container">
+                    <div class="cont-top">
+                        <div class="depth-group">
+                            <ul>
+                                <li><a href="#"><i class="ico i-home"></i></a></li>
+                                <li>/</li>
+                                <li><a href="#">디자인</a></li>
+                                <li>/</li>
+                                <li><a href="#">로고디자인</a></li>
+                            </ul>
+                        </div>
+                        <h1>로고디자인</h1>
+                        <p>시부터 노래 가사까지 창의적인 글쓰기로 자신이나 브랜드를 표현하세요. <a class="guide" href="#">가이드</a></p>
+                    </div>
+
+                    <div class="cont-body product-item-wrap">
+                        <div class="product-filter">
+                            <div class="dropdown-group catagory">
+                                <div class="dropdown-list-wrap">
+                                    <button class="dropdown-button" data-target="drop01">카테고리 선택</button>
+                                    <ul id="drop01" class="dropdown-list">
+                                        <li class="active">디자인/개발(520)</li>
+                                        <li>브랜딩(20)</li>
+                                        <li>패키지(10)</li>
+                                        <li>웹디자인(120)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown-group serivce">
+                                <div class="dropdown-list-wrap">
+                                    <button class="dropdown-button" data-target="drop02">서비스종류</button>
+                                    <div id="drop02" class="dropdown-list">
+                                        <div class="check-wrap">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="check-group type2">
+                                                        <input type="checkbox" id="chk00">
+                                                        <label for="chk00">작업전달 상품<span>(25)</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="check-group type2">
+                                                        <input type="checkbox" id="chk01">
+                                                        <label for="chk01">1:1상담 상품<span>(3)</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="check-group type2">
+                                                        <input type="checkbox" id="chk02">
+                                                        <label for="chk02">방문서비스 상품<span>(0)</span></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-bottom">
+                                            <span class="all-del">모두지우기</span>
+                                            <button type="button" class="btn btn-gray btn-mini">적용하기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-group expert">
+                                <div class="dropdown-list-wrap">
+                                    <button class="dropdown-button" data-target="drop03">전문가옵션</button>
+                                    <div id="drop03" class="dropdown-list">
+                                        <div class="check-wrap">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h6>전문가등급</h6>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="check-group type2">
+                                                        <input type="checkbox" id="chk12">
+                                                        <label for="chk12">TOP<span>(5)</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="check-group type2">
+                                                        <input type="checkbox" id="chk13">
+                                                        <label for="chk13">Level 2<span>(3)</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="check-group type2">
+                                                        <input type="checkbox" id="chk14">
+                                                        <label for="chk14">Level 1<span>(0)</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="check-group type2">
+                                                        <input type="checkbox" id="chk15">
+                                                        <label for="chk15">신규판매자<span>(400)</span></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h6>전문가 상태</h6>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="check-group type2">
+                                                        <input type="checkbox" id="chk16">
+                                                        <label for="chk16">지금 온라인<span>(5)</span></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h6>전문가 언어</h6>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="check-group type2">
+                                                        <input type="checkbox" id="chk16">
+                                                        <label for="chk16">한국어<span>(5)</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="check-group type2">
+                                                        <input type="checkbox" id="chk17">
+                                                        <label for="chk17">중국어<span>(5)</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="check-group type2">
+                                                        <input type="checkbox" id="chk18">
+                                                        <label for="chk18">영어<span>(5)</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="check-group type2">
+                                                        <input type="checkbox" id="chk19">
+                                                        <label for="chk19">태국어<span>(5)</span></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h6>전문가 거주지</h6>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="check-group type2">
+                                                        <input type="checkbox" id="chk20">
+                                                        <label for="chk20">한국<span>(5)</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="check-group type2">
+                                                        <input type="checkbox" id="chk21">
+                                                        <label for="chk21">중국<span>(5)</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="check-group type2">
+                                                        <input type="checkbox" id="chk22">
+                                                        <label for="chk22">미국<span>(5)</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="check-group type2">
+                                                        <input type="checkbox" id="chk23">
+                                                        <label for="chk23">태국<span>(5)</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <a href="#" class="more">+20개 더보기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-bottom">
+                                            <span class="all-del">모두지우기</span>
+                                            <button type="button" class="btn btn-gray btn-mini">적용하기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-group budget">
+                                <div class="dropdown-list-wrap">
+                                    <button class="dropdown-button" data-target="drop04">예산</button>
+                                    <div id="drop04" class="dropdown-list">
+                                        <div class="check-wrap">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="radio-group">
+                                                        <input type="radio" id="radio01">
+                                                        <label for="radio01">전체</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="radio-group">
+                                                        <input type="radio" id="radio02" name="budget">
+                                                        <label for="radio02">3만원 이하</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="radio-group">
+                                                        <input type="radio" id="radio03" name="budget">
+                                                        <label for="radio03">3만원 ~ 10만원</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="radio-group">
+                                                        <input type="radio" id="radio04" name="budget">
+                                                        <label for="radio04">10 ~ 20만원 이하</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="radio-group">
+                                                        <input type="radio" id="radio05" name="budget">
+                                                        <label for="radio05">20 ~ 30만원 이하</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="radio-group">
+                                                        <input type="radio" id="radio06" name="budget">
+                                                        <label for="radio06">예산작성</label> 
+                                                    </div>
+                                                    <input type="text" class="budget-write-input">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-bottom">
+                                            <span class="all-del">모두지우기</span>
+                                            <button type="button" class="btn btn-gray btn-mini">적용하기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-group region">
+                                <div class="dropdown-list-wrap">
+                                    <button class="dropdown-button" data-target="drop05">서비스가능지역</button>
+                                    <div id="drop05" class="dropdown-list">
+                                        <div class="select-group">
+                                            <select name="" id="">
+                                                <option value="대한민국" selected="selected">대한민국</option>
+                                                <option value="대한민국">대한민국</option>
+                                                <option value="대한민국">대한민국</option>
+                                                <option value="대한민국">대한민국</option>
+                                                <option value="대한민국">대한민국</option>
+                                            </select>
+                                        </div>
+                                        <div class="select-group">
+                                            <select name="" id="">
+                                                <option value="서울시" selected="selected">서울시</option>
+                                                <option value="서울시">서울시</option>
+                                                <option value="서울시">서울시</option>
+                                                <option value="서울시">서울시</option>
+                                            </select>
+                                        </div>
+                                        <button type="button" class="btn btn-gray btn-mini">적용하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check-pro">
+                                <input type="checkbox" id="check001">
+                                <label for="check001"><i class="ico i-pro"></i>PRO</label>
+                            </div>
+
+                        </div>
+                        <div class="product-top">
+                            <div class="left">16,039개</div>
+                            <div class="right">
+                                <div class="ad-info">
+                                    <span class="btn-ad"><i class="ico i-info"></i>광고</span>
+                                    <div class="ad-info-area">
+                                        <h4>광고안내</h4>
+                                        <dl>
+                                            <dt>프리미엄</dt>
+                                            <dd>리스트 최상단에 고정노출되는 광고로 최고의
+                                                광고효과가 있습니다.</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>플러스</dt>
+                                            <dd>카테고리 리스트에서 프리미엄 광고 다음에 노출되는 광고입니다. 1페이지 노출을 노릴 수 있는 가성비 높은 광고 상품입니다.</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>추천</dt>
+                                            <dd>메인화면에 서비스추천 리스트에 랜덤노출되는 광고입니다.  </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="dropdown-group array">
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button" data-target="drop06">정렬기준:<span>추천순</span></button>
+                                        <ul id="drop06" class="dropdown-list">
+                                            <li class="check">추천순</li>
+                                            <li>판매순</li>
+                                            <li>최신등록순</li>
+                                            <li>평점순</li>
+                                            <li>리뷰많은순</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- comment :: .col-3 반복 -->
+                            <div class="col-3">
+                                <div class="product-wrap">
+                                    <button class="btn-heart"></button>
+                                    <div class="swiper-wrap product-img">
+                                        <div class="swiper product-img-swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="info-top">
+                                            <a href="#" class="user off"><img src="img/sample/sample-02.png"
+                                                    alt="">Shane
+                                                A</a>
+                                            <span class="user-level">TOP</span>
+                                        </div>
+                                        <h5 class="product-name">고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다. 고급스러운 홈페이지 같은 네이버
+                                            고급스러운 홈페이지 같은 네이버</h5>
+                                        <p class="product-review"><i class="ico i-star"></i>4.8 <span>(268)</span>
+                                        </p>
+                                        <h6 class="product-price">4,000 원~</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="product-wrap">
+                                    <button class="btn-heart"></button>
+                                    <div class="swiper-wrap product-img">
+                                        <div class="swiper product-img-swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="info-top">
+                                            <a href="#" class="user off"><img src="img/sample/sample-02.png"
+                                                    alt="">Shane
+                                                A</a>
+                                            <span class="user-level">TOP</span>
+                                        </div>
+                                        <h5 class="product-name">고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다. 고급스러운 홈페이지 같은 네이버
+                                            고급스러운 홈페이지 같은 네이버</h5>
+                                        <p class="product-review"><i class="ico i-star"></i>4.8 <span>(268)</span>
+                                        </p>
+                                        <h6 class="product-price">4,000 원~</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="product-wrap">
+                                    <button class="btn-heart"></button>
+                                    <div class="swiper-wrap product-img">
+                                        <div class="swiper product-img-swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="info-top">
+                                            <a href="#" class="user off"><img src="img/sample/sample-02.png"
+                                                    alt="">Shane
+                                                A</a>
+                                            <span class="user-level">TOP</span>
+                                        </div>
+                                        <h5 class="product-name">고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다. 고급스러운 홈페이지 같은 네이버
+                                            고급스러운 홈페이지 같은 네이버</h5>
+                                        <p class="product-review"><i class="ico i-star"></i>4.8 <span>(268)</span>
+                                        </p>
+                                        <h6 class="product-price">4,000 원~</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="product-wrap">
+                                    <button class="btn-heart"></button>
+                                    <div class="swiper-wrap product-img">
+                                        <div class="swiper product-img-swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="info-top">
+                                            <a href="#" class="user off"><img src="img/sample/sample-02.png"
+                                                    alt="">Shane
+                                                A</a>
+                                            <span class="user-level">TOP</span>
+                                        </div>
+                                        <h5 class="product-name">고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다. 고급스러운 홈페이지 같은 네이버
+                                            고급스러운 홈페이지 같은 네이버</h5>
+                                        <p class="product-review"><i class="ico i-star"></i>4.8 <span>(268)</span>
+                                        </p>
+                                        <h6 class="product-price">4,000 원~</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="product-wrap">
+                                    <button class="btn-heart"></button>
+                                    <div class="swiper-wrap product-img">
+                                        <div class="swiper product-img-swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="info-top">
+                                            <a href="#" class="user off"><img src="img/sample/sample-02.png"
+                                                    alt="">Shane
+                                                A</a>
+                                            <span class="user-level">TOP</span>
+                                        </div>
+                                        <h5 class="product-name">고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다. 고급스러운 홈페이지 같은 네이버
+                                            고급스러운 홈페이지 같은 네이버</h5>
+                                        <p class="product-review"><i class="ico i-star"></i>4.8 <span>(268)</span>
+                                        </p>
+                                        <h6 class="product-price">4,000 원~</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="product-wrap">
+                                    <button class="btn-heart"></button>
+                                    <div class="swiper-wrap product-img">
+                                        <div class="swiper product-img-swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="info-top">
+                                            <a href="#" class="user off"><img src="img/sample/sample-02.png"
+                                                    alt="">Shane
+                                                A</a>
+                                            <span class="user-level">TOP</span>
+                                        </div>
+                                        <h5 class="product-name">고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다. 고급스러운 홈페이지 같은 네이버
+                                            고급스러운 홈페이지 같은 네이버</h5>
+                                        <p class="product-review"><i class="ico i-star"></i>4.8 <span>(268)</span>
+                                        </p>
+                                        <h6 class="product-price">4,000 원~</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="product-wrap">
+                                    <button class="btn-heart"></button>
+                                    <div class="swiper-wrap product-img">
+                                        <div class="swiper product-img-swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="info-top">
+                                            <a href="#" class="user off"><img src="img/sample/sample-02.png"
+                                                    alt="">Shane
+                                                A</a>
+                                            <span class="user-level">TOP</span>
+                                        </div>
+                                        <h5 class="product-name">고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다. 고급스러운 홈페이지 같은 네이버
+                                            고급스러운 홈페이지 같은 네이버</h5>
+                                        <p class="product-review"><i class="ico i-star"></i>4.8 <span>(268)</span>
+                                        </p>
+                                        <h6 class="product-price">4,000 원~</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="product-wrap">
+                                    <button class="btn-heart"></button>
+                                    <div class="swiper-wrap product-img">
+                                        <div class="swiper product-img-swiper">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="info-top">
+                                            <a href="#" class="user off"><img src="img/sample/sample-02.png"
+                                                    alt="">Shane
+                                                A</a>
+                                            <span class="user-level">TOP</span>
+                                        </div>
+                                        <h5 class="product-name">고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다. 고급스러운 홈페이지 같은 네이버
+                                            고급스러운 홈페이지 같은 네이버</h5>
+                                        <p class="product-review"><i class="ico i-star"></i>4.8 <span>(268)</span>
+                                        </p>
+                                        <h6 class="product-price">4,000 원~</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="product-wrap">
+                                    <button class="btn-heart"></button>
+                                    <div class="swiper-wrap product-img">
+                                        <div class="swiper product-img-swiper product-img-swiper01">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="info-top">
+                                            <a href="#" class="user off"><img src="img/sample/sample-02.png"
+                                                    alt="">Shane
+                                                A</a>
+                                            <span class="user-level">TOP</span>
+                                        </div>
+                                        <h5 class="product-name">고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다. 고급스러운 홈페이지 같은 네이버
+                                            고급스러운 홈페이지 같은 네이버</h5>
+                                        <p class="product-review"><i class="ico i-star"></i>4.8 <span>(268)</span>
+                                        </p>
+                                        <h6 class="product-price">4,000 원~</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="product-wrap">
+                                    <button class="btn-heart"></button>
+                                    <div class="swiper-wrap product-img">
+                                        <div class="swiper product-img-swiper product-img-swiper01">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="info-top">
+                                            <a href="#" class="user off"><img src="img/sample/sample-02.png"
+                                                    alt="">Shane
+                                                A</a>
+                                            <span class="user-level">TOP</span>
+                                        </div>
+                                        <h5 class="product-name">고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다. 고급스러운 홈페이지 같은 네이버
+                                            고급스러운 홈페이지 같은 네이버</h5>
+                                        <p class="product-review"><i class="ico i-star"></i>4.8 <span>(268)</span>
+                                        </p>
+                                        <h6 class="product-price">4,000 원~</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="product-wrap">
+                                    <button class="btn-heart"></button>
+                                    <div class="swiper-wrap product-img">
+                                        <div class="swiper product-img-swiper product-img-swiper01">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="info-top">
+                                            <a href="#" class="user off"><img src="img/sample/sample-02.png"
+                                                    alt="">Shane
+                                                A</a>
+                                            <span class="user-level">TOP</span>
+                                        </div>
+                                        <h5 class="product-name">고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다. 고급스러운 홈페이지 같은 네이버
+                                            고급스러운 홈페이지 같은 네이버</h5>
+                                        <p class="product-review"><i class="ico i-star"></i>4.8 <span>(268)</span>
+                                        </p>
+                                        <h6 class="product-price">4,000 원~</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="product-wrap">
+                                    <button class="btn-heart"></button>
+                                    <div class="swiper-wrap product-img">
+                                        <div class="swiper product-img-swiper product-img-swiper01">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                                <div class="swiper-slide"
+                                                    style="background: url(img/sample/sample-01.png);"></div>
+                                            </div>
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="info-top">
+                                            <a href="#" class="user off"><img src="img/sample/sample-02.png"
+                                                    alt="">Shane
+                                                A</a>
+                                            <span class="user-level">TOP</span>
+                                        </div>
+                                        <h5 class="product-name">고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다. 고급스러운 홈페이지 같은 네이버
+                                            고급스러운 홈페이지 같은 네이버</h5>
+                                        <p class="product-review"><i class="ico i-star"></i>4.8 <span>(268)</span>
+                                        </p>
+                                        <h6 class="product-price">4,000 원~</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <ul>
+                                <li class="prev"><a href=""><i class="ico i-page-prev"></i></a></li>
+                                <li class="active"><a href="">1</a></li>
+                                <li><a href="">2</a></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">4</a></li>
+                                <li><a href="">5</a></li>
+                                <li><a href="">6</a></li>
+                                <li><a href="">7</a></li>
+                                <li><a href="">8</a></li>
+                                <li><a href="">9</a></li>
+                                <li><a href="">10</a></li>
+                                <li class="next"><a href=""><i class="ico i-page-next"></i></a></li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- S : FOOTER -->
+        <footer class="footer" id="footer"></footer>
+        <!-- E : FOOTER -->
+    </div>
+
+    <!-- S : languageModal :: 언어설정 -->
+    <div id="languageModal" class="gt-modal-wrap language-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : languageModal -->
+
+    <!-- S : alarmAllDelModal :: 알림 전체삭제 -->
+    <div id="alarmAllDelModal" class="gt-modal-wrap alert-modal alarm-all-del-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : alarmAllDelModal -->
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>
