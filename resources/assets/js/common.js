@@ -1,11 +1,11 @@
 $(document).ready(function () {
-    $("#header").append(Header());
-    $("#footer").append(Footer());
-    $("#footer-top").append(FooterTop());
-    $("#footer-bottom").append(FooterBot());
+  $("#header").append(Header());
+  $("#footer").append(Footer());
+  $("#footer-top").append(FooterTop());
+  $("#footer-bottom").append(FooterBot());
 
-    function Header() {
-        return `
+  function Header() {
+    return `
         <div class="header-top">
                 <div class="container">
                     <a href="메인.html" class="header-logo">
@@ -201,10 +201,10 @@ $(document).ready(function () {
                 </div>
             </div>
     `;
-    }
+  }
 
-    function Footer() {
-        return `
+  function Footer() {
+    return `
         <div class="footer-top">
             <div class="container">
             <div class="footer-top-left">
@@ -262,10 +262,10 @@ $(document).ready(function () {
         </div>
     </div>
     `;
-    }
+  }
 
-    function FooterTop() {
-        return `
+  function FooterTop() {
+    return `
         <div class="footer-top">
         <div class="container">
             <div class="footer-top-left">
@@ -301,10 +301,10 @@ $(document).ready(function () {
         </div>
     </div>
     `;
-    }
+  }
 
-    function FooterBot() {
-        return `
+  function FooterBot() {
+    return `
         <div class="footer-nav">
         <div class="container">
             <ul>
@@ -328,246 +328,336 @@ $(document).ready(function () {
         </div>
     </div>
     `;
+  }
+
+  // -------------- HEADER --------------
+
+  // 상단 알림 이벤트
+  $(".btn-alarm").click(function () {
+    $(".alarm-wrap").show();
+  });
+  // 마우스가 .alarm-wrap 밖으로 나가면 hide()
+  $(".alarm-wrap").mouseleave(function () {
+    $(this).hide();
+  });
+  // .btn-alarm-close 시 li 위에 p로 금일, 이전 날짜를 표시하는 구간이
+  // 있는데 해당 부분은 어떤식으로 해야할지 고민이 필요
+  $(".btn-alarm-close").on("click", function () {
+    $(this).closest("li").hide();
+  });
+
+  // 상단 카테고리 이벤트
+  $(".all-catagory").click(function () {
+    $(".all-catagory-wrap").show();
+  });
+  // 마우스가 .all-catagory-wrap 밖으로 나가면 hide()
+  $(".all-catagory-wrap").mouseleave(function () {
+    $(this).hide();
+  });
+
+  // 버튼 이벤트
+  $(".btn-heart").click(function () {
+    $(this).toggleClass("active");
+  });
+
+  // -------------- MAIN --------------
+
+  // 드롭다운 버튼 클릭 시 드롭다운 리스트 토글
+  $(".dropdown-button").click(function (e) {
+    if ($(this).hasClass("disabled")) {
+      return;
     }
 
-    // -------------- HEADER --------------
+    var target = $(this).data("target");
+    $("#" + target).toggle();
+    $(this).toggleClass("active");
 
-    // 상단 알림 이벤트
-    $(".btn-alarm").click(function () {
-        $(".alarm-wrap").show();
-    });
-    // 마우스가 .alarm-wrap 밖으로 나가면 hide()
-    $(".alarm-wrap").mouseleave(function () {
-        $(this).hide();
-    });
-    // .btn-alarm-close 시 li 위에 p로 금일, 이전 날짜를 표시하는 구간이
-    // 있는데 해당 부분은 어떤식으로 해야할지 고민이 필요
-    $('.btn-alarm-close').on('click', function () {
-        $(this).closest('li').hide();
-    });
+    e.stopPropagation();
+  });
 
-    // 상단 카테고리 이벤트
-    $(".all-catagory").click(function () {
-        $(".all-catagory-wrap").show();
-    });
-    // 마우스가 .all-catagory-wrap 밖으로 나가면 hide()
-    $(".all-catagory-wrap").mouseleave(function () {
-        $(this).hide();
-    });
+  // 드롭다운 영역을 벗어날 시 hide
+  $(document).on("click", function (e) {
+    if (!$(e.target).closest(".dropdown-list-wrap").length) {
+      $(".dropdown-list").hide();
+      $(".dropdown-button").removeClass("active");
+    }
+  });
 
+  // -------------- COMMON --------------
 
-    // 버튼 이벤트
-    $(".btn-heart").click(function () {
-        $(this).toggleClass("active");
-    });
+  // 모달 열기 버튼 클릭 이벤트
+  $(".open-modal").click(function () {
+    var modalId = $(this).data("modal-id");
+    $("#" + modalId).addClass("active");
+    $("body").css("overflow", "hidden");
+  });
+  // 모달 닫기 버튼 및 모달 바깥 영역 클릭 이벤트
+  $(".btn-modal-close, .gt-modal-wrap").click(function () {
+    $(".gt-modal-wrap").removeClass("active");
+    $("body").css("overflow", "auto");
+  });
+  // 모달 내부 클릭 시 닫기 방지
+  $(".gt-modal-content").click(function (e) {
+    e.stopPropagation();
+  });
 
-    // -------------- MAIN --------------
+  // 아코디언
+  $(".accordion-header").click(function () {
+    // 현재 클릭된 아코디언 아이템
+    var accordionItem = $(this).parent();
 
-    // 드롭다운 버튼 클릭 시 드롭다운 리스트 토글
-    $(".dropdown-button").click(function (e) {
-        if ($(this).hasClass("disabled")) {
-            return;
-        }
+    // 다른 아코디언 아이템에서는 content를 닫음
+    $(".accordion-item")
+      .not(accordionItem)
+      .find(".accordion-content")
+      .slideUp();
+    $(".accordion-item").not(accordionItem).removeClass("active");
 
-        var target = $(this).data("target");
-        $("#" + target).toggle();
-        $(this).toggleClass("active");
+    // 현재 클릭된 아코디언 아이템의 content를 토글
+    accordionItem.find(".accordion-content").slideToggle();
+    accordionItem.toggleClass("active");
+  });
 
-        e.stopPropagation();
-    });
+  // 드롭다운 리스트 항목 클릭 시 이벤트 핸들러
+  $(".dropdown-list li").click(function () {
+    var selectedText = $(this).text(); // 클릭한 항목의 텍스트 가져오기
+    $(".dropdown-button .placeholder").text(selectedText); // 플레이스홀더 텍스트 업데이트
+    $("#drop01").hide(); // 드롭다운 리스트 숨기기
+    $(".dropdown-button").removeClass("active"); // 드롭다운 버튼의 활성 클래스 제거
+  });
 
-    // 드롭다운 영역을 벗어날 시 hide
-    $(document).on("click", function (e) {
-        if (!$(e.target).closest('.dropdown-list-wrap').length) {
-            $(".dropdown-list").hide();
-            $(".dropdown-button").removeClass("active");
-        }
-    });
+  // 탭 메뉴
+  $(".tab-button").click(function () {
+    var target = $(this).data("target");
 
-    // -------------- COMMON --------------
+    $(".tab-button").removeClass("active");
+    $(this).addClass("active");
 
-    // 모달 열기 버튼 클릭 이벤트
-    $(".open-modal").click(function () {
-        var modalId = $(this).data("modal-id");
-        $("#" + modalId).addClass("active");
-        $("body").css("overflow", "hidden");
-    });
-    // 모달 닫기 버튼 및 모달 바깥 영역 클릭 이벤트
-    $(".btn-modal-close, .gt-modal-wrap").click(function () {
-        $(".gt-modal-wrap").removeClass("active");
-        $("body").css("overflow", "auto");
-    });
-    // 모달 내부 클릭 시 닫기 방지
-    $(".gt-modal-content").click(function (e) {
-        e.stopPropagation();
-    });
+    // $(".tab-content").hide();
+    // $("#" + target).show();
 
-    // 아코디언
-    $(".accordion-header").click(function () {
-        // 현재 클릭된 아코디언 아이템
-        var accordionItem = $(this).parent();
+    // Scroll to the target section
+    $("html, body").animate(
+      {
+        scrollTop: $("#" + target).offset().top,
+      },
+      500
+    );
+  });
 
-        // 다른 아코디언 아이템에서는 content를 닫음
-        $(".accordion-item").not(accordionItem).find(".accordion-content").slideUp();
-        $(".accordion-item").not(accordionItem).removeClass("active");
+  // tab1 초기설정
+  // $("#viewProduct").show();
+  // $(".tab-button[data-target='viewProduct']").addClass("active");
+  // $("#writeReview").show();
+  // $("#idFind").show();
+  // $("#imgUpload").show();
 
-        // 현재 클릭된 아코디언 아이템의 content를 토글
-        accordionItem.find(".accordion-content").slideToggle();
-        accordionItem.toggleClass("active");
-    });
+  // toggle
+  $('.toggle-group .toggle input[type="checkbox"]').change(function () {
+    var $toggleGroup = $(this).closest(".toggle-group");
+    if ($(this).is(":checked")) {
+      $toggleGroup.addClass("active");
+    } else {
+      $toggleGroup.removeClass("active");
+    }
+  });
 
-    // 드롭다운 리스트 항목 클릭 시 이벤트 핸들러
-    $(".dropdown-list li").click(function () {
-        var selectedText = $(this).text(); // 클릭한 항목의 텍스트 가져오기
-        $(".dropdown-button .placeholder").text(selectedText); // 플레이스홀더 텍스트 업데이트
-        $("#drop01").hide(); // 드롭다운 리스트 숨기기
-        $(".dropdown-button").removeClass("active"); // 드롭다운 버튼의 활성 클래스 제거
-    });
+  // pie progress
+  $(".circle").each(function () {
+    var circle = $(this);
+    var span = circle.find("span");
 
-    // 탭 메뉴
-    $(".tab-button").click(function () {
-        var target = $(this).data("target");
+    // 초기 텍스트 가져오기
+    var text = span.text();
+    // 텍스트에서 '%' 문자 제거하고 숫자만 추출
+    var score = parseFloat(text.replace("%", "")) / 100;
 
-        $(".tab-button").removeClass("active");
-        $(this).addClass("active");
+    // 각도 계산
+    var angle = Math.round(score * 360);
+    // 배경 그라데이션 각도 설정
+    if (circle.hasClass("success")) {
+      circle.css(
+        "background",
+        "conic-gradient(var(--gt-success) " + angle + "deg, #2E3F77 0deg)"
+      );
+    } else if (circle.hasClass("info")) {
+      circle.css(
+        "background",
+        "conic-gradient(var(--gt-info) " + angle + "deg, #2E3F77 0deg)"
+      );
+    } else if (circle.hasClass("warning")) {
+      circle.css(
+        "background",
+        "conic-gradient(var(--gt-warning) " + angle + "deg, #2E3F77 0deg)"
+      );
+    }
 
-        $(".tab-content").hide();
-        $("#" + target).show();
-
-        // Scroll to the target section
-        $("html, body").animate(
-            {
-                scrollTop: $("#" + target).offset().top,
-            },
-            500
+    // 숫자 텍스트 갱신 함수
+    function updateProgress(text) {
+      var score = parseFloat(text.replace("%", "")) / 100;
+      var angle = Math.round(score * 360);
+      // 배경 그라데이션 각도 설정
+      if (circle.hasClass("success")) {
+        circle.css(
+          "background",
+          "conic-gradient(var(--gt-success) " + angle + "deg, #2E3F77 0deg)"
         );
+      } else if (circle.hasClass("info")) {
+        circle.css(
+          "background",
+          "conic-gradient(var(--gt-info) " + angle + "deg, #2E3F77 0deg)"
+        );
+      } else if (circle.hasClass("warning")) {
+        circle.css(
+          "background",
+          "conic-gradient(var(--gt-warning) " + angle + "deg, #2E3F77 0deg)"
+        );
+      }
+    }
+
+    // span 안의 텍스트 변경 이벤트 핸들러
+    span.on("DOMSubtreeModified", function () {
+      var newText = $(this).text();
+      updateProgress(newText);
     });
+  });
 
-    // tab1 초기설정
-    $("#viewProduct").show();
-    $(".tab-button[data-target='viewProduct']").addClass("active");
-    $("#writeReview").show();
-    $("#idFind").show();
-    $("#imgUpload").show();
+  // custom-tabs
+  $(".custom-tab").click(function () {
+    $(this).toggleClass("selected");
+  });
 
+  // 비밀번호 숨기기/보이기
+  // 비밀번호 입력란과 비밀번호 표시 버튼 선택
+  var passwordInput = $("#pwInput");
+  var showPasswordBtn = $(".btn-pw-eyes");
 
-    // custom-tabs
-    $(".custom-tab").click(function () {
-        $(this).toggleClass("selected");
-    });
+  // 비밀번호 표시 버튼을 클릭했을 때
+  showPasswordBtn.click(function () {
+    // 입력된 텍스트가 있는지 확인
+    if (passwordInput.val().trim() !== "") {
+      // 비밀번호 입력란의 type 속성을 토글
+      var type =
+        passwordInput.attr("type") === "password" ? "text" : "password";
+      passwordInput.attr("type", type);
 
-    // 비밀번호 숨기기/보이기
-    // 비밀번호 입력란과 비밀번호 표시 버튼 선택
-    var passwordInput = $('#pwInput');
-    var showPasswordBtn = $('.btn-pw-eyes');
+      // 현재 상태에 따라 버튼 배경 이미지 변경
+      if (type === "password") {
+        showPasswordBtn.css("background-image", 'url("img/ico/i-eyes-on.png")');
+      } else {
+        showPasswordBtn.css(
+          "background-image",
+          'url("img/ico/i-eyes-off.png")'
+        );
+      }
+    }
+  });
 
-    // 비밀번호 표시 버튼을 클릭했을 때
-    showPasswordBtn.click(function() {
-        // 입력된 텍스트가 있는지 확인
-        if (passwordInput.val().trim() !== '') {
-            // 비밀번호 입력란의 type 속성을 토글
-            var type = passwordInput.attr('type') === 'password' ? 'text' : 'password';
-            passwordInput.attr('type', type);
+  // input(number) 인증코드 입력 시 다음으로 next
+  $(".input-code").on("input", function () {
+    var currentInput = $(this);
+    var nextInput = currentInput.next(".input-code");
 
-            // 현재 상태에 따라 버튼 배경 이미지 변경
-            if (type === 'password') {
-                showPasswordBtn.css('background-image', 'url("img/ico/i-eyes-on.png")');
-            } else {
-                showPasswordBtn.css('background-image', 'url("img/ico/i-eyes-off.png")');
-            }
-        }
-    });
+    if (currentInput.val().length === 1) {
+      if (nextInput.length > 0) {
+        nextInput.focus();
+      }
+    }
+  });
 
-    // input(number) 인증코드 입력 시 다음으로 next
-    $('.input-code').on('input', function () {
-        var currentInput = $(this);
-        var nextInput = currentInput.next('.input-code');
+  // 한자리 입력
+  $(".input-code").on("keypress", function (e) {
+    var key = String.fromCharCode(e.which);
+    var regex = /^[0-9]$/;
 
-        if (currentInput.val().length === 1) {
-            if (nextInput.length > 0) {
-                nextInput.focus();
-            }
-        }
-    });
+    if (!regex.test(key)) {
+      e.preventDefault();
+    }
+  });
 
-    // 한자리 입력
-    $('.input-code').on('keypress', function (e) {
-        var key = String.fromCharCode(e.which);
-        var regex = /^[0-9]$/;
+  $(".product-img").hover(
+    function () {
+      $(".swiper-button-next, .swiper-button-prev", this)
+        .stop()
+        .fadeTo(300, 1)
+        .css("visibility", "visible");
+    },
+    function () {
+      $(".swiper-button-next, .swiper-button-prev", this)
+        .stop()
+        .fadeTo(300, 0, function () {
+          $(this).css("visibility", "hidden");
+        });
+    }
+  );
 
-        if (!regex.test(key)) {
-            e.preventDefault();
-        }
-    });
+  // 검색리스트 이벤트
+  // 검색리스트 광고 hover 이벤트
+  $(".btn-ad").hover(
+    function () {
+      // 마우스가 올라갔을 때
+      $(this).siblings(".ad-info-area").css("display", "flex");
+    },
+    function () {
+      // 마우스가 벗어났을 때
+      $(this).siblings(".ad-info-area").css("display", "none");
+    }
+  );
 
-    $(".product-img").hover(
-        function () {
-            $(".swiper-button-next, .swiper-button-prev", this).stop().fadeTo(300, 1).css("visibility", "visible");
-        },
-        function () {
-            $(".swiper-button-next, .swiper-button-prev", this).stop().fadeTo(300, 0, function() {
-                $(this).css("visibility", "hidden");
-            });
-        }
-    );
+  // 정렬기준
+  $(".dropdown-group.array li").click(function () {
+    // 클릭한 li에 .check 클래스 추가
+    $(this).addClass("check");
+    // 클릭한 li의 형제 요소들에서 .check 클래스 제거
+    $(this).siblings().removeClass("check");
+    // 클릭한 li의 텍스트를 버튼 안에 넣기
+    var selectedText = $(this).text();
+    $(".dropdown-group.array .dropdown-button span").text(selectedText);
+    // 드롭다운 숨기기 (선택한 후 자동으로 숨기려면 필요)
+    $(".dropdown-group.array .dropdown-list").hide();
+  });
 
-    // 검색리스트 이벤트
-    // 검색리스트 광고 hover 이벤트
-    $(".btn-ad").hover(
-        function () {
-            // 마우스가 올라갔을 때
-            $(this).siblings(".ad-info-area").css("display", "flex");
-        },
-        function () {
-            // 마우스가 벗어났을 때
-            $(this).siblings(".ad-info-area").css("display", "none");
-        }
-    );
+  // 상세페이지
+  // $(".product-detail-detail .tab-button").click(function () {
+  //     // 선택된 탭 버튼
+  //     var selectedTab = $(this).data("target");
 
-    // 정렬기준
-    $(".dropdown-group.array li").click(function () {
-        // 클릭한 li에 .check 클래스 추가
-        $(this).addClass("check");
-        // 클릭한 li의 형제 요소들에서 .check 클래스 제거
-        $(this).siblings().removeClass("check");
-        // 클릭한 li의 텍스트를 버튼 안에 넣기
-        var selectedText = $(this).text();
-        $(".dropdown-group.array .dropdown-button span").text(selectedText);
-        // 드롭다운 숨기기 (선택한 후 자동으로 숨기려면 필요)
-        $(".dropdown-group.array .dropdown-list").hide();
-    });
-
-
+  //     // 스크롤을 해당 탭 위치로 이동
+  //     var tabPosition = $("#" + selectedTab).offset().top;
+  //     $('html, body').animate({
+  //         scrollTop: tabPosition
+  //     }, 500);
+  // });
 });
 
 // 모달 애니메이션 이벤트
 class MobilePopup {
-    constructor(popupId) {
-        this.popupId = popupId;
-        this.openBtn = $(`.open-popup-btn[data-popup-id="${popupId}"]`);
-        this.closeBtn = $(`.close-popup-btn[data-popup-id="${popupId}Close"]`);
-        this.popupContainer = $(`#${popupId}`);
-        this.popupContent = this.popupContainer.find('.popup-content');
+  constructor(popupId) {
+    this.popupId = popupId;
+    this.openBtn = $(`.open-popup-btn[data-popup-id="${popupId}"]`);
+    this.closeBtn = $(`.close-popup-btn[data-popup-id="${popupId}Close"]`);
+    this.popupContainer = $(`#${popupId}`);
+    this.popupContent = this.popupContainer.find(".popup-content");
 
-        this.setupEvents();
-    }
+    this.setupEvents();
+  }
 
-    setupEvents() {
-        this.openBtn.on('click', () => this.openPopup());
-        this.closeBtn.on('click', () => this.closePopup());
-    }
+  setupEvents() {
+    this.openBtn.on("click", () => this.openPopup());
+    this.closeBtn.on("click", () => this.closePopup());
+  }
 
-    openPopup() {
-        this.popupContainer.css('display', 'block');
-        setTimeout(() => {
-            this.popupContent.css('transform', 'translateY(0)');
-        }, 10);
-    }
+  openPopup() {
+    this.popupContainer.css("display", "block");
+    setTimeout(() => {
+      this.popupContent.css("transform", "translateY(0)");
+    }, 10);
+  }
 
-    closePopup() {
-        this.popupContent.css('transform', 'translateY(100%)');
-        setTimeout(() => {
-            this.popupContainer.css('display', 'none');
-        }, 300);
-    }
+  closePopup() {
+    this.popupContent.css("transform", "translateY(100%)");
+    setTimeout(() => {
+      this.popupContainer.css("display", "none");
+    }, 300);
+  }
 }

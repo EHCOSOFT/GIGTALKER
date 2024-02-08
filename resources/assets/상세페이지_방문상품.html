@@ -423,8 +423,7 @@
                                                         </li>
                                                     </ul>
                                                     <div class="product-detail-review-more">
-                                                        <button type="button" class="btn btn-outline-gray">리뷰
-                                                            더보기</button>
+                                                        <button type="button" class="btn btn-outline-gray">리뷰 더보기</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -488,8 +487,7 @@
                                     <button type="button" class="btn btn-primary btn-xl">바로구매</button>
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-md btn-outline-gray">채팅문의</button>
-                                        <button type="button" class="btn btn-md btn-outline-gray open-modal"
-                                            data-modal-id="orderInquiryModal">견적문의</button>
+                                        <button type="button" class="btn btn-md btn-outline-gray">견적문의</button>
                                     </div>
                                 </div>
                             </div>
@@ -521,66 +519,6 @@
         <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
     </div>
     <!-- E : shareModal -->
-
-    <!-- S: orderInquiryModal :: 견적문의 -->
-    <div id="orderInquiryModal" class="gt-modal-wrap content-modal order-modal">
-        <div class="gt-modal-inner">
-            <div class="gt-modal-content">
-                <div class="gt-modal-header">
-                    <button type="button" class="btn-modal-close">
-                        <i class="ico i-modal-close"></i>
-                    </button>
-                </div>
-                <div class="gt-modal-body">
-                    <h1>맞춤주문문의</h1>
-                    <form action="" method="post">
-                        <div class="order-input-wrap">
-                            <div class="input-group mn">
-                                <label for="">제목</label>
-                                <input type="text" id="text02" placeholder="문의 제목을 작성해주세요.">
-                            </div>
-
-                            <div class="text-group sm">
-                                <label for="">내용</label>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="자세한 문의 내용을 작성해주세요"></textarea>
-                            </div>
-
-                            <!-- 모달 종류는 총 2가지(간편문의, 직접문의) 직접문의 모달 시 해당 .select-group을 주석처리 해주시기 바랍니다. -->
-                            <div class="select-group sm">
-                                <h6>카테고리 선택</h6>
-                                <select name="" id="">
-                                    <option value="홈서비스" selected="selected">홈서비스</option>
-                                    <option value="홈서비스">홈서비스</option>
-                                    <option value="홈서비스">홈서비스</option>
-                                    <option value="홈서비스">홈서비스</option>
-                                    <option value="홈서비스">홈서비스</option>
-                                </select>
-                            </div>
-
-                            <div class="input-group mn">
-                                <label for="">예산</label>
-                                <input type="text" id="text02" placeholder="사용가능한 예산을 작성해주세요">
-                                <div class="check-group type2 sm">
-                                    <input type="checkbox" id="chk00">
-                                    <label for="chk00">예산은 상황에 따라 유연합니다.</label>
-                                </div>
-                            </div>
-
-                            <div class="date-group mn">
-                                <label for="">희망완료일</label>
-                                <input type="date" date-placeholder="희망완료일을 선택해주세요" required aria-required="true">
-                            </div>
-                        </div>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-md btn-outline-gray btn-modal-close">취소</button>
-                            <button type="button" class="btn btn-md btn-primary">보내기</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- E: orderInquiryModal -->
 
     <!-- S : SCRIPT -->
     <script src="lib/swiper-bundle.min.js"></script>
