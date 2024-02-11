@@ -2651,8 +2651,9 @@
 }
 
 .notice-item .notice {
-    color: var(--gt-secondary );
+    color: var(--gt-secondary);
 }
+
 .notice-item .notice span {
     background: #DEEFFF;
     border-radius: 4px;
@@ -2660,4 +2661,71 @@
     font-size: var(--gt-text-sm);
     margin: 0 4px 0 0;
     padding: 2px 6px;
+}
+
+/* 판매관리 */
+.ec-sell-set h1 {
+    color: var(--gt-gray-01);
+    font-size: 24px;
+    margin: 0 0 16px 0;
+}
+
+.ec-sell-top {
+    display: flex;
+    gap: 8px;
+}
+
+.ec-sell-top .select-group {
+    width: 160px;
+}
+
+.ec-sell-top .input-group {
+    width: 228px;
+}
+
+.ec-sell-top button {
+    font-size: var(--gt-text-sm);
+    height: 40px;
+    width: 116px;
+}
+
+.ec-sell-category ul {
+    align-items: center;
+    border-bottom: 1px solid var(--gt-gray-04);
+    border-top: 1px solid var(--gt-gray-04);
+    display: flex;
+    gap: 24px;
+    margin: 16px 0 0 0;
+    padding: 12px 0;
+}
+
+.ec-sell-category ul li {
+    cursor: pointer;
+    color: #74767C;
+    font-size: var(--gt-text-md);
+}
+
+.ec-sell-category ul li.active {
+    color: var(--gt-black-01);
+    font-weight: bold;
+}
+
+.ec-sell-body {
+    margin: 12px 0 0 0;
+}
+
+.ec-sell-info {
+    align-items: center;
+    background: var(--gt-primary-bg);
+    color: var(--gt-primary);
+    font-size: var(--gt-text-sm);
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+}
+
+.ec-sell-list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
 }
