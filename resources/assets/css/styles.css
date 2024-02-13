@@ -21,6 +21,7 @@
  * 06) 고객센터
  * 07) 상세페이지
  * 08) 전문가센터
+ * 09) 마이페이지
  */
 
 /* **************************************** *
@@ -2316,6 +2317,7 @@
 }
 
 .expert-profile-top p a {
+    color: var(--gt-secondary);
     font-weight: 400;
 }
 
@@ -2634,6 +2636,7 @@
 }
 
 .notice-item p {
+
     color: var(--gt-black-03);
     cursor: pointer;
     font-size: var(--gt-text-md);
@@ -2721,11 +2724,295 @@
     font-size: var(--gt-text-sm);
     display: flex;
     justify-content: center;
+    margin: 0 0 16px 0;
     padding: 12px 0;
+    text-align: center;
 }
 
-.ec-sell-list {
+.ec-sell-list ul {
     display: flex;
     flex-direction: column;
     gap: 28px;
+}
+
+.ec-sell-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ec-sell-item-top {
+    align-items: center;
+    display: flex;
+}
+
+.ec-sell-item-top p {
+    color: var(--gt-black-03);
+    font-size: var(--gt-text-md);
+}
+
+.ec-sell-item-top p span {
+    margin: 0 0 0 4px;
+}
+
+.ec-sell-item-top p span.gray {
+    color: var(--gt-gray-03);
+}
+
+.ec-sell-item-top p span.sky {
+    color: var(--gt-info);
+}
+
+.ec-sell-item-top p span.green {
+    color: var(--gt-success);
+}
+
+.ec-sell-item-top p span.orange {
+    color: var(--gt-warning);
+}
+
+.ec-sell-item-top p span.red {
+    color: var(--gt-error);
+}
+
+.ec-sell-item-top a {
+    align-items: center;
+    color: var(--gt-info);
+    font-size: var(--gt-text-lg);
+    font-weight: 500;
+    display: flex;
+    gap: 4px;
+    margin: 0 0 0 auto;
+}
+
+.ec-sell-item-bot {
+    border: 1px solid var(--gt-gray-05);
+    border-radius: 6px;
+    display: flex;
+    gap: 24px;
+    padding: 20px 28px;
+}
+
+.ec-sell-item-img {
+    height: 76px;
+    width: 108px;
+}
+
+.ec-sell-item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.ec-sell-item-text h6 {
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-lg);
+    font-weight: 400;
+}
+
+.ec-sell-item-text p {
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-md);
+    font-weight: bold;
+}
+
+.ec-sell-item-text ul {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.ec-sell-item-text ul li {
+    color: var(--gt-gray-02);
+    font-size: var(--gt-text-md);
+}
+
+.ec-sell-item-info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    margin: 0 0 0 auto;
+}
+
+.ec-sell-item-info p {
+    color: var(--gt-black-03);
+    font-size: var(--gt-text-sm);
+}
+
+.ec-sell-item-info button {
+    background: var(--gt-gray-07);
+    border: 1px solid var(--gt-gray-04);
+    color: var(--gt-black-03);
+    width: 98px;
+}
+
+
+/* **************************************** *
+ * 마이페이지
+ * **************************************** */
+.mypage {
+    padding: 68px 0 100px 0;
+}
+
+.mypage .container {
+    display: flex;
+    gap: 60px;
+}
+
+.mypage-profile {
+    padding: 28px 0;
+    position: relative;
+}
+
+.mypage-profile-top {
+    border-bottom: 5px solid #cccccc;
+    position: absolute;
+    top: -30px;
+    width: 100%;
+}
+
+.mypage-profile-top p {
+    align-content: center;
+    color: var(--gt-gray-01);
+    display: flex;
+    font-size: var(--gt-text-md);
+    font-weight: bold;
+    justify-content: space-between;
+    margin: 0 0 8px 0;
+}
+
+.mypage-profile-top p a {
+    color: var(--gt-secondary);
+    font-weight: 400;
+}
+
+.mypage-profile-img-area {
+    align-items: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+    width: 132px;
+}
+
+.mypage-profile-img {
+    border-radius: 100px;
+    height: 132px;
+    width: 132px;
+}
+
+.mypage-profile h5 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 12px 0;
+    text-align: center;
+}
+
+.mypage-profile button {
+    background: #461593;
+    font-size: var(--gt-text-lg);
+    height: 40px;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.sc-sidebar>h5 {
+    border-bottom: 5px solid var(--gt-black-01);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 0 16px 0;
+}
+
+.mypage-content {
+    width: calc(100% - 340px);
+}
+
+.mp-product-review-list>ul {
+    border-top: 1px solid var(--gt-black-01);
+    display: flex;
+    flex-direction: column;
+}
+
+.mp-product-review-list>ul>li {
+    border-bottom: 1px solid #ccc;
+}
+
+.mp-product-review-list>ul>li.none {
+    border-bottom: 0;
+}
+
+.mp-review-item {
+    padding: 20px 0;
+}
+
+.mp-review-item h6 {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-lg);
+    font-weight: 400;
+    margin: 0 0 4px 0;
+}
+
+.mp-review-item-area {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.mp-review-item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.mp-review-item-text p {
+    color: #74767C;
+    font-size: var(--gt-text-sm);
+    max-width: 532px;
+}
+
+.mp-review-item-text ul {
+    display: flex;
+    gap: 8px;
+}
+
+.mp-review-item-text ul li {
+    color: #74767C;
+    font-size: var(--gt-text-sm);
+}
+
+.mp-review-item-text ul li a {
+    color: var(--gt-gray-01);
+    text-decoration: underline;
+}
+
+.mp-review-score-area {
+    align-items: center;
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-lg);
+    font-weight: bold;
+    display: flex;
+    gap: 4px;
+    margin: 0 0 0 auto;
+}
+
+.mp-review-item-area button {
+    font-size: var(--gt-text-md);
+    width: 136px;
+}
+
+.mp-review-item-none {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    padding: 32px 0;
+}
+
+.mp-review-item-none p {
+    color: var(--gt-gray-04);
+    font-size: var(--gt-text-md);
 }

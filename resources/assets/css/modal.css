@@ -278,3 +278,17 @@
 .order-modal .btn-group {
     justify-content: center;
 }
+
+/* 별점 */
+.review-score-area {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 0 40px 0;
+}
+.review-score-area h6 {
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-lg);
+    font-weight: 400;
+    text-align: left;
+}

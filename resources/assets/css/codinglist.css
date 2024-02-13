@@ -126,7 +126,7 @@ ul li {
 }
 
 .table_base tbody td:last-child,
-.table_base tbody td:nth-child(9),
+.table_base tbody td:nth-child(10),
 .table_base tbody td:nth-child(4),
 .table_base tbody td:nth-child(5) {
     text-align: left;

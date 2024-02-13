@@ -617,17 +617,15 @@ $(document).ready(function () {
     $(".dropdown-group.array .dropdown-list").hide();
   });
 
-  // 상세페이지
-  // $(".product-detail-detail .tab-button").click(function () {
-  //     // 선택된 탭 버튼
-  //     var selectedTab = $(this).data("target");
-
-  //     // 스크롤을 해당 탭 위치로 이동
-  //     var tabPosition = $("#" + selectedTab).offset().top;
-  //     $('html, body').animate({
-  //         scrollTop: tabPosition
-  //     }, 500);
-  // });
+  // 별점 입력
+  $('.rating-group .star').click(function() {
+    var rating = $(this).attr('data-rating');
+    $('#ratingValue').text(rating);
+    // 선택된 별보다 앞에 있는 별들의 색을 변경
+    $(this).prevAll('.star').addBack().addClass("active");
+    // 선택된 별보다 뒤에 있는 별들의 색을 원래 색으로 변경
+    $(this).nextAll('.star').removeClass("active");
+  });
 });
 
 // 모달 애니메이션 이벤트

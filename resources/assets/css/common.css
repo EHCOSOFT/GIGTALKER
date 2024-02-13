@@ -2494,9 +2494,9 @@ h3.title {
     border-radius: inherit;
     color: white;
     display: flex;
-    height: 92%; 
+    height: 92%;
     justify-content: center;
-    margin: auto;  
+    margin: auto;
     width: 92%;
 }
 
@@ -2506,4 +2506,34 @@ h3.title {
     display: flex;
     font-size: var(--gt-text-sm);
     font-weight: bold;
+}
+
+/**/
+.rating-area {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-md);
+    display: flex;
+    gap: 12px;
+}
+
+.rating-group {
+    display: flex;
+    gap: 8px;
+}
+
+.rating-group input {
+    display: none;
+}
+
+.rating-group .star {
+    background: url(../img/ico/i-star.png);
+    background-size: cover;
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+}
+
+.rating-group .star.active {
+    background: url(../img/ico/i-star-active.png);
+    background-size: cover;
 }
