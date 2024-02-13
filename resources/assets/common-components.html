@@ -106,6 +106,16 @@
                         <tr>
                             <td>
                                 <div class="input-wrap">
+                                    <div class="input-group warning mn">
+                                        <label for="">warning(mini)</label>
+                                        <input type="text" id="text02" placeholder="Placeholder">
+                                        <p>Status<span>1/300</span></p>
+                                    </div>
+
+                                    <div class="input-group sm">
+                                        <label for="">Disabled(sm)</label>
+                                        <input type="text" id="text03" disabled placeholder="Placeholder">
+                                    </div>
                                     <div class="input-group">
                                         <label for="">Default</label>
                                         <input type="text" id="text01" placeholder="Placeholder">
@@ -124,16 +134,7 @@
                                         <p>Status<span>1/300</span></p>
                                     </div>
 
-                                    <div class="input-group warning">
-                                        <label for="">warning</label>
-                                        <input type="text" id="text02" placeholder="Placeholder">
-                                        <p>Status<span>1/300</span></p>
-                                    </div>
 
-                                    <div class="input-group">
-                                        <label for="">Disabled</label>
-                                        <input type="text" id="text03" disabled placeholder="Placeholder">
-                                    </div>
 
                                     <!-- <div class="input-group">
                                         <label for="">Text Field</label>
@@ -233,6 +234,11 @@
                         <tr>
                             <td>
                                 <div class="check-wrap">
+                                    <div class="check-group type2 sm">
+                                        <input type="checkbox" id="chk00">
+                                        <label for="chk00">SM</label>
+                                    </div>
+
                                     <div class="check-group type2">
                                         <input type="checkbox" id="chk00">
                                         <label for="chk00">기본</label>
@@ -296,39 +302,68 @@
                     </tbody>
                 </table>
                 <table>
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: auto;">
+                    </colgroup>
                     <tbody>
                         <tr>
                             <td>Input(datepicker)</td>
                         </tr>
                         <tr>
                             <td>
+                                <div class="date-group mn">
+                                    <label for="">SM</label>
+                                    <input type="date" date-placeholder="시작일" required aria-required="true">
+                                </div>
+                            </td>
+                            <td>
                                 <div class="date-group">
-                                    <!-- <h2>날짜</h2> -->
+                                    <label for="">Default</label>
+                                    <input type="date" placeholder="시작일">
+                                </div>
+                            </td>
+                            <td></td>
+                            <!-- <td>
+                                <div class="date-group">
                                     <div class="date-wrap">
                                         <input type="date" placeholder="시작일">
                                         <span>-</span>
                                         <input type="date" placeholder="시작일">
                                     </div>
                                 </div>
-                            </td>
+                            </td> -->
                         </tr>
+
                     </tbody>
                 </table>
                 <table>
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: auto;">
+                    </colgroup>
                     <tbody>
                         <tr>
                             <td>input(textarea)</td>
                         </tr>
                         <tr>
                             <td>
-                                <div class="input-group textarea">
-                                    <label for="">텍스트(여러줄)</label>
+                                <div class="text-group sm">
+                                    <label for="">Textarea(SM)</label>
                                     <textarea name="" id="" cols="30" rows="10" placeholder="텍스트를 입력해주세요"></textarea>
                                 </div>
                             </td>
-                        </tr>
+                            <td>
+                                <div class="text-group">
+                                    <label for="">Textarea(Default)</label>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="텍스트를 입력해주세요"></textarea>
+                                </div>
+                            </td>
+                            <td></td>
 
-                        <tr>
+                            <!-- <tr>
                             <td class="pt-4">
                                 <div class="file-group">
                                     <h2>첨부파일</h2>
@@ -336,18 +371,25 @@
                                     <input type="file" id="fileupload" />
                                 </div>
                             </td>
-                        </tr>
+                        </tr> -->
                     </tbody>
                 </table>
                 <table>
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                    </colgroup>
                     <tbody>
                         <tr>
                             <td>dropdown(selectbox)</td>
                         </tr>
                         <tr>
                             <td>
-                                <div class="select-group">
-                                    <h6>Label</h6>
+                                <div class="select-group sm">
+                                    <h6>SM</h6>
                                     <select name="" id="">
                                         <option value="한국어" selected="selected">한국어</option>
                                         <option value="한국어">한국어</option>
@@ -357,8 +399,20 @@
                                     </select>
                                 </div>
                             </td>
-                        </tr>
-                        <tr>
+
+                            <td>
+                                <div class="select-group">
+                                    <h6>Defalut</h6>
+                                    <select name="" id="">
+                                        <option value="한국어" selected="selected">한국어</option>
+                                        <option value="한국어">한국어</option>
+                                        <option value="한국어">한국어</option>
+                                        <option value="한국어">한국어</option>
+                                        <option value="한국어">한국어</option>
+                                    </select>
+                                </div>
+                            </td>
+
                             <td>
                                 <div class="select-group type2">
                                     <h6>Label</h6>
@@ -371,8 +425,11 @@
                                     </select>
                                 </div>
                             </td>
+                            <td></td>
+                            <td></td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
+
                             <td>
                                 <div class="dropdown-group">
                                     <h2>dropdown</h2>
@@ -388,7 +445,11 @@
                                             <li>옵션 5</li>
                                         </ul>
                                     </div>
-
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dropdown-group">
+                                    <h2>dropdown</h2>
                                     <div class="dropdown-list-wrap">
                                         <button class="dropdown-button disabled" data-target="drop01">
                                             <span class="placeholder">Select an option</span>
@@ -401,13 +462,9 @@
                                             <li>옵션 5</li>
                                         </ul>
                                     </div>
-
                                 </div>
                             </td>
-
-                        </tr>
-                        <tr>
-                            <td class="pt-4">
+                            <td>
                                 <div class="dropdown-group type2">
                                     <h2>dropdown(type2)</h2>
                                     <div class="dropdown-list-wrap">
@@ -425,7 +482,8 @@
 
                                 </div>
                             </td>
-                        </tr>
+                            <td></td>
+                        </tr> -->
                     </tbody>
                 </table>
 
@@ -643,6 +701,11 @@
                     <tbody>
                         <tr>
                             <td>
+                                <h4>Accordion</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
                                 <div class="accordion-item">
                                     <h6 class="accordion-header">Section 1</h6>
                                     <div class="accordion-content">
@@ -653,18 +716,163 @@
                         </tr>
                     </tbody>
                 </table>
-
-                <table id="etc">
+                <table id="progress">
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                    </colgroup>
                     <tbody>
                         <tr>
                             <td>
+                                <h4>Progress</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="product-detail-review-rating">
+                                    <progress id="file" value="32" max="100"></progress>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="progress-group">
+                                    <progress id="file" value="32" max="100"></progress>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="circle success">
+                                    <div class="inner-circle">
+                                        <span>40%</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="circle info">
+                                    <div class="inner-circle">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="circle warning">
+                                    <div class="inner-circle">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+                <table id="toggle">
+                    <colgroup>
+                        <col style="width: 10%;">
+                        <col style="width: 10%;">
+                        <col style="width: auto">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h4>Toggle</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="toggle-group">
+                                    <label class="toggle">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="toggle-group type2">
+                                    <label class="toggle">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="etc">
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h4>ETC</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
                                 <div class="detail-etc">
-                                    <button type="button" class="btn-pink-heart"><i class="ico i-heart-pink"></i>109</button>
+                                    <button type="button" class="btn-pink-heart"><i
+                                            class="ico i-heart-pink"></i>109</button>
                                     <button type="button" class="btn-heart"><i class="ico i-heart-blue"></i></button>
                                     <button type="button" class="btn-share open-modal" data-modal-id="shareModal"><i
                                             class="ico i-share-blue"></i></button>
                                 </div>
                             </td>
+                            <td>
+                                <div class="expert-profile">
+                                    <div class="expert-profile-img-area">
+                                        <div class="expert-profile-img"
+                                            style="background: url(img/sample/sample-02.png); background-size: cover;">
+                                        </div>
+                                        <div class="expert-rating new">NEW</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="expert-profile">
+                                    <div class="expert-profile-img-area">
+                                        <div class="expert-profile-img"
+                                            style="background: url(img/sample/sample-02.png); background-size: cover;">
+                                        </div>
+                                        <div class="expert-rating one">Level<br>one</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="expert-profile">
+                                    <div class="expert-profile-img-area">
+                                        <div class="expert-profile-img"
+                                            style="background: url(img/sample/sample-02.png); background-size: cover;">
+                                        </div>
+                                        <div class="expert-rating two">Level<br>two</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="expert-profile">
+                                    <div class="expert-profile-img-area">
+                                        <div class="expert-profile-img"
+                                            style="background: url(img/sample/sample-02.png); background-size: cover;">
+                                        </div>
+                                        <div class="expert-rating top">TOP</div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <div class="rating-group">
+                                <span class="star" data-rating="1"></span>
+                                <span class="star" data-rating="2"></span>
+                                <span class="star" data-rating="3"></span>
+                                <span class="star" data-rating="4"></span>
+                                <span class="star" data-rating="5"></span>
+                            </div>
                         </tr>
                     </tbody>
                 </table>

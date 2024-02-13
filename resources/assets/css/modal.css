@@ -248,3 +248,47 @@
     font-weight: 400;
     margin: 8px 0 0 0;
 }
+
+/* order modal */
+.order-modal .gt-modal-content {
+    width: 560px;
+}
+
+.order-modal .gt-modal-body {
+    padding: 40px 0;
+}
+
+.order-modal .gt-modal-body h1 {
+    color: var(--gt-gray-01);
+    font-size: 24px;
+    margin: 0 0 32px 0;
+}
+
+.order-modal .order-input-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 0 24px 0;
+}
+
+.order-input-wrap .check-group {
+    margin: 8px 0 0 0;
+}
+
+.order-modal .btn-group {
+    justify-content: center;
+}
+
+/* 별점 */
+.review-score-area {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 0 40px 0;
+}
+.review-score-area h6 {
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-lg);
+    font-weight: 400;
+    text-align: left;
+}

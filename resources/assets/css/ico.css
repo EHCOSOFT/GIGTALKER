@@ -251,3 +251,15 @@
     height: 20px;
     width: 20px;
 }
+
+.i-arrow-right-sky {
+    background: url(../img/ico/i-arrow-right-sky.png);
+    height: 12px;
+    width: 12px;
+}
+
+.i-review-none {
+    background: url(../img/ico/i-review-none.png);
+    height: 48px;
+    width: 48px;
+}
