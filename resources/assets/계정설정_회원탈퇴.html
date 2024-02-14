@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header" id="header"></div>
+
+        <div class="content account-set-wrap">
+            <div class="container">
+                <aside class="sc-sidebar">
+                    <h4>계정 설정</h4>
+                    <ul class="sc-menu">
+                        <li><a href="#">내 정보 수정</a></li>
+                        <li><a href="#">비밀번호 변경</a></li>
+                        <li><a href="#">알림 설정</a></li>
+                        <li class="active"><a href="#">회원 탈퇴</a></li>
+                    </ul>
+                </aside>
+
+                <div class="acset-content">
+                    <h1>회원 탈퇴</h1>
+                    <div class="ac-box">
+                        <h3>긱톡커를 떠나는 이유를 알려주세요.</h3>
+                        <div class="radio-wrap">
+                            <div class="radio-group">
+                                <input type="radio" id="radio01" name="secessionReason">
+                                <label for="radio01">이용하고 싶은 서비스가 없어요</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="radio02" name="secessionReason">
+                                <label for="radio02">서비스 퀄리티가 낮아요</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="radio03" name="secessionReason">
+                                <label for="radio03">비매너 회원을 만났어요</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="radio04" name="secessionReason">
+                                <label for="radio04">잦은 오류가 발생해요</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="radio05" name="secessionReason">
+                                <label for="radio05">대체할 만한 서비스를 찾았어요</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="radio06" name="secessionReason">
+                                <label for="radio06">쿠폰 적립금 등 혜택이 적어요</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="radio07" name="secessionReason">
+                                <label for="radio07">기타</label>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="">이메일 확인</label>
+                            <input type="text" id="text01" placeholder="이메일을 입력해주세요">
+                        </div>
+                        <ul class="secession-info">
+                            <li>현재 사용중인 계정 정보는 회원 탈퇴 후 복구가 불가합니다.</li>
+                            <li>진행 중인 거래건이 있거나 페널티 조치 중인 경우 탈퇴 신청이 불가합니다.</li>
+                            <li>탈퇴 후 회원님의 정보는 전자상거래 소비자보호법에 의거한 글로수 개인정보처리방침에 따라 관리됩니다.</li>
+                            <li>현재 보유 중인 쿠폰 및 무상지급된 캐시와 비즈머니는 모두 자동 소멸되며, 탈퇴 후 재가입하더라도 이미 소멸되었기 때문에 양도되지 않습니다.</li>
+                            <li>구매후기 및 답글은 탈퇴 시 자동 삭제되지 않습니다. 탈퇴 후에는 계정 정보가 삭제되어 본인 확인이 불가하므로, 탈퇴 신청 전에 게시글 삭제를 요청해 주시기 바랍니다.</li>
+                            <li>충전 캐시, 충전 비즈머니 또는 수익금이 있을 경우, 캐시 환불, 비즈머니 환불 및 수익금 출금을 통해 정산이 완료된 이후 탈퇴를 신청하셔야 합니다.   </li>
+                            <li>* 무상으로 지급된 캐시는 탈퇴와 함께 자동 소멸됩니다.</li>
+                        </ul>
+                        <div class="btn-group">
+                            <div class="check-group type2">
+                                <input type="checkbox" id="chk00">
+                                <label for="chk00">주의사항을 모두 확인하였습니다.</label>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-md">회원탈퇴</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- S : FOOTER -->
+        <footer class="footer" id="footer"></footer>
+        <!-- E : FOOTER -->
+    </div>
+
+    <!-- S : languageModal :: 언어설정 -->
+    <div id="languageModal" class="gt-modal-wrap language-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : languageModal -->
+
+    <!-- S : alarmAllDelModal :: 알림 전체삭제 -->
+    <div id="alarmAllDelModal" class="gt-modal-wrap alert-modal alarm-all-del-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : alarmAllDelModal -->
+
+    <!-- S : shareModal :: 공유하기 -->
+    <div id="shareModal" class="gt-modal-wrap content-modal share-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : shareModal -->
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>

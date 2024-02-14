@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header-top type2">
+                <div class="container">
+                    <a href="메인.html" class="header-logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="input-search">
+                        <input type="text" placeholder="어떤 전문가를 찾으시나요?">
+                        <button type="submit">
+                            <i class="ico i-search-p"></i>
+                        </button>
+                    </div>
+                    <ul class="header-top-right">
+                        <li class="on"><button type="button" class="btn-alarm"><i class="ico i-alarm"></i></button>
+                            <div class="alarm-wrap">
+                                <div class="alarm-top">
+                                    <h6>알림</h6>
+                                    <ul>
+                                        <li class="open-modal" data-modal-id="alarmAllDelModal"><i
+                                                class="ico i-trash"></i></li>
+                                        <li><i class="ico i-set"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="alarm-body">
+                                    <div class="alarm-item">
+                                        <p>오늘</p>
+                                        <ul>
+                                            <li>
+                                                <div class="alarm-area">
+                                                    <img src="img/sample/sample-02.png" alt="">
+                                                    <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
+                                                        있습니다.<br><span>2023.11.16. 13:00</span></h3>
+                                                    <button type="button" class="btn-alarm-close"></button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="alarm-item">
+                                        <p>이전</p>
+                                        <ul>
+                                            <li>
+                                                <div class="alarm-area">
+                                                    <img src="img/sample/sample-02.png" alt="">
+                                                    <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
+                                                        있습니다.<br><span>2023.11.16. 13:00</span></h3>
+                                                    <button type="button" class="btn-alarm-close"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="alarm-area">
+                                                    <img src="img/sample/sample-02.png" alt="">
+                                                    <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
+                                                        있습니다.<br><span>2023.11.16. 13:00</span></h3>
+                                                    <button type="button" class="btn-alarm-close"></button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="on"><a href="#"><i class="ico i-chat"></i></a></li>
+                        <li class="on"><a href="#"><i class="ico i-heart"></i></a></li>
+                        <li class="language open-modal" data-modal-id="languageModal"><i class="ico i-language"></i>한국어
+                        </li>
+                        <li class="on"><a href="#"><b>구매관리</b></a></li>
+                        <li>
+                            <div class="dropdown-group">
+                                <div class="dropdown-list-wrap header-user">
+                                    <button class="dropdown-button" data-target="headerUserMenu">
+                                        <!-- on and off -->
+                                        <span href="#" class="user md off">
+                                            <img src="img/sample/sample-02.png" alt="">
+                                        </span>
+                                    </button>
+                                    <ul id="headerUserMenu" class="dropdown-list">
+                                        <li><a href="#">프로필 관리</a></li>
+                                        <li><a href="#">계정정보</a></li>
+                                        <li><a href="#">구매관리</a></li>
+                                        <li><a href="#">마이페이지</a></li>
+                                        <hr>
+                                        <li><a href="#">전문가센터</a></li>
+                                        <li><a href="#">판매관리</a></li>
+                                        <li><a href="#"><i class="ico i-logout"></i>로그아웃</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="chat-content">
+                <div class="container">
+                    <div class="chat-sidebar">
+                        <div class="chat-side-top">
+                            <div class="dropdown-group">
+                                <div class="dropdown-list-wrap">
+                                    <button class="dropdown-button" data-target="drop01">
+                                        <span class="placeholder">안읽은 메세지</span>
+                                    </button>
+                                    <ul id="drop01" class="dropdown-list" style="display: none;">
+                                        <li class="active">전체 메세지</li>
+                                        <li>안읽은 메세지</li>
+                                        <li>거래중</li>
+                                        <li>즐겨찾기</li>
+                                        <li>가격제안</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="chat-search"><i class="ico i-search"></i></button>
+                        </div>
+                        <ul class="chat-side-list">
+                            <li class="chat-side-item">
+                                <div class="chat-profile-img" style="background: url(img/sample/sample-02.png); background-size: cover;"><span class="on"></span></div>
+                                <div class="chat-side-text">
+                                    <h6>아츠달 스튜디오<span>23.11.20</span></h6>
+                                    <p><span>안녕하세요 문의드립니다. 안녕하세요 문의드립니다.</span><button type="button" class="btn-bookmark active"><i class="ico i-star"></i></button></p>
+                                </div>
+                            </li>
+                            <li class="chat-side-item">
+                                <div class="chat-profile-img" style="background: url(img/sample/sample-02.png); background-size: cover;"><span class=""></span></div>
+                                <div class="chat-side-text">
+                                    <h6>아츠달 스튜디오<span>23.11.20</span></h6>
+                                    <p><span>안녕하세요 문의드립니다. 안녕하세요 문의드립니다.</span><button type="button" class="btn-bookmark"><i class="ico i-star"></i></button></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chat-search-area">
+                        <div class="input-group mn">
+                            <input type="text" id="text02" placeholder="검색어를 입력해주세요">
+                        </div>
+                        <button class="chat-search-close">닫기</button>
+                    </div>
+                    <div class="chat-none">
+                        <img src="img/ico/chat-img-01.png" alt="">
+                        <h5>중단한 부분부터 다시 시작할수 있습니다.</h5>
+                        <p>대화를 선택하고 채팅을 시작하세요</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- S : languageModal :: 언어설정 -->
+    <div id="languageModal" class="gt-modal-wrap language-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : languageModal -->
+
+    <!-- S : alarmAllDelModal :: 알림 전체삭제 -->
+    <div id="alarmAllDelModal" class="gt-modal-wrap alert-modal alarm-all-del-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : alarmAllDelModal -->
+
+    <!-- S : shareModal :: 공유하기 -->
+    <div id="shareModal" class="gt-modal-wrap content-modal share-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : shareModal -->
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>
