@@ -1033,6 +1033,10 @@ h3.title {
     font-size: var(--gt-text-sm);
 }
 
+.check-group label span.red {
+    color: var(--gt-error);
+}
+
 .check-group label::before {
     background: url(../img/ico/i-checkbox.png);
     background-size: cover;
@@ -1080,6 +1084,12 @@ h3.title {
 .check-group input[type=checkbox]:checked:disabled+label::before {
     background: url(../img/ico/i-checkbox-disabled.png);
     background-size: cover;
+}
+
+.check-group a {
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-sm);
+    margin: 0 0 0 auto;
 }
 
 .check-group.type2 label {
@@ -1372,6 +1382,20 @@ h3.title {
     font-size: var(--gt-text-md);
 }
 
+/* md */
+.text-group.md textarea {
+    height: 180px;
+    padding: 12px;
+}
+
+.text-group.md textarea::placeholder {
+    color: #cccccc;
+}
+
+.text-group.md label {
+    font-size: var(--gt-text-md);
+}
+
 /* input date */
 .date-group {
     display: flex;
@@ -1456,41 +1480,26 @@ h3.title {
 }
 
 /* input file */
-.file-group {
+
+/* input file img */
+.file-img-group {
+    align-items: center;
+    background: #D9D9D9;
+    background-size: cover;
+    border-radius: 100px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    height: 144px;
+    width: 144px;
 }
 
-.file-group h2 {
-    color: var(--gt-black-01);
-    font-size: var(--gt-text-lg);
-    font-weight: 400;
-    flex: 0 0 auto;
-}
-
-.file-group input[type=file] {
+.file-img-group input {
     display: none;
 }
 
-.file-group label {
-    align-items: center;
-    background: #fafafa;
-    border-radius: 6px;
-    border: 1px solid var(--gt-gray-05);
-    color: #74767C;
-    font-size: 13px;
-    font-weight: 400;
-    display: flex;
-    height: 55px;
-    padding: 0 16px;
-    max-width: 400px;
-}
-
-.file-group span {
-    color: #8437DD;
-    font-size: 13px;
-    font-weight: 400;
-    margin: 0 4px 0 0;
+.file-img-group button {
+    background: none;
+    border: 0;
 }
 
 /* dropdown-group */
@@ -1514,13 +1523,13 @@ h3.title {
 
 .dropdown-group .dropdown-list-wrap .dropdown-button {
     background: var(--gt-write);
-    border: 1px solid #ECECEC;
-    border-radius: 10px;
-    color: var(--gt-gray-01);
+    border: 1px solid var(--gt-gray-05);
+    border-radius: 6px;
+    color: var(--gt-black-03);
     font-size: var(--gt-text-sm);
     font-weight: 400;
     justify-content: flex-start;
-    height: 48px;
+    height: 40px;
     padding: 0 16px;
     position: relative;
     width: 100%;
@@ -1528,7 +1537,7 @@ h3.title {
 
 .dropdown-group .dropdown-list-wrap .dropdown-button .placeholder {
     background: none;
-    color: #B0B0B7;
+    color: var(--gt-black-03);
     font-size: 14px;
     opacity: 1;
 }
@@ -1563,12 +1572,10 @@ h3.title {
 .dropdown-group .dropdown-list-wrap .dropdown-list {
     background: #fff;
     border: 0;
-    border-radius: 4px;
     box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.20);
     display: none;
     margin: 4px 0 0 0;
     position: absolute;
-    padding: 4px;
     width: 100%;
     z-index: 99;
 }
@@ -1581,10 +1588,25 @@ h3.title {
     display: flex;
     font-size: 14px;
     font-weight: 400;
-    height: 32px;
-    padding: 0 16px;
+    height: 40px;
+    padding: 0 16px 0 46px;
+    position: relative;
 }
 
+.dropdown-group .dropdown-list-wrap .dropdown-list li.active {
+    background: var(--gt-gray-07);
+}
+
+.dropdown-group .dropdown-list-wrap .dropdown-list li.active::before {
+    background: url(../img/ico/i-check-g.png);
+    background-size: cover;
+    content: '';
+    display: inline-block;
+    height: 20px;
+    position: absolute;
+    left: 12px;
+    width: 20px;
+}
 /* **************************************** *
  * tab
  * **************************************** */
@@ -1653,6 +1675,45 @@ h3.title {
     background: var(--gt-primary-bg);
     border-color: #D5B4FF;
     color: var(--gt-secondary);
+}
+
+.default-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.default-tabs .tab-list {
+    border-bottom: 1px solid #999999;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.default-tabs .tab-button {
+    align-items: center;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid var(--gt-write);
+    color: var(--gt-gray-03);
+    cursor: pointer;
+    font-size: var(--gt-text-md);
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    height: 36px;
+    width: 90px;
+}
+
+.default-tabs .tab-button.active {
+    border-bottom: 2px solid var(--gt-black-01);
+    color: var(--gt-black-03);
+    font-weight: bold;
+
+}
+
+.default-tabs .tab-content {
+    display: none;
 }
 
 /* **************************************** *

@@ -22,6 +22,8 @@
  * 07) 상세페이지
  * 08) 전문가센터
  * 09) 마이페이지
+ * 10) 전문가등록
+ * 11) 계정설정
  */
 
 /* **************************************** *
@@ -2848,6 +2850,179 @@
     width: 98px;
 }
 
+/* 수익금 관리 */
+.ec-proceeds-set h1 {
+    color: var(--gt-gray-01);
+    font-size: 24px;
+    margin: 0 0 16px 0;
+}
+
+.ec-proceeds-top {
+    align-items: center;
+    border-top: 1px solid var(--gt-gray-04);
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.ec-proceeds-top ul {
+    display: flex;
+}
+
+.ec-proceeds-top ul li {
+    align-items: center;
+    color: var(--gt-black-01);
+    display: flex;
+    font-size: var(--gt-text-lg);
+}
+
+.ec-proceeds-top ul li::after {
+    content: 'ㅣ';
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.ec-proceeds-top ul li:last-child::after {
+    display: none;
+}
+
+.ec-proceeds-top a {
+    color: #8437DD;
+    font-size: var(--gt-text-sm);
+    text-decoration: underline;
+}
+
+.ec-proceeds-all {
+    align-items: center;
+    border: 3px solid #BBC3D9;
+    display: flex;
+    justify-content: center;
+    padding: 28px 0;
+}
+
+.ec-proceeds-all p {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-lg);
+}
+
+.ec-proceeds-all p span {
+    color: var(--gt-black-01);
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 0 8px;
+}
+
+.ec-proceeds-list {
+    display: flex;
+    gap: 12px;
+    margin: 12px 0 0 0;
+}
+
+.ec-proceeds-list li {
+    width: calc(25% - 6px);
+}
+
+.proceeds-item {
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px 16px 16px 16px;
+}
+
+.proceeds-item p {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-sm);
+}
+
+.proceeds-item h6 {
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-lg);
+}
+
+.ec-proceeds-info {
+    align-items: flex-start;
+    color: #FF9659;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    list-style: disc;
+    margin: 12px 0 0 0;
+    padding: 0 0 0 20px;
+}
+
+.ec-proceeds-info li {
+    font-size: var(--gt-text-sm);
+    list-style: disc;
+}
+
+.ec-proceeds-info li span {
+    color: #666666;
+}
+
+.ec-proceeds-body {
+    margin: 20px 0 0 0;
+}
+
+.ec-proceeds-body .dropdown-group {
+    width: 160px;
+}
+
+.proceeds-table {
+    border: 1px solid #ECECEC;
+    margin: 16px 0 0 0;
+    width: 100%;
+}
+
+.proceeds-table tr th {
+    background: #E6E6E6;
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-mn);
+    font-weight: 400;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.proceeds-table tr td {
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-mn);
+    font-weight: 400;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.proceeds-table tr td:first-child {
+    color: var(--gt-gray-03);
+}
+
+.proceeds-table tr td.left {
+    text-align: left;
+}
+
+.proceeds-table tfoot {
+    background: #F8F8F8;
+    border-top: 1px solid #ECECEC;
+}
+
+.proceeds-table tfoot p {
+    color: var(--gt-black-01);
+    display: flex;
+    font-size: var(--gt-text-md);
+    font-weight: 500;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.revenue p {
+    background: #FFF0CA;
+    color: var(--gt-black-01);
+    display: flex;
+    font-size: var(--gt-text-lg);
+    font-weight: bold;
+    justify-content: space-between;
+    margin: 4px 0 0 0;
+    padding: 12px 20px;
+}
 
 /* **************************************** *
  * 마이페이지
@@ -3015,4 +3190,427 @@
 .mp-review-item-none p {
     color: var(--gt-gray-04);
     font-size: var(--gt-text-md);
+}
+
+/* **************************************** *
+ * 전문가등록
+ * **************************************** */
+.expert-register-wrap .container {
+    max-width: 1080px;
+}
+
+.expert-register-wrap .content {
+    padding: 60px 0;
+}
+
+.expert-register .row {
+    --bs-gutter-x: 40px;
+}
+
+.expert-register .expert-img-01 {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.expert-register h1 {
+    color: var(--gt-gray-01);
+    font-size: 24px;
+}
+
+.register-order {
+    margin: 28px 0 0 0;
+}
+
+.register-order li {
+    align-items: center;
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    gap: 24px;
+    padding: 16px 0;
+}
+
+.register-order li:first-child {
+    border-top: 1px solid #cccccc;
+}
+
+.register-order li span {
+    align-items: center;
+    background: var(--gt-black-01);
+    border-radius: 100px;
+    color: var(--gt-write);
+    display: flex;
+    flex: 0 0 auto;
+    font-size: var(--gt-text-lg);
+    font-weight: bold;
+    height: 48px;
+    justify-content: center;
+    width: 48px;
+}
+
+.order-text-area h6 {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-lg);
+}
+
+.order-text-area p {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-lg);
+}
+
+.expert-register .btn-group {
+    padding: 60px 0 0 0;
+}
+
+.expert-register .btn-group button {
+    font-size: var(--gt-text-lg);
+    font-weight: bold;
+    height: 55px;
+    width: 200px;
+}
+
+.expert-register .btn-primary {
+    margin: 0 0 0 auto;
+}
+
+/* 02 */
+.expert-register p {
+    align-items: center;
+    color: var(--gt-gray-01);
+    display: flex;
+    font-size: var(--gt-text-lg);
+    justify-content: space-between;
+    margin: 4px 0 0 0;
+}
+
+.expert-register p span b {
+    color: var(--gt-error);
+    margin: 0 0 0 2px;
+}
+
+.expert-method {
+    border-top: 1px solid #cccccc;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 20px 0 0 0;
+    padding: 40px 0 0 0;
+}
+
+.expert-method li {
+    width: calc(33.33% - 30px);
+}
+
+.expert-method li img {
+    width: 48px;
+}
+
+.expert-method li dl {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.expert-method li dd {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-md);
+}
+
+.expert-register .expert-img-02 {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* 전문가등록_프로필작성 01 */
+.expert-register-step {
+    border-bottom: 1px solid #cccccc;
+    padding: 12px 0;
+}
+
+.expert-register-step .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.expert-register-step ul {
+    display: flex;
+}
+
+.expert-register-step ul li {
+    align-items: center;
+    color: #999999;
+    font-size: var(--gt-text-sm);
+    font-weight: 500;
+    display: flex;
+    gap: 8px;
+}
+
+.expert-register-step ul li::after {
+    background: url(../img/ico/i-arrow-right-g.png);
+    background-size: cover;
+    content: '';
+    display: inline-block;
+    height: 16px;
+    margin: 0 20px;
+    width: 16px;
+}
+
+.expert-register-step ul li:last-child::after {
+    display: none;
+}
+
+.expert-register-step ul li span {
+    align-items: center;
+    border-radius: 100px;
+    background: #CCCCCC;
+    color: var(--gt-write);
+    font-size: var(--gt-text-sm);
+    font-weight: bold;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    width: 32px;
+}
+
+.expert-register-step ul li.active {
+    color: var(--gt-black-01);
+}
+
+.expert-register-step ul li.active span {
+    background: #8437DD;
+}
+
+.expert-register-step dl {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.expert-register-step dt {
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-sm);
+    text-align: center;
+}
+
+.expert-register-step .progress-group {
+    width: 112px;
+}
+
+.expert-register-step .progress-group progress {
+    height: 4px;
+}
+
+.expert-input-area {
+    border-top: 1px solid #cccccc;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    margin: 12px 0 0 0;
+    padding: 60px 0 0 0;
+}
+
+.expert-input-area h6 {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-lg);
+    font-weight: 500;
+}
+
+.expert-input-area h6 span {
+    color: var(--gt-error);
+}
+
+.expert-input-area p {
+    color: #666666;
+    font-size: var(--gt-text-md);
+}
+
+.language-group {
+    display: flex;
+    gap: 4px;
+}
+
+.language-group button {
+    flex: 0 0 auto;
+    width: 98px;
+}
+
+.language-group .select-group {
+    width: 100%;
+}
+
+.language-list {
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    margin: 12px 0 0 0;
+}
+
+.language-list li {
+    border-bottom: 1px solid #cccccc;
+}
+
+.language-list li:last-child {
+    border: 0;
+}
+
+.language-item {
+    font-size: var(--gt-text-sm);
+    display: flex;
+    padding: 8px 24px;
+}
+
+.language-item span:nth-child(1),
+.language-item span:nth-child(2) {
+    width: 45%;
+}
+
+.language-item span:last-child {
+    cursor: pointer;
+    margin: 0 0 0 auto;
+}
+
+/* 전문가등록_프로필작성 02 */
+.specialty-field-area {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.specialty-field {
+    display: flex;
+    gap: 12px;
+}
+
+.specialty-field .select-group:first-child {
+    width: 100%;
+}
+
+.specialty-field .select-group:last-child {
+    flex: 0 0 auto;
+    width: 168px;
+}
+
+.specialty-field .select-group select {
+    background-position: right 16px center;
+}
+
+.specialty-field-area p {
+    color: #74767C;
+    font-size: var(--gt-text-sm);
+}
+
+.specialty-field-check {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px
+}
+
+.specialty-field-check li {
+    width: calc(50% - 6px);
+}
+
+.specialty-catagory {
+    display: flex;
+    gap: 4px;
+}
+
+.specialty-catagory .input-group input {
+    font-size: var(--gt-text-md) !important;
+    height: 50px !important;
+}
+
+.specialty-catagory .select-group {
+    flex: 0 0 auto;
+    width: 148px;
+}
+
+.specialty-catagory button {
+    flex: 0 0 auto;
+    width: 98px;
+}
+
+.ed-group {
+    display: flex;
+    gap: 4px;
+}
+
+.ed-group .input-group input {
+    font-size: var(--gt-text-md) !important;
+    height: 50px !important;
+}
+
+.ed-group button {
+    flex: 0 0 auto;
+    width: 98px;
+}
+
+/* **************************************** *
+ * 계정설정
+ * **************************************** */
+.account-set-wrap {
+    padding: 50px 0 100px 0;
+}
+
+.account-set-wrap .container {
+    display: flex;
+    gap: 60px;
+}
+
+.acset-content {
+    width: calc(100% - 340px);
+}
+
+.acset-content h1 {
+    border: 0;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+}
+
+.acset-content h1 span {
+    font-size: var(--gt-text-lg);
+}
+
+.acset-content h1 span a {
+    color: #8437DD;
+    text-decoration: underline;
+}
+
+.my-info-edit {
+    border: 1px solid #cccccc;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 12px 0 0 0;
+    padding: 40px;
+}
+
+.my-info-edit .input-group {
+    align-items: center;
+    flex-direction: row;
+}
+
+.my-info-edit .input-group label {
+    font-size: var(--gt-text-lg) !important;
+    flex: 0 0 auto;
+    width: 260px;
+}
+
+.my-info-edit .input-area {
+    width: 100%;
+}
+
+.my-info-edit .input-group button {
+    height: 40px;
+}
+
+.my-info-edit .btn-group {
+    justify-content: flex-end;
+}
+
+.my-info-edit .btn-group button {
+    font-size: var(--gt-text-lg);
+    height: 40px;
+    width: 200px;
 }
