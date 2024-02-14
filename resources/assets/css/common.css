@@ -1607,6 +1607,7 @@ h3.title {
     left: 12px;
     width: 20px;
 }
+
 /* **************************************** *
  * tab
  * **************************************** */
@@ -2423,6 +2424,11 @@ h3.title {
 }
 
 /* toggle */
+.toggle-group {
+    display: flex;
+    width: 78px;
+}
+
 .toggle-group .toggle {
     display: inline-block;
     height: 28px;

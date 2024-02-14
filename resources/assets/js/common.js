@@ -654,6 +654,20 @@ $(document).ready(function () {
       reader.readAsDataURL(file);
     }
   });
+
+  // 채팅
+  // 채팅 사이드바 검색
+  // 채팅 검색 버튼 클릭 시
+  $(".chat-search").click(function () {
+    $(".chat-sidebar").hide(); // 채팅 사이드바 숨기기
+    $(".chat-search-area").css("display", "flex"); // 채팅 검색 영역을 flex로 설정하여 표시
+  });
+
+  // 채팅 검색 닫기 버튼 클릭 시
+  $(".chat-search-close").click(function () {
+    $(".chat-sidebar").show(); // 채팅 사이드바 표시
+    $(".chat-search-area").hide(); // 채팅 검색 영역 숨기기
+  });
 });
 
 // 모달 애니메이션 이벤트
