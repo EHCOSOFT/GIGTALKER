@@ -263,3 +263,15 @@
     height: 48px;
     width: 48px;
 }
+
+.i-camera {
+    background: url(../img/ico/i-camera.png);
+    height: 32px;
+    width: 32px;
+}
+
+.i-language-close {
+    background: url(../img/ico/i-language-close.png);
+    height: 12px;
+    width: 12px;
+}
