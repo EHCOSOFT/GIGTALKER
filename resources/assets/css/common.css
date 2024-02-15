@@ -422,6 +422,14 @@ h6,
     margin-bottom: 0 !important;
 }
 
+.m-none {
+    margin: 0 !important;
+}
+
+.mb-33 {
+    margin-bottom: 132px !important;
+}
+
 /* **************************************** *
  * Button
  * **************************************** */
@@ -1278,6 +1286,7 @@ h3.title {
     border: 1px solid var(--gt-gray-05);
     border-radius: 6px;
     color: var(--gt-gray-01);
+    cursor: pointer;
     font-size: 14px;
     font-weight: 400;
     height: 50px;
@@ -2593,7 +2602,7 @@ h3.title {
 }
 
 .rating-group .star {
-    background: url(../img/ico/i-star.png);
+    background: url(../img/ico/i-star-active.png);
     background-size: cover;
     cursor: pointer;
     height: 18px;
@@ -2601,6 +2610,6 @@ h3.title {
 }
 
 .rating-group .star.active {
-    background: url(../img/ico/i-star-active.png);
+    background: url(../img/ico/i-star-active-active.png);
     background-size: cover;
 }
