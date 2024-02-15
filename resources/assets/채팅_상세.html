@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header-top type2">
+                <div class="container">
+                    <a href="메인.html" class="header-logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="input-search">
+                        <input type="text" placeholder="어떤 전문가를 찾으시나요?">
+                        <button type="submit">
+                            <i class="ico i-search-p"></i>
+                        </button>
+                    </div>
+                    <ul class="header-top-right">
+                        <li class="on"><button type="button" class="btn-alarm"><i class="ico i-alarm"></i></button>
+                            <div class="alarm-wrap">
+                                <div class="alarm-top">
+                                    <h6>알림</h6>
+                                    <ul>
+                                        <li class="open-modal" data-modal-id="alarmAllDelModal"><i
+                                                class="ico i-trash"></i></li>
+                                        <li><i class="ico i-set"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="alarm-body">
+                                    <div class="alarm-item">
+                                        <p>오늘</p>
+                                        <ul>
+                                            <li>
+                                                <div class="alarm-area">
+                                                    <img src="img/sample/sample-02.png" alt="">
+                                                    <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
+                                                        있습니다.<br><span>2023.11.16. 13:00</span></h3>
+                                                    <button type="button" class="btn-alarm-close"></button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="alarm-item">
+                                        <p>이전</p>
+                                        <ul>
+                                            <li>
+                                                <div class="alarm-area">
+                                                    <img src="img/sample/sample-02.png" alt="">
+                                                    <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
+                                                        있습니다.<br><span>2023.11.16. 13:00</span></h3>
+                                                    <button type="button" class="btn-alarm-close"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="alarm-area">
+                                                    <img src="img/sample/sample-02.png" alt="">
+                                                    <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
+                                                        있습니다.<br><span>2023.11.16. 13:00</span></h3>
+                                                    <button type="button" class="btn-alarm-close"></button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="on"><a href="#"><i class="ico i-chat"></i></a></li>
+                        <li class="on"><a href="#"><i class="ico i-heart"></i></a></li>
+                        <li class="language open-modal" data-modal-id="languageModal"><i class="ico i-language"></i>한국어
+                        </li>
+                        <li class="on"><a href="#"><b>구매관리</b></a></li>
+                        <li>
+                            <div class="dropdown-group">
+                                <div class="dropdown-list-wrap header-user">
+                                    <button class="dropdown-button" data-target="headerUserMenu">
+                                        <!-- on and off -->
+                                        <span href="#" class="user md off">
+                                            <img src="img/sample/sample-02.png" alt="">
+                                        </span>
+                                    </button>
+                                    <ul id="headerUserMenu" class="dropdown-list">
+                                        <li><a href="#">프로필 관리</a></li>
+                                        <li><a href="#">계정정보</a></li>
+                                        <li><a href="#">구매관리</a></li>
+                                        <li><a href="#">마이페이지</a></li>
+                                        <hr>
+                                        <li><a href="#">전문가센터</a></li>
+                                        <li><a href="#">판매관리</a></li>
+                                        <li><a href="#"><i class="ico i-logout"></i>로그아웃</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="chat-content">
+                <div class="container">
+                    <div class="chat-sidebar">
+                        <div class="chat-side-top">
+                            <div class="dropdown-group">
+                                <div class="dropdown-list-wrap">
+                                    <button class="dropdown-button" data-target="drop01">
+                                        <span class="placeholder">안읽은 메세지</span>
+                                    </button>
+                                    <ul id="drop01" class="dropdown-list" style="display: none;">
+                                        <li class="active">전체 메세지</li>
+                                        <li>안읽은 메세지</li>
+                                        <li>거래중</li>
+                                        <li>즐겨찾기</li>
+                                        <li>가격제안</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="chat-search"><i class="ico i-search"></i></button>
+                        </div>
+                        <ul class="chat-side-list">
+                            <li class="chat-side-item active">
+                                <div class="chat-profile-img"
+                                    style="background: url(img/sample/sample-02.png); background-size: cover;"><span
+                                        class="on"></span></div>
+                                <div class="chat-side-text">
+                                    <h6>아츠달 스튜디오<span>23.11.20</span></h6>
+                                    <p><span>안녕하세요 문의드립니다. 안녕하세요 문의드립니다.</span><button type="button"
+                                            class="btn-bookmark active"><i class="ico i-star-active"></i></button></p>
+                                </div>
+                            </li>
+                            <li class="chat-side-item">
+                                <div class="chat-profile-img"
+                                    style="background: url(img/sample/sample-02.png); background-size: cover;"><span
+                                        class=""></span></div>
+                                <div class="chat-side-text">
+                                    <h6>아츠달 스튜디오<span>23.11.20</span></h6>
+                                    <p><span>안녕하세요 문의드립니다. 안녕하세요 문의드립니다.</span><button type="button"
+                                            class="btn-bookmark"><i class="ico i-star-active"></i></button></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chat-search-area">
+                        <div class="input-group mn">
+                            <input type="text" id="text02" placeholder="검색어를 입력해주세요">
+                        </div>
+                        <button class="chat-search-close">닫기</button>
+                    </div>
+                    <div class="chat">
+                        <div class="chat-top">
+                            <h6>아츠달 스튜디오<br><span>Last view : 2023.12.34 34:00</span></h6>
+                            <div class="btn-group">
+                                <button type="button" class="open-modal" data-modal-id="autoTranslationModal"><i
+                                        class="ico i-auto-translation"></i>자동번역</button>
+                                <button type="button" class="open-modal" data-modal-id="chatWarningModal"><i
+                                        class="ico i-trash"></i></button>
+                                <button type="button" class="open-modal" data-modal-id="chatDecModal"><i
+                                        class="ico i-dec"></i></button>
+                            </div>
+                        </div>
+                        <div class="chat-list">
+                            <div class="chat-list-top">
+                                <h6><i class="ico i-safe-payment"></i>주한 안심결제로 안심하고 거래하세요</h6>
+                                <p>추가 안전과 보호를 위해 주한내에서 결제와 대화를 유지하세요.</p>
+                            </div>
+                            <div class="chat-list-area">
+                                <ul>
+                                    <li>
+                                        <div class="chat-list-item">
+                                            <div class="user-profile-text">T</div>
+                                            <div class="user-text">
+                                                <h6>나<span>2023년 9월 15일, 16:48</span></h6>
+                                                <p>您好，我有个疑问吗?</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="chat-list-item">
+                                            <div class="user-profile-img"
+                                                style="background: url(img/sample/sample-02.png); background-size: cover;">
+                                            </div>
+                                            <div class="user-text">
+                                                <h6>아츠달 스튜디오<span>2023년 9월 15일, 16:48</span></h6>
+                                                <p>제가 중국어를 잘 몰라서 번역기능을 설정해야 할거 같습니다.<br>
+                                                    상단에 통역 버튼을 클릭해서 상대방 언어를 한국어로 설정해주세요</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="chat-list-item">
+                                            <div class="user-profile-text">T</div>
+                                            <div class="user-text">
+                                                <h6>나<span>2023년 9월 15일, 16:48</span></h6>
+                                                <p>嗯，知道了。 </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="chat-list-item">
+                                            <div class="user-profile-img"
+                                                style="background: url(img/sample/sample-02.png); background-size: cover;">
+                                            </div>
+                                            <div class="user-text">
+                                                <h6>아츠달 스튜디오<span>2023년 9월 15일, 16:48</span></h6>
+                                                <p>번역은 잘 되시나요? </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="chat-list-item">
+                                            <div class="user-profile-text">T</div>
+                                            <div class="user-text">
+                                                <h6>나<span>2023년 9월 15일, 16:48</span></h6>
+                                                <p>好的，谢谢你。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="chat-list-item">
+                                            <div class="user-profile-text">T</div>
+                                            <div class="user-text">
+                                                <h6>나<span>2023년 9월 15일, 16:48</span></h6>
+                                                <p>好的，谢谢你。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="chat-list-item">
+                                            <div class="user-profile-text">T</div>
+                                            <div class="user-text">
+                                                <h6>나<span>2023년 9월 15일, 16:48</span></h6>
+                                                <p>好的，谢谢你。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="chat-list-item">
+                                            <div class="user-profile-text">T</div>
+                                            <div class="user-text">
+                                                <h6>나<span>2023년 9월 15일, 16:48</span></h6>
+                                                <p>好的，谢谢你。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="chat-list-item">
+                                            <div class="user-profile-text">T</div>
+                                            <div class="user-text">
+                                                <h6>나<span>2023년 9월 15일, 16:48</span></h6>
+                                                <p>好的，谢谢你。</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chat-write">
+                            <div class="input-group sm">
+                                <input type="text" placeholder="메세지를 입력하세요 ( enter 줄바꿈 ) ">
+                            </div>
+                            <div class="chat-write-bot">
+                                <div class="btn-group">
+                                    <button type="button"><i class="ico i-emoticon"></i></button>
+                                    <button type="button"><i class="ico i-file"></i></button>
+                                </div>
+                                <button type="button" class="btn-send"><i class="ico i-send"></i>전송</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-info">
+                        <div class="chat-info-top">
+                            <div class="chat-profile-img"
+                                style="background: url(img/sample/sample-02.png); background-size: cover;"><span
+                                    class="on"></span></div>
+                            <h6>아츠달 스튜디오</h6>
+                            <div class="export-info">
+                                <dl>
+                                    <dt>거주지</dt>
+                                    <dd>대한민국</dd>
+                                </dl>
+                                <dl>
+                                    <dt>가입일</dt>
+                                    <dd>2023.11.30</dd>
+                                </dl>
+                                <dl>
+                                    <dt>중국어</dt>
+                                    <dd>유창한</dd>
+                                </dl>
+                                <dl>
+                                    <dt>평균응답시간</dt>
+                                    <dd>1시간</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="export-service">
+                            <h6>관련서비스 <a href="#">더보기 ></a></h6>
+                            <ul>
+                                <li>
+                                    <div class="export-service-item">
+                                        <div class="export-service-item-top">
+                                            <div class="export-service-item-img"
+                                                style="background: url(img/sample/sample-01.png); background-size: cover;">
+                                            </div>
+                                            <div class="export-service-item-text">
+                                                <h6>한국어, 중국어 번역,
+                                                    교정, 편집dddddddddddd</h6>
+                                                <p>아츠 스튜디오</p>
+                                            </div>
+                                        </div>
+                                        <div class="exprot-service-item-price">
+                                            <span><i class="ico i-star-active-active"></i>4.8<b>(268)</b></span>
+                                            <p>4,000원~</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="export-service-item">
+                                        <div class="export-service-item-top">
+                                            <div class="export-service-item-img"
+                                                style="background: url(img/sample/sample-01.png); background-size: cover;">
+                                            </div>
+                                            <div class="export-service-item-text">
+                                                <h6>한국어, 중국어 번역,
+                                                    교정, 편집dddddddddddd</h6>
+                                                <p>아츠 스튜디오</p>
+                                            </div>
+                                        </div>
+                                        <div class="exprot-service-item-price">
+                                            <span><i class="ico i-star-active-active"></i>4.8<b>(268)</b></span>
+                                            <p>4,000원~</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="export-service-item">
+                                        <div class="export-service-item-top">
+                                            <div class="export-service-item-img"
+                                                style="background: url(img/sample/sample-01.png); background-size: cover;">
+                                            </div>
+                                            <div class="export-service-item-text">
+                                                <h6>한국어, 중국어 번역,
+                                                    교정, 편집dddddddddddd</h6>
+                                                <p>아츠 스튜디오</p>
+                                            </div>
+                                        </div>
+                                        <div class="exprot-service-item-price">
+                                            <span><i class="ico i-star-active-active"></i>4.8<b>(268)</b></span>
+                                            <p>4,000원~</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- S : languageModal :: 언어설정 -->
+    <div id="languageModal" class="gt-modal-wrap language-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : languageModal -->
+
+    <!-- S : alarmAllDelModal :: 알림 전체삭제 -->
+    <div id="alarmAllDelModal" class="gt-modal-wrap alert-modal alarm-all-del-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : alarmAllDelModal -->
+
+    <!-- S : autoTranslationModal :: 자동번역 -->
+    <div id="autoTranslationModal" class="gt-modal-wrap auto-translation-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+                <div class="gt-modal-body">
+                    <div class="check-group type2">
+                        <input type="checkbox" id="chk00">
+                        <label for="chk00">자동번역사용</label>
+                    </div>
+                    <p>내가 사용할 언어와 나와 대화할 상대방 언어를 확인후 선택한후 확인을 눌러주세요</p>
+                    <dl>
+                        <dd>
+                            <div class="select-group sm">
+                                <select name="" id="">
+                                    <option value="내 언어 선택" selected="selected">내 언어 선택</option>
+                                    <option value="한국어">한국어</option>
+                                    <option value="한국어">한국어</option>
+                                    <option value="한국어">한국어</option>
+                                    <option value="한국어">한국어</option>
+                                </select>
+                            </div>
+                        </dd>
+                        <dd><i class="ico i-language-change"></i></dd>
+                        <dd>
+                            <div class="select-group sm">
+                                <select name="" id="">
+                                    <option value="상대방 언어 선택" selected="selected">상대방 언어 선택</option>
+                                    <option value="한국어">한국어</option>
+                                    <option value="한국어">한국어</option>
+                                    <option value="한국어">한국어</option>
+                                    <option value="한국어">한국어</option>
+                                </select>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-primary">확인</button>
+                        <button type="button" class="btn btn-sm btn-outline-gray btn-modal-close">취소</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : autoTranslationModal -->
+
+    <!-- S : chatWarningModal :: 대화방나가기 -->
+    <div id="chatWarningModal" class="gt-modal-wrap complete-modal chat-warning-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+                <div class="gt-modal-body">
+                    <img class="ico-complete" src="img/ico/i-complete-warning.png" alt="">
+                    <h1>대화방 나가기</h1>
+                    <p>대화방을 나가면 메시지 목록에서 사라져요<br>
+                        같은 상대와 다시 대화를 시작하면 지난 메시지를 확인할 수 있어요.</p>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-lg btn-primary btn-modal-close">나가기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : chatWarningModal -->
+
+    <!-- S : chatDecModal :: 신고하기 -->
+    <div id="chatDecModal" class="gt-modal-wrap complete-modal chat-warning-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+                <div class="gt-modal-body">
+                    <img class="ico-complete" src="img/ico/i-complete-dec.png" alt="">
+                    <h1>신고하기</h1>
+                    <p>대화하는 동안 비매너 행위를 경험하셨다면 저희에게 알려주세요<br>
+                        확인 후 조치해 드리겠습니다.<br><br>
+                        1. 홍보(스팸)성 메시지<br>2. 욕설, 비방, 모욕성 메시지</p>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-lg btn-primary open-modal"
+                            data-modal-id="chatDecWriteModal">신고하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : chatDecModal -->
+
+    <!-- S : chatDecWriteModal :: 신고내용 -->
+    <div id="chatDecWriteModal" class="gt-modal-wrap complete-modal chat-dec-write-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+                <div class="gt-modal-body">
+                    <h1>신고내용</h1>
+                    <div class="text-group md">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="신고내용을 작성해주세요"></textarea>
+                    </div>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-primary">신고</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : chatDecWriteModal -->
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>
