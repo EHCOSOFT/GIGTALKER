@@ -29,6 +29,12 @@
     width: 22px;
 }
 
+.i-star {
+    background: url(../img/ico/i-star.png);
+    height: 16px;
+    width: 16px;
+}
+
 .i-star-active {
     background: url(../img/ico/i-star-active.png);
     height: 16px;
