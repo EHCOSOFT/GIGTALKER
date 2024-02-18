@@ -300,6 +300,13 @@
     width: 20px;
 }
 
+
+.i-auto-translation-actvie {
+    background: url(../img/ico/i-auto-translation-active.png);
+    height: 20px;
+    width: 20px;
+}
+
 .i-dec {
     background: url(../img/ico/i-dec.png);
     height: 20px;

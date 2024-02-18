@@ -796,11 +796,28 @@ h3.title {
     gap: 20px;
 }
 
+.input-wrap.vertical {
+    flex-direction: column;
+    gap: 12px;
+}
+
 .input-group {
     display: flex;
     flex-direction: column;
     position: relative;
     width: 100%;
+}
+
+.input-group.horizontal {
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.input-group.horizontal label {
+    flex: 0 0 auto;
+    margin: 0 !important;
+    width: 90px;
 }
 
 .input-area {
@@ -1312,7 +1329,8 @@ h3.title {
 
 /* sm */
 .select-group.sm select {
-    background: url(../img/ico/i-arrow-down-g.png) no-repeat 97% 50%/16px auto;
+    background-size: 16px;
+    background-position: right 12px center;
     font-size: var(--gt-text-sm);
     height: 40px;
     padding: 0 12px;
@@ -1598,7 +1616,7 @@ h3.title {
     font-size: 14px;
     font-weight: 400;
     height: 40px;
-    padding: 0 16px 0 46px;
+    padding: 0 16px 0 40px;
     position: relative;
 }
 
@@ -1925,6 +1943,7 @@ h3.title {
     top: 40px;
     right: 0;
     width: 132px;
+    z-index: 999;
 }
 
 .dropdown-group .header-user .dropdown-list li {
@@ -2412,6 +2431,7 @@ h3.title {
     background-size: cover;
     content: '';
     display: inline-block;
+    flex: 0 0 auto;
     height: 16px;
     transition: all .5s;
     width: 16px;
