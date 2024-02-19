@@ -224,6 +224,7 @@
 .complete-modal .gt-modal-body {
     margin: 0 0 20px 0;
 }
+
 .complete-modal .gt-modal-footer {
     display: flex;
     justify-content: center;
@@ -286,9 +287,133 @@
     gap: 8px;
     margin: 0 0 40px 0;
 }
+
 .review-score-area h6 {
     color: var(--gt-black-01);
     font-size: var(--gt-text-lg);
     font-weight: 400;
     text-align: left;
+}
+
+/* 대금수령방법관리(accountInfoModal) */
+.accout-modal .gt-modal-header {
+    justify-content: flex-end;
+}
+
+.accout-modal .gt-modal-body h5 {
+    text-align: left;
+}
+
+.accout-modal .gt-modal-body .input-wrap {
+    flex-direction: column;
+    gap: 16px;
+    margin: 20px 0;
+}
+
+.accout-modal .gt-modal-body .input-group {
+    align-items: center;
+    flex-direction: row;
+}
+
+.accout-modal .gt-modal-body .input-group label {
+    font-weight: 400;
+    flex: 0 0 auto;
+    margin: 0;
+    width: 90px;
+}
+
+.accout-modal .gt-modal-body .select-group {
+    width: 100%;
+}
+
+.accout-modal .gt-modal-footer {
+    padding: 32px 0 12px 0;
+}
+
+.accout-modal .btn-group {
+    justify-content: center;
+}
+
+.accout-modal .btn-group button {
+    font-size: var(--gt-text-lg);
+    font-weight: bold;
+    height: 55px;
+    width: 172px;
+}
+
+/* 자동번역(autoTranslationModal) */
+.auto-translation-modal .gt-modal-content {
+    padding: 40px;
+    width: 426px;
+}
+
+.auto-translation-modal label {
+    font-size: var(--gt-text-lg) !important;
+    font-weight: bold !important;
+}
+
+.auto-translation-modal p {
+    color: var(--gt-black-03);
+    font-size: var(--gt-text-md);
+    margin: 24px 0 16px 0;
+    text-align: left;
+}
+
+.auto-translation-modal dl {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.auto-translation-modal .gt-modal-footer {
+    padding: 32px 0 0 0;
+}
+
+.auto-translation-modal .btn-group button {
+    font-size: 15px;
+    height: 50px;
+    width: calc(50% - 4px);
+}
+
+/* 대화방나가기(chatWarningModal) */
+.chat-warning-modal .btn-group button:first-child {
+    width: 110px;
+}
+
+.chat-warning-modal .btn-group button:last-child {
+    width: 148px;
+}
+
+/* 신고내용(chat-dec-write-modal) */
+.chat-dec-write-modal .gt-modal-content {
+    padding: 48px 60px;
+}
+
+.chat-dec-write-modal h1 {
+    margin: 0 0 24px 0;
+    text-align: left;
+}
+
+.chat-dec-write-modal .gt-modal-footer {
+    padding: 0;
+}
+
+.chat-dec-write-modal .btn-group {
+    width: 320px;
+}
+
+.chat-dec-write-modal button {
+    font-size: var(--gt-text-lg);
+    font-weight: bold;
+    width: 100%;
+}
+
+/* 전문가프로필 설정완료(exprot-profile-set-modal) */
+.exprot-profile-set-modal .gt-modal-content {
+    padding: 40px;
+    width: 550px;
+}
+
+.exprot-profile-set-modal .ico-complete {
+    margin: 0 0 12px 0;
 }

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header" id="header"></div>
+
+        <div class="content account-set-wrap">
+            <div class="container">
+                <aside class="sc-sidebar">
+                    <h4>계정 설정</h4>
+                    <ul class="sc-menu">
+                        <li><a href="#">내 정보 수정</a></li>
+                        <li><a href="#">비밀번호 변경</a></li>
+                        <li class="active"><a href="#">알림 설정</a></li>
+                        <li><a href="#">회원 탈퇴</a></li>
+                    </ul>
+                </aside>
+
+                <div class="acset-content">
+                    <h1>알림설정</h1>
+                    <div class="my-info-edit">
+                        <div class="row">
+                            <div class="col-6">
+                                <dl>
+                                    <dt>프로젝트 의뢰</dt>
+                                    <dd>나와 관련된 의뢰인의 프로젝트 알림</dd>
+                                    <dd>전문가의 제안 도착시 알림</dd>
+                                </dl>
+                            </div>
+                            <div class="col-6">
+                                <div class="alarm-group">
+                                    <dl>
+                                        <dt>앱푸쉬</dt>
+                                        <dd>
+                                            <div class="toggle-group">
+                                                <label class="toggle">
+                                                    <input type="checkbox">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                        </dd>
+                                        <dd>
+                                            <div class="toggle-group">
+                                                <label class="toggle">
+                                                    <input type="checkbox">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>SMS</dt>
+                                        <dd>
+                                            <div class="toggle-group">
+                                                <label class="toggle">
+                                                    <input type="checkbox">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                        </dd>
+                                        <dd>
+                                            <div class="toggle-group">
+                                                <label class="toggle">
+                                                    <input type="checkbox">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>이메일</dt>
+                                        <dd>
+                                            <div class="toggle-group">
+                                                <label class="toggle">
+                                                    <input type="checkbox">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                        </dd>
+                                        <dd>
+                                            <div class="toggle-group">
+                                                <label class="toggle">
+                                                    <input type="checkbox">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>  
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <dl>
+                                    <dt>마케팅 정보 수신 동의</dt>
+                                    <dd>이벤트∙쿠폰 등의 할인 혜택 알림</dd>
+                                </dl>
+                            </div>
+                            <div class="col-6">
+                                <div class="alarm-group">
+                                    <dl>
+                                        <dt>앱푸쉬</dt>
+                                        <dd>
+                                            <div class="toggle-group">
+                                                <label class="toggle">
+                                                    <input type="checkbox">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>SMS</dt>
+                                        <dd>
+                                            <div class="toggle-group">
+                                                <label class="toggle">
+                                                    <input type="checkbox">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>이메일</dt>
+                                        <dd>
+                                            <div class="toggle-group">
+                                                <label class="toggle">
+                                                    <input type="checkbox">
+                                                    <span class="slider"></span>
+                                                </label>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- S : FOOTER -->
+        <footer class="footer" id="footer"></footer>
+        <!-- E : FOOTER -->
+    </div>
+
+    <!-- S : languageModal :: 언어설정 -->
+    <div id="languageModal" class="gt-modal-wrap language-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : languageModal -->
+
+    <!-- S : alarmAllDelModal :: 알림 전체삭제 -->
+    <div id="alarmAllDelModal" class="gt-modal-wrap alert-modal alarm-all-del-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : alarmAllDelModal -->
+
+    <!-- S : shareModal :: 공유하기 -->
+    <div id="shareModal" class="gt-modal-wrap content-modal share-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : shareModal -->
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>

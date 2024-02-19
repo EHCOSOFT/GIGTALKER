@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap expert-register-wrap">
+        <div class="header">
+            <div class="header-top type2">
+                <div class="container">
+                    <a href="" class="header-logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="expert-register-step">
+            <div class="container">
+                <ul>
+                    <li class="active">
+                        <span>1</span>
+                        전문가 프로필 작성
+                    </li>
+                    <li class="active">
+                        <span>2</span>
+                        전문가 정보
+                    </li>
+                    <li class="active">
+                        <span>3</span>
+                        계정 보안
+                    </li>
+                </ul>
+                <dl>
+                    <dt>완료율 : 0%</dt>
+                    <dd>
+                        <div class="progress-group">
+                            <progress id="file" value="32" max="100"></progress>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="content expert-register">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>계정 보안</h1>
+                        <p>신뢰와 안전은 우리에게 매우 중요한 문제입니다. 귀하의 계정을 안전하게 보호할 수 있도록 이메일과 전화번호를 확인해 주세요.</p>
+                        <div class="expert-input-area ac-security">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h6><i class="ico i-email"></i>이메일</h6>
+                                </div>
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-email checked">확인됨</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h6><i class="ico i-call"></i>전화번호</h6>
+                                    <p>우리는 전화번호를 절대 공유하지 않습니다.</p>
+                                </div>
+                                <div class="col-6">
+                                    <button type="button" class="btn btn-call open-modal" data-modal-id="phonenumberCertModal">전화번호 추가</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary open-modal" data-modal-id="exprotProfileSetModal">완료</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- comment(ksw) :: 전화번호 인증관련된 Figma 디자인은 스크린샷으로 연동되어 있어, 회원가입시 휴대폰 인증과 연동 처리 합니다. UI는 동일합니다. -->
+    <!-- S : phonenumberCertModal :: 전화번호 확인 -->
+    <div id="phonenumberCertModal" class="gt-modal-wrap content-modal phone-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content gt-modal-md">
+                <div class="gt-modal-header">
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <h1>전화번호 인증</h1>
+                    <h6>인증한 번호로 알람을 받으실 수 있습니다.</h6>
+                    <div class="input-wrap">
+                        <div class="input-group sm">
+                            <label for="">국가 입력</label>
+                            <input type="text" id="text01" placeholder="국가를 입력하세요">
+                        </div>
+                        <div class="input-group sm error input-country">
+                            <label for="">전화번호를 입력하세요</label>
+                            <div class="input-area">
+                                <span class="country-code">+82 -</span>
+                                <input type="text" id="text01" placeholder="전화번호를 입력하세요">
+                            </div>
+                            <p>이 번호는 이미 계정에 연결되어 있습니다.</p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-xl btn-primary open-modal" data-modal-id="phonenumberCheckModal">SMS 인증</button>
+                        <button type="button" class="btn btn-xl btn-primary">전화 인증</button>
+                    </div>
+                    <p>귀하의 전화번호는 비공개로 유지되며 마케팅 목적으로 공유되거나 사용되지 않습니다. <a href="#">개인 정보 정책</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : phonenumberCertModal -->
+
+    <!-- S : phonenumberCheckModal -->
+    <div id="phonenumberCheckModal" class="gt-modal-wrap content-modal phone-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content gt-modal-md">
+                <div class="gt-modal-header">
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <h1>전화번호 확인</h1>
+                    <h6>인증 코드가 다음 번호로 전송되었습니다.</h6>
+                    <h5>-82 - 1054302939</h5>
+                    <h3>인증 코드를 입력해주세요</h3>
+                    <div class="number-group">
+                        <input type="text" maxlength="1" class="input-code" pattern="[0-9]">
+                        <input type="text" maxlength="1" class="input-code" pattern="[0-9]">
+                        <input type="text" maxlength="1" class="input-code" pattern="[0-9]">
+                        <input type="text" maxlength="1" class="input-code" pattern="[0-9]">
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-xl btn-primary">코드 제출</button>
+                    </div>
+                    <p>코드를 받지 못한 경우 창을 닫고 올바른 번호를 입력 했는지 확인한 후 다시 시도해 주세요</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : phonenumberCheckModal -->
+
+    <!-- S : exprotProfileSetModal :: 전문가프로필 설정완료 -->
+    <div id="exprotProfileSetModal" class="gt-modal-wrap complete-modal exprot-profile-set-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+                <div class="gt-modal-body">
+                    <img class="ico-complete" src="img/ico/i-complete-checked.png" alt="">
+                    <h1>전문가 프로필이 모두 설정되었습니다.</h1>
+                    <p>이제 첫번째 서비스를 만들어 판매를 시작하세요<br>
+                        언제든지 프로필 정보를 편집할 수 있습니다.</p>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-primary">상품 등록하기</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : exprotProfileSetModal -->
+
+
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>

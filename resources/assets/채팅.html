@@ -14,10 +14,15 @@
         <div class="header">
             <div class="header-top type2">
                 <div class="container">
-                    <a href="" class="header-logo">
-                        <img src="img/logo.png" alt="">고객센터
+                    <a href="메인.html" class="header-logo">
+                        <img src="img/logo.png" alt="">
                     </a>
-
+                    <div class="input-search">
+                        <input type="text" placeholder="어떤 전문가를 찾으시나요?">
+                        <button type="submit">
+                            <i class="ico i-search-p"></i>
+                        </button>
+                    </div>
                     <ul class="header-top-right">
                         <li class="on"><button type="button" class="btn-alarm"><i class="ico i-alarm"></i></button>
                             <div class="alarm-wrap">
@@ -100,57 +105,65 @@
             </div>
         </div>
 
-        <div class="content service-center">
-            <div class="container">
-                <aside class="sc-sidebar">
-                    <h4>고객센터</h4>
-                    <ul class="sc-menu">
-                        <li><a href="#">공지사항</a></li>
-                        <li class="active"><a href="#">1:1문의</a></li>
-                        <li><a href="#">이벤트</a></li>
-                        <li><a href="#">자주 묻는 질문</a></li>
-                    </ul>
-                </aside>
-
-                <div class="sc-content">
-                    <h1>1:1 문의</h1>
-                    <div class="inquiry">
-                        <div class="inquiry-header">
-                            <p><span>[문의하시기 전에 확인해주세요!]</span><br>긱톡커는 서비스 중개플랫폼입니다. 서비스 작업 의뢰는 사이트에서 전문가에게 직접 문의해 주시기를
-                                부탁드립니다. 또한, 계정 인증에 관한 문의는 '휴대전화 번호' 또는 '이메일 주소'를 전달해 주시면 빠른 안내가 가능합니다.</p>
+        <div class="content">
+            <div class="chat-content">
+                <div class="container">
+                    <div class="chat-sidebar">
+                        <div class="chat-side-top">
+                            <div class="dropdown-group">
+                                <div class="dropdown-list-wrap">
+                                    <button class="dropdown-button" data-target="drop01">
+                                        <span class="placeholder">안읽은 메세지</span>
+                                    </button>
+                                    <ul id="drop01" class="dropdown-list" style="display: none;">
+                                        <li class="active">전체 메세지</li>
+                                        <li>안읽은 메세지</li>
+                                        <li>거래중</li>
+                                        <li>즐겨찾기</li>
+                                        <li>가격제안</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="chat-search"><i class="ico i-search"></i></button>
                         </div>
-                        <div class="inquiry-body">
-                            <div class="select-group type2">
-                                <h6>회원 유형</h6>
-                                <select name="" id="">
-                                    <option value="전문가" selected="selected">전문가</option>
-                                    <option value="전문가">전문가</option>
-                                    <option value="전문가">전문가</option>
-                                </select>
-                            </div>
-                            <div class="input-group md">
-                                <input type="text" id="text01" placeholder="문의 제목을 작성해주세요">
-                            </div>
-                            <div class="text-group">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="문의 내용을 작성해주세요"></textarea>
-                            </div>
-                            <div class="file-group">
-                                <h2>첨부파일</h2>
-                                <label for="fileupload"><span>파일 추가</span> 또는 파일을 여기로 드래그</label>
-                                <input type="file" id="fileupload" />
-                            </div>
+                        <ul class="chat-side-list">
+                            <li class="chat-side-item active">
+                                <div class="chat-profile-img"
+                                    style="background: url(img/sample/sample-02.png); background-size: cover;"><span
+                                        class="on"></span></div>
+                                <div class="chat-side-text">
+                                    <h6>아츠달 스튜디오<span>23.11.20</span></h6>
+                                    <p><span>안녕하세요 문의드립니다. 안녕하세요 문의드립니다.</span><button type="button"
+                                            class="btn-bookmark active"><i class="ico i-star-active"></i></button></p>
+                                </div>
+                            </li>
+                            <li class="chat-side-item ">
+                                <div class="chat-profile-img"
+                                    style="background: url(img/sample/sample-02.png); background-size: cover;"><span
+                                        class=""></span></div>
+                                <div class="chat-side-text">
+                                    <h6>아츠달 스튜디오<span>23.11.20</span></h6>
+                                    <p><span>안녕하세요 문의드립니다. 안녕하세요 문의드립니다.</span><button type="button"
+                                            class="btn-bookmark"><i class="ico i-star-active"></i></button></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chat-search-area">
+                        <div class="input-group mn">
+                            <input type="text" id="text02" placeholder="검색어를 입력해주세요">
                         </div>
-                        <div class="inquiry-footer">
-                            <button type="submit" class="btn btn-xl btn-primary open-modal" data-modal-id="submitCompleteModal">제출</button>
-                        </div>
+                        <button class="chat-search-close">닫기</button>
+                    </div>
+                    <div class="chat-none">
+                        <img src="img/ico/chat-img-01.png" alt="">
+                        <h5>중단한 부분부터 다시 시작할수 있습니다.</h5>
+                        <p>대화를 선택하고 채팅을 시작하세요</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- S : FOOTER -->
-        <footer class="footer" id="footer"></footer>
-        <!-- E : FOOTER -->
     </div>
 
     <!-- S : languageModal :: 언어설정 -->
@@ -170,27 +183,6 @@
         <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
     </div>
     <!-- E : shareModal -->
-
-    <!-- S : submitCompleteModal -->
-    <div id="submitCompleteModal" class="gt-modal-wrap complete-modal">
-        <div class="gt-modal-inner">
-            <div class="gt-modal-content">
-                <div class="gt-modal-body">
-                    <img class="ico-complete" src="img/ico/i-complete-check.png" alt="">
-                    <h1>제출완료</h1>
-                    <p>작성하신 1:1문의가 제출이 완료되었습니다.<br>
-                        담당자가 확인후 빠른시간내에 답변드리도록 하겠습니다.</p>
-                </div>
-                <div class="gt-modal-footer">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-lg btn-primary btn-modal-close">확인</button>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- E : submitCompleteModal -->
 
     <!-- S : SCRIPT -->
     <script src="lib/swiper-bundle.min.js"></script>

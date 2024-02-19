@@ -427,16 +427,11 @@ $(document).ready(function () {
   });
 
   // 탭 메뉴
-  $(".tab-button").click(function () {
+  $(".tabs .tab-button").click(function () {
     var target = $(this).data("target");
-
-    $(".tab-button").removeClass("active");
+    $(".tabs .tab-button").removeClass("active");
     $(this).addClass("active");
-
-    // $(".tab-content").hide();
-    // $("#" + target).show();
-
-    // Scroll to the target section
+    // 스크롤 이동
     $("html, body").animate(
       {
         scrollTop: $("#" + target).offset().top,
@@ -445,12 +440,20 @@ $(document).ready(function () {
     );
   });
 
-  // tab1 초기설정
-  // $("#viewProduct").show();
-  // $(".tab-button[data-target='viewProduct']").addClass("active");
-  // $("#writeReview").show();
-  // $("#idFind").show();
-  // $("#imgUpload").show();
+  // 전문가센터 판매관리
+  // 초기에 "판매내역" 탭을 활성화
+  $("#salesList").show();
+  $(".default-tabs .tab-button").click(function () {
+    var target = $(this).data("target");
+    // 모든 탭 버튼에서 active 클래스를 제거
+    $(".default-tabs .tab-button").removeClass("active");
+    // 현재 클릭된 탭 버튼에만 active 클래스 추가
+    $(this).addClass("active");
+    // 모든 탭 콘텐츠를 숨김
+    $(".default-tabs .tab-content").hide();
+    // 클릭된 탭에 해당하는 콘텐츠를 표시
+    $("#" + target).show();
+  });
 
   // toggle
   $('.toggle-group .toggle input[type="checkbox"]').change(function () {
@@ -618,13 +621,52 @@ $(document).ready(function () {
   });
 
   // 별점 입력
-  $('.rating-group .star').click(function() {
-    var rating = $(this).attr('data-rating');
-    $('#ratingValue').text(rating);
+  $(".rating-group .star").click(function () {
+    var rating = $(this).attr("data-rating");
+    $("#ratingValue").text(rating);
     // 선택된 별보다 앞에 있는 별들의 색을 변경
-    $(this).prevAll('.star').addBack().addClass("active");
+    $(this).prevAll(".star").addBack().addClass("active");
     // 선택된 별보다 뒤에 있는 별들의 색을 원래 색으로 변경
-    $(this).nextAll('.star').removeClass("active");
+    $(this).nextAll(".star").removeClass("active");
+  });
+
+  // 프로필 업로드
+  // 파일 업로드 버튼 클릭 시
+  $(".file-img-group button").click(function () {
+    // input 파일 엘리먼트를 클릭하여 파일 선택 창 열기
+    $("#fileImgUpload").click();
+  });
+
+  // 파일이 선택되면 실행되는 이벤트
+  $("#fileImgUpload").change(function () {
+    var file = this.files[0]; // 선택한 파일 객체 가져오기
+
+    // 파일이 선택되었고, 이미지 파일인지 확인
+    if (file && file.type.startsWith("image")) {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        var imageData = e.target.result;
+        $(".file-img-group").css("background-image", "url(" + imageData + ")");
+      };
+
+      // 파일을 읽어옴
+      reader.readAsDataURL(file);
+    }
+  });
+
+  // 채팅
+  // 채팅 사이드바 검색
+  // 채팅 검색 버튼 클릭 시
+  $(".chat-search").click(function () {
+    $(".chat-sidebar").hide(); // 채팅 사이드바 숨기기
+    $(".chat-search-area").css("display", "flex"); // 채팅 검색 영역을 flex로 설정하여 표시
+  });
+
+  // 채팅 검색 닫기 버튼 클릭 시
+  $(".chat-search-close").click(function () {
+    $(".chat-sidebar").show(); // 채팅 사이드바 표시
+    $(".chat-search-area").hide(); // 채팅 검색 영역 숨기기
   });
 });
 

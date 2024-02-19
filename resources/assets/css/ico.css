@@ -35,6 +35,18 @@
     width: 16px;
 }
 
+.i-star-active {
+    background: url(../img/ico/i-star-active.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-star-active-active {
+    background: url(../img/ico/i-star-active-active.png);
+    height: 16px;
+    width: 16px;
+}
+
 .i-top {
     background: url(../img/ico/i-top.png);
     height: 18px;
@@ -260,6 +272,84 @@
 
 .i-review-none {
     background: url(../img/ico/i-review-none.png);
+    height: 48px;
+    width: 48px;
+}
+
+.i-camera {
+    background: url(../img/ico/i-camera.png);
+    height: 32px;
+    width: 32px;
+}
+
+.i-language-close {
+    background: url(../img/ico/i-language-close.png);
+    height: 12px;
+    width: 12px;
+}
+
+.i-outline-star{
+    background: url(../img/ico/i-outline-star.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-auto-translation {
+    background: url(../img/ico/i-auto-translation.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-dec {
+    background: url(../img/ico/i-dec.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-language-change {
+    background: url(../img/ico/i-language-change.png);
+    height: 24px;
+    width: 24px;
+}
+
+.i-safe-payment {
+    background: url(../img/ico/i-safe-payment.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-emoticon {
+    background: url(../img/ico/i-emoticon.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-file {
+    background: url(../img/ico/i-file.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-send {
+    background: url(../img/ico/i-send.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-email {
+    background: url(../img/ico/i-email.png);
+    height: 36px;
+    width: 36px;
+}
+
+.i-call {
+    background: url(../img/ico/i-call.png);
+    height: 36px;
+    width: 36px;
+}
+
+.i-customer-request-info {
+    background: url(../img/ico/i-customer-request-info.png);
     height: 48px;
     width: 48px;
 }

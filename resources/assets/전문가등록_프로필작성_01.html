@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap expert-register-wrap">
+        <div class="header">
+            <div class="header-top type2">
+                <div class="container">
+                    <a href="" class="header-logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="expert-register-step">
+            <div class="container">
+                <ul>
+                    <li class="active">
+                        <span>1</span>
+                        전문가 프로필 작성
+                    </li>
+                    <li>
+                        <span>2</span>
+                        전문가 정보
+                    </li>
+                    <li>
+                        <span>3</span>
+                        계정 보안
+                    </li>
+                </ul>
+                <dl>
+                    <dt>완료율 : 0%</dt>
+                    <dd>
+                        <div class="progress-group">
+                            <progress id="file" value="32" max="100"></progress>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="content expert-register">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>전문가 프로필 작성</h1>
+                        <p>자신에 대해 어필해 주세요~ 이 정보는 공개 프로필에 표시되므로 이용자가 귀하에 대해 더 잘 알 수 있습니다. <span>필수입력<b>*</b></span></p>
+                        <div class="expert-input-area">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h6>성명<span>*</span></h6>
+                                    <p>실명을 작성합니다.<br>
+                                        Ex. 길동 홍</p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-wrap">
+                                        <div class="input-group mn">
+                                            <input type="text" id="text02" placeholder="이름">
+                                        </div>
+                                        <div class="input-group mn">
+                                            <input type="text" id="text02" placeholder="성">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h6>표시 이름<span>*</span></h6>
+                                    <p>고객과 신뢰할 수 있는 관계를 구축하기 위해 고객이 신뢰할만한<br>
+                                        이름을 작성합니다. 회사이름이나 실명, 또는 실명을 유추할 수 있는<br>
+                                        이니셜을 사용하는걸 추천합니다.</p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-group mn">
+                                        <input type="text" id="text02" placeholder="이름을 입력하세요." value="그리고미디어">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h6>프로필 사진<span>*</span></h6>
+                                    <p>고객이 누구와 함께 일하게 될지 정확히<br>알 수 있도록 자신의 프로필 사진을 추가하세요.</p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="file-img-group">
+                                        <input type="file" id="fileImgUpload" accept="image/*">
+                                        <button type="button"><i class="ico i-camera"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h6>설명<span>*</span></h6>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-group md">
+                                        <textarea name="" id="" cols="30" rows="10"
+                                            placeholder="업무경험, 완료한 멋진 프로젝트, 전문 분야에 대해 공유해 주세요."></textarea>
+                                        <p>최소 150자 이상은 작성해주세요 <span>0 / 600</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h6>언어<span>*</span></h6>
+                                    <p>의사소통이 가능한 언어와 능숙도를 선택하세요.</p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="language-group">
+                                        <div class="select-group">
+                                            <select name="" id="">
+                                                <option value="언어선택" selected="selected">언어선택</option>
+                                                <option value="한국어">한국어</option>
+                                                <option value="영어">영어</option>
+                                                <option value="중국어">중국어</option>
+                                                <option value="베트남어">베트남어</option>
+                                            </select>
+                                        </div>
+                                        <div class="select-group">
+                                            <select name="" id="">
+                                                <option value="언어레벨" selected="selected">언어레벨</option>
+                                                <option value="초보자">초보자</option>
+                                                <option value="기본회화가능">기본회화가능</option>
+                                                <option value="유창한">유창한</option>
+                                                <option value="현지어/이중언어">현지어/이중언어</option>
+                                            </select>
+                                        </div>
+                                        <button class="btn btn-gray">추가</button>
+                                    </div>
+                                    <ul class="language-list">
+                                        <li>
+                                            <div class="language-item">
+                                                <span>한국어</span>
+                                                <span>초보자</span>
+                                                <span><i class="ico i-language-close"></i></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="language-item">
+                                                <span>한국어</span>
+                                                <span>기본회화가능</span>
+                                                <span><i class="ico i-language-close"></i></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="language-item">
+                                                <span>한국어</span>
+                                                <span>초보자</span>
+                                                <span><i class="ico i-language-close"></i></span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="language-item">
+                                                <span>한국어</span>
+                                                <span>초보자</span>
+                                                <span><i class="ico i-language-close"></i></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-gray">이전단계</button>
+                            <button type="button" class="btn btn-primary">다음단계</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>

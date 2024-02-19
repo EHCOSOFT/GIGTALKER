@@ -15,7 +15,7 @@
             <div class="header-top type2">
                 <div class="container">
                     <a href="" class="header-logo">
-                        <img src="img/logo.png" alt="">고객센터
+                        <img src="img/logo.png" alt="">전문가센터
                     </a>
 
                     <ul class="header-top-right">
@@ -100,56 +100,67 @@
             </div>
         </div>
 
-        <div class="content service-center">
+        <div class="content expert-center">
             <div class="container">
                 <aside class="sc-sidebar">
-                    <h4>고객센터</h4>
+                    <div class="expert-profile">
+                        <div class="expert-profile-top">
+                            <p>전문가 프로필 80% <a href="#">완성하러가기</a></p>
+                            <div class="progress-group">
+                                <progress id="file" value="32" max="100"></progress>
+                            </div>
+                        </div>
+                        <div class="expert-profile-img-area">
+                            <div class="expert-profile-img"
+                                style="background: url(img/sample/sample-02.png); background-size: cover;"></div>
+                            <div class="expert-rating new">NEW</div>
+                            <!-- <div class="expert-rating one">Level<br>one</div>
+                            <div class="expert-rating two">Level<br>two</div>
+                            <div class="expert-rating top">TOP</div> -->
+                        </div>
+                        <h5>그리고미디어</h5>
+                        <div class="toggle-group type2 active">
+                            <label class="toggle">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <h6>이달 수익금 <span>2,000,000원</span></h6>
                     <ul class="sc-menu">
-                        <li><a href="#">공지사항</a></li>
-                        <li class="active"><a href="#">1:1문의</a></li>
-                        <li><a href="#">이벤트</a></li>
-                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">센터홈</a></li>
+                        <li><a href="#">고객 견적요청</a></li>
+                        <li><a href="#">판매관리</a></li>
+                        <li><a href="#">내 상품관리</a></li>
+                        <li><a href="#">수익금관리</a></li>
+                        <li><a href="#">광고관리</a></li>
+                        <li><a href="#">내 전문가 등급</a></li>
+                        <li class="active"><a href="#">전문가 공지사항</a></li>
                     </ul>
                 </aside>
 
-                <div class="sc-content">
-                    <h1>1:1 문의</h1>
-                    <div class="inquiry">
-                        <div class="inquiry-header">
-                            <p><span>[문의하시기 전에 확인해주세요!]</span><br>긱톡커는 서비스 중개플랫폼입니다. 서비스 작업 의뢰는 사이트에서 전문가에게 직접 문의해 주시기를
-                                부탁드립니다. 또한, 계정 인증에 관한 문의는 '휴대전화 번호' 또는 '이메일 주소'를 전달해 주시면 빠른 안내가 가능합니다.</p>
-                        </div>
-                        <div class="inquiry-body">
-                            <div class="select-group type2">
-                                <h6>회원 유형</h6>
-                                <select name="" id="">
-                                    <option value="전문가" selected="selected">전문가</option>
-                                    <option value="전문가">전문가</option>
-                                    <option value="전문가">전문가</option>
-                                </select>
-                            </div>
-                            <div class="input-group md">
-                                <input type="text" id="text01" placeholder="문의 제목을 작성해주세요">
-                            </div>
-                            <div class="text-group">
-                                <textarea name="" id="" cols="30" rows="10" placeholder="문의 내용을 작성해주세요"></textarea>
-                            </div>
-                            <div class="file-group">
-                                <h2>첨부파일</h2>
-                                <label for="fileupload"><span>파일 추가</span> 또는 파일을 여기로 드래그</label>
-                                <input type="file" id="fileupload" />
-                            </div>
-                        </div>
-                        <div class="inquiry-footer">
-                            <button type="submit" class="btn btn-xl btn-primary open-modal" data-modal-id="submitCompleteModal">제출</button>
-                        </div>
+                <section class="ec-content">
+                    <div class="ec-proceeds-set">
+                        <h1>전문가 공지사항</h1>
+                        <ul class="sc-list">
+                            <li class="fix"><span>중요</span>서비스 점검 안내 (10/13 00:00 ~ 07:30) <p>2023-10-05 09:10</p>
+                            </li>
+                            <li>서비스 점검 안내 (10/13 00:00 ~ 07:30) <p>2023-10-05 09:10</p></li>
+                            <li>서비스 점검 안내 (10/13 00:00 ~ 07:30) <p>2023-10-05 09:10</p></li>
+                            <li>서비스 점검 안내 (10/13 00:00 ~ 07:30) <p>2023-10-05 09:10</p></li>
+                            <li>서비스 점검 안내 (10/13 00:00 ~ 07:30) <p>2023-10-05 09:10</p></li>
+                        </ul>
+                        <button class="btn btn-outline-gray btn-notice-more" type="button">더보기</button>
                     </div>
-                </div>
+
+                </section>
             </div>
         </div>
 
         <!-- S : FOOTER -->
-        <footer class="footer" id="footer"></footer>
+        <footer class="footer">
+            <div class="footer-bottom" id="footer-bottom"></div>
+        </footer>
         <!-- E : FOOTER -->
     </div>
 
@@ -165,32 +176,47 @@
     </div>
     <!-- E : alarmAllDelModal -->
 
-    <!-- S : shareModal :: 공유하기 -->
-    <div id="shareModal" class="gt-modal-wrap content-modal share-modal">
-        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
-    </div>
-    <!-- E : shareModal -->
-
-    <!-- S : submitCompleteModal -->
-    <div id="submitCompleteModal" class="gt-modal-wrap complete-modal">
+    <!-- S : accountInfoModal :: 대금수령방법관리 -->
+    <div id="accountInfoModal" class="gt-modal-wrap accout-modal">
         <div class="gt-modal-inner">
-            <div class="gt-modal-content">
+            <div class="gt-modal-content gt-modal-md">
+                <div class="gt-modal-header">
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
                 <div class="gt-modal-body">
-                    <img class="ico-complete" src="img/ico/i-complete-check.png" alt="">
-                    <h1>제출완료</h1>
-                    <p>작성하신 1:1문의가 제출이 완료되었습니다.<br>
-                        담당자가 확인후 빠른시간내에 답변드리도록 하겠습니다.</p>
+                    <h5>계좌정보 정보 입력</h5>
+                    <div class="input-wrap">
+                        <div class="input-group mn">
+                            <label for="">예금주</label>
+                            <input type="text" id="text02" placeholder="예금주 이름을 입력해주세요">
+                        </div>
+                        <div class="input-group mn">
+                            <label for="">은행명</label>
+                            <input type="text" id="text02" placeholder="은행을 선택해주세요">
+                        </div>
+                        <div class="input-group mn">
+                            <label for="">계좌번호</label>
+                            <input type="text" id="text02" placeholder="계좌번호를 입력해주세요">
+                        </div>
+                    </div>
+                    <div class="check-group type2 sm">
+                        <input type="checkbox" id="chk00">
+                        <label for="chk00">개인정보 수집, 이용 동의<span class="red">(필수)</span></label>
+                        <a href="#">상세보기</a>
+                    </div>
                 </div>
                 <div class="gt-modal-footer">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-lg btn-primary btn-modal-close">확인</button>
-                        
+                        <button type="button" class="btn btn-sm btn-outline-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-sm btn-secondary">변경하기</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- E : submitCompleteModal -->
+    <!-- E : accountInfoModal -->
 
     <!-- S : SCRIPT -->
     <script src="lib/swiper-bundle.min.js"></script>
