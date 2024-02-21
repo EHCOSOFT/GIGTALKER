@@ -345,11 +345,13 @@
 .review-score {
     align-items: center;
     display: flex;
+    list-style: none !important;
 }
 
 .review-score li {
     align-items: center;
-    display: flex;
+    display: flex !important;
+    list-style: none !important;
 }
 
 .review-item-info .review-text {

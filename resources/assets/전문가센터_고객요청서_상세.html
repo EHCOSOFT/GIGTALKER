@@ -141,9 +141,98 @@
 
                 <section class="ec-content">
                     <h2>고객요청서</h2>
-                    <div class="row">
-                        <div class="col-7">dd</div>
-                        <div class="col-5">dd</div>
+                    <div class="row inquiry-wrap">
+                        <div class="col-7">
+                            <button type="button" class="btn btn-print"><i class="ico i-print"></i>프린트</button>
+                            <div class="inquiry-box">
+                                <h3>맞춤문의</h3>
+                                <div class="inquiry-box-text">
+                                    <dl>
+                                        <dt>제목</dt>
+                                        <dd>우리 회사 홈페이지가 필요하고,</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>서비스</dt>
+                                        <dd>웹사이트 콘텐츠</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>설명</dt>
+                                        <dd>우리 회사 홈페이지가 필요해요. 우리는 무역회사이므로 홈페이지를 만들어야 합니다. 우리 회사의 아이덴티티를 보여주고, 서비스를 잘
+                                            표현하는 홈페이지였으면 좋겠는데, 메뉴섹션이나 페이지가 10페이지 정도 됩니다.</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>언어</dt>
+                                        <dd>영어</dd>
+                                    </dl>
+                                </div>
+                                <div class="inquiry-budget">
+                                    <h4>예산 및 일정</h4>
+                                    <div class="inquiry-budget-text">
+                                        <dl>
+                                            <dt>예산</dt>
+                                            <dd>US$100 (유연)</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>희망완료일</dt>
+                                            <dd>2023년 11월 30일</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="inquiry-info">
+                                    <div class="inquiry-export-profile">
+                                        <div class="inquiry-export-profile-img"
+                                            style="background: url(img/sample/sample-02.png); background-size: cover;">
+                                        </div>
+                                        <h6>홍길동</h6>
+                                    </div>
+                                    <div class="inquiry-info-text">
+                                        <dl>
+                                            <dt>거주지</dt>
+                                            <dd>대한민국</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>가입일</dt>
+                                            <dd>2021.11.23</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>사용언어</dt>
+                                            <dd>중국어</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>주한이용횟수</dt>
+                                            <dd>1회</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="estimate-wrap">
+                                <h3>견적보내기</h3>
+                                <a href="javascript:void(0);" class="use-often-estimate open-modal" data-modal-id="estimateModal">자주쓰는 견적서 불러오기<i class="ico i-arrow-right"></i></a>
+                                <div class="estimate-input-area">
+                                    <div class="input-group md">
+                                        <label for="">총금액</label>
+                                        <input type="text" id="text01" placeholder="금액을 입력해주세요">
+                                    </div>
+                                    <div class="text-group">
+                                        <label for="">견적설명</label>
+                                        <p>서비스 진행방식, 다양한 가격옵션, 고수 이력 등을 작성해주세요.</p>
+                                        <textarea name="" id="" cols="30" rows="10" placeholder="요청사항에 대한 답변, 서비스진행방식, 전문가님만의 강점등을 입력해주세요"></textarea>
+                                    </div>
+                                    <div class="file-group">
+                                        <h2>첨부파일<span>20MB 미만</span></h2>
+                                        <label for="fileupload"><span>파일 추가</span> 또는 파일을 여기로 드래그</label>
+                                        <input type="file" id="fileupload" />
+                                    </div>
+                                    <div class="check-group type2">
+                                        <input type="checkbox" id="chk00">
+                                        <label for="chk00">자주쓰는 견적에 추가하기</label>
+                                    </div>
+                                    <button type="button" class="btn btn-primary">견적보내기 (100캐쉬 차감)</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -168,47 +257,36 @@
     </div>
     <!-- E : alarmAllDelModal -->
 
-    <!-- S : accountInfoModal :: 대금수령방법관리 -->
-    <div id="accountInfoModal" class="gt-modal-wrap accout-modal">
+    <!-- S : estimateModal :: 대금수령방법관리 -->
+    <div id="estimateModal" class="gt-modal-wrap content-modal estimate-modal">
         <div class="gt-modal-inner">
-            <div class="gt-modal-content gt-modal-md">
+            <div class="gt-modal-content">
                 <div class="gt-modal-header">
                     <button type="button" class="btn-modal-close">
                         <i class="ico i-modal-close"></i>
                     </button>
                 </div>
                 <div class="gt-modal-body">
-                    <h5>계좌정보 정보 입력</h5>
-                    <div class="input-wrap">
-                        <div class="input-group mn">
-                            <label for="">예금주</label>
-                            <input type="text" id="text02" placeholder="예금주 이름을 입력해주세요">
-                        </div>
-                        <div class="input-group mn">
-                            <label for="">은행명</label>
-                            <input type="text" id="text02" placeholder="은행을 선택해주세요">
-                        </div>
-                        <div class="input-group mn">
-                            <label for="">계좌번호</label>
-                            <input type="text" id="text02" placeholder="계좌번호를 입력해주세요">
-                        </div>
-                    </div>
-                    <div class="check-group type2 sm">
-                        <input type="checkbox" id="chk00">
-                        <label for="chk00">개인정보 수집, 이용 동의<span class="red">(필수)</span></label>
-                        <a href="#">상세보기</a>
-                    </div>
-                </div>
-                <div class="gt-modal-footer">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-gray btn-modal-close">취소</button>
-                        <button type="button" class="btn btn-sm btn-secondary">변경하기</button>
-                    </div>
+                    <h3>자주쓰는 견적</h3>
+                    <ul>
+                        <li>
+                            <dl>
+                                <dt>총금액 10,000원</dt>
+                                <dd>견적서 보냅니다.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt>총금액 10,000원</dt>
+                                <dd>견적서 보냅니다.</dd>
+                            </dl>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <!-- E : accountInfoModal -->
+    <!-- E : estimateModal -->
 
     <!-- S : SCRIPT -->
     <script src="lib/swiper-bundle.min.js"></script>

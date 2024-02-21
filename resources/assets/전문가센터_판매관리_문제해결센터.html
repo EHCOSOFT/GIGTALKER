@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header-top type2">
+                <div class="container">
+                    <a href="" class="header-logo">
+                        <img src="img/logo.png" alt="">전문가센터
+                    </a>
+
+                    <ul class="header-top-right">
+                        <li class="on"><button type="button" class="btn-alarm"><i class="ico i-alarm"></i></button>
+                            <div class="alarm-wrap">
+                                <div class="alarm-top">
+                                    <h6>알림</h6>
+                                    <ul>
+                                        <li class="open-modal" data-modal-id="alarmAllDelModal"><i
+                                                class="ico i-trash"></i></li>
+                                        <li><i class="ico i-set"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="alarm-body">
+                                    <div class="alarm-item">
+                                        <p>오늘</p>
+                                        <ul>
+                                            <li>
+                                                <div class="alarm-area">
+                                                    <img src="img/sample/sample-02.png" alt="">
+                                                    <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
+                                                        있습니다.<br><span>2023.11.16. 13:00</span></h3>
+                                                    <button type="button" class="btn-alarm-close"></button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="alarm-item">
+                                        <p>이전</p>
+                                        <ul>
+                                            <li>
+                                                <div class="alarm-area">
+                                                    <img src="img/sample/sample-02.png" alt="">
+                                                    <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
+                                                        있습니다.<br><span>2023.11.16. 13:00</span></h3>
+                                                    <button type="button" class="btn-alarm-close"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="alarm-area">
+                                                    <img src="img/sample/sample-02.png" alt="">
+                                                    <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
+                                                        있습니다.<br><span>2023.11.16. 13:00</span></h3>
+                                                    <button type="button" class="btn-alarm-close"></button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="on"><a href="#"><i class="ico i-chat"></i></a></li>
+                        <li class="on"><a href="#"><i class="ico i-heart"></i></a></li>
+                        <li class="language open-modal" data-modal-id="languageModal"><i class="ico i-language"></i>한국어
+                        </li>
+                        <li class="on"><a href="#"><b>구매관리</b></a></li>
+                        <li>
+                            <div class="dropdown-group">
+                                <div class="dropdown-list-wrap header-user">
+                                    <button class="dropdown-button" data-target="headerUserMenu">
+                                        <!-- on and off -->
+                                        <span href="#" class="user md off">
+                                            <img src="img/sample/sample-02.png" alt="">
+                                        </span>
+                                    </button>
+                                    <ul id="headerUserMenu" class="dropdown-list">
+                                        <li><a href="#">프로필 관리</a></li>
+                                        <li><a href="#">계정정보</a></li>
+                                        <li><a href="#">구매관리</a></li>
+                                        <li><a href="#">마이페이지</a></li>
+                                        <hr>
+                                        <li><a href="#">전문가센터</a></li>
+                                        <li><a href="#">판매관리</a></li>
+                                        <li><a href="#"><i class="ico i-logout"></i>로그아웃</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content expert-center">
+            <div class="container">
+                <aside class="sc-sidebar">
+                    <div class="expert-profile">
+                        <div class="expert-profile-top">
+                            <p>전문가 프로필 80% <a href="#">완성하러가기</a></p>
+                            <div class="progress-group">
+                                <progress id="file" value="32" max="100"></progress>
+                            </div>
+                        </div>
+                        <div class="expert-profile-img-area">
+                            <div class="expert-profile-img"
+                                style="background: url(img/sample/sample-02.png); background-size: cover;"></div>
+                            <div class="expert-rating new">NEW</div>
+                            <!-- <div class="expert-rating one">Level<br>one</div>
+                            <div class="expert-rating two">Level<br>two</div>
+                            <div class="expert-rating top">TOP</div> -->
+                        </div>
+                        <h5>그리고미디어</h5>
+                        <div class="toggle-group type2 active">
+                            <label class="toggle">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <h6>이달 수익금 <span>2,000,000원</span></h6>
+                    <ul class="sc-menu">
+                        <li><a href="#">센터홈</a></li>
+                        <li><a href="#">고객 견적요청</a></li>
+                        <li class="active"><a href="#">판매관리</a></li>
+                        <li><a href="#">내 상품관리</a></li>
+                        <li><a href="#">수익금관리</a></li>
+                        <li><a href="#">광고관리</a></li>
+                        <li><a href="#">내 전문가 등급</a></li>
+                        <li><a href="#">전문가 공지사항</a></li>
+                    </ul>
+                </aside>
+
+                <section class="ec-content">
+                    <h2>문제해결 센터</h2>
+                    <div class="row ps-center-wrap">
+                        <div class="col-7">
+                            <div class="input-wrap">
+                                <div class="radio-group type2">
+                                    <p>진행에 문제가 있나요? 원하는 내용을 작성해주세요</p>
+                                    <div class="radio-area">
+                                        <input type="radio" id="radio01" name="radio01">
+                                        <label for="radio01">주문취소를 요청합니다.</label>
+                                    </div>
+                                    <div class="radio-area">
+                                        <input type="radio" id="radio02"  name="radio01">
+                                        <label for="radio02">환불을 요청합니다.</label>
+                                    </div>
+                                </div>
+                                <div class="text-group sm">
+                                    <h6>주문을 취소하는 이유가 무엇인가요?<br><p>의견은 구매자에게 표시됩니다.</p></h6>
+                                    
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="의견을 작성해주세요"></textarea>
+                                </div>
+                                <hr>
+                                <div class="text-group sm">
+                                    <h6>이 주문을 취소하려는 이유를 비공개로 알려주세요<br><p>이 내용은 구매자에게 공유되지 않습니다.</p></h6>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="의견을 작성해주세요"></textarea>
+                                </div>
+                                <button type="button" class="btn btn-primary">전달하기</button>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="order-box">
+                                <div class="export-service-item-top">
+                                    <div class="export-service-item-img"
+                                        style="background: url(img/sample/sample-01.png); background-size: cover;">
+                                    </div>
+                                    <div class="export-service-item-text">
+                                        <p>생활서비스</p>
+                                        <h6>한국어, 중국어 번역,
+                                            교정, 편집dddddddddddd</h6>
+                                    </div>
+                                </div>
+                                <div class="order-detail-info">
+                                    <dl>
+                                        <dt>주문자</dt>
+                                        <dd>홍길동</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>주문일</dt>
+                                        <dd>2023.06.29 17:30</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>배송일</dt>
+                                        <dd>2023.11.4</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>총가격</dt>
+                                        <dd>24,000원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>주문번호</dt>
+                                        <dd>#2196593</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>결재방식</dt>
+                                        <dd>무통장입금</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- S : FOOTER -->
+        <footer class="footer">
+            <div class="footer-bottom" id="footer-bottom"></div>
+        </footer>
+        <!-- E : FOOTER -->
+    </div>
+
+    <!-- S : languageModal :: 언어설정 -->
+    <div id="languageModal" class="gt-modal-wrap language-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : languageModal -->
+
+    <!-- S : alarmAllDelModal :: 알림 전체삭제 -->
+    <div id="alarmAllDelModal" class="gt-modal-wrap alert-modal alarm-all-del-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : alarmAllDelModal -->
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>
