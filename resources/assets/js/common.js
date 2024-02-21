@@ -421,7 +421,8 @@ $(document).ready(function () {
   // 드롭다운 리스트 항목 클릭 시 이벤트 핸들러
   $(".dropdown-list li").click(function () {
     var selectedText = $(this).text(); // 클릭한 항목의 텍스트 가져오기
-    $(".dropdown-button .placeholder").text(selectedText); // 플레이스홀더 텍스트 업데이트
+    $(this).parent().prev().children(".placeholder").text(selectedText); // 플레이스홀더 텍스트 업데이트
+    // $(".dropdown-button .placeholder").text(selectedText);
     $("#drop01").hide(); // 드롭다운 리스트 숨기기
     $(".dropdown-button").removeClass("active"); // 드롭다운 버튼의 활성 클래스 제거
   });
@@ -667,6 +668,28 @@ $(document).ready(function () {
   $(".chat-search-close").click(function () {
     $(".chat-sidebar").show(); // 채팅 사이드바 표시
     $(".chat-search-area").hide(); // 채팅 검색 영역 숨기기
+  });
+
+  // 텍스트 입력 상자의 내용이 변경될 때마다 이벤트를 수행
+  $(".chat-write input").on("input", function () {
+    // 입력 상자에 입력된 텍스트의 길이를 확인
+    var inputText = $(this).val();
+
+    // 입력된 텍스트가 있는 경우 "btn-send" 버튼에 "active" 클래스를 추가
+    if (inputText.trim() !== "") {
+      $(".btn-send").addClass("active");
+    } else {
+      // 입력된 텍스트가 없는 경우 "btn-send" 버튼에서 "active" 클래스를 제거
+      $(".btn-send").removeClass("active");
+    }
+  });
+
+  // 상세페이지
+  // 상품 리뷰 더보기 클릭 시
+  $(".review-text a").click(function (e) {
+    e.preventDefault(); // 기본 동작 방지
+    $(this).siblings("span").css("display", "block"); // 형제인 span 요소를 보이도록 변경
+    $(this).remove(); // "더보기" 링크 삭제
   });
 });
 

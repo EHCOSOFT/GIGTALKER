@@ -134,7 +134,7 @@
                                 <div class="chat-side-text">
                                     <h6>아츠달 스튜디오<span>23.11.20</span></h6>
                                     <p><span>안녕하세요 문의드립니다. 안녕하세요 문의드립니다.</span><button type="button"
-                                            class="btn-bookmark active"><i class="ico i-star-active"></i></button></p>
+                                            class="btn-bookmark active"><i class="ico i-star"></i></button></p>
                                 </div>
                             </li>
                             <li class="chat-side-item">
@@ -161,6 +161,8 @@
                             <div class="btn-group">
                                 <button type="button" class="open-modal" data-modal-id="autoTranslationModal"><i
                                         class="ico i-auto-translation"></i>자동번역</button>
+                                <!-- <button type="button" data-modal-id="autoTranslationModal" class="auto-translation-none"><i
+                                        class="ico i-auto-translation-actvie"></i>번역끄기</button> -->
                                 <button type="button" class="open-modal" data-modal-id="chatWarningModal"><i
                                         class="ico i-trash"></i></button>
                                 <button type="button" class="open-modal" data-modal-id="chatDecModal"><i
@@ -180,6 +182,7 @@
                                             <div class="user-text">
                                                 <h6>나<span>2023년 9월 15일, 16:48</span></h6>
                                                 <p>您好，我有个疑问吗?</p>
+                                                <span class="translated-text">안녕하세요</span>
                                             </div>
                                         </div>
                                     </li>
@@ -192,6 +195,7 @@
                                                 <h6>아츠달 스튜디오<span>2023년 9월 15일, 16:48</span></h6>
                                                 <p>제가 중국어를 잘 몰라서 번역기능을 설정해야 할거 같습니다.<br>
                                                     상단에 통역 버튼을 클릭해서 상대방 언어를 한국어로 설정해주세요</p>
+                                                <span class="translated-text">您好，有什么可以帮您的吗？</span>
                                             </div>
                                         </div>
                                     </li>
@@ -201,6 +205,8 @@
                                             <div class="user-text">
                                                 <h6>나<span>2023년 9월 15일, 16:48</span></h6>
                                                 <p>嗯，知道了。 </p>
+                                                <span class="translated-text">저희집의 싱크대가 고장나서 수리가 필요합니다. 견적은 얼마나 나올지 알고
+                                                    싶습니다.</span>
                                             </div>
                                         </div>
                                     </li>
@@ -212,6 +218,7 @@
                                             <div class="user-text">
                                                 <h6>아츠달 스튜디오<span>2023년 9월 15일, 16:48</span></h6>
                                                 <p>번역은 잘 되시나요? </p>
+                                                <span class="translated-text">您好，有什么可以帮您的吗？</span>
                                             </div>
                                         </div>
                                     </li>
@@ -253,10 +260,35 @@
                                     </li>
                                     <li>
                                         <div class="chat-list-item">
-                                            <div class="user-profile-text">T</div>
+                                            <div class="user-profile-img"
+                                                style="background: url(img/sample/sample-02.png); background-size: cover;">
+                                            </div>
                                             <div class="user-text">
-                                                <h6>나<span>2023년 9월 15일, 16:48</span></h6>
-                                                <p>好的，谢谢你。</p>
+                                                <h6>아츠달 스튜디오<span>2023년 9월 15일, 16:48</span></h6>
+                                                <div class="price-offer-box">
+                                                    <h6>결제를 제안합니다.</h6>
+                                                    <div class="export-service-item">
+                                                        <div class="export-service-item-top">
+                                                            <div class="export-service-item-img"
+                                                                style="background: url(img/sample/sample-11.png); background-size: cover;">
+                                                            </div>
+                                                            <div class="export-service-item-text">
+                                                                <h6>고급스러운 홈페이지 같은 네이버 블로그/카페를 예쁘게 제작합니다.</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price-offer-data">
+                                                        <dl>
+                                                            <dt>작업기간</dt>
+                                                            <dd>2일</dd>
+                                                        </dl>
+                                                        <dl>
+                                                            <dt>제안금액 </dt>
+                                                            <dd>100,000원</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <button type="button" class="btn btn-outline-gray">주문하기</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </li>
@@ -269,8 +301,11 @@
                             </div>
                             <div class="chat-write-bot">
                                 <div class="btn-group">
-                                    <button type="button"><i class="ico i-emoticon"></i></button>
-                                    <button type="button"><i class="ico i-file"></i></button>
+                                    <button type="button" class="btn-emoticon"><i class="ico i-emoticon"></i></button>
+                                    <button type="button" class="btn-file"><i class="ico i-file"></i></button>
+                                    <button type="button"
+                                        class="btn btn-outline-gray btn-mini btn-price-offer open-modal"
+                                        data-modal-id="priceOfferModal">가격 제안하기</button>
                                 </div>
                                 <button type="button" class="btn-send"><i class="ico i-send"></i>전송</button>
                             </div>
@@ -317,7 +352,7 @@
                                             </div>
                                         </div>
                                         <div class="exprot-service-item-price">
-                                            <span><i class="ico i-star-active-active"></i>4.8<b>(268)</b></span>
+                                            <span><i class="ico i-star-active"></i>4.8<b>(268)</b></span>
                                             <p>4,000원~</p>
                                         </div>
                                     </div>
@@ -335,7 +370,7 @@
                                             </div>
                                         </div>
                                         <div class="exprot-service-item-price">
-                                            <span><i class="ico i-star-active-active"></i>4.8<b>(268)</b></span>
+                                            <span><i class="ico i-star-active"></i>4.8<b>(268)</b></span>
                                             <p>4,000원~</p>
                                         </div>
                                     </div>
@@ -353,7 +388,7 @@
                                             </div>
                                         </div>
                                         <div class="exprot-service-item-price">
-                                            <span><i class="ico i-star-active-active"></i>4.8<b>(268)</b></span>
+                                            <span><i class="ico i-star-active"></i>4.8<b>(268)</b></span>
                                             <p>4,000원~</p>
                                         </div>
                                     </div>
@@ -425,6 +460,61 @@
         </div>
     </div>
     <!-- E : autoTranslationModal -->
+
+    <!-- S : priceOfferModal :: 가격제안 -->
+    <div id="priceOfferModal" class="gt-modal-wrap content-modal price-offer-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+                <div class="gt-modal-header">
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <h6>가격제안</h6>
+                    <p>상품을 선택 후 금액과 작업기간을 입력해주세요</p>
+                    <div class="accordion-item">
+                        <h6 class="accordion-header">
+                            <div class="export-service-item">
+                                <div class="export-service-item-top">
+                                    <div class="export-service-item-img"
+                                        style="background: url(img/sample/sample-11.png); background-size: cover;">
+                                    </div>
+                                    <div class="export-service-item-text">
+                                        <h6>한국어, 중국어 번역,
+                                            교정, 편집dddddddddddd</h6>
+                                        <p>4,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </h6>
+                        <div class="accordion-content" style="display: none;">
+                            <p>Content for Section 1</p>
+                        </div>
+                    </div>
+                    <div class="input-wrap vertical">
+                        <div class="input-group mn horizontal">
+                            <label for="">작업기간</label>
+                            <input type="text" id="text02" placeholder="활동기간입력">
+                            <span>일</span>
+                        </div>
+                        <div class="input-group mn horizontal">
+                            <label for="">판매금액</label>
+                            <input type="text" id="text02" placeholder="금액입력">
+                            <span>원</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-md btn-primary">확인</button>
+                        <button type="button" class="btn btn-md btn-outline-gray btn-modal-close">취소</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : priceOfferModal -->
 
     <!-- S : chatWarningModal :: 대화방나가기 -->
     <div id="chatWarningModal" class="gt-modal-wrap complete-modal chat-warning-modal">

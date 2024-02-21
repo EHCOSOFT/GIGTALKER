@@ -375,6 +375,71 @@
     width: calc(50% - 4px);
 }
 
+/* 채팅 : 가격제안(priceOfferModal) */
+.price-offer-modal .gt-modal-content {
+    padding: 20px 28px;
+    width: 450px;
+}
+
+.price-offer-modal .gt-modal-body>h6 {
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-lg);
+    font-weight: bold;
+    text-align: left;
+}
+
+.price-offer-modal .gt-modal-body>p {
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-md);
+    margin: 4px 0 12px 0;
+    text-align: left;
+}
+
+.price-offer-modal .gt-modal-body .accordion-header {
+    border-top: 1px solid var(--gt-gray-03);
+    padding: 12px;
+}
+
+.price-offer-modal .gt-modal-body .accordion-header::after {
+    height: 28px;
+    width: 28px;
+}
+
+.price-offer-modal .gt-modal-body .export-service-item-img {
+    height: 60px;
+    width: 80px;
+}
+
+.price-offer-modal .gt-modal-body .export-service-item-text h6 {
+    color: var(--gt-black-01);
+}
+
+.price-offer-modal .gt-modal-body .export-service-item-text p {
+    color: var(--gt-black-01);
+    line-height: 1.5;
+}
+
+.price-offer-modal .input-wrap {
+    margin: 16px 0 100px 0;
+}
+
+.price-offer-modal .input-group label {
+    color: var(--gt-gray-02);
+    font-weight: 400;
+}
+
+.price-offer-modal .input-group span {
+    color: var(--gt-gray-02);
+    font-size: var(--gt-text-md);
+    font-weight: 400;
+    position: absolute;
+    right: 12px;
+}
+
+.price-offer-modal .btn-group {
+    justify-content: center;
+}
+
 /* 대화방나가기(chatWarningModal) */
 .chat-warning-modal .btn-group button:first-child {
     width: 110px;
@@ -416,4 +481,124 @@
 
 .exprot-profile-set-modal .ico-complete {
     margin: 0 0 12px 0;
+}
+
+/* 자주쓰는견적(estimateModal) */
+.estimate-modal .gt-modal-content {
+    padding: 20px 48px;
+    width: 500px;
+}
+
+.estimate-modal .gt-modal-body {
+    padding: 40px 0;
+}
+
+.estimate-modal .gt-modal-body ul {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0 0 0;
+}
+
+.estimate-modal .gt-modal-body ul li {
+    border-bottom: 1px solid #cccccc;
+    cursor: pointer;
+    position: relative;
+}
+
+.estimate-modal .gt-modal-body ul li::after {
+    background: url(../img/ico/i-arrow-right.png);
+    background-size: cover;
+    content: '';
+    display: inline-block;
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 16px;
+}
+
+.estimate-modal .gt-modal-body dl {
+    padding: 20px 0;
+}
+
+.estimate-modal .gt-modal-body dt {
+    color: var(--gt-gray-01);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.estimate-modal .gt-modal-body dd {
+    color: var(--gt-gray-02);
+    font-size: var(--gt-text-lg);
+    text-align: left;
+}
+
+/* 마감일연장(extendModal) */
+.extend-modal .gt-modal-content {
+    padding: 48px 40px;
+}
+
+.extend-modal .gt-modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.extend-modal .gt-modal-body h3 {
+    font-size: 26px;
+}
+
+.extend-modal .gt-modal-body p {
+    color: var(--gt-gray-02);
+    font-size: var(--gt-text-sm);
+    text-align: left;
+}
+
+.extend-modal .gt-modal-body button {
+    width: 100%;
+}
+
+/* 구매자후기(review-write-modal) */
+.review-write-modal .gt-modal-content {
+    padding: 48px 40px;
+    width: 500px;
+}
+
+.review-write-modal .gt-modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.review-write-modal .gt-modal-body button {
+    margin: 0 auto;
+}
+
+.rating-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: flex-start;
+}
+
+.rating-box h6 {
+    color: var(--gt-gray-01);
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.rating-box .rating-group .star {
+    height: 36px;
+    width: 36px;
+}
+
+/* 작업물전달(resultModal) */
+.result-modal .gt-modal-content {
+    width: 650px;
+}
+
+.result-modal .file-group {
+    max-width: 400px;
 }

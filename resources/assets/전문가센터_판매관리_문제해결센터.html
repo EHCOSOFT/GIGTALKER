@@ -14,15 +14,10 @@
         <div class="header">
             <div class="header-top type2">
                 <div class="container">
-                    <a href="메인.html" class="header-logo">
-                        <img src="img/logo.png" alt="">
+                    <a href="" class="header-logo">
+                        <img src="img/logo.png" alt="">전문가센터
                     </a>
-                    <div class="input-search">
-                        <input type="text" placeholder="어떤 전문가를 찾으시나요?">
-                        <button type="submit">
-                            <i class="ico i-search-p"></i>
-                        </button>
-                    </div>
+
                     <ul class="header-top-right">
                         <li class="on"><button type="button" class="btn-alarm"><i class="ico i-alarm"></i></button>
                             <div class="alarm-wrap">
@@ -105,65 +100,124 @@
             </div>
         </div>
 
-        <div class="content">
-            <div class="chat-content">
-                <div class="container">
-                    <div class="chat-sidebar">
-                        <div class="chat-side-top">
-                            <div class="dropdown-group">
-                                <div class="dropdown-list-wrap">
-                                    <button class="dropdown-button" data-target="drop01">
-                                        <span class="placeholder">안읽은 메세지</span>
-                                    </button>
-                                    <ul id="drop01" class="dropdown-list" style="display: none;">
-                                        <li class="active">전체 메세지</li>
-                                        <li>안읽은 메세지</li>
-                                        <li>거래중</li>
-                                        <li>즐겨찾기</li>
-                                        <li>가격제안</li>
-                                    </ul>
+        <div class="content expert-center">
+            <div class="container">
+                <aside class="sc-sidebar">
+                    <div class="expert-profile">
+                        <div class="expert-profile-top">
+                            <p>전문가 프로필 80% <a href="#">완성하러가기</a></p>
+                            <div class="progress-group">
+                                <progress id="file" value="32" max="100"></progress>
+                            </div>
+                        </div>
+                        <div class="expert-profile-img-area">
+                            <div class="expert-profile-img"
+                                style="background: url(img/sample/sample-02.png); background-size: cover;"></div>
+                            <div class="expert-rating new">NEW</div>
+                            <!-- <div class="expert-rating one">Level<br>one</div>
+                            <div class="expert-rating two">Level<br>two</div>
+                            <div class="expert-rating top">TOP</div> -->
+                        </div>
+                        <h5>그리고미디어</h5>
+                        <div class="toggle-group type2 active">
+                            <label class="toggle">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <h6>이달 수익금 <span>2,000,000원</span></h6>
+                    <ul class="sc-menu">
+                        <li><a href="#">센터홈</a></li>
+                        <li><a href="#">고객 견적요청</a></li>
+                        <li class="active"><a href="#">판매관리</a></li>
+                        <li><a href="#">내 상품관리</a></li>
+                        <li><a href="#">수익금관리</a></li>
+                        <li><a href="#">광고관리</a></li>
+                        <li><a href="#">내 전문가 등급</a></li>
+                        <li><a href="#">전문가 공지사항</a></li>
+                    </ul>
+                </aside>
+
+                <section class="ec-content">
+                    <h2>문제해결 센터</h2>
+                    <div class="row ps-center-wrap">
+                        <div class="col-7">
+                            <div class="input-wrap">
+                                <div class="radio-group type2">
+                                    <p>진행에 문제가 있나요? 원하는 내용을 작성해주세요</p>
+                                    <div class="radio-area">
+                                        <input type="radio" id="radio01" name="radio01">
+                                        <label for="radio01">주문취소를 요청합니다.</label>
+                                    </div>
+                                    <div class="radio-area">
+                                        <input type="radio" id="radio02"  name="radio01">
+                                        <label for="radio02">환불을 요청합니다.</label>
+                                    </div>
+                                </div>
+                                <div class="text-group sm">
+                                    <h6>주문을 취소하는 이유가 무엇인가요?<br><p>의견은 구매자에게 표시됩니다.</p></h6>
+                                    
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="의견을 작성해주세요"></textarea>
+                                </div>
+                                <hr>
+                                <div class="text-group sm">
+                                    <h6>이 주문을 취소하려는 이유를 비공개로 알려주세요<br><p>이 내용은 구매자에게 공유되지 않습니다.</p></h6>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="의견을 작성해주세요"></textarea>
+                                </div>
+                                <button type="button" class="btn btn-primary">전달하기</button>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="order-box">
+                                <div class="export-service-item-top">
+                                    <div class="export-service-item-img"
+                                        style="background: url(img/sample/sample-01.png); background-size: cover;">
+                                    </div>
+                                    <div class="export-service-item-text">
+                                        <p>생활서비스</p>
+                                        <h6>한국어, 중국어 번역,
+                                            교정, 편집dddddddddddd</h6>
+                                    </div>
+                                </div>
+                                <div class="order-detail-info">
+                                    <dl>
+                                        <dt>주문자</dt>
+                                        <dd>홍길동</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>주문일</dt>
+                                        <dd>2023.06.29 17:30</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>배송일</dt>
+                                        <dd>2023.11.4</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>총가격</dt>
+                                        <dd>24,000원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>주문번호</dt>
+                                        <dd>#2196593</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>결재방식</dt>
+                                        <dd>무통장입금</dd>
+                                    </dl>
                                 </div>
                             </div>
-                            <button class="chat-search"><i class="ico i-search"></i></button>
                         </div>
-                        <ul class="chat-side-list">
-                            <li class="chat-side-item active">
-                                <div class="chat-profile-img"
-                                    style="background: url(img/sample/sample-02.png); background-size: cover;"><span
-                                        class="on"></span></div>
-                                <div class="chat-side-text">
-                                    <h6>아츠달 스튜디오<span>23.11.20</span></h6>
-                                    <p><span>안녕하세요 문의드립니다. 안녕하세요 문의드립니다.</span><button type="button"
-                                            class="btn-bookmark active"><i class="ico i-star"></i></button></p>
-                                </div>
-                            </li>
-                            <li class="chat-side-item ">
-                                <div class="chat-profile-img"
-                                    style="background: url(img/sample/sample-02.png); background-size: cover;"><span
-                                        class=""></span></div>
-                                <div class="chat-side-text">
-                                    <h6>아츠달 스튜디오<span>23.11.20</span></h6>
-                                    <p><span>안녕하세요 문의드립니다. 안녕하세요 문의드립니다.</span><button type="button"
-                                            class="btn-bookmark"><i class="ico i-star-active"></i></button></p>
-                                </div>
-                            </li>
-                        </ul>
                     </div>
-                    <div class="chat-search-area">
-                        <div class="input-group mn">
-                            <input type="text" id="text02" placeholder="검색어를 입력해주세요">
-                        </div>
-                        <button class="chat-search-close">닫기</button>
-                    </div>
-                    <div class="chat-none">
-                        <img src="img/ico/chat-img-01.png" alt="">
-                        <h5>중단한 부분부터 다시 시작할수 있습니다.</h5>
-                        <p>대화를 선택하고 채팅을 시작하세요</p>
-                    </div>
-                </div>
+                </section>
             </div>
         </div>
 
+        <!-- S : FOOTER -->
+        <footer class="footer">
+            <div class="footer-bottom" id="footer-bottom"></div>
+        </footer>
+        <!-- E : FOOTER -->
     </div>
 
     <!-- S : languageModal :: 언어설정 -->
@@ -177,12 +231,6 @@
         <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
     </div>
     <!-- E : alarmAllDelModal -->
-
-    <!-- S : shareModal :: 공유하기 -->
-    <div id="shareModal" class="gt-modal-wrap content-modal share-modal">
-        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
-    </div>
-    <!-- E : shareModal -->
 
     <!-- S : SCRIPT -->
     <script src="lib/swiper-bundle.min.js"></script>

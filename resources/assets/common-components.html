@@ -78,6 +78,7 @@
                     </tbody>
                 </table>
                 <table>
+
                     <tbody>
                         <tr>
                             <td>MODAL</td>
@@ -99,9 +100,16 @@
                     </tbody>
                 </table>
                 <table>
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                        <col style="width: 20%;">
+                    </colgroup>
                     <tbody>
                         <tr>
-                            <td>Input(text)</td>
+                            <td colspan="5">Input(text)</td>
                         </tr>
                         <tr>
                             <td>
@@ -112,37 +120,41 @@
                                         <p>Status<span>1/300</span></p>
                                     </div>
 
-                                    <div class="input-group sm">
-                                        <label for="">Disabled(sm)</label>
-                                        <input type="text" id="text03" disabled placeholder="Placeholder">
-                                    </div>
-                                    <div class="input-group">
-                                        <label for="">Default</label>
-                                        <input type="text" id="text01" placeholder="Placeholder">
-                                        <p>Status<span>1/300</span></p>
-                                    </div>
-
-                                    <div class="input-group error">
-                                        <label for="">Error</label>
-                                        <input type="text" id="text02" placeholder="Placeholder">
-                                        <p>Status</p>
-                                    </div>
-
-                                    <div class="input-group success">
-                                        <label for="">sucess</label>
-                                        <input type="text" id="text02" placeholder="Placeholder">
-                                        <p>Status<span>1/300</span></p>
-                                    </div>
-
-
-
-                                    <!-- <div class="input-group">
-                                        <label for="">Text Field</label>
-                                        <div class="input-area">
-                                            <input type="text" id="text01" placeholder="Placeholder">
-                                            <button type="button" class="btn btn-sm btn-primary">버튼명</button>
-                                        </div>
-                                    </div> -->
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-group sm">
+                                    <label for="">Disabled(sm)</label>
+                                    <input type="text" id="text03" disabled placeholder="Placeholder">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-group">
+                                    <label for="">Default</label>
+                                    <input type="text" id="text01" placeholder="Placeholder">
+                                    <p>Status<span>1/300</span></p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-group error">
+                                    <label for="">Error</label>
+                                    <input type="text" id="text02" placeholder="Placeholder">
+                                    <p>Status</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-group success">
+                                    <label for="">sucess</label>
+                                    <input type="text" id="text02" placeholder="Placeholder">
+                                    <p>Status<span>1/300</span></p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="input-group mn horizontal">
+                                    <label for="">Label</label>
+                                    <input type="text" id="text02" placeholder="Placeholder">
                                 </div>
                             </td>
                         </tr>
@@ -369,15 +381,7 @@
                             </td>
                             <td></td>
 
-                            <!-- <tr>
-                            <td class="pt-4">
-                                <div class="file-group">
-                                    <h2>첨부파일</h2>
-                                    <label for="fileupload"><span>파일 추가</span> 또는 파일을 여기로 드래그</label>
-                                    <input type="file" id="fileupload" />
-                                </div>
-                            </td>
-                        </tr> -->
+
                     </tbody>
                 </table>
                 <table>
@@ -397,7 +401,13 @@
                                     <button type="button"><i class="ico i-camera"></i></button>
                                 </div>
                             </td>
-                            <td></td>
+                            <td>
+                                <div class="file-group">
+                                    <h2>첨부파일</h2>
+                                    <label for="fileupload"><span>파일 추가</span> 또는 파일을 여기로 드래그</label>
+                                    <input type="file" id="fileupload" />
+                                </div>
+                            </td>
                             <td></td>
 
                             <!-- <tr>
@@ -670,7 +680,8 @@
                                         </div>
                                         <h5 class="product-name">고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다. 고급스러운 홈페이지 같은 네이버
                                             고급스러운 홈페이지 같은 네이버</h5>
-                                        <p class="product-review"><i class="ico i-star-active"></i>4.8 <span>(268)</span>
+                                        <p class="product-review"><i class="ico i-star-active"></i>4.8
+                                            <span>(268)</span>
                                         </p>
                                         <h6 class="product-price">4,000 원~</h6>
                                     </div>

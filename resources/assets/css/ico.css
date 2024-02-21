@@ -41,8 +41,8 @@
     width: 16px;
 }
 
-.i-star-active-active {
-    background: url(../img/ico/i-star-active-active.png);
+.i-star-half {
+    background: url(../img/ico/i-star-half.png);
     height: 16px;
     width: 16px;
 }
@@ -288,7 +288,7 @@
     width: 12px;
 }
 
-.i-outline-star{
+.i-outline-star {
     background: url(../img/ico/i-outline-star.png);
     height: 16px;
     width: 16px;
@@ -296,6 +296,13 @@
 
 .i-auto-translation {
     background: url(../img/ico/i-auto-translation.png);
+    height: 20px;
+    width: 20px;
+}
+
+
+.i-auto-translation-actvie {
+    background: url(../img/ico/i-auto-translation-active.png);
     height: 20px;
     width: 20px;
 }
@@ -352,4 +359,34 @@
     background: url(../img/ico/i-customer-request-info.png);
     height: 48px;
     width: 48px;
+}
+
+.i-print {
+    background: url(../img/ico/i-print.png);
+    height: 24px;
+    width: 24px;
+}
+
+.i-arrow-right {
+    background: url(../img/ico/i-arrow-right.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-download {
+    background: url(../img/ico/i-download.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-doc {
+    background: url(../img/ico/i-doc.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-order {
+    background: url(../img/ico/i-order.png);
+    height: 20px;
+    width: 20px;
 }
