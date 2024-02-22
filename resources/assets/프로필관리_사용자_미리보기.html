@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header" id="header"></div>
+
+        <div class="content profile-wrap">
+            <div class="container">
+                <aside class="profile-area">
+                    <div class="profile-box">
+                        <span class="user-state off">오프라인</span>
+                        <!-- <span class="user-state on">온라인</span> -->
+                        <div class="expert-profile-img-area">
+                            <div class="expert-profile-img"
+                                style="background: url(img/sample/sample-02.png); background-size: cover;"></div>
+                            <!--   -->
+                            <!-- <div class="expert-rating one">Level<br>one</div>
+                            <div class="expert-rating two">Level<br>two</div>
+                            <div class="expert-rating top">TOP</div> -->
+                        </div>
+                        <h5>그리고미디어</h5>
+                        <button type="button" class="btn btn-primary">채팅</button>
+                        <div class="profile-user-info">
+                            <dl>
+                                <dt>거주지</dt>
+                                <dd>대한민국</dd>
+                            </dl>
+                            <dl>
+                                <dt>가입일</dt>
+                                <dd>2021.11.23</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="profile-box">
+                        <div class="profile-user-detail-info">
+                            <dl>
+                                <dt>설명</dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>언어</dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>기술</dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>전문분야</dt>
+                                <dd></dd>
+                            </dl>
+                            <dl>
+                                <dt>학력</dt>
+                                <dd></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </aside>
+
+                <section class="profile-content">
+                </section>
+            </div>
+        </div>
+
+        <!-- S : FOOTER -->
+        <footer class="footer">
+            <div class="footer-bottom" id="footer-bottom"></div>
+        </footer>
+        <!-- E : FOOTER -->
+    </div>
+
+    <!-- S : languageModal :: 언어설정 -->
+    <div id="languageModal" class="gt-modal-wrap language-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : languageModal -->
+
+    <!-- S : alarmAllDelModal :: 알림 전체삭제 -->
+    <div id="alarmAllDelModal" class="gt-modal-wrap alert-modal alarm-all-del-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : alarmAllDelModal -->
+
+    <!-- S : accountInfoModal :: 대금수령방법관리 -->
+    <div id="accountInfoModal" class="gt-modal-wrap accout-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content gt-modal-md">
+                <div class="gt-modal-header">
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <h5>계좌정보 정보 입력</h5>
+                    <div class="input-wrap">
+                        <div class="input-group mn">
+                            <label for="">예금주</label>
+                            <input type="text" id="text02" placeholder="예금주 이름을 입력해주세요">
+                        </div>
+                        <div class="input-group mn">
+                            <label for="">은행명</label>
+                            <div class="select-group sm">
+                                <select name="" id="">
+                                    <option value="은행명" selected="selected">은행명</option>
+                                    <option value="은행명">은행명</option>
+                                    <option value="은행명">은행명</option>
+                                    <option value="은행명">은행명</option>
+                                    <option value="은행명">은행명</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-group mn">
+                            <label for="">계좌번호</label>
+                            <input type="text" id="text02" placeholder="계좌번호를 입력해주세요">
+                        </div>
+                    </div>
+                    <div class="check-group type2 sm">
+                        <input type="checkbox" id="chk00">
+                        <label for="chk00">개인정보 수집, 이용 동의<span class="red">(필수)</span></label>
+                        <a href="#">상세보기</a>
+                    </div>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-sm btn-secondary">변경하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : accountInfoModal -->
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>

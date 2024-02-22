@@ -25,6 +25,7 @@
  * 10) 전문가등록
  * 11) 계정설정
  * 12) 채팅
+ * 13) 프로필관리
  */
 
 /* **************************************** *
@@ -2692,9 +2693,13 @@
 
 /* 판매관리 */
 .ec-sell-set h1 {
+    align-items: center;
     color: var(--gt-gray-01);
+    display: flex;
     font-size: 24px;
+    justify-content: space-between;
     margin: 0 0 16px 0;
+    width: 100%;
 }
 
 .ec-sell-top {
@@ -3930,6 +3935,136 @@
     font-weight: bold;
     height: 55px;
     width: 220px;
+}
+
+/* 광고관리 */
+.ec-sell-set .input-search {
+    width: 280px;
+}
+
+.ec-sell-set .input-search button {
+    top: 56%;
+}
+
+.ec-ad-all {
+    border-top: 1px solid #cccccc;
+    padding: 28px 0;
+}
+
+.ad-box {
+    align-items: center;
+    border: 3px solid var(--gt-gray-05);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 32px;
+}
+
+.ad-box p {
+    align-items: center;
+    color: var(--gt-gray-03);
+    display: flex;
+    font-size: 15px;
+}
+
+.ad-box p span {
+    color: var(--gt-black-01);
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0 0 0 8px;
+}
+
+.ad-box ul {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+}
+
+.ad-box ul li {
+    color: var(--gt-primary);
+    font-size: 15px;
+}
+
+.ad-box ul li button {
+    font-size: var(--gt-text-lg);
+    font-weight: bold;
+    height: 48px;
+    width: 144px;
+}
+
+.ec-ad-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ad-list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.ad-item-top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ad-item-top p {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-lg);
+}
+
+.ad-item-top h6.gray {
+    color: var(--gt-gray-04);
+}
+
+.ad-item-top h6.green {
+    color: var(--gt-success);
+}
+
+.ad-item-bot {
+    align-items: center;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    display: flex;
+    gap: 24px;
+    padding: 20px;
+}
+
+.ad-item-bot .ad-item-img {
+    border-radius: 6px;
+    height: 60px;
+    width: 80px;
+}
+
+.ad-item-bot .ad-item-text h6 {
+    font-size: var(--gt-text-lg);
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 500px;
+}
+
+.ad-item-bot .ad-item-text p {
+    color: #74767C;
+    font-size: var(--gt-text-md);
+}
+
+.ad-item-bot .ad-item-text p span {
+    color: var(--gt-gray-01);
+}
+
+.ad-item-bot .ad-price {
+    color: var(--gt-primary);
+    font-size: var(--gt-text-lg);
+    margin: 0 32px 0 auto;
+    text-align: center;
+}
+
+.ad-item-bot .ad-price.gray {
+    color: var(--gt-gray-04);
 }
 
 /* **************************************** *
@@ -5192,4 +5327,216 @@
     color: var(--gt-gray-01);
     font-size: var(--gt-text-md);
     font-weight: bold;
+}
+
+
+/* **************************************** *
+ * 프로필관리
+ * **************************************** */
+.profile-wrap {
+    padding: 68px 0 100px 0;
+}
+
+.profile-wrap .container {
+    display: flex;
+    gap: 40px;
+}
+
+.profile-area {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    gap: 20px;
+    width: 380px;
+}
+
+.profile-box {
+    align-items: center;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    position: relative;
+}
+
+.profile-box .user-state {
+    align-items: center;
+    border-radius: 100px;
+    display: flex;
+    font-size: var(--gt-text-sm);
+    height: 24px;
+    justify-content: center;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 64px;
+}
+
+.profile-box .user-state.off {
+    border: 1px solid #cccccc;
+    color: #999999;
+}
+
+.profile-box .user-state.on {
+    border: 1px solid #8437DD;
+    color: #8437DD;
+}
+
+.profile-box .expert-profile-img-area {
+    margin: 20px 0 0 0;
+}
+
+.profile-box h5 {
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    gap: 4px;
+}
+
+.profile-box h5 button {
+    background: none;
+    border: 0;
+    padding: 0;
+}
+
+.profile-box>button {
+    height: 35px;
+    width: 152px;
+}
+
+.profile-user-info {
+    border-top: 1px solid #cccccc;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px 0 0 0;
+    width: 100%;
+}
+
+.profile-user-info dl {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-user-info dt {
+    color: #5C5A54;
+    font-size: var(--gt-text-sm);
+}
+
+.profile-user-info dd {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-sm);
+}
+
+.profile-user-detail-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.profile-user-detail-info dl {
+    border-bottom: 1px solid #E6E6E6;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0 0 20px 0;
+}
+
+.profile-user-detail-info dl:last-child {
+    border: 0;
+    padding: 0;
+}
+
+.profile-user-detail-info dt {
+    align-items: center;
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-sm);
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-user-detail-info dt a {
+    color: #8437DD;
+    font-size: 10px;
+}
+
+.profile-user-detail-info dd {
+    color: #74767C;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--gt-text-mn);
+    gap: 8px;
+}
+
+.profile-user-detail-info dd ul li {
+    align-items: center;
+    color: var(--gt-gray-01);
+    display: flex;
+    gap: 4px;
+}
+
+.profile-user-detail-info dd ul li .btn-del {
+    background: none;
+    border: 0;
+    padding: 0;
+}
+
+.profile-user-detail-info dd ul li .btn-del i {
+    height: 12px;
+    width: 12px;
+}
+
+.profile-user-detail-info dd ul li span {
+    color: #74767C;
+}
+
+.profile-content {
+    width: 100%;
+}
+
+.profile-content-box {
+    align-items: center;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 28px 0 60px 0;
+}
+
+.profile-content-box img {
+    width: 406px;
+}
+
+.profile-content-box h1 {
+    color: var(--gt-black-01);
+    font-size: 20px;
+}
+
+.profile-content-box button {
+    font-size: var(--gt-text-lg);
+    height: 50px;
+    width: 210px;
+}
+
+.profile-user-detail-info .edit-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.profile-user-detail-info .edit-group button {
+    width: calc(50% - 4px);
+}
+
+.profile-user-detail-info .text-group textarea {
+    height: 120px;
+}
+
+.profile-user-detail-info .input-group input {
+    font-size: 13px;
 }
