@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header-top type2">
+                <div class="container">
+                    <a href="" class="header-logo">
+                        <img src="img/logo.png" alt="">전문가센터
+                    </a>
+
+                    <ul class="header-top-right">
+                        <li class="on"><button type="button" class="btn-alarm"><i class="ico i-alarm"></i></button>
+                            <div class="alarm-wrap">
+                                <div class="alarm-top">
+                                    <h6>알림</h6>
+                                    <ul>
+                                        <li class="open-modal" data-modal-id="alarmAllDelModal"><i
+                                                class="ico i-trash"></i></li>
+                                        <li><i class="ico i-set"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="alarm-body">
+                                    <div class="alarm-item">
+                                        <p>오늘</p>
+                                        <ul>
+                                            <li>
+                                                <div class="alarm-area">
+                                                    <img src="img/sample/sample-02.png" alt="">
+                                                    <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
+                                                        있습니다.<br><span>2023.11.16. 13:00</span></h3>
+                                                    <button type="button" class="btn-alarm-close"></button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="alarm-item">
+                                        <p>이전</p>
+                                        <ul>
+                                            <li>
+                                                <div class="alarm-area">
+                                                    <img src="img/sample/sample-02.png" alt="">
+                                                    <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
+                                                        있습니다.<br><span>2023.11.16. 13:00</span></h3>
+                                                    <button type="button" class="btn-alarm-close"></button>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="alarm-area">
+                                                    <img src="img/sample/sample-02.png" alt="">
+                                                    <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
+                                                        있습니다.<br><span>2023.11.16. 13:00</span></h3>
+                                                    <button type="button" class="btn-alarm-close"></button>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="on"><a href="#"><i class="ico i-chat"></i></a></li>
+                        <li class="on"><a href="#"><i class="ico i-heart"></i></a></li>
+                        <li class="language open-modal" data-modal-id="languageModal"><i class="ico i-language"></i>한국어
+                        </li>
+                        <li class="on"><a href="#"><b>구매관리</b></a></li>
+                        <li>
+                            <div class="dropdown-group">
+                                <div class="dropdown-list-wrap header-user">
+                                    <button class="dropdown-button" data-target="headerUserMenu">
+                                        <!-- on and off -->
+                                        <span href="#" class="user md off">
+                                            <img src="img/sample/sample-02.png" alt="">
+                                        </span>
+                                    </button>
+                                    <ul id="headerUserMenu" class="dropdown-list">
+                                        <li><a href="#">프로필 관리</a></li>
+                                        <li><a href="#">계정정보</a></li>
+                                        <li><a href="#">구매관리</a></li>
+                                        <li><a href="#">마이페이지</a></li>
+                                        <hr>
+                                        <li><a href="#">전문가센터</a></li>
+                                        <li><a href="#">판매관리</a></li>
+                                        <li><a href="#"><i class="ico i-logout"></i>로그아웃</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content expert-center">
+            <div class="container">
+                <aside class="sc-sidebar">
+                    <div class="expert-profile">
+                        <div class="expert-profile-top">
+                            <p>전문가 프로필 80% <a href="#">완성하러가기</a></p>
+                            <div class="progress-group">
+                                <progress id="file" value="32" max="100"></progress>
+                            </div>
+                        </div>
+                        <div class="expert-profile-img-area">
+                            <div class="expert-profile-img"
+                                style="background: url(img/sample/sample-02.png); background-size: cover;"></div>
+                            <div class="expert-rating new">NEW</div>
+                            <!-- <div class="expert-rating one">Level<br>one</div>
+                            <div class="expert-rating two">Level<br>two</div>
+                            <div class="expert-rating top">TOP</div> -->
+                        </div>
+                        <h5>그리고미디어</h5>
+                        <div class="toggle-group type2 active">
+                            <label class="toggle">
+                                <input type="checkbox" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <h6>이달 수익금 <span>2,000,000원</span></h6>
+                    <ul class="sc-menu">
+                        <li><a href="#">센터홈</a></li>
+                        <li><a href="#">고객 견적요청</a></li>
+                        <li><a href="#">판매관리</a></li>
+                        <li><a href="#">내 상품관리</a></li>
+                        <li><a href="#">수익금관리</a></li>
+                        <li class="active"><a href="#">광고관리</a></li>
+                        <li><a href="#">내 전문가 등급</a></li>
+                        <li><a href="#">전문가 공지사항</a></li>
+                    </ul>
+                </aside>
+
+                <section class="ec-content">
+                    <div class="ec-sell-set">
+                        <h1>광고신청
+                            <div class="input-search type2">
+                                <input type="text" placeholder="상품검색">
+                                <button type="submit">
+                                    <i class="ico i-search"></i>
+                                </button>
+                            </div>
+                        </h1>
+                        <div class="ec-ad-all">
+                            <div class="default-tabs md">
+                                <ul class="tab-list">
+                                    <li class="tab-button active" data-target="premiunAd">프리미엄광고</li>
+                                    <li class="tab-button" data-target="plusAd">플러스광고</li>
+                                    <li class="tab-button " data-target="pushProductAd">추천상품광고</li>
+                                </ul>
+                                <div class="tab-content" id="premiunAd">
+                                    <div class="ad-price-area">
+                                        <div class="ad-price-box">
+                                            <div class="ad-price-box-item">
+                                                <p>1주일 광고 비용</p>
+                                                <h6>499,000원</h6>
+                                            </div>
+                                            <div class="ad-price-box-item">
+                                                <p>사용가능한 주한캐쉬</p>
+                                                <h6 class="gray">499,000원</h6>
+                                            </div>
+                                            <div class="ad-price-box-item">
+                                                <p>광고기간선택</p>
+                                                <div class="ad-period">
+                                                    <input type="radio" id="radio01" name="radio01" checked>
+                                                    <label for="radio01">1주</label>
+                                                    <input type="radio" id="radio02" name="radio01" disabled>
+                                                    <label for="radio02">2주</label>
+                                                    <input type="radio" id="radio03" name="radio01" disabled>
+                                                    <label for="radio03">3주</label>
+                                                    <input type="radio" id="radio04" name="radio01" disabled>
+                                                    <label for="radio04">4주</label>
+                                                </div>
+                                            </div>
+                                            <div class="ad-price-box-item">
+                                                <h5>광고 예상 비용</h5>
+                                                <h2>499,000원</h2>
+                                            </div>
+                                        </div>
+                                        <div class="ad-price-text">
+                                            <h6>1페이지 최상단 고정형 (최대 클릭률 위치)</h6>
+                                            <p>평균보다 2~3배 클릭률이 높은 카테고리 리스트 첫 줄에 고정 노출되는 광고입니다.<br>확실한 광고 효과를 원하시는 분들께
+                                                추천합니다.</p>
+                                            <dl>
+                                                <dt>적용 플랫폼</dt>
+                                                <dd>PC / Mobile</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>신청가능 개수</dt>
+                                                <dd>카테고리 당 최대 4개 게시<br><span>*선착순 신청<br>
+                                                        타 광고상품과 중복 신청 불가<br>
+                                                        가상계좌(무통장입금) 결제 불가</span></dd>
+                                            </dl>
+                                            <button type="button" class="btn btn-primary open-modal"
+                                                data-modal-id="premiunAdModal">프리미엄 광고 신청</button>
+                                        </div>
+                                        <div class="ad-exposure">
+                                            <dl>
+                                                <dt>노출위치</dt>
+                                                <dd>1·2차 카테고리 리스트 1페이지 최상단 1열 고정<br><span>플래티넘 광고 간 노출 순서 랜덤</span></dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-content" id="plusAd">
+                                    <div class="ad-price-area">
+                                        <div class="ad-price-box">
+                                            <div class="ad-price-box-item">
+                                                <p>1주일 광고 비용</p>
+                                                <h6>499,000원</h6>
+                                            </div>
+                                            <div class="ad-price-box-item">
+                                                <p>사용가능한 주한캐쉬</p>
+                                                <h6 class="gray">499,000원</h6>
+                                            </div>
+                                            <div class="ad-price-box-item">
+                                                <p>광고기간선택</p>
+                                                <div class="ad-period">
+                                                    <input type="radio" id="radio01" name="radio01" checked>
+                                                    <label for="radio01">1주</label>
+                                                    <input type="radio" id="radio02" name="radio01" disabled>
+                                                    <label for="radio02">2주</label>
+                                                    <input type="radio" id="radio03" name="radio01" disabled>
+                                                    <label for="radio03">3주</label>
+                                                    <input type="radio" id="radio04" name="radio01" disabled>
+                                                    <label for="radio04">4주</label>
+                                                </div>
+                                            </div>
+                                            <div class="ad-price-box-item">
+                                                <h5>광고 예상 비용</h5>
+                                                <h2>499,000원</h2>
+                                            </div>
+                                        </div>
+                                        <div class="ad-price-text">
+                                            <h6>1페이지 최상단 고정형 (최대 클릭률 위치)</h6>
+                                            <p>평균보다 2~3배 클릭률이 높은 카테고리 리스트 첫 줄에 고정 노출되는 광고입니다.<br>확실한 광고 효과를 원하시는 분들께
+                                                추천합니다.</p>
+                                            <dl>
+                                                <dt>적용 플랫폼</dt>
+                                                <dd>PC / Mobile</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>신청가능 개수</dt>
+                                                <dd>카테고리 당 최대 4개 게시<br><span>*선착순 신청<br>
+                                                        타 광고상품과 중복 신청 불가<br>
+                                                        가상계좌(무통장입금) 결제 불가</span></dd>
+                                            </dl>
+                                            <button type="button" class="btn btn-primary">프리미엄 광고 신청</button>
+                                        </div>
+                                        <div class="ad-exposure">
+                                            <dl>
+                                                <dt>노출위치</dt>
+                                                <dd>1·2차 카테고리 리스트 1페이지 최상단 1열 고정<br><span>플래티넘 광고 간 노출 순서 랜덤</span></dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-content" id="pushProductAd">
+                                    <div class="ad-price-area">
+                                        <div class="ad-price-box">
+                                            <div class="ad-price-box-item">
+                                                <p>1주일 광고 비용</p>
+                                                <h6>499,000원</h6>
+                                            </div>
+                                            <div class="ad-price-box-item">
+                                                <p>사용가능한 주한캐쉬</p>
+                                                <h6 class="gray">499,000원</h6>
+                                            </div>
+                                            <div class="ad-price-box-item">
+                                                <p>광고기간선택</p>
+                                                <div class="ad-period">
+                                                    <input type="radio" id="radio01" name="radio01" checked>
+                                                    <label for="radio01">1주</label>
+                                                    <input type="radio" id="radio02" name="radio01" disabled>
+                                                    <label for="radio02">2주</label>
+                                                    <input type="radio" id="radio03" name="radio01" disabled>
+                                                    <label for="radio03">3주</label>
+                                                    <input type="radio" id="radio04" name="radio01" disabled>
+                                                    <label for="radio04">4주</label>
+                                                </div>
+                                            </div>
+                                            <div class="ad-price-box-item">
+                                                <h5>광고 예상 비용</h5>
+                                                <h2>499,000원</h2>
+                                            </div>
+                                        </div>
+                                        <div class="ad-price-text">
+                                            <h6>1페이지 최상단 고정형 (최대 클릭률 위치)</h6>
+                                            <p>평균보다 2~3배 클릭률이 높은 카테고리 리스트 첫 줄에 고정 노출되는 광고입니다.<br>확실한 광고 효과를 원하시는 분들께
+                                                추천합니다.</p>
+                                            <dl>
+                                                <dt>적용 플랫폼</dt>
+                                                <dd>PC / Mobile</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>신청가능 개수</dt>
+                                                <dd>카테고리 당 최대 4개 게시<br><span>*선착순 신청<br>
+                                                        타 광고상품과 중복 신청 불가<br>
+                                                        가상계좌(무통장입금) 결제 불가</span></dd>
+                                            </dl>
+                                            <button type="button" class="btn btn-primary">프리미엄 광고 신청</button>
+                                        </div>
+                                        <div class="ad-exposure">
+                                            <dl>
+                                                <dt>노출위치</dt>
+                                                <dd>1·2차 카테고리 리스트 1페이지 최상단 1열 고정<br><span>플래티넘 광고 간 노출 순서 랜덤</span></dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ec-sell-body">
+                            <div class="ad-app-info">
+                                <img src="img/sample/sample-12.png" alt="">
+                                <div class="ad-app-info-text">
+                                    <h6>꼭 확인해주세요!</h6>
+                                    <div class="ad-info-text-group">
+                                        <h6>광고 상세 안내</h6>
+                                        <ul>
+                                            <li>광고는 인기순, 추천순 정렬 조건에만 적용되며, 그 외 서비스 정렬 조건에는 적용되지 않습니다.</li>
+                                            <li>광고가 적용된 이후에는 광고 상품, 서비스 및 리뷰를 변경할 수 없습니다.</li>
+                                            <li>자발적인 서비스 판매중단 시 광고를 "일시중지" 하거나, 기간을 연장할 수 없습니다.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="ad-info-text-group">
+                                        <h6>취소 및 환불 안내</h6>
+                                        <ul>
+                                            <li>광고는 구매 완료 즉시 서비스에 적용되며, 광고가 적용된 이후 중도 해지 시 환불이 불가합니다.</li>
+                                            <li>회원이 이용약관 및 운영정책을 위반하여 판매중단, 서비스 이용 제한 및 기타 조치를 받을 경우, 광고 기간은 연장되지 않으며
+                                                환불이 불가합니다.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="ad-info-text-group">
+                                        <h6>결제 및 영수증 안내</h6>
+                                        <ul>
+                                            <li>무통장입금 수단으로 발급받은 가상계좌는 12시간 동안 유효하며, 입금기한 내 미입금 시 광고 신청이 자동으로 취소됩니다.</li>
+                                            <li>광고 구매 비용에 대한 영수증은 결제 수단에 따라 "카드 전표" 또는 "현금영수증"으로 발행 받을 수 있습니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- S : FOOTER -->
+        <footer class="footer">
+            <div class="footer-bottom" id="footer-bottom"></div>
+        </footer>
+        <!-- E : FOOTER -->
+    </div>
+
+    <!-- S : languageModal :: 언어설정 -->
+    <div id="languageModal" class="gt-modal-wrap language-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : languageModal -->
+
+    <!-- S : alarmAllDelModal :: 알림 전체삭제 -->
+    <div id="alarmAllDelModal" class="gt-modal-wrap alert-modal alarm-all-del-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : alarmAllDelModal -->
+
+    <!-- S : shareModal :: 공유하기 -->
+    <div id="shareModal" class="gt-modal-wrap content-modal share-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : shareModal -->
+
+    <!-- S : premiunAdModal :: 프리미엄 광고 -->
+    <div id="premiunAdModal" class="gt-modal-wrap content-modal ad-modal active">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content gt-modal-md">
+                <div class="gt-modal-header">
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <h1>프리미엄 광고</h1>
+                    <div class="input-wrap">
+                        <div class="select-group">
+                            <h6>서비스 선택</h6>
+                            <select name="" id="">
+                                <option value="한국어" selected="selected">신청가능한 서비스가 없습니다.</option>
+                                <option value="한국어">한국어</option>
+                                <option value="한국어">한국어</option>
+                                <option value="한국어">한국어</option>
+                                <option value="한국어">한국어</option>
+                            </select>
+                        </div>
+                        <div class="select-group">
+                            <h6>광고기간 선택</h6>
+                            <select name="" id="">
+                                <option value="한국어" selected="selected">선택해주세요</option>
+                                <option value="한국어">한국어</option>
+                                <option value="한국어">한국어</option>
+                                <option value="한국어">한국어</option>
+                                <option value="한국어">한국어</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="ad-price-all">
+                        <dl>
+                            <dt>광고금액</dt>
+                            <dd>30,000원</dd>
+                        </dl>
+                        <dl>
+                            <dt><b>주한캐쉬 사용</b><br><span>(사용가능 캐쉬 0원)</span></dt>
+                            <dd><input type="text" value="10,000원"></dd>
+                        </dl>
+                        <hr>
+                        <dl>
+                            <dt><b>총 결제금액</b></dt>
+                            <dd>20,000원</dd>
+                        </dl>
+                    </div>
+                    <div class="check-group type2">
+                        <input type="checkbox" id="chk00">
+                        <label for="chk00">주문내용을 확인했으며 결제에 동의합니다.(필수) </label>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-md btn-secondary">결제하기</button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <!-- E : premiunAdModal -->
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>

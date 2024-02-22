@@ -639,3 +639,81 @@
     height: 45px;
     width: calc(50% - 4px);
 }
+
+/* 프리미엄 광고(premiunAdModal) */
+.ad-modal .gt-modal-content {
+    padding: 48px;
+}
+
+.ad-modal .input-wrap {
+    flex-direction: column;
+    margin: 52px 0 28px 0;
+}
+
+.ad-modal h6 {
+    font-size: var(--gt-text-lg) !important;
+}
+
+.ad-price-all {
+    background: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 28px;
+}
+
+.ad-price-all dl {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ad-price-all dl dt {
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-sm);
+    text-align: left;
+}
+
+.ad-price-all dl dt {
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-sm);
+} 
+
+.ad-price-all dl dd {
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-md);
+    font-weight: bold;
+}
+
+.ad-price-all dl dd input {
+    border: 1px solid #cccccc;
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-md);
+    font-weight: bold;
+    height: 38px;
+    padding: 0 8px;
+    text-align: right;
+    width: 158px;
+}
+
+.ad-price-all hr {
+    background: #999999;
+    opacity: 0.5;
+    margin: 0;
+}
+
+.ad-price-all dl:last-child dt {
+    font-size: var(--gt-text-lg);
+}
+
+.ad-price-all dl:last-child dd {
+    color: #0059DE;
+    font-size: 20px;
+}
+
+.ad-modal .check-group {
+    margin: 16px 0 20px 0;
+}
+
+.ad-modal .gt-modal-body button {
+    width: 100%;
+}

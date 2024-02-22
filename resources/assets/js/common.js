@@ -444,6 +444,7 @@ $(document).ready(function () {
   // 전문가센터 판매관리
   // 초기에 "판매내역" 탭을 활성화
   $("#salesList").show();
+  $("#premiunAd").show();
   $(".default-tabs .tab-button").click(function () {
     var target = $(this).data("target");
     // 모든 탭 버튼에서 active 클래스를 제거
