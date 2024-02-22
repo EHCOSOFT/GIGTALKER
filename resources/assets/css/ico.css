@@ -390,3 +390,21 @@
     height: 20px;
     width: 20px;
 }
+
+.i-pen {
+    background: url(../img/ico/i-pen.png);
+    height: 12px;
+    width: 12px;
+}
+
+.i-ad {
+    background: url(../img/ico/i-ad.png);
+    height: 44px;
+    width: 44px;
+}
+
+.i-arrow-right-w {
+    background: url(../img/ico/i-arrow-right-w.png);
+    height: 20px;
+    width: 20px;
+}

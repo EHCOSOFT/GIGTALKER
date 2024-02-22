@@ -545,6 +545,7 @@
     flex-direction: column;
     gap: 16px;
 }
+
 .extend-modal .gt-modal-body h3 {
     font-size: 26px;
 }
@@ -601,4 +602,40 @@
 
 .result-modal .file-group {
     max-width: 400px;
+}
+
+/* 표시이름 수정(userNameEditModal) */
+.user-name-edit-modal .gt-modal-content {
+    padding: 28px 40px;
+    width: 450px;
+}
+
+.user-name-edit-modal .gt-modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.user-name-edit-modal .gt-modal-body h5 {
+    font-size: 24px;
+}
+
+.user-name-edit-modal .gt-modal-body p {
+    color: var(--gt-gray-02);
+    font-size: var(--gt-text-sm);
+    text-align: left;
+}
+
+.user-name-edit-modal .gt-modal-footer { 
+    padding: 20px 0 0 0;
+}
+
+.user-name-edit-modal .input-group p {
+    color: var(--gt-gray-04);
+    line-height: 1.7;
+}
+
+.user-name-edit-modal .gt-modal-footer button {
+    height: 45px;
+    width: calc(50% - 4px);
 }
