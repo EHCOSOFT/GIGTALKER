@@ -408,3 +408,27 @@
     height: 20px;
     width: 20px;
 }
+
+.i-number-minus {
+    background: url(../img/ico/i-number-minus.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-number-plus {
+    background: url(../img/ico/i-number-plus.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-exclamation-circle-fill {
+    background: url(../img/ico/i-exclamation-circle-fill.png);
+    height: 16px;
+    width: 16px;
+}
+
+.i-share-fill {
+    background: url(../img/ico/i-share-fill.png);
+    height: 16px;
+    width: 16px;
+}

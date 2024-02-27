@@ -445,6 +445,8 @@ $(document).ready(function () {
   // 초기에 "판매내역" 탭을 활성화
   $("#salesList").show();
   $("#premiunAd").show();
+  $("#productSale").show();
+  $("#idFind").show();
   $(".default-tabs .tab-button").click(function () {
     var target = $(this).data("target");
     // 모든 탭 버튼에서 active 클래스를 제거
@@ -691,6 +693,33 @@ $(document).ready(function () {
     e.preventDefault(); // 기본 동작 방지
     $(this).siblings("span").css("display", "block"); // 형제인 span 요소를 보이도록 변경
     $(this).remove(); // "더보기" 링크 삭제
+  });
+
+  // 결제하기
+  // 수량 감소 버튼 클릭 시
+  $(".decrease-btn").click(function () {
+    var input = $(this).siblings(".quantity-input");
+    var currentValue = parseInt(input.val());
+    if (currentValue > 1) {
+      input.val(currentValue - 1);
+    }
+  });
+
+  // 수량 증가 버튼 클릭 시
+  $(".increase-btn").click(function () {
+    var input = $(this).siblings(".quantity-input");
+    var currentValue = parseInt(input.val());
+    input.val(currentValue + 1);
+  });
+
+  // 세금계산서 발행 시
+  $(".product-payment-taxbill-info").hide();
+  $("#taxbillInfo").change(function () {
+    if ($(this).is(":checked")) {
+      $(".product-payment-taxbill-info").show();
+    } else {
+      $(".product-payment-taxbill-info").hide();
+    }
   });
 });
 

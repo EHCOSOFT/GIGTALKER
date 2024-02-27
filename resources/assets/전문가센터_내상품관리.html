@@ -131,17 +131,18 @@
                         <li><a href="#">센터홈</a></li>
                         <li><a href="#">고객 견적요청</a></li>
                         <li><a href="#">판매관리</a></li>
-                        <li><a href="#">내 상품관리</a></li>
+                        <li class="active"><a href="#">내 상품관리</a></li>
                         <li><a href="#">수익금관리</a></li>
-                        <li class="active"><a href="#">광고관리</a></li>
+                        <li><a href="#">광고관리</a></li>
                         <li><a href="#">내 전문가 등급</a></li>
                         <li><a href="#">전문가 공지사항</a></li>
+                        <li><a href="#">사업자 인증하기</a></li>
                     </ul>
                 </aside>
 
                 <section class="ec-content">
                     <div class="ec-sell-set">
-                        <h1>광고관리
+                        <h1>내 상품관리
                             <div class="input-search type2">
                                 <input type="text" placeholder="상품검색">
                                 <button type="submit">
@@ -149,78 +150,36 @@
                                 </button>
                             </div>
                         </h1>
-                        <div class="ec-ad-all">
-                            <div class="ad-box">
-                                <p>현재 광고중인 상품<span>3개</span></p>
-                                <ul>
-                                    <li><i class="ico i-ad"></i></li>
-                                    <li>지금 광고신청으로<br>수익증가를 경험해보세요</li>
-                                    <li><button type="button" class="btn btn-primary">광고신청<i class="ico i-arrow-right-w"></i></button></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="ec-sell-top">
-                            <div class="dropdown-group">
-                                <div class="dropdown-list-wrap">
-                                    <button class="dropdown-button" data-target="drop01">전체
-                                    </button>
-                                    <ul id="drop01" class="dropdown-list" style="display: none;">
-                                        <li class="active">옵션 1</li>
-                                        <li>진행중</li>
-                                        <li>완료</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="dropdown-group">
-                                <div class="dropdown-list-wrap">
-                                    <button class="dropdown-button" data-target="drop02">광고기간
-                                    </button>
-                                    <ul id="drop02" class="dropdown-list" style="display: none;">
-                                        <li class="active">옵션 1</li>
-                                        <li>진행중</li>
-                                        <li>완료</li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="ec-sell-category">
+                            <ul>
+                                <li class="active">판매 (0)</li>
+                                <li>비승인 (0)</li>
+                                <li>임시중지 (0)</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary btn-sm">새상품등록</button>
                         </div>
                         <div class="ec-sell-body">
-                            <div class="ec-ad-list">
+                            <div class="ec-sell-list">
                                 <ul>
                                     <li>
-                                        <div class="ad-list-item">
-                                            <div class="ad-item-top">
-                                                <p>2023.01.12 13:53 주문</p>
-                                                <h6 class="green">진행중</h6>
+                                        <div class="ec-product-item">
+                                            <div class="ec-product-item-img" style="background: url(img/sample/sample-01.png); background-size: cover;">
+                                                <button type="button"><i class="ico i-share-fill"></i></button>
                                             </div>
-                                            <div class="ad-item-bot">
-                                                <div class="ad-item-img" style="background: url(img/sample/sample-08.png); background-size: cover;"></div>
-                                                <div class="ad-item-text">
-                                                    <h6>워드프레스 웹사이트 속도 개선 확실히 작업해 드립니다. 워드프레스 웹사이트 속도 개선 확실히 작업해 드립니다. </h6>
-                                                    <p>광고기간 : <span>2023.11.23 ~ 2023.11.30</span></p>
-                                                </div>
-                                                <div class="ad-price">
-                                                    <p>플래티넘 광고</p>
-                                                    <b>120,000원</b>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="ad-list-item">
-                                            <div class="ad-item-top">
-                                                <p>2023.01.12 13:53 주문</p>
-                                                <h6 class="gray">완료</h6>
-                                            </div>
-                                            <div class="ad-item-bot">
-                                                <div class="ad-item-img" style="background: url(img/sample/sample-08.png); background-size: cover;"></div>
-                                                <div class="ad-item-text">
-                                                    <h6>워드프레스 웹사이트 속도 개선 확실히 작업해 드립니다. 워드프레스 웹사이트 속도 개선 확실히 작업해 드립니다. </h6>
-                                                    <p>광고기간 : <span>2023.11.23 ~ 2023.11.30</span></p>
-                                                </div>
-                                                <div class="ad-price gray">
-                                                    <p>플래티넘 광고</p>
-                                                    <b>120,000원</b>
-                                                </div>
+                                            <div class="ec-product-item-text">
+                                                <p>#134556</p>
+                                                <h5>고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다.고급스러운 홈페이지 같은 네이버 블로그/카</h5>
+                                                <h6>4,000 원 ~</h6>
+                                                <ul>
+                                                    <li>등록일 : 2023.10.15</li>
+                                                    <li>판매완료 : 2건</li>
+                                                </ul>
+                                                <ul class="ec-product-item-tag">
+                                                    <li>미리보기</li>
+                                                    <li>편집</li>
+                                                    <li>임시중지</li>
+                                                    <li>삭제</li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </li>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header-top type2">
+                <div class="container">
+                    <a href="" class="header-logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="info-find">
+                <div class="container">
+                    <h1>이메일/비밀번호 찾기</h1>
+                    <div class="default-tabs md">
+                        <ul class="tab-list">
+                            <li class="tab-button active" data-target="idFind">이메일</li>
+                            <li class="tab-button" data-target="pwFind">비밀번호</li>
+                        </ul>
+                        <div class="tab-content" id="idFind">
+                            <h6>이메일 찾기</h6>
+                            <p>본인인증 받으신 정보를 입력해 주세요. 휴대폰 번호로 아이디(이메일 주소)를 보내드립니다.</p>
+                            <div class="info-find-input-area">
+                                <div class="input-group md">
+                                    <label for="">성명</label>
+                                    <input type="text" id="text01" placeholder="이름을 입력해주세요">
+                                </div>
+                                <div class="input-group md">
+                                    <label for="">휴대폰번호</label>
+                                    <input type="text" id="text01" placeholder="휴대폰 번호를 입력해주세요">
+                                </div>
+                                <button type="button" class="btn btn-gray btn-xl open-modal" data-modal-id="idChangeModal">이메일 주소 받기</button>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="pwFind">
+                            <h6>비밀번호 찾기</h6>
+                            <p>가입 시 등록하신 이메일 주소를 입력해 주세요. 비밀번호 재설정 링크를 보내드립니다.</p>
+                            <div class="info-find-input-area">
+                                <div class="input-group md">
+                                    <label for="">이메일</label>
+                                    <input type="text" id="text01" placeholder="이메일 주소를 입력해주세요">
+                                </div>
+                                <button type="button" class="btn btn-gray btn-xl open-modal" data-modal-id="pwChangeModal">비밀번호 재설정 링크 받기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- S : FOOTER -->
+        <!-- <footer class="footer" id="footer"></footer> -->
+        <!-- E : FOOTER -->
+    </div>
+
+    <!-- S : idChangeModal :: 아이디 찾기 -->
+    <div id="idChangeModal" class="gt-modal-wrap complete-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+                <div class="gt-modal-body">
+                    <img class="ico-complete" src="img/ico/i-complete-check.png" alt="">
+                    <h1>보내기 완료</h1>
+                    <p>휴대폰 번호로 이메일 주소를<br>보내드렸습니다.</p>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-primary btn-modal-close">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : idChangeModal -->
+
+    <!-- S : pwChangeModal :: 비밀번호 찾기 -->
+    <div id="pwChangeModal" class="gt-modal-wrap complete-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+                <div class="gt-modal-body">
+                    <img class="ico-complete" src="img/ico/i-complete-check.png" alt="">
+                    <h1>보내기 완료</h1>
+                    <p>입력하신 이메일 주소로 비밀번호 변경<br>
+                        URL(을)를 전송하였습니다.</p>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-primary btn-modal-close">확인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : pwChangeModal -->
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>

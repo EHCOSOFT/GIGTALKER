@@ -133,98 +133,135 @@
                         <li><a href="#">판매관리</a></li>
                         <li><a href="#">내 상품관리</a></li>
                         <li><a href="#">수익금관리</a></li>
-                        <li class="active"><a href="#">광고관리</a></li>
+                        <li><a href="#">광고관리</a></li>
                         <li><a href="#">내 전문가 등급</a></li>
                         <li><a href="#">전문가 공지사항</a></li>
+                        <li class="active"><a href="#">사업자 인증하기</a></li>
                     </ul>
                 </aside>
 
                 <section class="ec-content">
                     <div class="ec-sell-set">
-                        <h1>광고관리
-                            <div class="input-search type2">
-                                <input type="text" placeholder="상품검색">
-                                <button type="submit">
-                                    <i class="ico i-search"></i>
-                                </button>
-                            </div>
+                        <h1>사업자 인증하기
+                            <span>인증이 완료되었습니다.</span>
                         </h1>
-                        <div class="ec-ad-all">
-                            <div class="ad-box">
-                                <p>현재 광고중인 상품<span>3개</span></p>
-                                <ul>
-                                    <li><i class="ico i-ad"></i></li>
-                                    <li>지금 광고신청으로<br>수익증가를 경험해보세요</li>
-                                    <li><button type="button" class="btn btn-primary">광고신청<i class="ico i-arrow-right-w"></i></button></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="ec-sell-top">
-                            <div class="dropdown-group">
-                                <div class="dropdown-list-wrap">
-                                    <button class="dropdown-button" data-target="drop01">전체
-                                    </button>
-                                    <ul id="drop01" class="dropdown-list" style="display: none;">
-                                        <li class="active">옵션 1</li>
-                                        <li>진행중</li>
-                                        <li>완료</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="dropdown-group">
-                                <div class="dropdown-list-wrap">
-                                    <button class="dropdown-button" data-target="drop02">광고기간
-                                    </button>
-                                    <ul id="drop02" class="dropdown-list" style="display: none;">
-                                        <li class="active">옵션 1</li>
-                                        <li>진행중</li>
-                                        <li>완료</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
                         <div class="ec-sell-body">
-                            <div class="ec-ad-list">
-                                <ul>
-                                    <li>
-                                        <div class="ad-list-item">
-                                            <div class="ad-item-top">
-                                                <p>2023.01.12 13:53 주문</p>
-                                                <h6 class="green">진행중</h6>
-                                            </div>
-                                            <div class="ad-item-bot">
-                                                <div class="ad-item-img" style="background: url(img/sample/sample-08.png); background-size: cover;"></div>
-                                                <div class="ad-item-text">
-                                                    <h6>워드프레스 웹사이트 속도 개선 확실히 작업해 드립니다. 워드프레스 웹사이트 속도 개선 확실히 작업해 드립니다. </h6>
-                                                    <p>광고기간 : <span>2023.11.23 ~ 2023.11.30</span></p>
-                                                </div>
-                                                <div class="ad-price">
-                                                    <p>플래티넘 광고</p>
-                                                    <b>120,000원</b>
-                                                </div>
-                                            </div>
+                            <div class="ec-business-certification">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="input-group mn">
+                                            <label for="">상호</label>
+                                            <input type="text" id="text02" placeholder="예) 주식회사 긱톡커">
                                         </div>
-                                    </li>
-                                    <li>
-                                        <div class="ad-list-item">
-                                            <div class="ad-item-top">
-                                                <p>2023.01.12 13:53 주문</p>
-                                                <h6 class="gray">완료</h6>
-                                            </div>
-                                            <div class="ad-item-bot">
-                                                <div class="ad-item-img" style="background: url(img/sample/sample-08.png); background-size: cover;"></div>
-                                                <div class="ad-item-text">
-                                                    <h6>워드프레스 웹사이트 속도 개선 확실히 작업해 드립니다. 워드프레스 웹사이트 속도 개선 확실히 작업해 드립니다. </h6>
-                                                    <p>광고기간 : <span>2023.11.23 ~ 2023.11.30</span></p>
-                                                </div>
-                                                <div class="ad-price gray">
-                                                    <p>플래티넘 광고</p>
-                                                    <b>120,000원</b>
-                                                </div>
-                                            </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="input-group mn">
+                                            <label for="">사업자등록번호</label>
+                                            <input type="text" id="text02" placeholder="숫자만 입력">
                                         </div>
-                                    </li>
-                                </ul>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="input-group mn">
+                                            <label for="">사업자유형</label>
+                                            <input type="text" id="text02" placeholder="예) 법인사업자">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="input-group mn">
+                                            <label for="">대표자명</label>
+                                            <input type="text" id="text02" placeholder="홍길동">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="input-group mn">
+                                            <label for="">업태</label>
+                                            <input type="text" id="text02" placeholder="예) 서비스업">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="input-group mn">
+                                            <label for="">업종</label>
+                                            <input type="text" id="text02" placeholder="예) 전자상거래">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="input-group mn">
+                                            <label for="">사업장 소재지</label>
+                                            <input type="text" id="text02" placeholder="예) 서울시 마포구 독막로 262 신영빌딩 6층">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="file-group">
+                                            <h2>사업자등록증 사본</h2>
+                                            <label for="fileupload"><span>파일 추가</span></label>
+                                            <input type="file" id="fileupload">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="file-group">
+                                            <h2>사업자/대표자명 통장사본</h2>
+                                            <label for="fileupload"><span>파일 추가</span></label>
+                                            <input type="file" id="fileupload">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="input-group mn">
+                                            <label for="">세금계산서 수취 이메일상호</label>
+                                            <input type="text" id="text02" placeholder="예) help@gigtalker.com">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="input-group mn">
+                                            <label for="">담당자명</label>
+                                            <input type="text" id="text02" placeholder="홍길동">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="input-group mn">
+                                            <label for="">담당자 연락처</label>
+                                            <input type="text" id="text02" placeholder="숫자만 입력">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="input-group mn">
+                                            <label for="">수익금 출금 은행</label>
+                                            <input type="text" id="text02" placeholder="은행명 입력">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="input-group mn">
+                                            <label for="">수익금 출금계좌 (통장 사본과 일치)</label>
+                                            <input type="text" id="text02" placeholder="숫자만 입력">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="input-group mn">
+                                            <label for="">예금주 (통장 사본과 일치)</label>
+                                            <input type="text" id="text02" placeholder="홍길동">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-md">저장</button>
+                            </div>
+                            <div class="ec-business-info">
+                                <div class="ec-business-info-text">
+                                    <h6>사업자 정보 및 수입금 출금 계좌 정보 작성 유의사항</h6>
+                                    <ul>
+                                        <li>사업자등록증 정보와 모두 일치하게 입력해 주세요. (상호, 업태, 사업자 소재지 등) 불일치하는 경우 승인이 거절될 수 있습니다.</li>
+                                        <li>수익금 출금 계좌 정보는 통장사본 정보와 모두 일치하게 입력해 주세요. 예금주 정보는 인증된 기업 정보와 일치해야 하며, 상호가 포함된 경우 대표자명(상호)와 같이 소괄호를 포함하여 모두 입력하셔야 합니다. 불일치하는 경우 승인이 거절될 수 있습니다.</li>
+                                    </ul>
+                                </div>
+                                <div class="ec-business-info-text">
+                                    <h6>인증 정보 변경 관련 안내</h6>
+                                    <ul>
+                                        <li>사업자 정보를 최초로 인증받거나 정보를 변경할 경우 별도의 승인 시간이 필요합니다.</li>
+                                        <li>특정 사유로 인해 계좌, 사업자 인증 정보를 변경할 경우 고객센터로 연락주세요.</li>
+                                        <li>사업자 정보에 변동사항이 있는 경우, 새로 승인받아 최신 정보를 유지해 주세요.</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>

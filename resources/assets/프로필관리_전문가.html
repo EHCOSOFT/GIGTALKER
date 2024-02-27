@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- S : HEADER -->
+        <header class="header" id="header"></header>
+        <!-- E : HEADER -->
+
+        <div class="content">
+            <div class="profile-wrap">
+                <div class="container">
+                    <aside class="profile-area">
+                        <div class="profile-box">
+                            <!-- <span class="user-state off">오프라인</span> -->
+                            <span class="user-state on">접속중</span>
+                            <div class="expert-profile-img-area">
+                                <div class="expert-profile-img"
+                                    style="background: url(img/sample/sample-02.png); background-size: cover;"></div>
+                                <!--   -->
+                                <!-- <div class="expert-rating one">Level<br>one</div>
+                            <div class="expert-rating two">Level<br>two</div>
+                            <div class="expert-rating top">TOP</div> -->
+                            </div>
+                            <h5>그리고미디어<button type="button" class="open-modal" data-modal-id="userNameEditModal"><i
+                                        class="ico i-pen"></i></button></h5>
+                            <button type="button" class="btn btn-outline-gray">프로필 미리보기</button>
+                            <div class="profile-user-info">
+                                <dl>
+                                    <dt>국적</dt>
+                                    <dd>미국</dd>
+                                </dl>
+                                <dl>
+                                    <dt>가입일</dt>
+                                    <dd>2021.11.23</dd>
+                                </dl>
+                                <dl>
+                                    <dt>평균응답시간</dt>
+                                    <dd>1시간</dd>
+                                </dl>
+                                <dl>
+                                    <dt>최종활동일</dt>
+                                    <dd>2021.11.23</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="profile-box">
+                            <div class="profile-user-detail-info">
+                                <dl>
+                                    <dt>설명 <a href="javasciprt:void(0);">편집하기</a></dt>
+                                    <dd>나는 모든 비즈니스 관점에 대해 깊이 이해하고 나만의 비즈니스를 갖고 있는 숙련된 디자이너입니다. 저는 귀하의 비즈니스를 다음 단계로 성장시키기
+                                        위해
+                                        앱과 웹사이트를 위한 아름답고 특별한 인터페이스를 만들기 위해 왔습니다.
+                                        <div class="edit-group">
+                                            <div class="text-group sm">
+                                                <textarea name="" id="" cols="30"
+                                                    rows="10">나는 모든 비즈니스 관점에 대해 깊이 이해하고 나만의 비즈니스를 갖고 있는 숙련된 디자이너입니다. 저는 귀하의 비즈니스를 다음 단계로 성장시키기 위해 앱과 웹사이트를 위한 아름답고 특별한 인터페이스를 만들기 위해 왔습니다.</textarea>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-primary">업데이트</button>
+                                                <button type="button" class="btn btn-sm btn-outline-gray">취소</button>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>언어 <a href="javasciprt:void(0);">추가하기</a></dt>
+                                    <dd>
+                                        <ul>
+                                            <li>영어 <span>- 기본</span><button class="btn-del"><i
+                                                        class="ico i-trash"></i></button></li>
+                                            <li>힌디어 (Hindy) <span>- 유창함</span><button class="btn-del"><i
+                                                        class="ico i-trash"></i></button></li>
+                                        </ul>
+                                        <div class="edit-group">
+                                            <div class="input-group sm">
+                                                <input type="text" placeholder="언어추가">
+                                            </div>
+                                            <div class="select-group sm">
+                                                <select name="" id="">
+                                                    <option value="언어수준" selected="selected">언어수준</option>
+                                                    <option value="한국어">한국어</option>
+                                                    <option value="한국어">한국어</option>
+                                                    <option value="한국어">한국어</option>
+                                                    <option value="한국어">한국어</option>
+                                                </select>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-primary">추가</button>
+                                                <button type="button" class="btn btn-sm btn-outline-gray">취소</button>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>기술 <a href="javasciprt:void(0);">추가하기</a></dt>
+                                    <dd>
+                                        <ul>
+                                            <li>어도비포토샵 <span>- 전문가</span><button class="btn-del"><i
+                                                        class="ico i-trash"></i></button></li>
+                                        </ul>
+                                        <div class="edit-group">
+                                            <div class="input-group sm">
+                                                <input type="text" placeholder="기술추가">
+                                            </div>
+                                            <div class="select-group sm">
+                                                <select name="" id="">
+                                                    <option value="언어수준" selected="selected">숙련도</option>
+                                                    <option value="한국어">한국어</option>
+                                                    <option value="한국어">한국어</option>
+                                                    <option value="한국어">한국어</option>
+                                                    <option value="한국어">한국어</option>
+                                                </select>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-primary">추가</button>
+                                                <button type="button" class="btn btn-sm btn-outline-gray">취소</button>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>전문분야 <a href="javasciprt:void(0);">추가하기</a></dt>
+                                    <dd>
+                                        <ul>
+                                            <li>로고디자인 <button class="btn-del"><i class="ico i-trash"></i></button></li>
+                                            <li>패키지 디자인 <button class="btn-del"><i class="ico i-trash"></i></button>
+                                            </li>
+                                        </ul>
+                                        <div class="edit-group">
+                                            <div class="input-group sm">
+                                                <input type="text" placeholder="전문분야를 작성해주세요">
+                                            </div>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-primary">추가</button>
+                                                <button type="button" class="btn btn-sm btn-outline-gray">취소</button>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>학력 <a href="javasciprt:void(0);">추가하기</a></dt>
+                                    <dd>
+                                        <ul>
+                                            <li>한국 서울대학교 <button class="btn-del"><i class="ico i-trash"></i></button>
+                                            </li>
+                                            <li><span>시각디자인 전공</span></li>
+                                        </ul>
+                                        <div class="edit-group">
+                                            <div class="input-group sm">
+                                                <input type="text" placeholder="국가와 학교명을 작성해주세요">
+                                            </div>
+                                            <div class="input-group sm">
+                                                <input type="text" placeholder="전공을 작성해주세요">
+                                            </div>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-primary">추가</button>
+                                                <button type="button" class="btn btn-sm btn-outline-gray">취소</button>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <section class="profile-content">
+                        <div class="default-tabs">
+                            <ul class="tab-list">
+                                <li class="tab-button active" data-target="productSale">판매중</li>
+                                <li class="tab-button" data-target="productStop">임시중지</li>
+                            </ul>
+                            <div class="tab-content" id="productSale">
+                                <div class="ec-sell-list">
+                                    <ul>
+                                        <li>
+                                            <div class="ec-product-item">
+                                                <div class="ec-product-item-img" style="background: url(img/sample/sample-01.png); background-size: cover;">
+                                                    <button type="button"><i class="ico i-share-fill"></i></button>
+                                                </div>
+                                                <div class="ec-product-item-text">
+                                                    <p>#134556</p>
+                                                    <h5>고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다.고급스러운 홈페이지 같은 네이버 블로그/카</h5>
+                                                    <p class="product-review"><i class="ico i-star-active"></i>4.8
+                                                        <span>(268)</span>
+                                                    </p>
+                                                    <h6>4,000 원 ~</h6>
+                                                    <ul class="ec-product-item-tag">
+                                                        <li>미리보기</li>
+                                                        <li>편집</li>
+                                                        <li>임시중지</li>
+                                                        <li>삭제</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="new-product-registration">
+                                                <img src="img/ico/i-circle-plus-fill.png">
+                                                <p>새로만들기</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-content" id="productStop">
+                                <div class="ec-sell-list">
+                                    <ul>
+                                        <li>
+                                            <div class="ec-product-item">
+                                                <div class="ec-product-item-img" style="background: url(img/sample/sample-01.png); background-size: cover;">
+                                                    <button type="button"><i class="ico i-share-fill"></i></button>
+                                                </div>
+                                                <div class="ec-product-item-text">
+                                                    <p>#134556</p>
+                                                    <h5>고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다.고급스러운 홈페이지 같은 네이버 블로그/카</h5>
+                                                    <p class="product-review"><i class="ico i-star-active"></i>4.8
+                                                        <span>(268)</span>
+                                                    </p>
+                                                    <h6>4,000 원 ~</h6>
+                                                    <ul class="ec-product-item-tag">
+                                                        <li>미리보기</li>
+                                                        <li>편집</li>
+                                                        <li>임시중지</li>
+                                                        <li>삭제</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- S : FOOTER -->
+        <footer class="footer">
+            <div class="footer-bottom" id="footer-bottom"></div>
+        </footer>
+        <!-- E : FOOTER -->
+    </div>
+
+    <!-- S : languageModal :: 언어설정 -->
+    <div id="languageModal" class="gt-modal-wrap language-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : languageModal -->
+
+    <!-- S : alarmAllDelModal :: 알림 전체삭제 -->
+    <div id="alarmAllDelModal" class="gt-modal-wrap alert-modal alarm-all-del-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : alarmAllDelModal -->
+
+    <!-- S : userNameEditModal :: 표시이름 수정 -->
+    <div id="userNameEditModal" class="gt-modal-wrap user-name-edit-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content gt-modal-md">
+                <div class="gt-modal-body">
+                    <h5>표시 이름 수정</h5>
+                    <p>표시 이름은 페이지, 메시지, 프로필 등과 같이 고객 및 고객과의 상호 작용에 표시되는 귀하의 이름 또는 대표 이름입니다.</p>
+                    <p>실명 또는 본인을 대표하는 이름(닉네임)을 사용해야 합니다. 최대 한글 10자, 영문 20자, 숫자 혼용 가능</p>
+                    <div class="input-group">
+                        <input type="text" id="text02" placeholder="예금주 이름을 입력해주세요">
+                        <p>ex) Daniel Kim<span>1/15</span></p>
+                    </div>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-gray btn-modal-close">취소</button>
+                        <button type="button" class="btn btn-sm btn-primary">수정</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : userNameEditModal -->
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>

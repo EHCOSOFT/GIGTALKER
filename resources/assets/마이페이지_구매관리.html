@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header" id="header"></header>
+
+        <div class="content mypage">
+            <div class="container">
+                <aside class="sc-sidebar">
+                    <div class="mypage-profile">
+                        <div class="mypage-profile-top">
+                            <p>내 프로필<a href="#">수정하기</a></p>
+                        </div>
+                        <div class="mypage-profile-img-area">
+                            <div class="mypage-profile-img"
+                                style="background: url(img/sample/sample-02.png); background-size: cover;"></div>
+                        </div>
+                        <h5>홍길동</h5>
+                        <button type="button" class="btn btn-primary">전문가센터로 이동</button>
+                    </div>
+                    <h5>마이페이지</h5>
+                    <ul class="sc-menu">
+                        <li><a href="#">맞춤주문내역</a></li>
+                        <li class="active"><a href="#">구매관리</a></li>
+                        <li><a href="#">채팅내역</a></li>
+                        <li><a href="#">내가 쓴 구매후기</a></li>
+                        <li><a href="#">신고한 내역</a></li>
+                        <li><a href="#">결제내역</a></li>
+                        <li><a href="#">캐쉬충전</a></li>
+                        <li><a href="#">받은쿠폰함</a></li>
+                    </ul>
+                </aside>
+
+                <section class="mypage-content">
+                    <div class="ec-sell-set">
+                        <h1>구매관리</h1>
+                        <div class="ec-sell-top">
+                            <div class="dropdown-group">
+                                <div class="dropdown-list-wrap">
+                                    <button class="dropdown-button" data-target="drop01">
+                                        <span class="placeholder">구매상태</span>
+                                    </button>
+                                    <ul id="drop01" class="dropdown-list" style="display: none;">
+                                        <li class="active">전체</li>
+                                        <li>대기중</li>
+                                        <li>진행중</li>
+                                        <li>작업완료</li>
+                                        <li>환불요청</li>
+                                        <li>수정요청</li>
+                                        <li>거래완료</li>
+                                        <li>취소</li>
+                                        <li>일시중단</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown-group">
+                                <div class="dropdown-list-wrap">
+                                    <button class="dropdown-button" data-target="drop02">
+                                        <span class="placeholder">요청기간</span>
+                                    </button>
+                                    <ul id="drop02" class="dropdown-list" style="display: none;">
+                                        <li class="active">전체</li>
+                                        <li>1개월내</li>
+                                        <li>3개월내</li>
+                                        <li>6개월내</li>
+                                        <li>1년내</li>
+                                        <li>2년내</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="input-group mn">
+                                <input type="text" id="text02" placeholder="제목">
+                            </div>
+                            <button type="button" class="btn btn-black">구매한 상품</button>
+                        </div>
+                        <div class="ec-sell-category">
+                            <ul>
+                                <li class="active">전체 (0)</li>
+                                <li>대기중 (0)</li>
+                                <li>진행중 (0)</li>
+                                <li>작업완료 (0)</li>
+                                <li>환불요청 (0)</li>
+                                <li>수정요청 (0)</li>
+                                <li>거래완료 (0)</li>
+                                <li>취소 (0)</li>
+                                <li>일시중단 (0)</li>
+                            </ul>
+                        </div>
+
+                        <div class="ec-sell-body">
+                            <p class="ec-sell-info">
+                                <i class="ico i-exclamation-circle-fill"></i>
+                                작업완료 이후 7일이 경과하면 자동으로 구매 확정이 되며 이후 환불이 불가능합니다.
+                            </p>
+                            <div class="ec-sell-list">
+                                <ul>
+                                    <li>
+                                        <div class="ec-sell-item">
+                                            <div class="ec-sell-item-top">
+                                                <p>2023.01.12 13:53 주문</p>
+                                                <a href="#">주문상세보기<i class="ico i-arrow-right-sky "></i></a>
+                                            </div>
+                                            <div class="ec-sell-item-bot">
+                                                <div class="ec-sell-item-img" style="background: url(img/sample/sample-08.png); background-size: cover;"></div>
+                                                <div class="ec-sell-item-text">
+                                                    <span>방문 상품</span>
+                                                    <h6>CI / BI 20년 경력 디자이너 최고의 품질로 해드립니다.</h6>
+                                                    <ul>
+                                                        <li>주문번호 : <span>#23424456</span></li>
+                                                        <li>거래총액 : <span>150,000원</span></li>
+                                                        <li>마감일 : <span>2023.11.25</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="ec-sell-item-info">
+                                                    <dl>
+                                                        <dt>진행상황</dt>
+                                                        <dd>대기중</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sell-item">
+                                            <div class="ec-sell-item-top">
+                                                <p>2023.01.12 13:53 주문</p>
+                                                <a href="#">주문상세보기<i class="ico i-arrow-right-sky "></i></a>
+                                            </div>
+                                            <div class="ec-sell-item-bot">
+                                                <div class="ec-sell-item-img" style="background: url(img/sample/sample-08.png); background-size: cover;"></div>
+                                                <div class="ec-sell-item-text">
+                                                    <span>방문 상품</span>
+                                                    <h6>CI / BI 20년 경력 디자이너 최고의 품질로 해드립니다.</h6>
+                                                    <ul>
+                                                        <li>주문번호 : <span>#23424456</span></li>
+                                                        <li>거래총액 : <span>150,000원</span></li>
+                                                        <li>마감일 : <span>2023.11.25</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="ec-sell-item-info">
+                                                    <dl>
+                                                        <dt>진행상황</dt>
+                                                        <dd class="info">진행중</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sell-item">
+                                            <div class="ec-sell-item-top">
+                                                <p>2023.01.12 13:53 주문</p>
+                                                <a href="#">주문상세보기<i class="ico i-arrow-right-sky "></i></a>
+                                            </div>
+                                            <div class="ec-sell-item-bot">
+                                                <div class="ec-sell-item-img" style="background: url(img/sample/sample-08.png); background-size: cover;"></div>
+                                                <div class="ec-sell-item-text">
+                                                    <span>방문 상품</span>
+                                                    <h6>CI / BI 20년 경력 디자이너 최고의 품질로 해드립니다.</h6>
+                                                    <ul>
+                                                        <li>주문번호 : <span>#23424456</span></li>
+                                                        <li>거래총액 : <span>150,000원</span></li>
+                                                        <li>마감일 : <span>2023.11.25</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="ec-sell-item-info">
+                                                    <dl>
+                                                        <dt>진행상황</dt>
+                                                        <dd class="success">작업완료</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sell-item">
+                                            <div class="ec-sell-item-top">
+                                                <p>2023.01.12 13:53 주문</p>
+                                                <a href="#">주문상세보기<i class="ico i-arrow-right-sky "></i></a>
+                                            </div>
+                                            <div class="ec-sell-item-bot">
+                                                <div class="ec-sell-item-img" style="background: url(img/sample/sample-08.png); background-size: cover;"></div>
+                                                <div class="ec-sell-item-text">
+                                                    <span>방문 상품</span>
+                                                    <h6>CI / BI 20년 경력 디자이너 최고의 품질로 해드립니다.</h6>
+                                                    <ul>
+                                                        <li>주문번호 : <span>#23424456</span></li>
+                                                        <li>거래총액 : <span>150,000원</span></li>
+                                                        <li>마감일 : <span>2023.11.25</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="ec-sell-item-info">
+                                                    <dl>
+                                                        <dt>진행상황</dt>
+                                                        <dd class="gray">거래완료</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="ec-sell-item">
+                                            <div class="ec-sell-item-top">
+                                                <p>2023.01.12 13:53 주문</p>
+                                                <a href="#">주문상세보기<i class="ico i-arrow-right-sky "></i></a>
+                                            </div>
+                                            <div class="ec-sell-item-bot">
+                                                <div class="ec-sell-item-img" style="background: url(img/sample/sample-08.png); background-size: cover;"></div>
+                                                <div class="ec-sell-item-text">
+                                                    <span>방문 상품</span>
+                                                    <h6>CI / BI 20년 경력 디자이너 최고의 품질로 해드립니다.</h6>
+                                                    <ul>
+                                                        <li>주문번호 : <span>#23424456</span></li>
+                                                        <li>거래총액 : <span>150,000원</span></li>
+                                                        <li>마감일 : <span>2023.11.25</span></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="ec-sell-item-info">
+                                                    <dl>
+                                                        <dt>진행상황</dt>
+                                                        <dd class="cancel">취소</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- S : FOOTER -->
+        <footer class="footer" id="footer"></footer>
+        <!-- E : FOOTER -->
+    </div>
+
+    <!-- S : languageModal :: 언어설정 -->
+    <div id="languageModal" class="gt-modal-wrap language-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : languageModal -->
+
+    <!-- S : alarmAllDelModal :: 알림 전체삭제 -->
+    <div id="alarmAllDelModal" class="gt-modal-wrap alert-modal alarm-all-del-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : alarmAllDelModal -->
+
+    <!-- S : shareModal :: 공유하기 -->
+    <div id="shareModal" class="gt-modal-wrap content-modal share-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : shareModal -->
+
+    <!-- S: qrcodeModal :: 견적문의 -->
+    <div id="qrcodeModal" class="gt-modal-wrap content-modal qrcode-modal active">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+                <div class="gt-modal-header">
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <h6>주문 업데이트를 놓치지 마세요</h6>
+                    <p>어디에서도 주문현황을 파악하려면 주한앱을 다운로드하세요</p>
+                    <dl>
+                        <dt>이 코드를 스캔하여 앱을 다운로드하세요.</dt>
+                        <dd><img src="img/sample/sample-15.png" alt="긱톡커 다운로드 QR코드"></dd>
+                    </dl>
+                    <span>휴대폰 카메라로 QR을 비추면<br>해당 스토어로 이동할 수 있습니다.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E: reviewEditModal -->
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>
