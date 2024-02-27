@@ -181,7 +181,8 @@
                         </ul>
                         <ul class="ec-proceeds-info">
                             <li>수익금은 주 1회, 등록된 출금 계좌로 전액 자동 출금 처리됩니다. <span>(토요일/일요일/공휴일 제외)</span></li>
-                            <li>처리일 당일 오후 2시까지 발생한 수익금에 한하여 다음날 오후 2시~6시 사이 출금됩니다.</li>
+                            <li>출금 날짜는 전문가 등급별로 차이가 있습니다. ( New : 7일후, Level 1 : 5일후, Level2 : 3일후, Top : 1일후 ) </li>
+                            <li>결제시스템의 상황에 따라 처리일자가 달라질 수 있습니다. </li>
                         </ul>
                         <div class="ec-proceeds-body">
                             <div class="default-tabs">
@@ -305,7 +306,7 @@
                                                 <td>150,000원</td>
                                                 <td>150,000원</td>
                                                 <td>150,000원</td>
-                                                <td>발행신청</td>
+                                                <td class="open-modal" data-modal-id="taxbillDetailModal">월별 수수료 상세보기</td>
                                             </tr>
                                             <tr>
                                                 <td>2023.12.34</td>
@@ -423,7 +424,7 @@
     <!-- S : accountInfoModal :: 대금수령방법관리 -->
     <div id="accountInfoModal" class="gt-modal-wrap accout-modal">
         <div class="gt-modal-inner">
-            <div class="gt-modal-content gt-modal-md">
+            <div class="gt-modal-content">
                 <div class="gt-modal-header">
                     <button type="button" class="btn-modal-close">
                         <i class="ico i-modal-close"></i>
@@ -431,6 +432,7 @@
                 </div>
                 <div class="gt-modal-body">
                     <h5>계좌정보 정보 입력</h5>
+                    <p>사업자 인증이 완료된 경우에는 변경이 불가하니 고객센터로 문의해주세요 </p>
                     <div class="input-wrap">
                         <div class="input-group mn">
                             <label for="">예금주</label>
@@ -462,13 +464,107 @@
                 <div class="gt-modal-footer">
                     <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-gray btn-modal-close">취소</button>
-                        <button type="button" class="btn btn-sm btn-secondary">변경하기</button>
+                        <button type="button" class="btn btn-sm btn-primary">변경하기</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- E : accountInfoModal -->
+
+    <!-- S : taxbillDetailModal :: 월별 수수료 세금계산서 -->
+    <div id="taxbillDetailModal" class="gt-modal-wrap taxbill-detail-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+                <div class="gt-modal-header">
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <dl>
+                        <dt>24년<br>08월</dt>
+                        <dd>세금계산서 발행금액 243,000원 ( VAT 포함)<br><span>판매금액 : 230,000원</span><span>수익금 : 100,000원</span><span>세금계산서 작성일자(구매확정 월) : 24.07.31</span></dd>
+                    </dl>
+                    <a href="#" class="excel-download">엑셀 내려받기</a>
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>주문번호</th>
+                                    <th>상품명</th>
+                                    <th>거래<br>시작일</th>
+                                    <th>구매<br>확정일</th>
+                                    <th>판매금액<br>(매출금액)</th>
+                                    <th>서비스<br>이용료</th>
+                                    <th>수익금<br>정산액</th>
+                                    <th>의뢰인<br>쿠폰<br>사용액</th>
+                                    <th>의뢰인<br>세금계산서<br>신청금액</th>
+                                    <th>의뢰인<br>세금계산서<br>신청건</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="javascript:void(0);">#2235241</a>
+                                    </td>
+                                    <td>로고 디자인을 만들어드립니다.</td>
+                                    <td>24.06.23</td>
+                                    <td>24.06.23</td>
+                                    <td>200,000</td>
+                                    <td>80,000</td>
+                                    <td>120,000</td>
+                                    <td>40,000</td>
+                                    <td>180,000</td>
+                                    <td>O</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="javascript:void(0);">#2235241</a>
+                                    </td>
+                                    <td>로고 디자인을 만들어드립니다.</td>
+                                    <td>24.06.23</td>
+                                    <td>24.06.23</td>
+                                    <td>200,000</td>
+                                    <td>80,000</td>
+                                    <td>120,000</td>
+                                    <td>40,000</td>
+                                    <td>180,000</td>
+                                    <td>O</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="javascript:void(0);">#2235241</a>
+                                    </td>
+                                    <td>로고 디자인을 만들어드립니다.</td>
+                                    <td>24.06.23</td>
+                                    <td>24.06.23</td>
+                                    <td>200,000</td>
+                                    <td>80,000</td>
+                                    <td>120,000</td>
+                                    <td>40,000</td>
+                                    <td>180,000</td>
+                                    <td>O</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4">월합계</td>
+                                    <td>23,560,000</td>
+                                    <td>1,360,000</td>
+                                    <td>1,360,000</td>
+                                    <td></td>
+                                    <td>360,000</td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : taxbillDetailModal -->
 
     <!-- S : SCRIPT -->
     <script src="lib/swiper-bundle.min.js"></script>

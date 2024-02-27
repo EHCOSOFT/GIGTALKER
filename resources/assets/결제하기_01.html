@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap payment-wrap">
+        <div class="header">
+            <div class="header-top type2">
+                <div class="container">
+                    <a href="" class="header-logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="expert-register-step payment">
+                        <ul>
+                            <li class="active">
+                                <span>1</span>
+                                주문 확인 및 결제
+                            </li>
+                            <li>
+                                <span>2</span>
+                                요구사항 제출
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content payment-content-wrap">
+            <div class="container">
+                <h1>결제하기</h1>
+                <div class="row">
+                    <div class="col-8">
+                        <div class="product-payment-info">
+                            <h3 class="payment-title">주문내역</h3>
+                            <div class="expert-service-item-top">
+                                <div class="expert-service-item-img"
+                                    style="background: url(img/sample/sample-01.png); background-size: cover;">
+                                </div>
+                                <div class="expert-service-item-text">
+                                    <p>생활서비스</p>
+                                    <h4>CI / BI 20년 경력 디자이너 최고의 품질로 해드립니다.</h4>
+                                    <h5>총가격 : 80,000원</h5>
+                                </div>
+                            </div>
+                            <table>
+                                <colgroup>
+                                    <col style="width: auto;">
+                                    <col style="width: 120px;">
+                                    <col style="width: 120px;">
+                                    <col style="width: 120px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>기본항목</th>
+                                        <th>수량선택</th>
+                                        <th>작업일</th>
+                                        <th>가격</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="text-area">
+                                                <h6>CI / BI 20년 경력 디자이너 최고의 품질로
+                                                    해드립니다.</h6>
+                                                <ul>
+                                                    <li><i class="ico i-check-orange"></i>세트장에서 장비 1시간 대여가능</li>
+                                                    <li><i class="ico i-check-orange"></i>사진 10장 제공</li>
+                                                    <li><i class="ico i-check-orange"></i>사진 리터칭</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="quantity-selector">
+                                                <button class="decrease-btn"><i class="ico i-number-minus"></i></button>
+                                                <input type="number" class="quantity-input" value="1" min="1">
+                                                <button class="increase-btn"><i class="ico i-number-plus"></i></button>
+                                            </div>
+                                        </td>
+                                        <td>4일</td>
+                                        <td>75,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="text-area">
+                                                <h6>추가옵션으로 프리미엄 작업</h6>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="quantity-selector">
+                                                <button class="decrease-btn"><i class="ico i-number-minus"></i></button>
+                                                <input type="number" class="quantity-input" value="1" min="1">
+                                                <button class="increase-btn"><i class="ico i-number-plus"></i></button>
+                                            </div>
+                                        </td>
+                                        <td>2일</td>
+                                        <td>5,000원</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="product-payment-coupon">
+                            <h3 class="payment-title">쿠폰 / 캐쉬</h3>
+                            <dl>
+                                <dt>사용 가능한 쿠폰</dt>
+                                <dd>
+                                    <div class="select-group sm">
+                                        <select name="" id="">
+                                            <option value="사용가능한 쿠폰 없음" selected="selected">사용가능한 쿠폰 없음</option>
+                                            <option value="한국어">한국어</option>
+                                            <option value="한국어">한국어</option>
+                                            <option value="한국어">한국어</option>
+                                            <option value="한국어">한국어</option>
+                                        </select>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>캐시 사용</dt>
+                                <dd>
+                                    <div class="input-group mn">
+                                        <input type="text" id="text02" placeholder="0원">
+                                        <button type="button" class="btn btn-outline-gray">전액사용</button>
+                                    </div>
+                                    <p>보유 캐시 : 0 원<a href="#">충전하러가기</a></p>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="product-payment-method">
+                            <h3 class="payment-title">결제방법</h3>
+                            <div class="radio-wrap">
+                                <div class="radio-group">
+                                    <input type="radio" id="radio01" name="payment-method">
+                                    <label for="radio01">신용카드</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" id="radio02" name="payment-method">
+                                    <label for="radio02">실시간 계좌이체</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" id="radio03" name="payment-method">
+                                    <label for="radio03">무통장 입금</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" id="radio04" name="payment-method">
+                                    <label for="radio04">휴대폰</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-payment-taxbill">
+                            <div class="check-group type2">
+                                <input type="checkbox" id="taxbillInfo">
+                                <label for="taxbillInfo">세금계산서 발행신청</label>
+                            </div>
+                            <ul>
+                                <li>주문 금액에 대한 세금계산서는 거래 주체인 전문가가 직접 발행하며, <span>세금계산서 발행 가능한 사업자 전문가의 서비스 구매 시에만 신청하실 수 있습니다.</span></li>
+                                <li>쿠폰 할인 금액은 세금계산서 발행 금액에 포함되지 않습니다. 자세한 내용은 여기를 통해 확인해 주세요.</li>
+                                <li>실시간 계좌이체, 무통장입금 선택 시 신청한 '현금영수증'은 매입세액공제가 불가합니다.</li>
+                                <li>신용카드 선택 시 발행된 '카드전표'는 결제에 대한 증빙용으로만 사용하실 수 있으며, 매입세액공제가 불가합니다.</li>
+                            </ul>
+                            <div class="product-payment-taxbill-info">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="input-group mn horizontal">
+                                            <label for="">회사명(법인명)</label>
+                                            <input type="text" id="text02" placeholder="예) (주)긱톡커">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-group mn horizontal">
+                                            <label for="">사업자등록번호</label>
+                                            <input type="text" id="text02" placeholder="123-45-67890">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-group mn horizontal">
+                                            <label for="">대표자명</label>
+                                            <input type="text" id="text02" placeholder="홍길동">
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="input-group mn horizontal">
+                                            <label for="">업태</label>
+                                            <input type="text" id="text02" placeholder="서비스업">
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="input-group mn horizontal">
+                                            <label for="" class="type2">종목</label>
+                                            <input type="text" id="text02" placeholder="정보통신업">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-group mn horizontal w-100">
+                                            <label for="">사업장 주소</label>
+                                            <input type="text" id="text02" placeholder="서울시 마포구 독막로 262, 6층">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-group mn horizontal w-100">
+                                            <label for="">세금계산서 이메일</label>
+                                            <input type="text" id="text02" placeholder="예) help@gigtalker.com">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-group mn horizontal">
+                                            <label for="">담당자명</label>
+                                            <input type="text" id="text02" placeholder="홍길동">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="input-group mn horizontal">
+                                            <label for="">담당자 연락처</label>
+                                            <input type="text" id="text02" placeholder="02-123-4568">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="payment-price-box">
+                            <dl>
+                                <dt>주문 금액</dt>
+                                <dd>75,000원</dd>
+                            </dl>
+                            <dl>
+                                <dt>추가옵션</dt>
+                                <dd>75,000원</dd>
+                            </dl>
+                            <dl>
+                                <dt>쿠폰 할인</dt>
+                                <dd>75,000원</dd>
+                            </dl>
+                            <dl>
+                                <dt>긱톡커 캐쉬</dt>
+                                <dd>75,000원</dd>
+                            </dl>
+                            <hr>
+                            <dl class="all">
+                                <dt>주문 금액<span>(VAT 포함)</span></dt>
+                                <dd>80,000원</dd>
+                            </dl>
+                            <div class="check-group type2">
+                                <input type="checkbox" id="chk00">
+                                <label for="chk00">위 내용을 확인하였고, 결제에 동의합니다.</label>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg">결제하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- S : FOOTER -->
+    <footer class="footer" id="footer"></footer>
+    <!-- E : FOOTER -->
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>

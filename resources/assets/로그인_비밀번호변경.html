@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header-top type2">
+                <div class="container">
+                    <a href="" class="header-logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="info-find">
+                <div class="container">
+                    <h1>비밀번호 변경</h1>
+                    <div class="info-find-input-area">
+                        <div class="input-group md">
+                            <label for="">변경할 비밀번호</label>
+                            <input type="password" id="text01" placeholder="비밀번호를 입력해주세요 ( 숫자, 특수문자포함 8자리 이상)">
+                        </div>
+                        <div class="input-group md">
+                            <label for="">한번 더 입력</label>
+                            <input type="password" id="text01" placeholder="비밀번호를 한번 더 입력해주세요">
+                        </div>
+                        <button type="button" class="btn btn-gray btn-xl open-modal" data-modal-id="pwChangeCompleteModal">변경하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- S : FOOTER -->
+    <!-- <footer class="footer" id="footer"></footer> -->
+    <!-- E : FOOTER -->
+    </div>
+
+    <!-- S : pwChangeCompleteModal :: 비밀번호 변경완료 -->
+    <div id="pwChangeCompleteModal" class="gt-modal-wrap complete-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+                <div class="gt-modal-body">
+                    <img class="ico-complete" src="img/ico/i-complete-check.png" alt="">
+                    <h1>변경완료</h1>
+                    <p>입력하신 비밀번호로 수정되었습니다.</p>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-primary btn-modal-close">확인</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : pwChangeCompleteModal :: 비밀번호 변경완료 -->
+
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>

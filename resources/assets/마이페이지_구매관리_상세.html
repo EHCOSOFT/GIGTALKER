@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header" id="header"></header>
+
+        <div class="content mypage">
+            <div class="container">
+                <aside class="sc-sidebar">
+                    <div class="mypage-profile">
+                        <div class="mypage-profile-top">
+                            <p>내 프로필<a href="#">수정하기</a></p>
+                        </div>
+                        <div class="mypage-profile-img-area">
+                            <div class="mypage-profile-img"
+                                style="background: url(img/sample/sample-02.png); background-size: cover;"></div>
+                        </div>
+                        <h5>홍길동</h5>
+                        <button type="button" class="btn btn-primary">전문가센터로 이동</button>
+                    </div>
+                    <h5>마이페이지</h5>
+                    <ul class="sc-menu">
+                        <li><a href="#">맞춤주문내역</a></li>
+                        <li class="active"><a href="#">구매관리</a></li>
+                        <li><a href="#">채팅내역</a></li>
+                        <li><a href="#">내가 쓴 구매후기</a></li>
+                        <li><a href="#">신고한 내역</a></li>
+                        <li><a href="#">결제내역</a></li>
+                        <li><a href="#">캐쉬충전</a></li>
+                        <li><a href="#">받은쿠폰함</a></li>
+                    </ul>
+                </aside>
+
+                <section class="mypage-content">
+                    <h2>구매상세</h2>
+                    <div class="row sales-wrap">
+                        <div class="col-7">
+                            <div class="sales-info">
+                                <h6>고객님의 주문이 현재<span>진행중</span>입니다.</h6>
+                                <p>귀하의 주문에 대해 Hans님에게 알렸습니다.<br>
+                                    11월 15일 까지 배송을 받아보실 수 있습니다.</p>
+                            </div>
+                            <div class="sales-progress-box">
+                                <h5>진행상황</h5>
+                                <ul class="sales-progress-list">
+                                    <li>
+                                        <div class="sales-progress-list-item">
+                                            <b></b>주문을 하셨습니다. <span>2023.09.20 14:20</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sales-progress-list-item">
+                                            <b></b>요구사항을 제출해주세요. <span>2023.09.20 14:20</span>
+                                        </div>
+                                        <div class="progress-cont-box">
+                                            <p>작업에 필요한 요구사항을 잘 작성하면<br>
+                                                원하는 결과물을 얻기가 수월해집니다.</p>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-mini btn-warning open-modal"
+                                                    data-modal-id="requirementsModal">요구사항
+                                                    제출하기</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="accordion-item">
+                                            <h6 class="accordion-header"><b></b>요구사항을 제출했습니다.
+                                                <span>2023.09.2014:20</span>
+                                            </h6>
+                                            <div class="accordion-content">
+                                                <div class="progress-cont-box">
+                                                    <p>전문가에게 진행 요청이 접수되었습니다.<br>
+                                                        전문가의 작업진행 수락이 있어야 거래가 진행됩니다.<br>
+                                                        거래진행 전에는 언제든지 구매취소가 가능합니다.</p>
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-mini btn-warning open-modal"
+                                                            data-modal-id="extendModal">구매취소</button>
+                                                    </div>
+                                                </div>
+                                                <div class="progress-cont-text">
+                                                    <h6>요구사항</h6>
+                                                    <ol start="1">
+                                                        <li>
+                                                            <dl>
+                                                                <dt>이 주문이 어느곳에 사용되어질 예정인가요? ( 선택사항 )</dt>
+                                                                <dd>업무용으로 사용합니다.</dd>
+                                                            </dl>
+                                                        </li>
+                                                        <li>
+                                                            <dl>
+                                                                <dt>전문가님이 서비스 진행시 고려할 사항이 있을까요? ( 선택사항 )</dt>
+                                                                <dd>업무진행시 스타일이나 느낌은 네이버를 참고해주세요<br>
+                                                                    되도록이면 퀄리티 높게 해주세요.</dd>
+                                                                <dd>
+                                                                    <div class="progress-download-box">
+                                                                        <h6>이미지 디자인.jpg ( 12.3mb)</h6>
+                                                                        <button type="button"
+                                                                            class="btn btn-download"><i
+                                                                                class="ico i-download"></i></button>
+                                                                    </div>
+                                                                </dd>
+                                                            </dl>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sales-progress-list-item">
+                                            <b></b>거래가 진행중입니다.<span>2023.09.20 14:20</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sales-progress-list-item">
+                                            <b></b>판매가 취소되었습니다.<span>2023.09.20 14:20</span>
+                                        </div>
+                                        <div class="progress-cont-box">
+                                            <p>전문가의 요청으로 판매가 취소되었습니다.</p>
+                                        </div>
+                                        <div class="progress-cont-text">
+                                            <h6>판매자의 메세지</h6>
+                                            <p>지금 여러 사정으로 인해서 부득이하게 판매취소를 합니다.<br>
+                                                죄송합니다.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sales-progress-list-item">
+                                            <b></b>마감일 연장요청이 접수되었습니다.<span>2023.09.20 14:20</span>
+                                        </div>
+                                        <div class="progress-cont-box">
+                                            <p>마감일 연장 <span class="success">1</span>일 연장이 접수되었습니다.<br>
+                                                수락하시면 마감이 연장되고 거절하시면<br>
+                                                거래가 임시중지 됩니다.</p>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-mini btn-info">연장수락</button>
+                                                <button type="button" class="btn btn-mini btn-warning open-modal"
+                                                    data-modal-id="refuseReasonModal">연장거절</button>
+                                            </div>
+                                        </div>
+                                        <div class="progress-cont-text">
+                                            <h6>판매자의 메세지</h6>
+                                            <p>지금 여러 사정으로 인해서 부득이하게 마감연장을<br>
+                                                해야합니다. 수락해주세요</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="accordion-item">
+                                            <h6 class="accordion-header"><b></b>거래가 임시중단되었습니다.<span>2023.09.20
+                                                    14:20</span></h6>
+                                            <div class="accordion-content">
+                                                <div class="progress-cont-box">
+                                                    <p>거래가 일시중단중입니다.<br>
+                                                        협의를 통해 거래취소요청을 보낼 수 있습니다.<br>
+                                                        구매취소는 판매자의 승인이 필요합니다.</p>
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-mini btn-warning">문제해결센터
+                                                            가기</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sales-progress-list-item">
+                                            <b></b>마감일 연장이 수락되어 작업 진행중입니다.<span>2023.09.20 14:20</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="accordion-item">
+                                            <h6 class="accordion-header"><b></b>주문상품이 도착했습니다.<span>2023.09.20
+                                                    14:20</span></h6>
+                                            <div class="accordion-content">
+                                                <div class="progress-cont-box">
+                                                    <h6>주문한 상품이 도착했습니다.</h6>
+                                                    <div class="primary-box">
+                                                        <p><span>11월 14일 17시 25분</span> 까지 구매확정을 하거나 수정요청을
+                                                            하셔야합니다. 이 날짜 이후에는 거래가 완료되며 거래완료후에는
+                                                            거래취소/환불이 불가능합니다.</p>
+                                                    </div>
+                                                    <dl class="info-msg">
+                                                        <dt>
+                                                            <img src="img/sample/sample-02.png" alt="">
+                                                        </dt>
+                                                        <dd>홍길동 으로부터 배송을 받았습니다. 만족하신다면 구매확정을 눌러주세요. 구매확정후에는 취소/환불이 불가능한점
+                                                            유의해주시기 바랍니다.</dd>
+                                                    </dl>
+                                                    <div class="btn-group">
+                                                        <button type="button"
+                                                            class="btn btn-mini btn-info">구매확정</button>
+                                                        <button type="button"
+                                                            class="btn btn-mini btn-warning">수정요청</button>
+                                                    </div>
+                                                </div>
+                                                <div class="progress-cont-text">
+                                                    <h6>판매자의 메세지</h6>
+                                                    <p>주문해 주셔서 다시 한번 감사드립니다.작업은 첨부파일을<br>확인해주세요. 확인후 문제가 있으면 연락주세요.<br>
+                                                        감사합니다.</p>
+                                                    <div class="progress-download-box-area">
+                                                        <h3>첨부파일</h3>
+                                                        <div class="progress-download-box">
+                                                            <h6>이미지 디자인.jpg ( 12.3mb)</h6>
+                                                            <button type="button" class="btn btn-download"><i
+                                                                    class="ico i-download"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="accordion-item">
+                                            <h6 class="accordion-header"><b></b>수정요청을 전달했습니다.<span>2023.09.20
+                                                    14:20</span></h6>
+                                            <div class="accordion-content">
+                                                <div class="progress-cont-box">
+                                                    <p>수정요청을 전문가에게 전달했습니다.<br>
+                                                        수정요청이 거절되면 거래가 임시중지 됩니다.</p>
+                                                </div>
+                                                <div class="progress-cont-text">
+                                                    <h6>나의 메세지</span></h6>
+                                                    <p>색상이 너무 부드러워요 좀더 강조되었으면 좋겠습니다.<br>
+                                                        되도록이면 빨리 반영해주세요</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sales-progress-list-item">
+                                            <b></b>작업이 완료되었습니다.<span>2023.09.20 14:20</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="sales-progress-list-item">
+                                            <b></b>거래가 완료되었습니다.<span>2023.09.20 14:20</span>
+                                        </div>
+                                        <div class="progress-cont-box">
+                                            <p class="text">거래가 완료되었습니다.<br>
+                                                구매리뷰를 작성해주세요</p>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-mini btn-info">리뷰작성</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="accordion-item">
+                                            <h6 class="accordion-header"><b class="underline">홍길동</b>님이 리뷰를
+                                                남겼습니다.<span>2023.09.20
+                                                    14:20</span></h6>
+                                            <div class="accordion-content">
+                                                <div class="progress-cont-text">
+                                                    <div class="review-score-wrap">
+                                                        <ul class="review-score">
+                                                            <li><i class="ico i-star-active"></i></li>
+                                                            <li><i class="ico i-star-active"></i></li>
+                                                            <li><i class="ico i-star-active"></i></li>
+                                                            <li><i class="ico i-star-half"></i></li>
+                                                            <li><i class="ico i-star"></i></li>
+                                                        </ul>
+                                                        4.8
+                                                    </div>
+                                                    <p>저렴한데 친절하게 잘해주셨고 알아서 척척해주십니다 피드백도 바로바로 와서 답답함도없고 앞으로도 자주 이용하도록
+                                                        하겠습니다 ^^~!</p>
+                                                    <div class="progress-review-list">
+                                                        <dl>
+                                                            <dt>
+                                                                <ul class="review-score">
+                                                                    <li><i class="ico i-star-active"></i></li>
+                                                                    <li><i class="ico i-star-active"></i></li>
+                                                                    <li><i class="ico i-star-active"></i></li>
+                                                                    <li><i class="ico i-star-half"></i></li>
+                                                                    <li><i class="ico i-star"></i></li>
+                                                                </ul>
+                                                            </dt>
+                                                            <dd>커뮤니케이션 수준</dd>
+                                                        </dl>
+                                                        <dl>
+                                                            <dt>
+                                                                <ul class="review-score">
+                                                                    <li><i class="ico i-star-active"></i></li>
+                                                                    <li><i class="ico i-star-active"></i></li>
+                                                                    <li><i class="ico i-star-active"></i></li>
+                                                                    <li><i class="ico i-star-half"></i></li>
+                                                                    <li><i class="ico i-star"></i></li>
+                                                                </ul>
+                                                            </dt>
+                                                            <dd>친구에게 추천</dd>
+                                                        </dl>
+                                                        <dl>
+                                                            <dt>
+                                                                <ul class="review-score">
+                                                                    <li><i class="ico i-star-active"></i></li>
+                                                                    <li><i class="ico i-star-active"></i></li>
+                                                                    <li><i class="ico i-star-active"></i></li>
+                                                                    <li><i class="ico i-star-half"></i></li>
+                                                                    <li><i class="ico i-star"></i></li>
+                                                                </ul>
+                                                            </dt>
+                                                            <dd>서비스 품질</dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="accordion-item">
+                                            <h6 class="accordion-header"><b class="underline">홍길동</b>에 리뷰를
+                                                남겼습니다.<span>2023.09.20
+                                                    14:20</span></h6>
+                                            <div class="accordion-content">
+                                                <div class="progress-cont-text">
+                                                    <div class="review-score-wrap">
+                                                        <ul class="review-score">
+                                                            <li><i class="ico i-star-active"></i></li>
+                                                            <li><i class="ico i-star-active"></i></li>
+                                                            <li><i class="ico i-star-active"></i></li>
+                                                            <li><i class="ico i-star-half"></i></li>
+                                                            <li><i class="ico i-star"></i></li>
+                                                        </ul>
+                                                        4.8
+                                                    </div>
+                                                    <p>매너 좋으시고 원하는 피드백을 잘 해주셨습니다.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="trading-statement">
+                                    <span>거래명세서</span>
+                                    <i class="ico i-arrow-right"></i>
+                                </div>
+                            </div>
+                            <div class="btn-group flex-center mt-5">
+                                <button type="button" class="btn btn-gray btn-md">전체 주문 목록</button>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <div class="order-box m-none">
+                                <div class="expert-service-item-top">
+                                    <div class="expert-service-item-img"
+                                        style="background: url(img/sample/sample-01.png); background-size: cover;">
+                                    </div>
+                                    <div class="expert-service-item-text">
+                                        <p>생활서비스</p>
+                                        <h6>한국어, 중국어 번역,
+                                            교정, 편집dddddddddddd</h6>
+                                    </div>
+                                </div>
+                                <div class="order-detail-info">
+                                    <dl>
+                                        <dt>주문자</dt>
+                                        <dd>홍길동</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>주문일</dt>
+                                        <dd>2023.06.29 17:30</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>배송일</dt>
+                                        <dd>2023.11.4</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>총가격</dt>
+                                        <dd>24,000원</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>주문번호</dt>
+                                        <dd>#2196593</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>결재방식</dt>
+                                        <dd>무통장입금</dd>
+                                    </dl>
+                                </div>
+                                <div class="order-status">
+                                    <h6>주문상황</h6>
+                                    <ul class="order-status-item">
+                                        <li class="check"><i class="ico i-order"></i>주문완료</li>
+                                        <li class="check"><i class="ico i-order"></i>대기중</li>
+                                        <li class="active"><i class="ico i-order"></i>주문 진행 중</li>
+                                        <li class="disabled"><i class="ico i-order"></i>작업완료</li>
+                                        <li class="disabled"><i class="ico i-order"></i>거래완료</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="javasciprt:void(0);" class="ps-center">
+                                <h6>문제해결센터</h6>
+                                <p>판매문제를 해결하세요</p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- S : FOOTER -->
+        <footer class="footer" id="footer"></footer>
+        <!-- E : FOOTER -->
+    </div>
+
+    <!-- S : languageModal :: 언어설정 -->
+    <div id="languageModal" class="gt-modal-wrap language-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : languageModal -->
+
+    <!-- S : alarmAllDelModal :: 알림 전체삭제 -->
+    <div id="alarmAllDelModal" class="gt-modal-wrap alert-modal alarm-all-del-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : alarmAllDelModal -->
+
+    <!-- S : shareModal :: 공유하기 -->
+    <div id="shareModal" class="gt-modal-wrap content-modal share-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : shareModal -->
+
+    <!-- S : requirementsModal :: 요구사항 전달하기 -->
+    <div id="requirementsModal" class="gt-modal-wrap content-modal req-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+                <div class="gt-modal-header">
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <div class="service-req-area">
+                        <div class="input-group sm">
+                            <label for="">1. 이 주문이 어느곳에 사용되어질 예정인가요? ( 선택사항 )</label>
+                            <input type="text" id="text03" placeholder="예) 새로 만들어지는 회사의 홈페이지">
+                        </div>
+                        <div class="text-group">
+                            <label for="">2. 전문가님이 서비스 진행시 고려할 사항이 있을까요? ( 선택사항 )</label>
+                            <textarea name="" id="" cols="30" rows="10"
+                                placeholder="요구사항이 구체적이고 정확할수록  원하는 결과물을 얻기에 수월해집니다."></textarea>
+                        </div>
+                        <div class="file-group">
+                            <h2>첨부파일<span>20MB 미만</span></h2>
+                            <label for="fileupload"><span>파일 추가</span> 또는 파일을 여기로 드래그</label>
+                            <input type="file" id="fileupload">
+                        </div>
+                        <div class="check-group type2">
+                            <input type="checkbox" id="chk00">
+                            <label for="chk00">내가 제공한 정보는 정확합니다, 모든 변경에는 판매자의 승인이 필요하며 추가<br>비용이 발생할 수
+                                있습니다.</label>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg">요구사항 전달</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : requirementsModal -->
+
+    <!-- S : extendModal :: 구매취소요청 -->
+    <div id="extendModal" class="gt-modal-wrap content-modal extend-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content gt-modal-md">
+                <div class="gt-modal-header">
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <h3>구매취소요청</h3>
+                    <div class="text-group sm">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="구매취소 이유를 입력해주세요"></textarea>
+                    </div>
+                    <p>취소전 판매자에게 채팅을 통해 양해를 구하는걸 추천합니다.<br>
+                        친절한 행동으로 전문가들에게 신뢰를 이어가세요.</p>
+                    <button type="button" class="btn btn-primary btn-lg">구매취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : extendModal -->
+
+    <!-- S : refuseReasonModal :: 거절사유 -->
+    <div id="refuseReasonModal" class="gt-modal-wrap content-modal extend-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content gt-modal-sm">
+                <div class="gt-modal-header">
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <h3>거절사유</h3>
+                    <div class="text-group sm">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="거절 사유를 작성해주세요"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-lg">보내기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : refuseReasonModal -->
+
+    <!-- S : reviewWriteModal :: 구매후기 작성 -->
+    <div id="reviewWriteModal" class="gt-modal-wrap content-modal order-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+                <div class="gt-modal-header">
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <h1>구매후기 작성</h1>
+                    <form action="" method="post">
+                        <div class="order-input-wrap">
+                            <div class="input-group mn">
+                                <input type="text" id="text02" placeholder="제목을 작성해주세요.">
+                            </div>
+                            <div class="text-group md">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="후기 내용을 작성해주세요"></textarea>
+                            </div>
+                        </div>
+                        <div class="review-score-area">
+                            <h6>항목별 별점을 선택해주세요</h6>
+                            <div class="rating-area">
+                                <div class="rating-group">
+                                    <span class="star" data-rating="1"></span>
+                                    <span class="star" data-rating="2"></span>
+                                    <span class="star" data-rating="3"></span>
+                                    <span class="star" data-rating="4"></span>
+                                    <span class="star" data-rating="5"></span>
+                                </div>
+                                커뮤니케이션 수준
+                            </div>
+                            <div class="rating-area">
+                                <div class="rating-group">
+                                    <span class="star" data-rating="1"></span>
+                                    <span class="star" data-rating="2"></span>
+                                    <span class="star" data-rating="3"></span>
+                                    <span class="star" data-rating="4"></span>
+                                    <span class="star" data-rating="5"></span>
+                                </div>
+                                친구에게 추천
+                            </div>
+                            <div class="rating-area">
+                                <div class="rating-group">
+                                    <span class="star" data-rating="1"></span>
+                                    <span class="star" data-rating="2"></span>
+                                    <span class="star" data-rating="3"></span>
+                                    <span class="star" data-rating="4"></span>
+                                    <span class="star" data-rating="5"></span>
+                                </div>
+                                서비스 품질
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-md btn-primary">작성</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : reviewWriteModal -->
+
+    <!-- S : correctModal :: 수정요청 -->
+    <div id="correctModal" class="gt-modal-wrap content-modal correct-modal active">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+                <div class="gt-modal-body">
+                    <h3>수정요청</h3>
+                    <div class="text-group">
+                        <textarea name="" id="" cols="30" rows="10"
+                            placeholder="수정요청 내용을 입력해주세요"></textarea>
+                    </div>
+                    <div class="file-group">
+                        <h2>첨부파일<span>20MB 미만</span></h2>
+                        <label for="fileupload"><span>파일 추가</span> 또는 파일을 여기로 드래그</label>
+                        <input type="file" id="fileupload">
+                    </div>
+                    <p>수정요청을 전문가가 수락을 하면 <b>작업완료에서 진행중</b>으로<br>
+                        상태가 변경됩니다.</p>
+                    <button type="button" class="btn btn-primary btn-lg">수정요청 보내기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : correctModal -->
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>

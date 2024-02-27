@@ -296,11 +296,22 @@
 }
 
 /* 대금수령방법관리(accountInfoModal) */
+.accout-modal .gt-modal-content {
+    width: 550px;
+}
+
 .accout-modal .gt-modal-header {
     justify-content: flex-end;
 }
 
 .accout-modal .gt-modal-body h5 {
+    text-align: left;
+}
+
+.accout-modal .gt-modal-body p {
+    color: var(--gt-primary);
+    font-size: var(--gt-text-md);
+    margin: 8px 0 0 0;
     text-align: left;
 }
 
@@ -405,16 +416,16 @@
     width: 28px;
 }
 
-.price-offer-modal .gt-modal-body .export-service-item-img {
+.price-offer-modal .gt-modal-body .expert-service-item-img {
     height: 60px;
     width: 80px;
 }
 
-.price-offer-modal .gt-modal-body .export-service-item-text h6 {
+.price-offer-modal .gt-modal-body .expert-service-item-text h6 {
     color: var(--gt-black-01);
 }
 
-.price-offer-modal .gt-modal-body .export-service-item-text p {
+.price-offer-modal .gt-modal-body .expert-service-item-text p {
     color: var(--gt-black-01);
     line-height: 1.5;
 }
@@ -556,6 +567,10 @@
     text-align: left;
 }
 
+.extend-modal .gt-modal-body .text-group textarea {
+    height: 168px;
+}
+
 .extend-modal .gt-modal-body button {
     width: 100%;
 }
@@ -626,7 +641,7 @@
     text-align: left;
 }
 
-.user-name-edit-modal .gt-modal-footer { 
+.user-name-edit-modal .gt-modal-footer {
     padding: 20px 0 0 0;
 }
 
@@ -676,7 +691,7 @@
 .ad-price-all dl dt {
     color: var(--gt-black-01);
     font-size: var(--gt-text-sm);
-} 
+}
 
 .ad-price-all dl dd {
     color: var(--gt-black-01);
@@ -684,15 +699,26 @@
     font-weight: bold;
 }
 
-.ad-price-all dl dd input {
+.ad-price-all dl dd .input-group input {
     border: 1px solid #cccccc;
+    border-radius: 0;
     color: var(--gt-gray-01);
     font-size: var(--gt-text-md);
     font-weight: bold;
     height: 38px;
-    padding: 0 8px;
+    padding: 0 20px 0 8px;
     text-align: right;
     width: 158px;
+}
+
+.ad-price-all dl dd .input-group label {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-md) !important;
+    font-weight: bold;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .ad-price-all hr {
@@ -716,4 +742,234 @@
 
 .ad-modal .gt-modal-body button {
     width: 100%;
+}
+
+/* 프리미엄 광고(qrcodeModal) */
+.qrcode-modal .gt-modal-content {
+    padding: 80px 72px;
+    width: 650px;
+}
+
+.qrcode-modal .gt-modal-content h6 {
+    color: var(--gt-black-03);
+    font-size: 24px;
+}
+
+.qrcode-modal .gt-modal-content p {
+    color: var(--gt-gray-02);
+    font-size: 20px;
+    margin: 8px 0 0 0;
+}
+
+.qrcode-modal dl {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.qrcode-modal dl dt {
+    color: var(--gt-gray-02);
+    font-size: 20px;
+}
+
+.qrcode-modal dl dd img {
+    width: 160px;
+}
+
+.qrcode-modal .gt-modal-body span {
+    color: var(--gt-success);
+    font-size: var(--gt-text-lg);
+}
+
+/* 요구사항전달하기(requirementsModal) */
+.req-modal .gt-modal-content {
+    width: 700px;
+    padding: 72px 32px 32px 32px;
+}
+
+.req-modal .service-req-area {
+    gap: 16px;
+    margin: 0;
+}
+
+.req-modal .service-req-area .check-group label {
+    text-align: left;
+}
+
+.req-modal .service-req-area button {
+    margin: 28px auto 0 auto;
+}
+
+/* 수정요청(correctModal) */
+.correct-modal .gt-modal-content {
+    padding: 36px 60px;
+    width: 500px;
+}
+
+.correct-modal .gt-modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.correct-modal .gt-modal-body .text-group textarea {
+    height: 160px;
+}
+
+.correct-modal .gt-modal-body p {
+    color: var(--gt-gray-02);
+    font-size: var(--gt-text-sm);
+    text-align: left;
+}
+
+.correct-modal .gt-modal-body button {
+    margin: 0 auto;
+}
+
+/* 월별 수수료 세금계산서(taxbillDetailModal) */
+.taxbill-detail-modal .btn-modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.taxbill-detail-modal i {
+    height: 20px;
+    width: 20px;
+}
+
+.taxbill-detail-modal .gt-modal-content {
+    padding: 40px 20px;
+    width: 852px;
+}
+
+.taxbill-detail-modal dl {
+    display: flex;
+    gap: 40px;
+}
+
+.taxbill-detail-modal dl dt {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-lg);
+}
+
+.taxbill-detail-modal dl dd {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-lg);
+    text-align: left;
+}
+
+.taxbill-detail-modal dl dd span {
+    font-size: var(--gt-text-sm);
+    margin: 0 8px 0 0;
+}
+
+.taxbill-detail-modal .excel-download {
+    color: var(--gt-info);
+    display: block;
+    font-size: var(--gt-text-lg);
+    margin: 8px 18px 8px 8px;
+    text-align: right;
+}
+
+.taxbill-detail-modal .table-wrap {
+    overflow-y: scroll;
+    padding: 0 8px 0 0;
+    height: 342px;
+}
+
+.taxbill-detail-modal .table-wrap::-webkit-scrollbar {
+    background: none;
+    width: 10px;
+}
+
+.taxbill-detail-modal .table-wrap::-webkit-scrollbar-thumb {
+    background: #D9D9D9;
+}
+
+.taxbill-detail-modal table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.taxbill-detail-modal table tr th {
+    background: #fafafa;
+    border: 1px solid var(--gt-gray-04);
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-sm);
+    font-weight: 400;
+    padding: 12px 8px;
+}
+
+.taxbill-detail-modal table tr td {
+    border: 1px solid var(--gt-gray-04);
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-sm);
+    padding: 12px 8px;
+}
+
+.taxbill-detail-modal table tr td a {
+    color: var(--gt-secondary);
+}
+
+
+.taxbill-detail-modal table tfoot tr td {
+    background: #FFFDEA;
+}
+
+/* 세금계산서요청정보(taxbill-info-modal) */
+.taxbill-info-modal .gt-modal-content {
+    padding: 52px 32px;
+    width: 640px;
+}
+
+.taxbill-info-modal .row {
+    --bs-gutter-x: 16px;
+    --bs-gutter-y: 16px;
+    margin: 12px 0 0 0;
+}
+
+.taxbill-info-modal .input-group.horizontal label {
+    width: 128px;
+}
+
+/* 맞춤주문요청서(customOrderModal01/02) */
+.custom-order-modal .gt-modal-content {
+    padding: 24px 28px;
+    width: 430px;
+}
+
+.custom-order-modal .gt-modal-title {
+    color: var(--gt-black-01);
+    font-size: 20px;
+}
+
+.custom-order-modal i {
+    height: 16px;
+    width: 16px;
+}
+
+.custom-order-modal .gt-modal-body {
+    margin: 28px 0;
+}
+
+.custom-order-modal .gt-modal-body ul {
+    list-style: disc;
+    padding: 0 0 0 20px;
+}
+
+.custom-order-modal .gt-modal-body ul li {
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-sm);
+    list-style: disc;
+    text-align: left;
+}
+
+.custom-order-modal .gt-modal-footer {
+    padding: 0;
+}
+
+.custom-order-modal .btn-group {
+    justify-content: flex-end;
 }

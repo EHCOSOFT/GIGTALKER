@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap expert-register-wrap">
+        <div class="header">
+            <div class="header-top type2">
+                <div class="container">
+                    <a href="" class="header-logo">
+                        <img src="img/logo.png" alt="">
+                        맞춤주문 요청서
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="expert-register-step">
+            <div class="container">
+                <ul>
+                    <li class="active">
+                        <span>1</span>
+                        간략한 설명 공유
+                    </li>
+                    <li class="active">
+                        <span>2</span>
+                        일정 및 예산 추가
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="content expert-register">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>이제 예산에 대해서 작성해주세요</h1>
+                        <p>지출하려는 예산은 어느정도인지 알려주시면 추후 전문가와의 상담이 용이합니다.</p>
+                        <div class="expert-input-area">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h6>예상 지출비용을 작성해주세요</h6>
+                                    <p>원하는 예산을 적어주세요 상황에 따라 예산을 변경할수 있다면 체크박스를 체크해주세요.</p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="input-wrap">
+                                        <div class="input-group">
+                                            <input type="text" id="text02" placeholder="원하는 예산을 적어주세요">
+                                            <div class="check-group type2">
+                                                <input type="checkbox" id="chk00">
+                                                <label for="chk00">예산은 상황예 따라 유연합니다.</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h6>완료일은 언제까지인가요?</h6>
+                                    <p>가능한 전문가를 찾아드리겠습니다.</p>
+                                </div>
+                                <div class="col-6">
+                                    <div class="date-group">
+                                        <input type="date" date-placeholder="시작일" required="" aria-required="true">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-gray">이전단계</button>
+                            <button type="button" class="btn btn-primary">다음단계</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- S : customOrderModal01 :: 일부 제목 예시  -->
+    <div id="customOrderModal01" class="gt-modal-wrap custom-order-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content gt-modal-sm">
+                <div class="gt-modal-header">
+                    <h3 class="gt-modal-title">일부 제목 예시</h3>
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <ul>
+                        <li>스타트업을 위한 Android 앱 개발</li>
+                        <li>내 웹사이트에 대한 SEO 최적화</li>
+                        <li>내 비즈니스를 위한 소셜 미디어 마케팅</li> 
+                    </ul>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-primary btn-modal-close">알았어요</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : customOrderModal01 -->
+
+    <!-- S : customOrderModal02 :: 훌륭한 설명을 작성하는 방법  -->
+    <div id="customOrderModal02" class="gt-modal-wrap custom-order-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content gt-modal-sm">
+                <div class="gt-modal-header">
+                    <h3 class="gt-modal-title">훌륭한 설명을 작성하는 방법</h3>
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <ul>
+                        <li>최종 결과물이 무엇을 원하는지 명확히 쓰세요.</li>
+                        <li>구체적인 내용을 포함하세요(많을수록 좋습니다!)</li>
+                        <li>참고 자료 및 영감 공유(링크 사용 또는 파일 첨부)</li> 
+                        <li>자신이 선호하는 사항을 입력하세요.</li>
+                    </ul>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-primary btn-modal-close">알았어요</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : customOrderModal02 -->
+
+
+
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>
