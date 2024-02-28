@@ -4310,21 +4310,24 @@
     color: #74767C;
 }
 
-.ad-price-box-item input {
+.ad-period input {
     display: none;
 }
 
-.ad-price-box-item label {
+.ad-period label {
     align-items: center;
-    border: 1px solid #CCCCCC;
+    border: 2px solid #CCCCCC;
+    border-radius: 4px;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     padding: 8px 0;
     width: calc(25% - 2px);
 }
 
-.ad-price-box-item input:checked+label {
-    border: 1px solid var(--gt-primary);
+.ad-period input:checked+label {
+    border: 2px solid var(--gt-secondary);
+    color: var(--gt-secondary);
 }
 
 .ad-period {
@@ -6805,6 +6808,40 @@
 .payment-price-box dl.all dd {
     font-size: 18px;
     font-weight: bold;
+}
+
+.payment-price-box .accordion-item {
+    border: 0;
+}
+
+.payment-price-box .accordion-header {
+    background: #FAFAFC;
+    color: var(--gt-gray-03);
+    font-size: var(--gt-text-mn);
+    font-weight: 400;
+    padding: 4px 12px;
+}
+
+.payment-price-box .accordion-content {
+    background: #FAFAFC;
+    padding: 12px 8px 12px 12px;
+}
+
+.payment-price-box .accordion-content p {
+    color: var(--gt-gray-02);
+    font-size: var(--gt-text-mn);
+    overflow-y: scroll;
+    height: 130px;
+    padding: 0 8px 0 0;
+}
+
+.payment-price-box .accordion-content p::-webkit-scrollbar {
+    background: none;
+    width: 10px;
+}
+
+.payment-price-box .accordion-content p::-webkit-scrollbar-thumb {
+    background: #D9D9D9;
 }
 
 .payment-price-box .check-group {
