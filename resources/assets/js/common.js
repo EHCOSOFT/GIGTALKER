@@ -428,7 +428,7 @@ $(document).ready(function () {
   });
 
   // 탭 메뉴
-  $(".tabs .tab-button").click(function () {
+  $(".prdouct-detail-area .tabs .tab-button").click(function () {
     var target = $(this).data("target");
     $(".tabs .tab-button").removeClass("active");
     $(this).addClass("active");
@@ -441,12 +441,14 @@ $(document).ready(function () {
     );
   });
 
+
   // 전문가센터 판매관리
   // 초기에 "판매내역" 탭을 활성화
   $("#salesList").show();
   $("#premiunAd").show();
   $("#productSale").show();
   $("#idFind").show();
+  $("#available").show();
   $(".default-tabs .tab-button").click(function () {
     var target = $(this).data("target");
     // 모든 탭 버튼에서 active 클래스를 제거
@@ -694,6 +696,9 @@ $(document).ready(function () {
     $(this).siblings("span").css("display", "block"); // 형제인 span 요소를 보이도록 변경
     $(this).remove(); // "더보기" 링크 삭제
   });
+
+  // 상품이미지 전체보기
+
 
   // 결제하기
   // 수량 감소 버튼 클릭 시

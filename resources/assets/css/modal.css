@@ -416,6 +416,41 @@
     width: 28px;
 }
 
+.price-offer-modal .gt-modal-body .accordion-content {
+    padding: 0;
+}
+
+.price-offer-modal .gt-modal-body .accordion-content ul {
+    border-top: 1px solid #cccccc;
+    display: flex;
+    flex-direction: column;
+    max-height: 170px;
+    overflow-y: scroll;
+}
+
+.price-offer-modal .gt-modal-body .accordion-content ul::-webkit-scrollbar {
+    background: none;
+    width: 6px;
+}
+
+.price-offer-modal .gt-modal-body .accordion-content ul::-webkit-scrollbar-thumb {
+    background: #D9D9D9;
+}
+
+.price-offer-modal .gt-modal-body .accordion-content ul li {
+    border-bottom: 1px solid #cccccc;
+    cursor: pointer;
+    padding: 12px;
+}
+
+.price-offer-modal .gt-modal-body .accordion-content ul li.active {
+    background: var(--gt-primary-bg);
+}
+
+.price-offer-modal .gt-modal-body .accordion-content ul li:last-child {
+    border: 0;
+}
+
 .price-offer-modal .gt-modal-body .expert-service-item-img {
     height: 60px;
     width: 80px;
@@ -972,4 +1007,86 @@
 
 .custom-order-modal .btn-group {
     justify-content: flex-end;
+}
+
+/* 거래명세서(tradingStatementModal) */
+.ts-modal .gt-modal-content {
+    padding: 68px 20px 32px 20px;
+    width: 580px;
+}
+
+.ts-modal .btn-group {
+    justify-content: center;
+}
+
+.ts-modal .btn-group button {
+    width: 132px;
+}
+
+.ts-modal .table-wrap {
+    height: 500px;
+    overflow-y: scroll;
+    margin: 20px 0 0 0;
+    padding: 0 12px 0 0;
+}
+
+.ts-modal .table-wrap::-webkit-scrollbar {
+    background: none;
+    width: 10px;
+}
+
+.ts-modal .table-wrap::-webkit-scrollbar-thumb {
+    background: #D9D9D9;
+}
+
+.ts-modal .table-wrap p {
+    color: var(--gt-gray-03);
+    font-size: var(--gt-text-md);
+    font-weight: 400;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.ts-modal table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.ts-modal table tr th,
+.ts-modal table tr td {
+    border: 1px solid var(--gt-gray-05);
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-md);
+    font-weight: 400;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.ts-modal table tr th {
+    background: var(--gt-gray-bg);
+}
+
+/* 전체창이미지보기(fullWindowView) */
+.full-window-view-modal .gt-modal-content {
+    background: none;
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    padding: 120px 40px;
+}
+
+.full-window-view-modal .gt-modal-header .btn-modal-close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+}
+
+.full-window-view-modal .gt-modal-body {}
+
+.full-window-view-modal .product-detila-img-swiper-02 {
+    width: 1080px;
+}
+
+.full-window-view-modal .product-detila-img-swiper-02 .swiper-slide {
+    height: 652px;
 }

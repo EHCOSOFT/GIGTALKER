@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header" id="header"></header>
+
+        <div class="content">
+            <div class="mypage">
+                <div class="container">
+                    <aside class="sc-sidebar">
+                        <div class="mypage-profile">
+                            <div class="mypage-profile-top">
+                                <p>내 프로필<a href="#">수정하기</a></p>
+                            </div>
+                            <div class="mypage-profile-img-area">
+                                <div class="mypage-profile-img"
+                                    style="background: url(img/sample/sample-02.png); background-size: cover;"></div>
+                            </div>
+                            <h5>홍길동</h5>
+                            <button type="button" class="btn btn-primary">전문가센터로 이동</button>
+                        </div>
+                        <h5>마이페이지</h5>
+                        <ul class="sc-menu">
+                            <li><a href="#">맞춤주문내역</a></li>
+                            <li><a href="#">구매관리</a></li>
+                            <li><a href="#">채팅내역</a></li>
+                            <li><a href="#">내가 쓴 구매후기</a></li>
+                            <li class="active"><a href="#">신고한 내역</a></li>
+                            <li><a href="#">결제내역</a></li>
+                            <li><a href="#">캐시충전</a></li>
+                            <li><a href="#">받은쿠폰함</a></li>
+                        </ul>
+                    </aside>
+
+                    <section class="mypage-content">
+                        <div class="ec-sell-set">
+                            <h1>받은쿠폰함</h1>
+                            <div class="ec-sell-body">
+                                <div class="coupon">
+                                    <div class="coupon-code">
+                                        <div class="input-group mn horizontal">
+                                            <label for="">쿠폰코드입력</label>
+                                            <input type="text" id="text02" placeholder="대소문자 구별 ">
+                                        </div>
+                                        <button type="button" class="btn btn-primary">입력</button>
+                                    </div>
+                                    <div class="default-tabs">
+                                        <ul class="tab-list">
+                                            <li class="tab-button active" data-target="available">사용가능</li>
+                                            <li class="tab-button" data-target="used">사용완료</li>
+                                        </ul>
+                                        <div class="tab-content" id="available">dd</div>
+                                        <div class="tab-content" id="used">dd</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- S : FOOTER -->
+        <footer class="footer" id="footer"></footer>
+        <!-- E : FOOTER -->
+    </div>
+
+    <!-- S : languageModal :: 언어설정 -->
+    <div id="languageModal" class="gt-modal-wrap language-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : languageModal -->
+
+    <!-- S : alarmAllDelModal :: 알림 전체삭제 -->
+    <div id="alarmAllDelModal" class="gt-modal-wrap alert-modal alarm-all-del-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : alarmAllDelModal -->
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>
