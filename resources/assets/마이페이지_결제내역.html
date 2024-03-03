@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header" id="header"></header>
+
+        <div class="content">
+            <div class="mypage">
+                <div class="container">
+                    <aside class="sc-sidebar">
+                        <div class="mypage-profile">
+                            <div class="mypage-profile-top">
+                                <p>내 프로필<a href="#">수정하기</a></p>
+                            </div>
+                            <div class="mypage-profile-img-area">
+                                <div class="mypage-profile-img"
+                                    style="background: url(img/sample/sample-02.png); background-size: cover;"></div>
+                            </div>
+                            <h5>홍길동</h5>
+                            <button type="button" class="btn btn-primary">전문가센터로 이동</button>
+                        </div>
+                        <h5>마이페이지</h5>
+                        <ul class="sc-menu">
+                            <li><a href="#">맞춤주문내역</a></li>
+                            <li><a href="#">구매관리</a></li>
+                            <li><a href="#">채팅내역</a></li>
+                            <li><a href="#">내가 쓴 구매후기</a></li>
+                            <li><a href="#">신고한 내역</a></li>
+                            <li class="active"><a href="#">결제내역</a></li>
+                            <li><a href="#">캐시충전</a></li>
+                            <li><a href="#">받은쿠폰함</a></li>
+                        </ul>
+                    </aside>
+
+                    <section class="mypage-content">
+                        <div class="ec-sell-set">
+                            <h1>결제내역</h1>
+                            <div class="ec-sell-top">
+                                <div class="dropdown-group">
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button" data-target="drop01">
+                                            <span class="placeholder">결제</span>
+                                        </button>
+                                        <ul id="drop01" class="dropdown-list" style="display: none;">
+                                            <li class="active">전체</li>
+                                            <li>환불</li>
+                                            <li>결제</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="dropdown-group">
+                                    <div class="dropdown-list-wrap">
+                                        <button class="dropdown-button" data-target="drop02">
+                                            <span class="placeholder">최근1개월</span>
+                                        </button>
+                                        <ul id="drop02" class="dropdown-list" style="display: none;">
+                                            <li class="active">전체</li>
+                                            <li>1개월내</li>
+                                            <li>3개월내</li>
+                                            <li>6개월내</li>
+                                            <li>1년내</li>
+                                            <li>2년내</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-black">검색</button>
+                            </div>
+                            <div class="ec-sell-body">
+                                <div class="cash-list m-none">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width: 128px;">
+                                            <col style="width: auto;">
+                                            <col style="width: auto;">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <td>사용</td>
+                                                <td>
+                                                    <div class="cash-item">
+                                                        <span>2023.12.30 13:00</span>
+                                                        <h6>서비스 구매</h6>
+                                                        <p>(#3500017) 워드프레스 웹사이트 속도 개선 확실히 작업해 드립니다.</p>
+                                                    </div>
+                                                </td>
+                                                <td>+ 240,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>결제방법:신용카드</td>
+                                                <td><button type="button" class="btn open-modal">전표출력</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>충전</td>
+                                                <td>
+                                                    <div class="cash-item">
+                                                        <span>2023.12.30 13:00</span>
+                                                        <h6>캐시충전</h6>
+                                                    </div>
+                                                </td>
+                                                <td>+ 240,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>결제방법:은행계좌입금</td>
+                                                <td><button type="button" class="btn open-modal">전표출력</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3" class="none">
+                                                    <div class="mp-review-item-none">
+                                                        <i class="ico i-review-none"></i>
+                                                        <p>결제내역이 없습니다.</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="cash-info">
+                                        <h6>이용 상세 안내</h6>
+                                        <ul>
+                                            <li>충전 캐시는 최대 200만원까지 보유할 수 있습니다.</li>
+                                            <li>신용카드 결제 시 각 카드사의 결제한도가 적용되며, 결제수단 선택 후 안내 표를 통해 확인하실 수 있습니다.</li>
+                                            <li>충전 캐시의 유효기간은 충전일로부터 5년이며, 보너스 적립 캐시의 유효기간은 4개월입니다.</li>
+                                            <li>서비스 구매 시 유효기간 만료일이 가까운 순서대로 사용되나, 보너스 적립 캐시의 경우 충전 캐시가 모두 소진된 이후 사용됩니다.</li>
+                                            <li>충전 캐시는 상품/서비스 구매를 위하여 사전에 일정 금액을 예치하는 것이므로 세금계산서 발행 대상이 아닙니다.</li>
+                                            <li>충전 캐시를 사용하여 상품/서비스를 구매하실 때 결제 금액에 대한 세금계산서 신청이 가능합니다. (개인전문가는 발행 불가).</li>
+                                            <li>충전 캐시의 영수증(신용카드 전표/현금영수증)은 개인 소득공제용으로만 사용하실 수 있습니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- S : FOOTER -->
+        <footer class="footer" id="footer"></footer>
+        <!-- E : FOOTER -->
+    </div>
+
+    <!-- S : languageModal :: 언어설정 -->
+    <div id="languageModal" class="gt-modal-wrap language-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : languageModal -->
+
+    <!-- S : alarmAllDelModal :: 알림 전체삭제 -->
+    <div id="alarmAllDelModal" class="gt-modal-wrap alert-modal alarm-all-del-modal">
+        <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
+    </div>
+    <!-- E : alarmAllDelModal -->
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>

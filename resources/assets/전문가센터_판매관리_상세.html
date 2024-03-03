@@ -359,7 +359,8 @@
                                             <p class="text">거래는 만족하셨나요?<br>
                                                 구매자님의 매너는 어땠는지 리뷰를 작성해주세요.</p>
                                             <div class="btn-group">
-                                                <button type="button" class="btn btn-mini btn-info open-modal" data-modal-id="reviewWriteModal">리뷰작성</button>
+                                                <button type="button" class="btn btn-mini btn-info open-modal"
+                                                    data-modal-id="reviewWriteModal">리뷰작성</button>
                                             </div>
                                         </div>
                                     </li>
@@ -447,7 +448,7 @@
                                         </div>
                                     </li>
                                 </ul>
-                                <div class="trading-statement">
+                                <div class="trading-statement open-modal" data-modal-id="tradingStatementModal">
                                     <span>거래명세서</span>
                                     <i class="ico i-arrow-right"></i>
                                 </div>
@@ -505,7 +506,8 @@
                                         <dt>결재방식</dt>
                                         <dd>무통장입금</dd>
                                     </dl>
-                                    <button class="btn btn-outline-gray btn-md open-modal" data-modal-id="taxbillInfoModal">세금계산서 요청 정보 보기</button>
+                                    <button class="btn btn-outline-gray btn-md open-modal"
+                                        data-modal-id="taxbillInfoModal">세금계산서 요청 정보 보기</button>
                                 </div>
                                 <div class="order-status">
                                     <h6>주문상황</h6>
@@ -546,6 +548,83 @@
         <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
     </div>
     <!-- E : alarmAllDelModal -->
+
+    <!-- S : tradingStatementModal :: 거레명세서 -->
+    <div id="tradingStatementModal" class="gt-modal-wrap content-modal ts-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+                <div class="gt-modal-header">
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <h3>거래명세서</h3>
+                    <div class="table-wrap">
+                        <table>
+                            <colgroup>
+                                <col style="width: 30%;">
+                            </colgroup>
+
+                            <tbody>
+                                <tr>
+                                    <th>주문번호</th>
+                                    <td>#352654</td>
+                                </tr>
+                                <tr>
+                                    <th>공급자 아이디</th>
+                                    <td>그리고미디어</td>
+                                </tr>
+                                <tr>
+                                    <th>구매사이트</th>
+                                    <td>(주)이엠케이미디어 https:gigtalker.com</td>
+                                </tr>
+                                <tr>
+                                    <th>사업자번호</th>
+                                    <td>548-87-01652</td>
+                                </tr>
+                                <tr>
+                                    <th>대표</th>
+                                    <td>한기호</td>
+                                </tr>
+                                <tr>
+                                    <th>서비스 명</th>
+                                    <td>매출을 높여주는 SEO 셋팅</td>
+                                </tr>
+                                <tr>
+                                    <th>수량</th>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <th>단가</th>
+                                    <td>50,000원</td>
+                                </tr>
+                                <tr>
+                                    <th>쿠폰할인</th>
+                                    <td>0원</td>
+                                </tr>
+                                <tr>
+                                    <th>결제금액</th>
+                                    <td>신용카드 : 50,000원</td>
+                                </tr>
+                                <tr>
+                                    <th>주문일/완료일</th>
+                                    <td>24.6.10 13:00 / 24.6.20 16:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>긱톡커는 중개사이트로 상품 판매의 공급자가 아님을 알려드리며 본 명세서는<br>
+                            고객 편의를 위해 제공되는 자료이며 법정 증빙서류로 사용하실 수 없습니다.</p>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-outline-gray btn-lg">인쇄</button>
+                        <button type="button" class="btn btn-primary btn-lg btn-modal-close">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : tradingStatementModal -->
 
     <!-- S : extendModal :: 마감일연장 -->
     <div id="extendModal" class="gt-modal-wrap content-modal extend-modal">
@@ -727,7 +806,7 @@
                         </div>
                         <div class="col-12">
                             <div class="input-group mn horizontal">
-                                <label for="">사업장 주소</label> 
+                                <label for="">사업장 주소</label>
                                 <input type="text" id="text02" placeholder="" value="서울시 마포구 독막로 262, 6층" disabled>
                             </div>
                         </div>

@@ -432,3 +432,9 @@
     height: 16px;
     width: 16px;
 }
+
+.i-modal-close-write {
+    background: url(../img/ico/i-x-write.png);
+    height: 32px;
+    width: 32px;
+}
