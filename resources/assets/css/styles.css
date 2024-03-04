@@ -5422,17 +5422,6 @@
     text-align: right;
 }
 
-.cash-list table tr:nth-child(2n) td {
-    background: #F8F8F8;
-    border-bottom: 1px solid #cccccc;
-}
-
-.cash-list table tr:nth-child(2n) td {
-    color: #666666;
-    font-size: var(--gt-text-sm);
-    font-weight: 400;
-}
-
 .cash-list .cash-item {
     display: flex;
     flex-direction: column;
@@ -5476,6 +5465,48 @@
     font-size: var(--gt-text-sm);
     list-style-type: disc;
     line-height: 2;
+}
+
+.cash-table ul {
+    border-top: 1px solid var(--gt-black-01);
+    display: flex;
+    flex-direction: column;
+}
+
+.cash-table ul li {
+    border-bottom: 1px solid #cccccc;
+}
+
+.cash-item-top {
+    align-items: center;
+    display: flex;
+    padding: 16px 0;
+}
+
+.cash-item-top>p {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-md);
+    font-weight: bold;
+    flex: 0 0 auto;
+    text-align: center;
+    width: 128px;
+}
+.cash-item-top>h6 {
+    margin: 0 0 0 auto;
+}
+
+.cash-item-bot {
+    background: #F8F8F8;
+    padding: 12px 0;
+}
+
+.cash-item-bot p {
+    align-items: center;
+    color: #666666;
+    display: flex;
+    font-size: var(--gt-text-sm);
+    justify-content: space-between;
+    margin: 0 12px 0 128px;
 }
 
 /* 캐시충전_충전 */
@@ -5626,8 +5657,7 @@
     margin: 20px 0 0 0;
 }
 
-.coupon .default-tabs .tab-list {
-}
+.coupon .default-tabs .tab-list {}
 
 .coupon .default-tabs .tab-button {
     position: relative;
