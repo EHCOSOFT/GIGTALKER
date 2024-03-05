@@ -1633,6 +1633,10 @@ h3.title {
 .file-img-group button {
     background: none;
     border: 0;
+    color: var(--gt-write);
+    font-size: 48px !important;
+    font-weight: bold !important;
+    height: 144px !important;
 }
 
 /* dropdown-group */
