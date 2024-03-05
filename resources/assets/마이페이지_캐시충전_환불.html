@@ -43,137 +43,39 @@
 
                     <section class="mypage-content">
                         <div class="ec-sell-set">
-                            <h1>캐시충전</h1>
-                            <div class="ec-sell-set-item">
-                                <div class="ec-proceeds-all">
-                                    <p>보유중인 캐시<span>30,000원</span></p>
-                                </div>
-                                <ul class="ec-proceeds-list">
-                                    <li>
-                                        <div class="proceeds-item">
-                                            <p>충전캐시</p>
-                                            <h6>25,500원</h6>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="proceeds-item">
-                                            <p>적립캐시</p>
-                                            <h6>0원</h6>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="proceeds-item">
-                                            <p>환불가능캐시</p>
-                                            <h6>0원</h6>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="proceeds-item">
-                                            <p>사용캐시</p>
-                                            <h6>25,500원</h6>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-outline-gray btn-lg">환불</button>
-                                    <button type="button" class="btn btn-primary btn-lg">충전하러가기</button>
-                                </div>
-                            </div>
+                            <h1>환불정보입력 (필수)</h1>
                             <div class="ec-sell-body">
-                                <div class="cash-list">
-                                    <div class="ec-sell-top">
-                                        <div class="dropdown-group">
-                                            <div class="dropdown-list-wrap">
-                                                <button class="dropdown-button" data-target="drop01">
-                                                    <span class="placeholder">결제</span>
-                                                </button>
-                                                <ul id="drop01" class="dropdown-list" style="display: none;">
-                                                    <li class="active">전체</li>
-                                                    <li>환불</li>
-                                                    <li>결제</li>
-                                                </ul>
+                                <div class="refund-wrap">
+                                    <div class="input-group md">
+                                        <label for="">환불예정금액<span>(충전된 전액 환불만 가능합니다.)</span></label>
+                                        <input type="text" id="text01" placeholder="" value="50,000" disabled>
+                                    </div>
+                                    <div class="input-group md">
+                                        <label for="">환불은행정보<span>(원결제 수단으로 환불이 안될 시 작성하신 계좌로 환불됩니다.)</span></label>
+                                        <div class="refund-input">
+                                            <div class="select-group type2">
+                                                <select name="" id="">
+                                                    <option value="은행" selected="selected">은행</option>
+                                                    <option value="한국어">한국어</option>
+                                                    <option value="한국어">한국어</option>
+                                                    <option value="한국어">한국어</option>
+                                                    <option value="한국어">한국어</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-area">
+                                                <input type="text" id="text02" placeholder="계좌번호를 입력하세요">
+                                                <input type="text" id="text03" placeholder="예금주를 입력하세요">
                                             </div>
                                         </div>
-                                        <div class="dropdown-group">
-                                            <div class="dropdown-list-wrap">
-                                                <button class="dropdown-button" data-target="drop02">
-                                                    <span class="placeholder">최근1개월</span>
-                                                </button>
-                                                <ul id="drop02" class="dropdown-list" style="display: none;">
-                                                    <li class="active">전체</li>
-                                                    <li>1개월내</li>
-                                                    <li>3개월내</li>
-                                                    <li>6개월내</li>
-                                                    <li>1년내</li>
-                                                    <li>2년내</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <button type="button" class="btn btn-black">검색</button>
                                     </div>
-                                    <div class="cash-table">
+                                    <div class="refund-info">
                                         <ul>
-                                            <li>
-                                                <div class="cash-item-top">
-                                                    <p>사용</p>
-                                                    <div class="cash-item">
-                                                        <span>2023.12.30 13:00</span>
-                                                        <h6>서비스 구매</h6>
-                                                        <p>(#3500017) 워드프레스 웹사이트 속도 개선 확실히 작업해 드립니다.</p>
-                                                    </div>
-                                                    <h6>+ 240,000</h6>
-                                                </div>
-                                                <div class="cash-item-bot">
-                                                    <p>결제방법 : 신용카드<span>소멸예정일 : 2027.06.10</span></p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="cash-item-top">
-                                                    <p>사용</p>
-                                                    <div class="cash-item">
-                                                        <span>2023.12.30 13:00</span>
-                                                        <h6>서비스 구매</h6>
-                                                        <p>(#3500017) 워드프레스 웹사이트 속도 개선 확실히 작업해 드립니다.</p>
-                                                    </div>
-                                                    <h6>+ 240,000</h6>
-                                                </div>
-                                                <div class="cash-item-bot">
-                                                    <p>결제방법 : 신용카드<span>소멸예정일 : 2027.06.10</span></p>
-                                                </div>
-                                            </li>
+                                            <li>환불 신청 시, 영업일 기준 2일 이내에 원결제 수단으로 환불됩니다.</li>
+                                            <li>원결제 수단으로 환불 불가 시, 환불 신청 시 기재했던 계좌로 환불됩니다.</li>
+                                            <li>캐시는 전액 환불만 가능합니다.</li>
                                         </ul>
                                     </div>
-                                    <div class="pagination">
-                                        <ul>
-                                            <li class="prev"><a href=""><i class="ico i-page-prev"></i></a></li>
-                                            <li class="active"><a href="">1</a></li>
-                                            <li><a href="">2</a></li>
-                                            <li><a href="">3</a></li>
-                                            <li><a href="">4</a></li>
-                                            <li><a href="">5</a></li>
-                                            <li><a href="">6</a></li>
-                                            <li><a href="">7</a></li>
-                                            <li><a href="">8</a></li>
-                                            <li><a href="">9</a></li>
-                                            <li><a href="">10</a></li>
-                                            <li class="next"><a href=""><i class="ico i-page-next"></i></a></li> 
-                                        </ul>
-                                    </div>
-                                
-                                    <div class="cash-info">
-                                        <h6>이용 상세 안내</h6>
-                                        <ul>
-                                            <li>충전 캐시는 최대 200만원까지 보유할 수 있습니다.</li>
-                                            <li>신용카드 결제 시 각 카드사의 결제한도가 적용되며, 결제수단 선택 후 안내 표를 통해 확인하실 수 있습니다.</li>
-                                            <li>충전 캐시의 유효기간은 충전일로부터 5년이며, 보너스 적립 캐시의 유효기간은 4개월입니다.</li>
-                                            <li>서비스 구매 시 유효기간 만료일이 가까운 순서대로 사용되나, 보너스 적립 캐시의 경우 충전 캐시가 모두 소진된 이후 사용됩니다.
-                                            </li>
-                                            <li>충전 캐시는 상품/서비스 구매를 위하여 사전에 일정 금액을 예치하는 것이므로 세금계산서 발행 대상이 아닙니다.</li>
-                                            <li>충전 캐시를 사용하여 상품/서비스를 구매하실 때 결제 금액에 대한 세금계산서 신청이 가능합니다. (개인전문가는 발행 불가).
-                                            </li>
-                                            <li>충전 캐시의 영수증(신용카드 전표/현금영수증)은 개인 소득공제용으로만 사용하실 수 있습니다.</li>
-                                        </ul>
-                                    </div>
+                                    <button type="button" class="btn btn-lg btn-primary">개인정보 수집 이용에 동의하고 환불신청</button>
                                 </div>
                             </div>
                         </div>
