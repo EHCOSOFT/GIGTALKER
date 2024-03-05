@@ -441,7 +441,6 @@ $(document).ready(function () {
     );
   });
 
-
   // 전문가센터 판매관리
   // 초기에 "판매내역" 탭을 활성화
   $("#salesList").show();
@@ -643,6 +642,15 @@ $(document).ready(function () {
     $("#fileImgUpload").click();
   });
 
+  // 파일이 선택되면
+  $("#fileImgUpload").change(function () {
+    // 파일이 선택되었고, 파일이름이 존재하면
+    if ($(this).val() && $(this).prop("files")[0].name) {
+      // 버튼 내의 "H" 텍스트 삭제
+      $(this).siblings("button").text("");
+    }
+  });
+
   // 파일이 선택되면 실행되는 이벤트
   $("#fileImgUpload").change(function () {
     var file = this.files[0]; // 선택한 파일 객체 가져오기
@@ -675,6 +683,12 @@ $(document).ready(function () {
     $(".chat-search-area").hide(); // 채팅 검색 영역 숨기기
   });
 
+  // 채팅 이모티콘 클릭 시
+  $(".btn-emoticon").click(function () {
+    // .emoticon-wrap 보이기
+    $(".emoticon-wrap").show();
+  });
+
   // 텍스트 입력 상자의 내용이 변경될 때마다 이벤트를 수행
   $(".chat-write input").on("input", function () {
     // 입력 상자에 입력된 텍스트의 길이를 확인
@@ -698,7 +712,6 @@ $(document).ready(function () {
   });
 
   // 상품이미지 전체보기
-
 
   // 결제하기
   // 수량 감소 버튼 클릭 시
@@ -726,7 +739,16 @@ $(document).ready(function () {
       $(".product-payment-taxbill-info").hide();
     }
   });
+
+  // 페이지 로드 후 스크롤 맨 아래로 내리기
+  scrollToBottom();
 });
+
+// 스크롤을 맨 아래로 내리는 함수
+function scrollToBottom() {
+  var chatList = $(".chat-list");
+  chatList.scrollTop(chatList.prop("scrollHeight"));
+}
 
 // 모달 애니메이션 이벤트
 class MobilePopup {

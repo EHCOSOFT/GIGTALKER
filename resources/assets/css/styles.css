@@ -2461,10 +2461,22 @@
     width: 112px;
 }
 
-.expert-profile-img {
+.expert-profile-img-area .file-img-group {
+    align-items: center;
+    background: #E48181;
     border-radius: 100px;
+    color: var(--gt-write);
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
     height: 112px;
+    justify-content: center;
     width: 112px;
+}
+
+.expert-profile-img-area .file-img-group button {
+    height: 112px !important;
+    width: 112px !important;
 }
 
 .expert-rating {
@@ -5031,23 +5043,23 @@
 }
 
 /* 전문가등급 자세히보기 */
-.expert-info {
+.expert-info-wrapo {
     border-top: 1px solid #cccccc;
     padding: 24px 0;
 }
 
-.expert-info h5 {
+.expert-info-wrap h5 {
     color: var(--gt-gray-01);
 }
 
-.expert-info p {
+.expert-info-wrap p {
     color: var(--gt-gray-02);
     font-size: 15px;
     font-weight: 400;
     margin: 8px 0 0 0;
 }
 
-.expert-info p a {
+.expert-info-wrap p a {
     color: var(--gt-success);
     font-weight: 400;
     text-decoration: underline;
@@ -5178,10 +5190,22 @@
     width: 132px;
 }
 
-.mypage-profile-img {
+.mypage-profile-img-area .file-img-group {
+    align-items: center;
+    background: #E48181;
     border-radius: 100px;
+    color: var(--gt-write);
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
     height: 132px;
+    justify-content: center;
     width: 132px;
+}
+
+.mypage-profile-img-area .file-img-group button {
+    height: 132px !important;
+    width: 132px !important;
 }
 
 .mypage-profile h5 {
@@ -5209,8 +5233,18 @@
     width: calc(100% - 340px);
 }
 
-.mp-product-review-list>ul {
+.review-info {
     border-top: 1px solid var(--gt-black-01);
+    margin: 20px 0 0 0;
+    padding: 12px 0 0 0;
+}
+
+.review-info ul li {
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-md);
+}
+.mp-product-review-list>ul {
+    border-top: 1px solid #cccccc;
     display: flex;
     flex-direction: column;
 }
@@ -5491,6 +5525,7 @@
     text-align: center;
     width: 128px;
 }
+
 .cash-item-top>h6 {
     margin: 0 0 0 auto;
 }
@@ -6527,6 +6562,51 @@
     margin: 0 2px 0 0;
 }
 
+.chat-file-area {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.chat-file-area span {
+    color: var(--gt-gray-03);
+    font-size: var(--gt-text-mn);
+}
+
+.chat-file-area img {
+    object-fit: cover;
+    height: 160px;
+    width: 240px;
+}
+
+.chat-file-area .file-img {
+    background-position: center center !important;
+    height: 160px;
+    width: 240px;
+}
+
+.chat-file-area p {
+    align-items: center;
+    display: flex;
+    gap: 4px;
+}
+
+.chat-file-area p i {
+    height: 16px;
+    width: 16px;
+}
+
+.chat-file-area p b {
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 160px;
+    white-space: nowrap;
+}
+.chat-file-area p span {
+    margin: 0 0 0 auto;
+}
+
 .price-offer-box {
     background: #ECF5FB;
     border-radius: 6px;
@@ -6587,6 +6667,7 @@
 .chat-write-bot {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .chat-write-bot .btn-emoticon,
@@ -6615,6 +6696,16 @@
 
 .chat-write-bot .btn-send.active .i-send {
     background: url(../img/ico/i-send-active.png);
+}
+
+.emoticon-wrap {
+    background: var(--gt-write);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    display: none;
+    left: -24px;
+    padding: 8px 12px;
+    position: absolute;
 }
 
 .chat-info {
@@ -7638,7 +7729,6 @@
 
 .wishlist .container {
     display: flex;
-    justify-content: space-between;
     gap: 86px;
 }
 
@@ -7673,6 +7763,10 @@
 
 .sc-wishlist-list ul li.active a {
     font-weight: bold;
+}
+
+.wishlist-wrap {
+    width: 100%;
 }
 
 .wishlist-wrap .row {
