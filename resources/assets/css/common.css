@@ -885,12 +885,12 @@ h3.title {
     color: #74767C;
 }
 
-/* .input-group input[type=text]:disabled,
+.input-group input[type=text]:disabled,
 .input-group input[type=password]:disabled {
-    background: var(--gt-write);
+    background: var(--gt-gray-06);
     border: 1px solid var(--gt-gray-05);
-    color: var(--gt-gray-04);
-} */
+    color: var(--gt-gray-03);
+}
 
 .input-group p {
     align-items: center;
@@ -1399,7 +1399,8 @@ h3.title {
 }
 
 .select-group.type2 select {
-    background: url(../img/ico/i-arrow-down-g.png) no-repeat 96% 50%/16px auto;
+    background: url(../img/ico/i-arrow-down-g.png) no-repeat 16px auto;
+    background-position: right 16px center;
     color: #74767C;
     font-size: 13px;
     font-weight: 400;
