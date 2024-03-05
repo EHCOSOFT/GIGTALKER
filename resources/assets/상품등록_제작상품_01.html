@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header-top type2">
+                <div class="container-md">
+                    <a href="" class="header-logo">
+                        <img src="img/logo.png" alt="">제작 상품
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="expert-register-step">
+            <div class="container-md">
+                <ul>
+                    <li class="active">
+                        <span>1</span>
+                        개요
+                    </li>
+                    <li>
+                        <span>2</span>
+                        가격
+                    </li>
+                    <li>
+                        <span>3</span>
+                        안내사항
+                    </li>
+                    <li>
+                        <span>4</span>
+                        갤러리
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-outline-gray btn-sm">저장</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="new-product-wrap">
+                <div class="container-md">
+                    <div class="product-input-area">
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>성명</h6>
+                                <p>제목은 구매자가 서비스를 검색하는데 사용할 가능성이 있는 키워드를 포함하는것이 중요합니다.</p>
+                            </div>
+                            <div class="col-8">
+                                <div class="text-group md h-80">
+                                    <textarea name="" id="" cols="30" rows="10"
+                                        placeholder="서비스의 제목을 작성해주세요"></textarea>
+                                    <p class="red"><span>0 / 50 최대</span></p>
+                                    <!-- <p class="red">최소 10자 이상 50자 이하로 작성해주세요.<span>0 / 50 최대</span></p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>카테고리</h6>
+                                <p>서비스의 카테고리와 하위 카테고리를 선택하세요.</p>
+                            </div>
+                            <div class="col-8">
+                                <div class="product-category-group">
+                                    <div class="select-group">
+                                        <select name="" id="">
+                                            <option value="카테고리를 선택하세요" selected="selected">카테고리를 선택하세요</option>
+                                            <option value="한국어">한국어</option>
+                                            <option value="영어">영어</option>
+                                            <option value="중국어">중국어</option>
+                                            <option value="베트남어">베트남어</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-group">
+                                        <select name="" id="">
+                                            <option value="카테고리를 선택하세요" selected="selected">카테고리를 선택하세요</option>
+                                            <option value="초보자">초보자</option>
+                                            <option value="기본회화가능">기본회화가능</option>
+                                            <option value="유창한">유창한</option>
+                                            <option value="현지어/이중언어">현지어/이중언어</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <p class="red">계속하려면 카테고리와 하위 카테고리를 선택하세요.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>서비스설명</h6>
+                                <p>전문가 소개 (경력과 이력), 작업 가능 분야, 작업 제공 절차, 서비스 특징에 대해서 고객이 이해하기 쉽도록 정확하게 작성해 주세요.</p>
+                            </div>
+                            <div class="col-8">
+                                <div class="text-group md">
+                                    <textarea name="" id="" cols="30" rows="10" class="resize-on"
+                                        placeholder="서비스의 제목을 작성해주세요"></textarea>
+                                    <p class="red"><span>0 / 100 최소</span></p>
+                                    <!-- <p class="red">최소 100자 이상 <span>0 / 100 최소</span></p> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="btn-group">
+                            <!-- <button type="button" class="btn btn-outline-gray">이전단계</button> -->
+                            <button type="button" class="btn btn-primary">저장하고 다음단계</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>

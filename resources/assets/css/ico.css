@@ -438,3 +438,28 @@
     height: 32px;
     width: 32px;
 }
+
+.i-x {
+    background: url(../img/ico/i-x.png);
+    background-size: cover;
+    height: 12px;
+    width: 12px;
+}
+
+.i-product-img-sample {
+    background: url(../img/ico/i-product-img-sample.png);
+    height: 68px;
+    width: 68px;
+}
+
+.i-product-video-sample {
+    background: url(../img/ico/i-product-video-sample.png);
+    height: 68px;
+    width: 68px;
+}
+
+.i-add-product-img-sample {
+    background: url(../img/ico/i-add-product-img-sample.png);
+    height: 68px;
+    width: 68px;
+}
