@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header-top type2">
+                <div class="container-md">
+                    <a href="" class="header-logo">
+                        <img src="img/logo.png" alt="">제작 상품
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="expert-register-step">
+            <div class="container-md">
+                <ul>
+                    <li class="active">
+                        <span>1</span>
+                        개요
+                    </li>
+                    <li class="active">
+                        <span>2</span>
+                        가격
+                    </li>
+                    <li class="active">
+                        <span>3</span>
+                        안내사항
+                    </li>
+                    <li class="active">
+                        <span>4</span>
+                        갤러리
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-outline-gray btn-sm">저장</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="new-product-wrap">
+                <div class="container-md">
+                    <div class="new-product-top">
+                        <h1>갤러리에서 귀하의 서비스를 선보이세요</h1>
+                        <p>긱톡커의 서비스 약관을 준수하려면 귀하가 소유한 콘텐츠만 업로드하거나 다른곳의 콘텐츠 이용시 사용 권한이나 라이센스가 있는지 확인하십시오.</p>
+                        <ul>
+                            <li>이미지는 서비스와 관련 없는 홍보성 문구나 임의로 제작된 인증 마크, 라벨, 할인표기등을 넣으시면 안됩니다.</li>
+                            <li>검증 불가 내용 (최초, 유일, 무제한, 1위, 누적의뢰 수/금액 표기 등)도 이미지에 넣으시면 안됩니다. </li>
+                        </ul>
+                    </div>
+                    <div class="product-input-area">
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>메인 이미지 ( 필수 )</h6>
+                                <p>최적의 이미지 크기</p>
+                                <ul>
+                                    <li>1280x769픽셀을 권장합니다.</li>
+                                    <li>최소 712x430픽셀.</li>
+                                    <li>최대 크기 10MB</li>
+                                </ul>
+                            </div>
+                            <div class="col-8">
+                                <div class="product-img-group-wrap">
+                                    <div class="product-img-group">
+                                        <input type="file" id="productFileImgUpload" accept="image/*">
+                                        <button type="button">
+                                            <i class="ico i-product-img-sample"></i>
+                                            <p>사진을 드래그 앤 드롭하거나<br>
+                                                찾아보세요.</p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>상세 이미지 ( 필수 )</h6>
+                                <p>최적의 이미지 크기</p>
+                                <ul>
+                                    <li>1280x769픽셀을 권장합니다.</li>
+                                    <li>최소 712x430픽셀.</li>
+                                    <li>최대 크기 장당 10MB</li>
+                                </ul>
+                                <p>이미지 최대 10장까지 업로드 가능</p>
+                            </div>
+                            <div class="col-8">
+                                <div class="product-img-group-wrap">
+                                    <div class="product-img-group">
+                                        <input type="file" id="productFileImgUpload" accept="image/*">
+                                        <button type="button">
+                                            <i class="ico i-product-img-sample"></i>
+                                            <p>사진을 드래그 앤 드롭하거나<br>
+                                                찾아보세요.</p>
+                                        </button>
+                                    </div>
+                                    <div class="product-img-group">
+                                        <input type="file" id="productFileImgUpload" accept="image/*">
+                                        <button type="button">
+                                            <i class="ico i-product-img-sample"></i>
+                                            <p>사진을 드래그 앤 드롭하거나<br>
+                                                찾아보세요.</p>
+                                        </button>
+                                    </div>
+                                    <div class="product-img-group">
+                                        <input type="file" id="productFileImgUpload" accept="image/*">
+                                        <button type="button">
+                                            <i class="ico i-product-img-sample"></i>
+                                            <p>사진을 드래그 앤 드롭하거나<br>
+                                                찾아보세요.</p>
+                                        </button>
+                                    </div>
+                                    <div class="add-product-img-group btn-add-product-img">
+                                        <i class="ico i-add-product-img-sample"></i>
+                                        <p>이미지 추가하기</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>영상</h6>
+                                <p>귀하의 서비스를 소개하는 동영상으로 구매자의 관심을 사로잡으세요.<Br>
+                                    50초 미만, 30MB 미만으로 올리세요</p>
+                            </div>
+                            <div class="col-8">
+                                <div class="product-img-group">
+                                    <input type="file" id="productFileImgUpload" accept="image/*">
+                                    <button type="button">
+                                        <i class="ico i-product-video-sample"></i>
+                                        <p>영상을 드래그 앤 드롭하거나<br>
+                                            찾아보세요.</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-gray">이전단계</button>
+                            <button type="button" class="btn btn-primary open-modal" data-modal-id="faModal">등록</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- S : faModal :: 등록완료 -->
+    <div id="faModal" class="gt-modal-wrap complete-modal fa-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+                <div class="gt-modal-body">
+                    <img class="ico-complete" src="img/ico/i-smail.png" alt="">
+                    <h1>이제 서비스가 등록됐습니다.</h1>
+                    <p>매출 증대를 위해 소문을 퍼뜨려 보세요.</p>
+                    <div class="link-box">
+                        <p>https://joohan.kr/tdcpt_doctors/123444https://joohan.kr/tdcpt_doctors/123444</p>
+                        <a href="#">링크복사</a>
+                    </div>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-lg btn-primary btn-modal-close">내 상품보기</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- S : faModal -->
+
+
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>

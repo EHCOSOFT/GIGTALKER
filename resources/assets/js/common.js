@@ -742,6 +742,218 @@ $(document).ready(function () {
 
   // 페이지 로드 후 스크롤 맨 아래로 내리기
   scrollToBottom();
+
+  // 상품등록
+  // 옵션추가
+  // 옵션 추가 버튼 클릭 시 이벤트 처리
+  $(".btn-add-option").click(function () {
+    // 새로운 .add-options 요소 생성
+    var newOption =
+      '<div class="add-options">' +
+      '<div class="option-one">' +
+      '<div class="input-group horizontal">' +
+      '<input type="text" placeholder="">' +
+      '<button type="button" class="btn-del-option"><i class="i i-x"></i>삭제</button>' +
+      "</div>" +
+      "</div>" +
+      '<div class="option-two">' +
+      '<div class="input-group">' +
+      '<div class="input-area">' +
+      '<input type="text" placeholder="금액"><span>원</span>' +
+      "</div>" +
+      "</div>" +
+      '<div class="input-group">' +
+      '<div class="input-area">' +
+      '<input type="text" placeholder="작업기간"><span>일</span>' +
+      "</div>" +
+      "</div>" +
+      "</div>" +
+      "</div>";
+
+    // 첫 번째 .add-options 요소 앞에 새로운 요소 추가
+    $(".add-options-wrap").find(".add-options:last").after(newOption);
+  });
+
+  // 옵션 삭제 버튼 클릭 시 이벤트 처리
+  $(document).on("click", ".btn-del-option", function () {
+    // 부모 요소인 .add-options 삭제
+    $(this).closest(".add-options").remove();
+  });
+
+  // 서비스 추가
+  // 추가 제공 서비스 추가 버튼 클릭 시 이벤트 처리
+  $(".btn-add-service").click(function () {
+    // 추가 서비스의 순서를 카운트하여 placeholder 설정
+    var count = $(".add-service").length + 1;
+    var placeholderText = count + "번째 추가 제공 서비스를 작성해주세요";
+
+    // 새로운 추가 서비스 요소 생성 및 추가
+    var newService =
+      '<div class="add-service">' +
+      '<div class="input-group">' +
+      '<div class="input-area">' +
+      '<input type="text" placeholder="' +
+      placeholderText +
+      '">' +
+      '<button type="button" class="btn-del-service"><i class="i i-x"></i>삭제</button>' +
+      "</div>" +
+      "</div>" +
+      "</div>";
+
+    // 기존 .btn-add-service의 이전에 새로운 요소 추가
+    $(".btn-add-service").prev().after(newService);
+  });
+
+  // 추가 제공 서비스 삭제 버튼 클릭 시 이벤트 처리
+  $(document).on("click", ".btn-del-service", function () {
+    // 부모 요소인 .add-service 삭제
+    $(this).closest(".add-service").remove();
+    // 순서 재정렬
+    $(".add-service").each(function (index) {
+      var placeholderText = index + 1 + "번째 추가 제공 서비스를 작성해주세요";
+      $(this).find("input").attr("placeholder", placeholderText);
+    });
+  });
+
+  // 검색키워드
+  // 버튼 클릭 이벤트 위임
+  $(".keyword-box").on("click", ".btn-del-keyword", function () {
+    $(this).closest("li").remove(); // 클릭된 버튼의 가장 가까운 부모인 li 요소를 삭제
+  });
+
+  $(".keyword-box li").keydown(function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault(); // 기본 동작 방지
+      var keyword = $(this).text().trim(); // 입력된 텍스트 가져오기
+      if (keyword !== "") {
+        var liCount = $(".keyword-box li").length; // 현재 li 요소의 개수 가져오기
+        if (liCount < 6) {
+          // li 요소의 개수가 5개 미만인 경우에만 실행
+          var newLi = $("<li>").addClass("tag"); // 새로운 li 요소 생성하고 클래스 추가
+          var button = $("<button>")
+            .attr("type", "button")
+            .addClass("btn-del-keyword"); // 삭제 버튼 생성
+          var icon = $("<i>").addClass("ico i-x"); // 아이콘 생성
+          button.append(icon); // 버튼에 아이콘 추가
+          newLi.append(keyword, button); // 텍스트와 버튼 추가
+          $(this).before(newLi); // 현재 li 요소의 이전에 새로운 li 요소 추가
+          $(this).text(""); // 현재 li 요소의 텍스트 지우기
+        }
+      }
+    }
+  });
+
+  // 이미지 업로드
+  var fileInput = document.getElementById("productFileImgUpload");
+  var productImgGroup = $(".product-img-group");
+
+  // 파일 입력 변화 이벤트 핸들러
+  $("#productFileImgUpload").change(function (event) {
+    var file = event.target.files[0]; // 업로드된 파일 가져오기
+
+    if (file) {
+      var reader = new FileReader(); // 파일을 읽기 위한 FileReader 객체 생성
+
+      reader.onload = function (event) {
+        var imageUrl = event.target.result; // 이미지 URL 가져오기
+        productImgGroup.css("background-image", "url('" + imageUrl + "')"); // 배경 이미지 설정
+        $(".product-img-group button").hide(); // 버튼
+      };
+
+      reader.readAsDataURL(file); // 파일을 읽어 Data URL 형식으로 변환
+    }
+  });
+
+  // 드래그 앤 드롭 이벤트 핸들러
+  $(".product-img-group").on("dragover", function (event) {
+    event.preventDefault(); // 기본 동작 방지
+    $(this).addClass("drag-over"); // 드래그 상태를 나타내는 클래스 추가
+  });
+
+  $(".product-img-group").on("dragleave", function (event) {
+    $(this).removeClass("drag-over"); // 드래그 상태를 나타내는 클래스 제거
+  });
+
+  $(".product-img-group").on("drop", function (event) {
+    event.preventDefault(); // 기본 동작 방지
+    $(this).removeClass("drag-over"); // 드래그 상태를 나타내는 클래스 제거
+
+    var files = event.originalEvent.dataTransfer.files; // 드롭한 파일 가져오기
+
+    // 파일 입력(input[type="file"])에 파일 설정
+    fileInput.files = files;
+
+    // 파일 입력 변화 이벤트 강제 호출
+    $("#productFileImgUpload").change();
+  });
+
+  // 버튼 클릭 이벤트 핸들러
+  $(".product-img-group button").click(function () {
+    // input[type="file"] 클릭 이벤트 트리거
+    fileInput.click();
+  });
+
+  // .btn-add-product-img 클릭 이벤트 핸들러
+  $(".btn-add-product-img").click(function () {
+    // 새로운 .product-img-group 요소 생성
+    var newProductImgGroup = $("<div class='product-img-group'>").appendTo(
+      $(this).parent()
+    );
+    var fileInput = $(
+      "<input type='file' id='productFileImgUpload' accept='image/*'>"
+    ).appendTo(newProductImgGroup);
+    var button = $("<button type='button'>").appendTo(newProductImgGroup);
+    var icon = $("<i class='ico i-product-img-sample'>").appendTo(button);
+    var text = $("<p>").html("사진을 드래그 앤 드롭하거나<br>찾아보세요.").appendTo(button); // <br> 사용
+
+    // 버튼 클릭 이벤트 핸들러 추가
+    button.click(function () {
+      fileInput.click();
+    });
+
+    // 파일 입력 변화 이벤트 핸들러 추가
+    fileInput.change(function (event) {
+      var file = event.target.files[0]; // 업로드된 파일 가져오기
+
+      if (file) {
+        var reader = new FileReader(); // 파일을 읽기 위한 FileReader 객체 생성
+
+        reader.onload = function (event) {
+          var imageUrl = event.target.result; // 이미지 URL 가져오기
+          newProductImgGroup.css("background-image", "url('" + imageUrl + "')"); // 배경 이미지 설정
+          button.hide(); // 버튼 숨기기
+        };
+
+        reader.readAsDataURL(file); // 파일을 읽어 Data URL 형식으로 변환
+      }
+    });
+
+    // 드래그 앤 드롭 이벤트 핸들러 추가
+    newProductImgGroup.on("dragover", function (event) {
+      event.preventDefault(); // 기본 동작 방지
+      $(this).addClass("drag-over"); // 드래그 상태를 나타내는 클래스 추가
+    });
+
+    newProductImgGroup.on("dragleave", function (event) {
+      $(this).removeClass("drag-over"); // 드래그 상태를 나타내는 클래스 제거
+    });
+
+    newProductImgGroup.on("drop", function (event) {
+      event.preventDefault(); // 기본 동작 방지
+      $(this).removeClass("drag-over"); // 드래그 상태를 나타내는 클래스 제거
+
+      var files = event.originalEvent.dataTransfer.files; // 드롭한 파일 가져오기
+
+      // 파일 입력(input[type="file"])에 파일 설정
+      fileInput.files = files;
+
+      // 파일 입력 변화 이벤트 강제 호출
+      fileInput.change();
+    });
+
+    // 마지막 .product-img-group 요소 뒤에 추가
+    $(".add-product-img-group").before(newProductImgGroup);
+  });
 });
 
 // 스크롤을 맨 아래로 내리는 함수

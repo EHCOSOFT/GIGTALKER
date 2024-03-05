@@ -1081,7 +1081,7 @@
     top: 32px;
 }
 
-.full-window-view-modal .gt-modal-body {}
+
 
 .full-window-view-modal .product-detila-img-swiper-02 {
     width: 1080px;
@@ -1089,4 +1089,40 @@
 
 .full-window-view-modal .product-detila-img-swiper-02 .swiper-slide {
     height: 652px;
+}
+
+/* 등록완료(fa-modal) */
+.fa-modal .gt-modal-content {
+    padding: 32px;
+    width: 550px;
+}
+
+.fa-modal .gt-modal-body h1 {
+    margin: 12px 0 0 0;
+}
+
+.fa-modal .gt-modal-body p {
+    margin: 0;
+}
+
+.fa-modal .link-box {
+    align-items: center;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    display: flex;
+    margin: 20px auto 0 auto;
+    padding: 12px 16px;
+    width: 420px;
+}
+
+.fa-modal .link-box p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 288px;
+    white-space: nowrap;
+}
+.fa-modal .link-box a {
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-sm);
+    margin: 0 0 0 auto;
 }

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header-top type2">
+                <div class="container-md">
+                    <a href="" class="header-logo">
+                        <img src="img/logo.png" alt="">제작 상품
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="expert-register-step">
+            <div class="container-md">
+                <ul>
+                    <li class="active">
+                        <span>1</span>
+                        개요
+                    </li>
+                    <li class="active">
+                        <span>2</span>
+                        가격
+                    </li>
+                    <li>
+                        <span>3</span>
+                        갤러리
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-outline-gray btn-sm">저장</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="new-product-wrap">
+                <div class="container-md">
+                    <div class="product-input-area step-02">
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>기본금액</h6>
+                                <p>최종금액은 채팅을 통해서 가격을 협의하고 제안할 수 있습니다.</p>
+                            </div>
+                            <div class="col-8">
+                                <div class="input-group">
+                                    <div class="input-area">
+                                        <input type="text" placeholder="기본금액 ( VAT 포함 )"><span>원</span>
+                                    </div>
+                                    <p>기본금액은 최소 5,000원 이상 1,000원 단위로 입력이 가능합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>상담시간</h6>
+                                <p>시간 당 상담 상품일 경우, 상담시간을 10분 단위로 설정해주세요.</p>
+                            </div>
+                            <div class="col-8">
+                                <div class="input-group">
+                                    <div class="input-area">
+                                        <input type="text" placeholder=""><span>분</span>
+                                    </div>
+                                    <p>예 ) 180분</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>A/S 정책</h6>
+                                <p>고객과의 분쟁을 미리 막기위해서 A/S정책에 대한 내용을 자세하게 적어서 안내하는것이 중요합니다.</p>
+                            </div>
+                            <div class="col-8">
+                                <div class="text-group md">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="A/S에 해당하는 범위를 구체적으로 작성해주세요
+예) 상담이 마음에 안드셨다면 10분상담 추가 진행                           
+"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>취소 및 환불<button type="button" class="btn btn-outline-gray">기본항목 적용</button>
+                                </h6>
+                                <p>고객과의 분쟁을 미리 막기위해서 취소 및 환불규정에 대한 내용을 자세하게 적어서
+                                    안내하는것이 중요합니다.</p>
+                            </div>
+                            <div class="col-8">
+                                <div class="text-group md">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="고객에게 제공한 서비스에 대해 구매자가 환불, 취소등을 요청할 경우에
+대한 규정을 기재해주세요.
+
+취소 및 환불에 대한 내용만 기재 바랍니다.
+범위 설정이 불명확한 경우, 의뢰인과 분쟁이 발생할 수 있습니다.
+"></textarea>
+                                    <p>* 취소 및 환불규정을 원하시는대로 작성했어도 구매자와의 분쟁시 관련 법령이 우선시 될 수 있습니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>세금계산서 발행가능 여부</h6>
+                                <p>판매금의 세금계산서는 전문가가 발행해야 합니다. 발행가능한지 체크해주세요</p>
+                            </div>
+                            <div class="col-8">
+                                <div class="radio-wrap">
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio01">
+                                        <label for="radio01">발행가능</label>
+                                    </div>
+                                    <div class="radio-group">
+                                        <input type="radio" id="radio02">
+                                        <label for="radio02">발행불가능</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>검색 키워드 (선택)</h6>
+                                <p>고객이 귀하의 서비스를 찾을 때 사용할 것으로 생각되는 검색어를 입력하세요.</p>
+                            </div>
+                            <div class="col-8">
+                                <div class="keyword">
+                                    <div class="keyword-box">
+                                        <ul>
+                                            <li contenteditable="true"></li>
+                                        </ul>
+                                    </div>
+                                    <p>태그는 최대 5개입니다. 문자와 숫자만 사용하세요.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-gray">이전단계</button>
+                            <button type="button" class="btn btn-primary">저장하고 다음단계</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>

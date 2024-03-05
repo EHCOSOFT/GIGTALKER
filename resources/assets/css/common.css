@@ -223,6 +223,12 @@ h6,
     line-height: 24px;
 }
 
+.container-md {
+    margin: 0 auto;
+    max-width: 880px;
+    width: 100%;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1200px;
@@ -1348,7 +1354,8 @@ h3.title {
 }
 
 .select-group select {
-    background: url(../img/ico/i-arrow-down-g.png) no-repeat 96% 50%/20px auto;
+    background: url(../img/ico/i-arrow-down-g.png) no-repeat 50%/20px auto;
+    background-position: right 12px center;
     border: 1px solid var(--gt-gray-05);
     border-radius: 6px;
     color: var(--gt-gray-01);
