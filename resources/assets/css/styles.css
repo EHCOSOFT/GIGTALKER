@@ -2510,6 +2510,7 @@
     align-items: center;
     background: #E48181;
     background-size: cover !important;
+    background-position: center center !important;
     border-radius: 100px;
     color: var(--gt-write);
     font-size: 48px;
