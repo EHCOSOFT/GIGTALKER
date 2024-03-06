@@ -1651,6 +1651,23 @@
     width: 16px;
 }
 
+/* 검색 결과가 없을 경우 */
+.search-none {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 116px 0 0 0;
+}
+
+.search-none h1 {
+    color: var(--gt-black-01);
+    font-size: var(--gt-text-lg);
+}
+
+.search-none h1 span {
+    font-weight: 400;
+}
 /* **************************************** *
  * 고객센터
  * **************************************** */
@@ -3092,6 +3109,10 @@
 
 .ec-proceeds-list li {
     width: calc(25% - 6px);
+}
+
+.ec-proceeds-list.column-2 li {
+    width: calc(50% - 6px);
 }
 
 .proceeds-item {

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIGTALKER</title>
+
+    <style type="text/css">
+        /* CLIENT-SPECIFIC RESETS */
+        /* Outlook.com(Hotmail)의 전체 너비 및 적절한 줄 높이를 허용 */
+        .ReadMsgBody {
+            width: 100%;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+
+        /* Outlook 2007 이상에서 Outlook이 추가하는 테이블 주위의 간격을 제거 */
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        /* Internet Explorer에서 크기가 조정된 이미지를 렌더링하는 방식을 수정 */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* Webkit 및 Windows 기반 클라이언트가 텍스트 크기를 자동으로 조정하지 않도록 수정 */
+        body,
+        table,
+        td,
+        p,
+        a,
+        li,
+        blockquote {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+    </style>
+    <style>
+        @font-face {
+            font-family: 'NotoSansKR';
+            font-weight: 700;
+            font-display: swap;
+            src: local('NotoSansKR Bold'),
+                url('font/NotoSans-Bold.woff2') format('woff2'),
+                url('font/NotoSans-Bold.woff') format('woff');
+        }
+
+        @font-face {
+            font-family: 'NotoSansKR';
+            font-weight: 500;
+            font-display: swap;
+            src: local('NotoSansKR Medium'),
+                url('font/NotoSans-Medium.woff2') format('woff2'),
+                url('font/NotoSans-Medium.woff') format('woff');
+        }
+
+
+        @font-face {
+            font-family: 'NotoSansKR';
+            font-weight: 400;
+            font-display: swap;
+            src: local('NotoSansKR Regular'),
+                url('font/NotoSans-Regular.woff2') format('woff2'),
+                url('font/NotoSans-Regular.woff') format('woff');
+        }
+    </style>
+</head>
+
+<body style="margin: 0;">
+    <div style="background: #EEEEEE; padding: 48px 60px;">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="720" bgcolor="#ffffff" align="center">
+                        <tbody>
+                            <tr>
+                                <td height="24"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="640"
+                                        style="font-family: 'NotoSansKR', sans-serif;">
+                                        <tr>
+                                            <td align="center">
+                                                <img src="img/logo.png" alt="" width="116">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="32"></td>
+                                        </tr>
+                                        <tr>
+                                            <td height="30" align="center"
+                                                style="font-size: 24px; font-weight: bold; line-height: 30px;">결제가
+                                                완료되었습니다.</td>
+                                        </tr>
+                                        <!-- <tr>
+                                            <td height="30" align="center"
+                                                style="font-size: 24px; font-weight: bold; line-height: 30px;">구매하신 상품이 <span style="color: #10A9FF;">「일지정지」</span>상태가 되었습니다.</td>
+                                        </tr> -->
+                                        <tr>
+                                            <td height="24" style="border-bottom: 1px solid #cccccc;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td height="20"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color: #333333; font-size: 16px;">긱톡커 상품을 주문해 주셔서 감사드립니다.<br>
+                                                주문이 정상적으로 완료 되었습니다.</td>
+                                        </tr>
+                                        <tr>
+                                            <td height="20"></td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                style="color: #333333; font-size: 16px; font-weight: bold; line-height: 36px;">
+                                                주문상품</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <table cellpadding="0" cellspacing="0" width="640"
+                                                    style="border: 1px solid #BDBDBD;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding: 20px; vertical-align: top;">
+                                                                <img width="100" src="img/sample/sample-01.png" alt=""
+                                                                    style="border-radius: 6px;">
+                                                            </td>
+                                                            <td>
+                                                                <table cellpadding="0" cellspacing="0" width="500"
+                                                                    style="padding: 20px 0;">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td colspan="2">
+                                                                                <span
+                                                                                    style="background: #F4F3FD; color: #7B78FF; font-size: 13px; padding: 0 20px;">제작상품</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="color: #282828; font-size: 15px;"
+                                                                                colspan="2" height="30">워드프레스 웹사이트 속도 개선
+                                                                                확실히 작업해
+                                                                                드립니다. </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="color: #74767C; font-size: 13px;"
+                                                                                width="140">주문번호 :<span
+                                                                                    style="color: #333333; font-size: 13px; margin: 0 0 0 4px;">#23424456</span>
+                                                                            </td>
+                                                                            <td
+                                                                                style="color: #74767C; font-size: 13px;">
+                                                                                거래총액 :<span
+                                                                                    style="color: #333333; font-size: 13px; margin: 0 0 0 4px;">150,000원</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="color: #74767C; font-size: 13px;"
+                                                                                width="140">판매자 :<span
+                                                                                    style="color: #333333; font-size: 13px; margin: 0 0 0 4px;">그리고미디어</span>
+                                                                            </td>
+                                                                            <td
+                                                                                style="color: #74767C; font-size: 13px;">
+                                                                                마감일 :<span
+                                                                                    style="color: #333333; font-size: 13px; margin: 0 0 0 4px;">2023.11.25</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="28"></td>
+                                        </tr>
+                                        <tr>
+                                            <td
+                                                style="color: #333333; font-size: 16px; font-weight: bold; line-height: 36px;">
+                                                주문정보</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <table cellpadding="0" cellspacing="0" width="100%"
+                                                    style="padding: 8px 0; border-bottom: 1px solid #828282; border-top: 1px solid #828282;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="80" style="color: #828282; font-size: 13px;"
+                                                                height="30">주문번호</td>
+                                                            <td style="color: #000000; font-size: 13px;" height="30">
+                                                                ORSPElISHBRUXk0FkdTV</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="80" style="color: #828282; font-size: 13px;"
+                                                                height="30">주문자 </td>
+                                                            <td style="color: #000000; font-size: 13px;" height="30">홍길동
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="80" style="color: #828282; font-size: 13px;"
+                                                                height="30">주문금액</td>
+                                                            <td style="color: #000000; font-size: 13px;" height="30">
+                                                                30,000원</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="80" style="color: #828282; font-size: 13px;"
+                                                                height="30">결제금액</td>
+                                                            <td style="color: #000000; font-size: 13px;" height="30">
+                                                                30,000원</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td width="80" style="color: #828282; font-size: 13px;"
+                                                                height="30">결제방법</td>
+                                                            <td style="color: #000000; font-size: 13px;" height="30">
+                                                                카드결제</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="36"></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center">
+                                                <button type="button"
+                                                    style="background: #3B00CC; border: 0; border-radius: 6px; color: #ffffff; font-family: 'NotoSansKR', sans-serif; font-size: 15px; font-weight: bold; height: 50px; padding: 0 36px;">마이페이지
+                                                    바로가기</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="36" style="border-bottom: 3px solid #E0E0E0;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td height="20"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color: #4F4F4F; font-size: 14px;">
+                                                본 메일은 발신 전용 메일입니다. 긱톡커 관련하여 궁금하신 사항은 긱톡커 고객센터를 이용하여 주세요.<br><br>
+                                                긱톡커는 통신판매중개시스템의 제공자로서, 통신판매의 당사자가 아니며 용역 상품의 주문, 상담 내용을 포함하여 용역의 이행, 환불
+                                                등과 관련한 의무와 책임은 각 판매자에게 있습니다. 또한 긱톡커는 본 플랫폼 외부에서 이루어진 상담 등으로 인하여 발생한 문제에
+                                                대해서도 마찬가지로 책임을 지지 않습니다.<br><br>
+                                                사업자등록번호 : 548-87-01652 통신판매업신고번호 : 제2020-서울마포-0190호 이메일문의 :
+                                                help@gigtalker.com<br>
+                                                (주)이엠케이미디어 서울시 마포구 독막로 262 신영빌딩 6층 취업정보제공사업신청 : 서울서부제2020-15호 대표전화
+                                                010-4889-0513 호스팅제공 : cafe24 클라우드<br><br>
+                                                Copyright ©emk media inc. All Rights Reserved.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="30"></td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center">
+                                                <a href="" style="padding: 0 8px;"><img src="img/google-play.png" width="172"></a>
+                                                <a href="" style="padding: 0 8px;"><img src="img/app-store.png" width="172"></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="50"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
