@@ -1595,7 +1595,7 @@
     position: absolute;
     right: 0;
     width: 425px;
-    z-index: 88;
+    z-index: 500;
 }
 
 .ad-info-area dt {
