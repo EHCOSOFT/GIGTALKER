@@ -818,16 +818,26 @@ $(document).ready(function () {
   // 검색키워드
   // 버튼 클릭 이벤트 위임
   $(".keyword-box").on("click", ".btn-del-keyword", function () {
+    var liCount = $(".keyword-box li").length; // 현재 li 요소의 개수 가져오기
     $(this).closest("li").remove(); // 클릭된 버튼의 가장 가까운 부모인 li 요소를 삭제
+    if (liCount !== 5) {
+      $(".keyword-box li").prop("contenteditable", "true");
+    }
   });
 
   $(".keyword-box li").keydown(function (event) {
-    if (event.key === "Enter") {
-      event.preventDefault(); // 기본 동작 방지
-      var keyword = $(this).text().trim(); // 입력된 텍스트 가져오기
-      if (keyword !== "") {
-        var liCount = $(".keyword-box li").length; // 현재 li 요소의 개수 가져오기
-        if (liCount < 6) {
+    var liCount = $(".keyword-box li").length; // 현재 li 요소의 개수 가져오기
+    if (liCount > 5) {
+      // $(".keyword-box li").blur();
+      // return false;
+    } else {
+      if (event.key === "Enter") {
+        if (liCount === 5) {
+          $(".keyword-box li").prop("contenteditable", "false");
+        }
+        event.preventDefault(); // 기본 동작 방지
+        var keyword = $(this).text().trim(); // 입력된 텍스트 가져오기
+        if (keyword !== "") {
           // li 요소의 개수가 5개 미만인 경우에만 실행
           var newLi = $("<li>").addClass("tag"); // 새로운 li 요소 생성하고 클래스 추가
           var button = $("<button>")
@@ -904,7 +914,9 @@ $(document).ready(function () {
     ).appendTo(newProductImgGroup);
     var button = $("<button type='button'>").appendTo(newProductImgGroup);
     var icon = $("<i class='ico i-product-img-sample'>").appendTo(button);
-    var text = $("<p>").html("사진을 드래그 앤 드롭하거나<br>찾아보세요.").appendTo(button); // <br> 사용
+    var text = $("<p>")
+      .html("사진을 드래그 앤 드롭하거나<br>찾아보세요.")
+      .appendTo(button); // <br> 사용
 
     // 버튼 클릭 이벤트 핸들러 추가
     button.click(function () {

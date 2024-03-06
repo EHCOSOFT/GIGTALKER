@@ -2796,3 +2796,21 @@ h3.title {
 .open-modal {
     cursor: pointer;
 }
+
+.loading-wrap {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.loading img {
+    height: 100px;
+    width: 100px;
+}
+
+.loading-w {
+    background: none;
+}
+

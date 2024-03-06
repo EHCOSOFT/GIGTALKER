@@ -463,3 +463,9 @@
     height: 68px;
     width: 68px;
 }
+
+.i-search-none {
+    background: url(../img/ico/i-search-none.png);
+    height: 108px;
+    width: 108px;
+}
