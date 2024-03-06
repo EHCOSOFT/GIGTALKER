@@ -49,7 +49,9 @@
                                     <li>
                                         <div class="quote-list-item">
                                             <div class="expert-info">
-                                                <div class="expert-img" style="background: url(img/sample/sample-02.png); background-size: cover;"></div>
+                                                <div class="expert-img"
+                                                    style="background: url(img/sample/sample-02.png); background-size: cover;">
+                                                </div>
                                                 <div class="expert-info-detail">
                                                     <h6>Shane A</h6>
                                                     <p class="expert-review-score">
@@ -64,15 +66,17 @@
                                                 <p>제안가 65,000원</p>
                                             </div>
                                             <div class="btn-group">
-                                                <button type="button" class="btn btn-primary">견적서보기</button>
+                                                <button type="button" class="btn btn-primary open-modal" data-modal-id="estimateModal">견적서보기</button>
                                                 <button type="button" class="btn btn-outline-gray">채팅하기</button>
-                                            </div> 
+                                            </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="quote-list-item">
                                             <div class="expert-info">
-                                                <div class="expert-img" style="background: url(img/sample/sample-02.png); background-size: cover;"></div>
+                                                <div class="expert-img"
+                                                    style="background: url(img/sample/sample-02.png); background-size: cover;">
+                                                </div>
                                                 <div class="expert-info-detail">
                                                     <h6>Shane A</h6>
                                                     <p class="expert-review-score">
@@ -89,13 +93,15 @@
                                             <div class="btn-group">
                                                 <button type="button" class="btn btn-primary">견적서보기</button>
                                                 <button type="button" class="btn btn-outline-gray">채팅하기</button>
-                                            </div> 
+                                            </div>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="quote-list-item">
                                             <div class="expert-info">
-                                                <div class="expert-img" style="background: url(img/sample/sample-02.png); background-size: cover;"></div>
+                                                <div class="expert-img"
+                                                    style="background: url(img/sample/sample-02.png); background-size: cover;">
+                                                </div>
                                                 <div class="expert-info-detail">
                                                     <h6>Shane A</h6>
                                                     <p class="expert-review-score">
@@ -112,7 +118,7 @@
                                             <div class="btn-group">
                                                 <button type="button" class="btn btn-primary">견적서보기</button>
                                                 <button type="button" class="btn btn-outline-gray">채팅하기</button>
-                                            </div> 
+                                            </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -139,6 +145,39 @@
         <!-- 공통사용 : 개발 시 이부분에 넣어주시면 됩니다. -->
     </div>
     <!-- E : alarmAllDelModal -->
+
+    <!-- S : estimateModal :: 견적서보기 -->
+    <div id="estimateModal" class="gt-modal-wrap content-modal estimate-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+                <div class="gt-modal-header">
+                    <h3 class="gt-modal-title">견적서</h3>
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <h3>총금액</h3>
+                    <h6>예상금액 <span>총 1,000원</span></h6>
+                    <h3>견적 설명</h3>
+                    <p>루마버텍스 썬팅점 입니다 고객님의 차량을 더욱 세련되고 품격있게 썬팅 해드리겠읍니다 썬팅 필름을 선택 하시면 가격 견적도 드리고 궁금한거 있으시면 바로 응대도 해드리겠읍니다 미리 예약하면 하루 한대만 책임시공 해드리겠읍니다 근처 사시면 방문 바랍니다 정성껏 썬팅 해드리겠읍니다.</p>
+                    <div class="attached-group">
+                        <h6>첨부파일</h6>
+                        <div class="attached">
+                            <p>이미지 디자인.jpg ( 12.3mb)</p>
+                            <i class="ico i-download"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-gray">채팅하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : estimateModal -->
 
 
     <!-- S : SCRIPT -->
