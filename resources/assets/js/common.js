@@ -966,6 +966,10 @@ $(document).ready(function () {
     // 마지막 .product-img-group 요소 뒤에 추가
     $(".add-product-img-group").before(newProductImgGroup);
   });
+
+  $(".btn-comment-heart").click(function () {
+    $(this).toggleClass("active");
+  });
 });
 
 // 스크롤을 맨 아래로 내리는 함수

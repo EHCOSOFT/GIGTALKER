@@ -1668,6 +1668,7 @@
 .search-none h1 span {
     font-weight: 400;
 }
+
 /* **************************************** *
  * 고객센터
  * **************************************** */
@@ -1923,7 +1924,20 @@
     color: #999999;
     display: flex;
     font-size: var(--gt-text-mn);
-    gap: 2px;
+    gap: 4px;
+}
+
+.comment-list .comment .btn-comment-heart {
+    background: none;
+    border: 0;
+    color: #999999;
+    display: flex;
+    font-size: var(--gt-text-mn);
+    gap: 4px;
+}
+
+.comment-list .comment .btn-comment-heart.active i {
+    background: url(../img/ico/i-heart-active.png);
 }
 
 .comment-write {
