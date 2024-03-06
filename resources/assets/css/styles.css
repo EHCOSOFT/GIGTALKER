@@ -2509,6 +2509,7 @@
 .expert-profile-img-area .file-img-group {
     align-items: center;
     background: #E48181;
+    background-size: cover !important;
     border-radius: 100px;
     color: var(--gt-write);
     font-size: 48px;
