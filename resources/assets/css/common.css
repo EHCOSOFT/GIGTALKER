@@ -2460,6 +2460,20 @@ h3.title {
     width: 24px;
 }
 
+.user-photo {
+    align-items: center;
+    border-radius: 100px;
+    background: var(--gt-warning);
+    background-size: cover !important;
+    color: #ffffff;
+    font-size: var(--gt-text-mn);
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    position: relative;
+    width: 24px;
+}
+
 .user.md.off::before {
     background: var(--gt-gray-05);
     border: 1px solid var(--gt-write);
@@ -2490,6 +2504,20 @@ h3.title {
 
 .user.md img {
     height: 36px;
+    width: 36px;
+}
+
+.user.md .user-photo {
+    align-items: center;
+    border-radius: 100px;
+    background: var(--gt-warning);
+    background-size: cover !important;
+    color: #ffffff;
+    font-size: var(--gt-text-mn);
+    display: flex;
+    height: 36px;
+    justify-content: center;
+    position: relative;
     width: 36px;
 }
 
