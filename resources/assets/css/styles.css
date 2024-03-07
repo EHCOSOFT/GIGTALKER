@@ -4663,6 +4663,7 @@
 }
 
 .ec-business-certification .input-group label,
+.ec-business-certification .select-group h6,
 .ec-business-certification .file-group h2 {
     color: var(--gt-black-01);
     font-size: var(--gt-text-lg) !important;
