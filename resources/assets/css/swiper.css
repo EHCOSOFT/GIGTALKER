@@ -153,6 +153,11 @@
     margin: 0 !important;
 }
 
+.product-img-swiper .swiper-slide {
+    background-size: cover !important;
+    background-position: center center !important;
+    border-radius: 6px;
+}
 .product-img-swiper .swiper-button-next,
 .product-img-swiper .swiper-button-prev {
     height: 30px;
