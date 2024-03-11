@@ -6569,6 +6569,15 @@
 
 .chat-profile-img .user.on::before {
     background: #589BFF;
+    border: 2px solid var(--gt-write);
+    border-radius: 100px;
+    bottom: 0;
+    height: 12px;
+    left: auto;
+    position: absolute;
+    top: auto;
+    right: -2px;
+    width: 12px;
 }
 
 .chat-side-text {
