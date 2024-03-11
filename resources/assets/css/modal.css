@@ -681,7 +681,7 @@
 }
 
 .user-name-edit-modal .input-group p {
-    color: var(--gt-gray-04);
+    color: var(--gt-gray-04) !important;
     line-height: 1.7;
 }
 
