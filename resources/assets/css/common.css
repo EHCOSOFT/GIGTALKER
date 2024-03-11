@@ -2723,6 +2723,27 @@ h3.title {
 }
 
 /* progress pie */
+.circle-wrap {
+    position: relative;
+    height: 84px;
+    width: 84px;
+}
+
+.circle-wrap canvas {
+    position: relative;
+    z-index: 1;
+}
+
+.circle-wrap .inner-circle {
+    background: none;
+    height: 84px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 84px;
+    z-index: 2;
+}
+
 .circle {
     border-radius: 100px;
     display: flex;
