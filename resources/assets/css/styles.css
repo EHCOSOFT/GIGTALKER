@@ -6501,30 +6501,59 @@
     padding: 24px 12px;
 }
 
-.chat-side-item.active {
-    background: var(--gt-gray-07);
-}
-
-.chat-profile-img {
+.chat-side-item .user-photo {
     border-radius: 100px;
+    font-size:var(--gt-text-lg);
     flex: 0 0 auto;
     height: 56px;
     position: relative;
     width: 56px;
 }
 
-.chat-profile-img span {
+.chat-side-item.active {
+    background: var(--gt-gray-07);
+}
+
+.chat-side-item .user.off::before {
     background: #D9D9D9;
     border: 2px solid var(--gt-write);
     border-radius: 100px;
     bottom: 0;
-    height: 16px;
+    height: 12px;
+    left: auto;
     position: absolute;
+    top: auto;
     right: -2px;
-    width: 16px;
+    width: 12px;
 }
 
-.chat-profile-img span.on {
+.chat-side-item .user.on::before {
+    background: #589BFF;
+}
+
+.chat-profile-img .user .user-photo {
+    border-radius: 100px;
+    font-size: var(--gt-text-lg);
+    flex: 0 0 auto;
+    height: 56px;
+    position: relative;
+    width: 56px;
+}
+
+.chat-profile-img .user.off::before {
+    background: #D9D9D9;
+    border: 2px solid var(--gt-write);
+    border-radius: 100px;
+    bottom: 0;
+    height: 12px;
+    left: auto;
+    position: absolute;
+    top: auto;
+    right: -2px;
+    width: 12px;
+}
+
+.chat-profile-img .user.on::before {
     background: #589BFF;
 }
 
@@ -6697,6 +6726,16 @@
     font-weight: bold;
     height: 36px;
     justify-content: center;
+    width: 36px;
+}
+
+.chat-list-item .user {
+    align-items: flex-start;
+}
+.chat-list-item .user .user-photo {
+    border-radius: 100px;
+    display: flex;
+    height: 36px;
     width: 36px;
 }
 
