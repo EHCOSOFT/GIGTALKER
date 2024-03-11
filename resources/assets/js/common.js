@@ -711,7 +711,11 @@ $(document).ready(function () {
     $(this).remove(); // "더보기" 링크 삭제
   });
 
-  // 상품이미지 전체보기
+  // 비디오
+  $(".video-play").click(function () {
+    var video = $(this).siblings(".product-video")[0];
+    video.play();
+  });
 
   // 결제하기
   // 수량 감소 버튼 클릭 시
@@ -969,6 +973,20 @@ $(document).ready(function () {
 
   $(".btn-comment-heart").click(function () {
     $(this).toggleClass("active");
+  });
+
+  // 비디오 업로드
+  $("#productFileVideoUpload").change(function (e) {
+    var file = e.target.files[0];
+    var videoURL = URL.createObjectURL(file);
+    var videoElement = $(".product-video-group video")[0];
+    $(videoElement).find("source").attr("src", videoURL);
+    $(videoElement).attr("src", videoURL);
+    $(".product-video-group button").hide();
+  });
+
+  $(".product-video-group button").click(function () {
+    $("#productFileVideoUpload").click();
   });
 });
 
