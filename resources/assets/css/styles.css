@@ -5079,6 +5079,11 @@
     gap: 8px
 }
 
+.expert-rating-target .progress-group span {
+    min-width: 20px;
+    text-align: right;
+}
+
 .expert-rating-target .progress-group progress {
     height: 10px;
     width: 300px;
@@ -5095,7 +5100,7 @@
 }
 
 /* 전문가등급 자세히보기 */
-.expert-info-wrapo {
+.expert-info-wrap {
     border-top: 1px solid #cccccc;
     padding: 24px 0;
 }
@@ -6503,7 +6508,7 @@
 
 .chat-side-item .user-photo {
     border-radius: 100px;
-    font-size:var(--gt-text-lg);
+    font-size: var(--gt-text-lg);
     flex: 0 0 auto;
     height: 56px;
     position: relative;
@@ -6732,6 +6737,7 @@
 .chat-list-item .user {
     align-items: flex-start;
 }
+
 .chat-list-item .user .user-photo {
     border-radius: 100px;
     display: flex;
@@ -7368,6 +7374,7 @@
 
 .expert-product {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
     margin: 0 0 80px 0;
 }
