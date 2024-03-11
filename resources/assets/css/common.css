@@ -976,7 +976,8 @@ h3.title {
     border: 1px solid var(--gt-error);
 }
 
-.input-group.error p {
+.input-group.error p,
+.input-group.error p.error {
     color: var(--gt-error) !important;
 }
 
