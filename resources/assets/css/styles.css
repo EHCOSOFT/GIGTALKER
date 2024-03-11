@@ -2722,7 +2722,7 @@
     font-size: var(--gt-text-md);
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 568px;
+    width: 528px;
     white-space: nowrap;
 }
 
@@ -2786,7 +2786,7 @@
     font-size: var(--gt-text-md);
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 440px;
+    width: 390px;
     white-space: nowrap;
 }
 
@@ -2796,7 +2796,7 @@
     font-weight: 400;
     text-align: center;
     margin: 0 0 0 auto;
-    width: 72px;
+    width: 86px;
 }
 
 .ad-item span {
