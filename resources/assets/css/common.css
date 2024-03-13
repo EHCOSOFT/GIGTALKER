@@ -2151,7 +2151,7 @@ h3.title {
     left: 0;
     top: 32px;
     width: 644px;
-    z-index: 99;
+    z-index: 500;
 }
 
 .all-catagory-area {
