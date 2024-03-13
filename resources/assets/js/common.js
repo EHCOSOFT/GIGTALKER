@@ -389,7 +389,7 @@ $(document).ready(function () {
   $(".open-modal").click(function () {
     var modalId = $(this).data("modal-id");
     $("#" + modalId).addClass("active");
-    $("body").css("overflow", "hidden");
+    // $("body").css("overflow", "hidden");
   });
   // 모달 닫기 버튼 및 모달 바깥 영역 클릭 이벤트
   $(".btn-modal-close, .gt-modal-wrap").click(function () {

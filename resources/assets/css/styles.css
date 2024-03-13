@@ -1773,7 +1773,7 @@
 }
 
 .sc-content button {
-    margin: 40px 0 0 0;
+    margin: 80px 0 0 0;
 }
 
 /* 공지사항 상세 */
@@ -5396,7 +5396,7 @@
     flex-direction: column;
     gap: 8px;
     justify-content: center;
-    padding: 32px 0;
+    padding: 60px 0;
 }
 
 .mp-review-item-none p {
@@ -6320,8 +6320,17 @@
     width: 100%;
 }
 
+.my-info-edit .input-area.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.my-info-edit .input-area p {
+    margin: 0;
+}
+
 .my-info-edit .input-group button {
     height: 40px;
+    width: 92px;
 }
 
 .my-info-edit .btn-group {
