@@ -2,7 +2,6 @@ $(document).ready(function () {
     $("#languageModal").append(languageModal()); // 언어설정
     $("#alarmAllDelModal").append(alarmAllDelModal()); // 알림 전체삭제
     $("#shareModal").append(shareModal()); // 공유하기
-    
 
     function languageModal() {
         return `

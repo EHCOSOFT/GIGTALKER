@@ -408,6 +408,7 @@
 
 .join-wrap .join-top a {
     color: var(--gt-black-01);
+    flex: 0 0 auto;
 }
 
 .join-wrap .btn-group {
@@ -1925,6 +1926,13 @@
     display: flex;
     font-size: var(--gt-text-mn);
     gap: 4px;
+}
+
+.comment-list .comment ul li a {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-md);
+    font-weight: 500;
+    margin: 0 0 0 6px;
 }
 
 .comment-list .comment .btn-comment-heart {
