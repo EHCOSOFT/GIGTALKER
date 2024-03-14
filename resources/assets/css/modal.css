@@ -199,14 +199,15 @@
     border-radius: 6px;
 }
 
-.share-list {
+.share-modal .share-list {
     display: flex;
-    gap: 32px;
+    flex-direction: row !important;
+    gap: 32px !important;
     justify-content: center;
     margin: 32px 0 0 0;
 }
 
-.share-list li a {
+.share-modal .share-list li a {
     align-items: center;
     color: #74767C;
     font-size: var(--gt-text-mn);
