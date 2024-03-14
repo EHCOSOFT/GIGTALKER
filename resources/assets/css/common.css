@@ -912,6 +912,7 @@ h3.title {
 .input-group p a {
     color: var(--gt-black-01);
     font-size: var(--gt-text-sm);
+    margin: 0 0 0 auto;
     text-decoration: underline;
 }
 
@@ -1465,6 +1466,9 @@ h3.title {
     text-decoration: underline;
 }
 
+.text-group.error textarea {
+    border: 1px solid var(--gt-error);
+}
 /* sm */
 .text-group.sm textarea {
     height: 136px;

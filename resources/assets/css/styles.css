@@ -7138,6 +7138,10 @@
     position: relative;
 }
 
+.profile-box .toggle-group {
+    margin: 0 0 0 auto;
+}
+
 .profile-box .user-state {
     align-items: center;
     border-radius: 100px;
@@ -7247,7 +7251,7 @@
     flex-direction: column;
     font-size: var(--gt-text-mn);
     gap: 8px;
-    word-break:break-all;
+    word-break: break-all;
 }
 
 .profile-user-detail-info dd ul li {
@@ -8434,6 +8438,7 @@
     border: 1px solid #cccccc;
     border-radius: 6px;
     height: 166px;
+    position: relative;
     width: 262px;
 }
 
@@ -8441,7 +8446,7 @@
     display: none;
 }
 
-.product-img-group button {
+.product-img-group .btn-img-upload {
     background: none;
     border: 0;
     display: flex;
@@ -8449,6 +8454,18 @@
     height: 166px;
     padding: 0;
     width: 262px;
+}
+
+.product-img-group .btn-img-del {
+    background: rgba(0, 0, 0, 0.8);
+    border: 0;
+    border-radius: 4px;
+    display: none;
+    height: 24px;
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    width: 32px;
 }
 
 .add-product-img-group {
@@ -8476,7 +8493,7 @@
     display: none;
 }
 
-.product-video-group button {
+.product-video-group .btn-video-upload {
     background: none;
     border: 0;
     display: flex;
@@ -8486,6 +8503,18 @@
     position: absolute;
     top: 0;
     width: 262px;
+}
+
+.product-video-group .btn-video-del {
+    background: rgba(0, 0, 0, 0.8);
+    border: 0;
+    border-radius: 4px;
+    display: none;
+    height: 24px;
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    width: 32px;
 }
 
 .product-video-group video {

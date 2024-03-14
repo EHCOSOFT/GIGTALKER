@@ -393,7 +393,7 @@ $(document).ready(function () {
     $("#" + modalId).addClass("active");
     // $("body").css("overflow", "hidden");
     // 스크롤 이벤트 방지
-    window.addEventListener("wheel", removeDefaultEvent, {passive:false});
+    window.addEventListener("wheel", removeDefaultEvent, { passive: false });
   });
 
   // 모달 닫기 버튼 및 모달 바깥 영역 클릭 이벤트
@@ -402,7 +402,7 @@ $(document).ready(function () {
     // $("body").css("overflow", "auto");
     window.removeEventListener("wheel", removeDefaultEvent);
   });
-  
+
   // 모달 내부 클릭 시 닫기 방지
   $(".gt-modal-content").click(function (e) {
     e.stopPropagation();
@@ -865,24 +865,50 @@ $(document).ready(function () {
   });
 
   // 이미지 업로드
-  var fileInput = document.getElementById("productFileImgUpload");
+  var fileInput = $(".product-file-img-upload");
   var productImgGroup = $(".product-img-group");
 
   // 파일 입력 변화 이벤트 핸들러
-  $("#productFileImgUpload").change(function (event) {
+  $(".product-file-img-upload").change(function (event) {
     var file = event.target.files[0]; // 업로드된 파일 가져오기
+    var $productImgGroup = $(this).closest(".product-img-group");
 
     if (file) {
       var reader = new FileReader(); // 파일을 읽기 위한 FileReader 객체 생성
 
       reader.onload = function (event) {
         var imageUrl = event.target.result; // 이미지 URL 가져오기
-        productImgGroup.css("background-image", "url('" + imageUrl + "')"); // 배경 이미지 설정
-        $(".product-img-group button").hide(); // 버튼
+
+        $productImgGroup.css("background-image", "url('" + imageUrl + "')"); // 배경 이미지 설정
+        $productImgGroup.find(".btn-img-upload").hide(); // 버튼 숨기기
+        $productImgGroup.find(".btn-img-del").show(); // 삭제 버튼 보이기
       };
 
       reader.readAsDataURL(file); // 파일을 읽어 Data URL 형식으로 변환
     }
+  });
+
+  // 이미지 hover 이벤트 핸들러
+  $(".product-img-group").hover(
+    function () {
+      var $productImgGroup = $(this);
+      if ($productImgGroup.css("background-image") !== "none") {
+        $productImgGroup.find(".btn-img-del").show(); // 삭제 버튼 보이기
+      }
+    },
+    function () {
+      $(this).find(".btn-img-del").hide(); // 삭제 버튼 숨기기
+    }
+  );
+
+  // 이미지 삭제 버튼 클릭 이벤트 핸들러
+  $(".product-img-group .btn-img-del").click(function () {
+    var $productImgGroup = $(this).closest(".product-img-group");
+
+    $productImgGroup.find(".product-file-img-upload").val(""); // 파일 입력 필드 초기화
+    $productImgGroup.css("background-image", "none"); // 배경 이미지 제거
+    $productImgGroup.find(".btn-img-del").hide(); // 삭제 버튼 숨기기
+    $productImgGroup.find(".btn-img-upload").show(); // 업로드 버튼 보이기
   });
 
   // 드래그 앤 드롭 이벤트 핸들러
@@ -905,13 +931,14 @@ $(document).ready(function () {
     fileInput.files = files;
 
     // 파일 입력 변화 이벤트 강제 호출
-    $("#productFileImgUpload").change();
+    $(".product-file-img-upload").change();
   });
 
   // 버튼 클릭 이벤트 핸들러
-  $(".product-img-group button").click(function () {
+  $(".product-img-group .btn-img-upload").click(function () {
     // input[type="file"] 클릭 이벤트 트리거
-    fileInput.click();
+    $(this).prev().click();
+    // fileInput.click();
   });
 
   // .btn-add-product-img 클릭 이벤트 핸들러
@@ -921,17 +948,45 @@ $(document).ready(function () {
       $(this).parent()
     );
     var fileInput = $(
-      "<input type='file' id='productFileImgUpload' accept='image/*'>"
+      "<input type='file' class='product-file-img-upload' accept='image/*'>"
     ).appendTo(newProductImgGroup);
-    var button = $("<button type='button'>").appendTo(newProductImgGroup);
+    var button = $("<button type='button' class='btn-img-upload'>").appendTo(
+      newProductImgGroup
+    );
+    var btnImgDel = $(
+      "<button type='button' class='btn-img-del'><i class='ico i-trash-w'></i></button>"
+    ).appendTo(newProductImgGroup);
     var icon = $("<i class='ico i-product-img-sample'>").appendTo(button);
     var text = $("<p>")
       .html("사진을 드래그 앤 드롭하거나<br>찾아보세요.")
       .appendTo(button); // <br> 사용
 
+    // 이미지 hover 이벤트 핸들러
+    $(".product-img-group").hover(
+      function () {
+        var $productImgGroup = $(this);
+        if ($productImgGroup.css("background-image") !== "none") {
+          $productImgGroup.find(".btn-img-del").show(); // 삭제 버튼 보이기
+        }
+      },
+      function () {
+        $(this).find(".btn-img-del").hide(); // 삭제 버튼 숨기기
+      }
+    );
+
+    // 이미지 삭제 버튼 클릭 이벤트 핸들러
+    $(".product-img-group .btn-img-del").click(function () {
+      var $productImgGroup = $(this).closest(".product-img-group");
+
+      $productImgGroup.find(".product-file-img-upload").val(""); // 파일 입력 필드 초기화
+      $productImgGroup.css("background-image", "none"); // 배경 이미지 제거
+      $productImgGroup.find(".btn-img-del").hide(); // 삭제 버튼 숨기기
+      $productImgGroup.find(".btn-img-upload").show(); // 업로드 버튼 보이기
+    });
+
     // 버튼 클릭 이벤트 핸들러 추가
     button.click(function () {
-      fileInput.click();
+      $(this).prev().click();
     });
 
     // 파일 입력 변화 이벤트 핸들러 추가
@@ -989,11 +1044,35 @@ $(document).ready(function () {
     var videoElement = $(".product-video-group video")[0];
     $(videoElement).find("source").attr("src", videoURL);
     $(videoElement).attr("src", videoURL);
-    $(".product-video-group button").hide();
+    $(".product-video-group .btn-video-upload").hide();
+    $(".product-video-group .btn-img-del").show(); // 삭제 버튼 보이기
   });
 
-  $(".product-video-group button").click(function () {
+  $(".product-video-group .btn-video-upload").click(function () {
     $("#productFileVideoUpload").click();
+  });
+
+  // 비디오 hover 이벤트 핸들러
+  $(".product-video-group").hover(
+    function () {
+      var $productVideoGroup = $(this);
+      if ($productVideoGroup.find("source").attr("src")) {
+        $productVideoGroup.find(".btn-video-del").show(); // 삭제 버튼 보이기
+      }
+    },
+    function () {
+      $(this).find(".btn-video-del").hide(); // 삭제 버튼 숨기기
+    }
+  );
+
+  // 비디오 삭제 버튼 클릭 이벤트 핸들러
+  $(".product-video-group .btn-video-del").click(function () {
+    var $productVideoGroup = $(this).closest(".product-video-group");
+
+    $productVideoGroup.find("video").remove(); // 비디오 요소 제거
+    $productVideoGroup.find("#productFileVideoUpload").val(""); // 파일 입력 필드 초기화
+    $productVideoGroup.find(".btn-video-del").hide(); // 삭제 버튼 숨기기
+    $productVideoGroup.find(".btn-video-upload").show(); // 업로드 버튼 보이기
   });
 });
 

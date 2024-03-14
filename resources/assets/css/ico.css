@@ -469,3 +469,9 @@
     height: 108px;
     width: 108px;
 }
+
+.i-trash-w {
+    background: url(../img/ico/i-trash-w.png);
+    height: 12px;
+    width: 12px;
+}
