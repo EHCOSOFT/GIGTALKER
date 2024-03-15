@@ -1386,6 +1386,9 @@ h3.title {
     outline: none;
 }
 
+.select-group.error select {
+    border: 1px solid var(--gt-error);
+}
 /* sm */
 .select-group.sm select {
     background-size: 16px;
@@ -1570,6 +1573,9 @@ h3.title {
     transition: all .5s;
 }
 
+.date-group.error input {
+    border: 1px solid var(--gt-error);
+}
 /* mn */
 .date-group.mn input {
     height: 40px;
