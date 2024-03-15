@@ -851,6 +851,10 @@ h3.title {
     position: relative;
 }
 
+.input-area.vertical {
+    flex-direction: column;
+}
+
 .input-area span {
     color: #5C5D62;
 }
