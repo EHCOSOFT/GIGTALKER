@@ -1802,7 +1802,7 @@
     color: var(--gt-gray-01);
     font-size: 13px;
     line-height: 24px;
-    margin: 12px 0 24px 0;
+    margin: 12px 0 60px 0;
     white-space: pre-line;
 }
 
@@ -4239,6 +4239,7 @@
     border-radius: 6px;
     display: flex;
     justify-content: space-between;
+    margin: 20px 0 0 0;
     padding: 20px 32px;
 }
 
