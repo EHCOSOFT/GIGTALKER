@@ -1389,6 +1389,12 @@ h3.title {
 .select-group.error select {
     border: 1px solid var(--gt-error);
 }
+
+.select-group.error p {
+    color: var(--gt-error);
+    font-size: var(--gt-text-sm);
+    margin: 8px 0 0 0;
+}
 /* sm */
 .select-group.sm select {
     background-size: 16px;
@@ -1581,6 +1587,12 @@ h3.title {
 
 .date-group.error input {
     border: 1px solid var(--gt-error);
+}
+
+.date-group.error p {
+    color: var(--gt-error);
+    font-size: var(--gt-text-sm);
+    margin: 8px 0 0 0;
 }
 /* mn */
 .date-group.mn input {
