@@ -1472,6 +1472,12 @@ h3.title {
 .text-group.error textarea {
     border: 1px solid var(--gt-error);
 }
+
+.text-group.error p {
+    color: var(--gt-error);
+    font-size: var(--gt-text-sm);
+    margin: 4px 0 0 0;
+}
 /* sm */
 .text-group.sm textarea {
     height: 136px;
