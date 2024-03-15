@@ -3984,6 +3984,24 @@
     border-radius: 4px;
 }
 
+.expert-name {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.expert-name h6 {
+    color: var(--gt-black-03);
+    font-size: var(--gt-text-sm);
+    font-weight: 400;
+}
+
+.expert-name button {
+    height: 26px;
+    width: 80px;
+}
+
 .order-detail-info {
     border-bottom: 1px solid var(--gt-gray-05);
     border-top: 1px solid var(--gt-gray-05);
