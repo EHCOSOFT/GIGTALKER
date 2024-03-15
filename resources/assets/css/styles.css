@@ -5739,6 +5739,11 @@
     border: 1px solid var(--gt-error);
 }
 
+.refund-input .select-group select.error,
+.refund-input .input-area input.error {
+    border: 1px solid var(--gt-error);
+}
+
 .refund-input .select-group {
     flex: 0 0 auto;
     width: 248px;
