@@ -1399,6 +1399,7 @@ h3.title {
     font-size: var(--gt-text-sm);
     margin: 8px 0 0 0;
 }
+
 /* sm */
 .select-group.sm select {
     background-size: 16px;
@@ -1468,9 +1469,16 @@ h3.title {
     color: #74767C;
 }
 
+.text-group p {
+    align-items: center;
+    display: flex;
+    margin: 4px 0 0 0;
+}
+
 .text-group p span {
     color: var(--gt-gray-03);
     font-size: var(--gt-text-sm);
+    margin: 0 0 0 auto;
 }
 
 .text-group p a {
@@ -1488,6 +1496,7 @@ h3.title {
     font-size: var(--gt-text-sm);
     margin: 4px 0 0 0;
 }
+
 /* sm */
 .text-group.sm textarea {
     height: 136px;
@@ -1598,6 +1607,7 @@ h3.title {
     font-size: var(--gt-text-sm);
     margin: 8px 0 0 0;
 }
+
 /* mn */
 .date-group.mn input {
     height: 40px;
@@ -2896,4 +2906,3 @@ h3.title {
 .loading-w {
     background: none;
 }
-
