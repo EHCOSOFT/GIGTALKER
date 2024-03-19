@@ -2568,7 +2568,7 @@ h3.title {
 .user-level {
     align-items: center;
     color: var(--gt-gray-01);
-    display: flex;
+    display: flex !important;
     font-size: var(--gt-text-sm);
     font-weight: bold;
     gap: 2px;
@@ -2584,6 +2584,7 @@ h3.title {
     line-height: 24px;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: left;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical
 }
@@ -2595,6 +2596,7 @@ h3.title {
     font-weight: bold;
     display: flex;
     gap: 4px;
+    margin: 4px 0 0 0;
 }
 
 .product-review span {
