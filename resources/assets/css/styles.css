@@ -2001,8 +2001,10 @@
     gap: 16px;
 }
 
-.seller-profile .seller-img {
-    border-radius: 100px;
+.seller-profile .user-photo {
+    background-size: cover !important;
+    background-position: center center !important;
+    font-size: var(--gt-text-lg);
     height: 56px;
     width: 56px;
 }
@@ -2051,6 +2053,7 @@
 .product-detail-detail .tabs .tab-list {
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .product-detail-detail .tab-content h2 {
@@ -2323,6 +2326,10 @@
 
 .info-box-top .dropdown-group {
     margin: 28px 0 0 0;
+}
+
+.info-box-top .product-all-info {
+    margin: 24px 0 0 0;
 }
 
 .product-op {
@@ -4029,6 +4036,12 @@
 .order-detail-info dd {
     color: var(--gt-black-03);
     font-size: var(--gt-text-sm);
+}
+
+.order-detail-info dd a {
+    color: var(--gt-black-03);
+    font-size: var(--gt-text-sm);
+    text-decoration: underline;
 }
 
 .order-detail-info button {
