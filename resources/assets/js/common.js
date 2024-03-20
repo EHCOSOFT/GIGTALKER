@@ -1074,6 +1074,42 @@ $(document).ready(function () {
     $productVideoGroup.find(".btn-video-del").hide(); // 삭제 버튼 숨기기
     $productVideoGroup.find(".btn-video-upload").show(); // 업로드 버튼 보이기
   });
+
+  /**
+   * 이벤트 댓글 삭제/수정 기능
+   */
+  $(".btn-comment-edit").click(function () {
+    var $comment = $(this).closest(".comment");
+    var $commentText = $comment.find(".comment-text");
+    var $commentEdit = $comment.find(".comment-edit");
+
+    $commentText.hide();
+    $commentEdit.css("display","flex");
+  });
+
+  $(".btn-comment-edit-close").click(function () {
+    var $comment = $(this).closest(".comment");
+    var $commentText = $comment.find(".comment-text");
+    var $commentEdit = $comment.find(".comment-edit");
+
+    $commentEdit.hide();
+    $commentText.show();
+  });
+
+  $(".btn-comment-edit-save").click(function () {
+    var $comment = $(this).closest(".comment");
+    var $commentText = $comment.find(".comment-text");
+    var $commentEdit = $comment.find(".comment-edit");
+    var newValue = $commentEdit.find(".input-group input").val();
+
+    $commentText.find("h4").text(newValue);
+    $commentEdit.hide();
+    $commentText.show();
+  });
+
+  $(".btn-comment-del").click(function () {
+    $(this).closest(".comment").remove();
+  });
 });
 
 // 스크롤을 맨 아래로 내리는 함수
