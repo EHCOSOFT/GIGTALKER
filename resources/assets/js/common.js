@@ -6,200 +6,214 @@ $(document).ready(function () {
 
   function Header() {
     return `
-        <div class="header-top">
-                <div class="container">
-                    <a href="메인.html" class="header-logo">
-                        <img src="img/logo.png" alt="">
-                    </a>
-                    <div class="input-search">
-                        <input type="text" placeholder="어떤 전문가를 찾으시나요?">
-                        <button type="submit">
-                            <i class="ico i-search-p"></i>
-                        </button>
+    <div class="header-top">
+    <div class="container">
+        <a href="메인.html" class="header-logo">
+            <img src="img/logo.png" alt="">
+        </a>
+        <div class="input-search">
+            <input type="text" placeholder="어떤 전문가를 찾으시나요?">
+            <button type="submit">
+                <i class="ico i-search-p"></i>
+            </button>
+        </div>
+        <ul class="header-top-right">
+            <li class="on">
+                <button type="button" class="btn-alarm active">
+                    <i class="ico i-alarm">
+                        <span></span>
+                    </i>
+                </button>
+                <div class="alarm-wrap">
+                    <div class="alarm-top">
+                        <h6>알림</h6>
+                        <ul>
+                            <li class="open-modal" data-modal-id="alarmAllDelModal"><i
+                                    class="ico i-trash"></i></li>
+                            <li><i class="ico i-set"></i></li>
+                        </ul>
                     </div>
-                    <ul class="header-top-right">
-                        <li class="on"><button type="button" class="btn-alarm"><i class="ico i-alarm"></i></button>
-                            <div class="alarm-wrap">
-                                <div class="alarm-top">
-                                    <h6>알림</h6>
-                                    <ul>
-                                        <li class="open-modal" data-modal-id="alarmAllDelModal"><i
-                                                class="ico i-trash"></i></li>
-                                        <li><i class="ico i-set"></i></li>
-                                    </ul>
-                                </div>
-                                <div class="alarm-body">
-                                    <div class="alarm-item">
-                                        <p>오늘</p>
-                                        <ul>
-                                            <li>
-                                                <div class="alarm-area">
-                                                    <img src="img/sample/sample-02.png" alt="">
-                                                    <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
-                                                        있습니다.<br><span>2023.11.16. 13:00</span></h3>
-                                                    <button type="button" class="btn-alarm-close"></button>
-                                                </div>
-                                            </li>
-                                        </ul>
+                    <div class="alarm-body">
+                        <div class="alarm-item">
+                            <p>오늘</p>
+                            <ul>
+                                <li>
+                                    <div class="alarm-area">
+                                        <a href="#" class="user">
+                                            <div class="user-photo">A
+                                            </div>
+                                        </a>
+                                        <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
+                                            있습니다.<br><span>2023.11.16. 13:00</span></h3>
+                                        <button type="button" class="btn-alarm-close"></button>
                                     </div>
-                                    <div class="alarm-item">
-                                        <p>이전</p>
-                                        <ul>
-                                            <li>
-                                                <div class="alarm-area">
-                                                    <img src="img/sample/sample-02.png" alt="">
-                                                    <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
-                                                        있습니다.<br><span>2023.11.16. 13:00</span></h3>
-                                                    <button type="button" class="btn-alarm-close"></button>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="alarm-area">
-                                                    <img src="img/sample/sample-02.png" alt="">
-                                                    <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
-                                                        있습니다.<br><span>2023.11.16. 13:00</span></h3>
-                                                    <button type="button" class="btn-alarm-close"></button>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="alarm-item">
+                            <p>이전</p>
+                            <ul>
+                                <li>
+                                    <div class="alarm-area">
+                                        <a href="#" class="user">
+                                            <div class="user-photo">A
+                                            </div>
+                                        </a>
+                                        <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
+                                            있습니다.<br><span>2023.11.16. 13:00</span></h3>
+                                        <button type="button" class="btn-alarm-close"></button>
                                     </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="on"><a href="#"><i class="ico i-chat"></i></a></li>
-                        <li class="on"><a href="#"><i class="ico i-heart"></i></a></li>
-                        <li class="language open-modal" data-modal-id="languageModal"><i class="ico i-language"></i>한국어
-                        </li>
-                        <li class="on"><a href="#"><b>구매관리</b></a></li>
-                        <li>
-                            <div class="dropdown-group">
-                                <div class="dropdown-list-wrap header-user">
-                                    <button class="dropdown-button" data-target="headerUserMenu">
-                                        <!-- on and off -->
-                                        <span href="#" class="user md off">
-                                            <img src="img/sample/sample-02.png" alt="">
-                                        </span>
-                                    </button>
-                                    <ul id="headerUserMenu" class="dropdown-list">
-                                        <li><a href="#">프로필 관리</a></li>
-                                        <li><a href="#">계정정보</a></li>
-                                        <li><a href="#">구매관리</a></li>
-                                        <li><a href="#">마이페이지</a></li>
-                                        <hr>
-                                        <li><a href="#">전문가센터</a></li>
-                                        <li><a href="#">판매관리</a></li>
-                                        <li><a href="#"><i class="ico i-logout"></i>로그아웃</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="header-catagory">
-                <div class="container">
-                    <ul>
-                        <li class="all-catagory"><i class="ico i-catagory"></i>전체카테고리</li>
-                        <li><a href="#">홈서비스</a></li>
-                        <li><a href="#">비자/유학</a></li>
-                        <li><a href="#">법률/세금</a></li>
-                        <li><a href="#">여행/공항픽업</a></li>
-                        <li><a href="#">휴대폰개통</a></li>
-                        <li><a href="#">대학/강의</a></li>
-                        <li><a href="#">해외배송</a></li>
-                        <li><a href="#">번역/통역</a></li>
-                        <li><a href="#">메디컬</a></li>
-                        <li><a href="#">문서/디자인</a></li>
-                        <li><a href="#">기타</a></li>
-                    </ul>
-                    <div class="all-catagory-wrap">
-                        <div class="all-catagory-area">
-                            <dl>
-                                <dt><a href="#">생활서비스 (400)</a></dt>
-                                <dd><a href="#">이사 (30)</a></dd>
-                                <dd><a href="#">청소 (30)</a></dd>
-                                <dd><a href="#">집수리 (30)</a></dd>
-                                <dd><a href="#">인테리어 (30)</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">유학/이민 (400)</a></dt>
-                                <dd><a href="#">비자발급 (30)</a></dd>
-                                <dd><a href="#">대학유학 (30)</a></dd>
-                                <dd><a href="#">어학민 (30)</a></dd>
-                                <dd><a href="#">이민 (30)</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">세무/법무 (400)</a></dt>
-                                <dd><a href="#">세무,회계 (30)</a></dd>
-                                <dd><a href="#">법률 (30)</a></dd>
-                                <dd><a href="#">노무상담 (30)</a></dd>
-                                <dd><a href="#">특허,상표 (30)</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">학습/취업 (400)</a></dt>
-                                <dd><a href="#">취업/이력서 (30)</a></dd>
-                                <dd><a href="#">컴퓨터,코딩 (30)</a></dd>
-                                <dd><a href="#">뷰티/미용 (30)</a></dd>
-                                <dd><a href="#">학생레슨 (30)</a></dd>
-                                <dd><a href="#">취미레슨 (30)</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">문서/번역 (400)</a></dt>
-                                <dd><a href="#">번역 (30)</a></dd>
-                                <dd><a href="#">통역 (30)</a></dd>
-                                <dd><a href="#">논문 (30)</a></dd>
-                                <dd><a href="#">카피/글쓰기 (30)</a></dd>
-                                <dd><a href="#">스토리/기획 (30)</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">디자인 (400)</a></dt>
-                                <dd><a href="#">로고/브랜드 (30)</a></dd>
-                                <dd><a href="#">인쇄홍보물 (30)</a></dd>
-                                <dd><a href="#">웹/앱 디자인 (30)</a></dd>
-                                <dd><a href="#">제품디자인 (30)</a></dd>
-                                <dd><a href="#">건축디자인 (30)</a></dd>
-                                <dd><a href="#">기타 디자인 (30)</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">비지니스 (400)</a></dt>
-                                <dd><a href="#">언롱홍보 (30)</a></dd>
-                                <dd><a href="#">시장조사 (30)</a></dd>
-                                <dd><a href="#">쇼핑몰 (30)</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">메디컬 (400)</a></dt>
-                                <dd><a href="#">의료관광 (30)</a></dd>
-                                <dd><a href="#">성형수술 (30)</a></dd>
-                                <dd><a href="#">모발이식 (30)</a></dd>
-                                <dd><a href="#">치과 (30)</a></dd>
-                                <dd><a href="#">피부과 (30)</a></dd>
-                                <dd><a href="#">안과 (30)</a></dd>
-                                <dd><a href="#">한방병원 (30)</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">상담 (400)</a></dt>
-                                <dd><a href="#">심리상담 (30)</a></dd>
-                                <dd><a href="#">비즈니스상담 (30)</a></dd>
-                                <dd><a href="#">부동산컨설팅 (30)</a></dd>
-                                <dd><a href="#">금융상담 (30)</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">프로그램 개발 (400)</a></dt>
-                                <dd><a href="#">웹개발 (30)</a></dd>
-                                <dd><a href="#">앱개발 (30)</a></dd>
-                                <dd><a href="#">소프트웨어 개발 (30)</a></dd>
-                                <dd><a href="#">AI 개발 (30)</a></dd>
-                                <dd><a href="#">기타 개발 (30)</a></dd>
-                            </dl>
-                            <dl>
-                                <dt><a href="#">기타 (400)</a></dt>
-                                <dd><a href="#">기타 (30)</a></dd>
-                            </dl>
+                                </li>
+                                <li>
+                                    <div class="alarm-area">
+                                        <a href="#" class="user">
+                                            <div class="user-photo">A
+                                            </div>
+                                        </a>
+                                        <h3>[eXpert] eXpert 정보수정이 완료되었습니다. 실제 서비스에 반영되기까지 다소 시간이 걸릴 수
+                                            있습니다.<br><span>2023.11.16. 13:00</span></h3>
+                                        <button type="button" class="btn-alarm-close"></button>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+            </li>
+
+            <li class="on"><a href="#"><i class="ico i-chat"></i></a></li>
+            <li class="on"><a href="#"><i class="ico i-heart"></i></a></li>
+            <li class="language open-modal" data-modal-id="languageModal"><i class="ico i-language"></i>한국어
+            </li>
+            <li class="on"><a href="#"><b>구매관리</b></a></li>
+            <li>
+                <div class="dropdown-group">
+                    <div class="dropdown-list-wrap header-user">
+                        <button class="dropdown-button" data-target="headerUserMenu">
+                            <!-- on and off -->
+                            <span href="#" class="user md off">
+                                <img src="img/sample/sample-02.png" alt="">
+                            </span>
+                        </button>
+                        <ul id="headerUserMenu" class="dropdown-list">
+                            <li><a href="#">프로필 관리</a></li>
+                            <li><a href="#">계정정보</a></li>
+                            <li><a href="#">구매관리</a></li>
+                            <li><a href="#">마이페이지</a></li>
+                            <hr>
+                            <li><a href="#">전문가센터</a></li>
+                            <li><a href="#">판매관리</a></li>
+                            <li><a href="#"><i class="ico i-logout"></i>로그아웃</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="header-catagory">
+    <div class="container">
+        <ul>
+            <li class="all-catagory"><i class="ico i-catagory"></i>전체카테고리</li>
+            <li><a href="#">홈서비스</a></li>
+            <li><a href="#">비자/유학</a></li>
+            <li><a href="#">법률/세금</a></li>
+            <li><a href="#">여행/공항픽업</a></li>
+            <li><a href="#">휴대폰개통</a></li>
+            <li><a href="#">대학/강의</a></li>
+            <li><a href="#">해외배송</a></li>
+            <li><a href="#">번역/통역</a></li>
+            <li><a href="#">메디컬</a></li>
+            <li><a href="#">문서/디자인</a></li>
+            <li><a href="#">기타</a></li>
+        </ul>
+        <div class="all-catagory-wrap">
+            <div class="all-catagory-area">
+                <dl>
+                    <dt><a href="#">생활서비스 (400)</a></dt>
+                    <dd><a href="#">이사 (30)</a></dd>
+                    <dd><a href="#">청소 (30)</a></dd>
+                    <dd><a href="#">집수리 (30)</a></dd>
+                    <dd><a href="#">인테리어 (30)</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">유학/이민 (400)</a></dt>
+                    <dd><a href="#">비자발급 (30)</a></dd>
+                    <dd><a href="#">대학유학 (30)</a></dd>
+                    <dd><a href="#">어학민 (30)</a></dd>
+                    <dd><a href="#">이민 (30)</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">세무/법무 (400)</a></dt>
+                    <dd><a href="#">세무,회계 (30)</a></dd>
+                    <dd><a href="#">법률 (30)</a></dd>
+                    <dd><a href="#">노무상담 (30)</a></dd>
+                    <dd><a href="#">특허,상표 (30)</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">학습/취업 (400)</a></dt>
+                    <dd><a href="#">취업/이력서 (30)</a></dd>
+                    <dd><a href="#">컴퓨터,코딩 (30)</a></dd>
+                    <dd><a href="#">뷰티/미용 (30)</a></dd>
+                    <dd><a href="#">학생레슨 (30)</a></dd>
+                    <dd><a href="#">취미레슨 (30)</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">문서/번역 (400)</a></dt>
+                    <dd><a href="#">번역 (30)</a></dd>
+                    <dd><a href="#">통역 (30)</a></dd>
+                    <dd><a href="#">논문 (30)</a></dd>
+                    <dd><a href="#">카피/글쓰기 (30)</a></dd>
+                    <dd><a href="#">스토리/기획 (30)</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">디자인 (400)</a></dt>
+                    <dd><a href="#">로고/브랜드 (30)</a></dd>
+                    <dd><a href="#">인쇄홍보물 (30)</a></dd>
+                    <dd><a href="#">웹/앱 디자인 (30)</a></dd>
+                    <dd><a href="#">제품디자인 (30)</a></dd>
+                    <dd><a href="#">건축디자인 (30)</a></dd>
+                    <dd><a href="#">기타 디자인 (30)</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">비지니스 (400)</a></dt>
+                    <dd><a href="#">언롱홍보 (30)</a></dd>
+                    <dd><a href="#">시장조사 (30)</a></dd>
+                    <dd><a href="#">쇼핑몰 (30)</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">메디컬 (400)</a></dt>
+                    <dd><a href="#">의료관광 (30)</a></dd>
+                    <dd><a href="#">성형수술 (30)</a></dd>
+                    <dd><a href="#">모발이식 (30)</a></dd>
+                    <dd><a href="#">치과 (30)</a></dd>
+                    <dd><a href="#">피부과 (30)</a></dd>
+                    <dd><a href="#">안과 (30)</a></dd>
+                    <dd><a href="#">한방병원 (30)</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">상담 (400)</a></dt>
+                    <dd><a href="#">심리상담 (30)</a></dd>
+                    <dd><a href="#">비즈니스상담 (30)</a></dd>
+                    <dd><a href="#">부동산컨설팅 (30)</a></dd>
+                    <dd><a href="#">금융상담 (30)</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">프로그램 개발 (400)</a></dt>
+                    <dd><a href="#">웹개발 (30)</a></dd>
+                    <dd><a href="#">앱개발 (30)</a></dd>
+                    <dd><a href="#">소프트웨어 개발 (30)</a></dd>
+                    <dd><a href="#">AI 개발 (30)</a></dd>
+                    <dd><a href="#">기타 개발 (30)</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">기타 (400)</a></dt>
+                    <dd><a href="#">기타 (30)</a></dd>
+                </dl>
             </div>
+        </div>
+    </div>
+</div>
     `;
   }
 
