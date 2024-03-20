@@ -1370,7 +1370,7 @@ h3.title {
     font-size: 14px;
     font-weight: 400;
     height: 50px;
-    padding: 0 16px;
+    padding: 0 48px 0 16px;
     transition: all .5s;
     width: 100%;
     -webkit-appearance: none;
