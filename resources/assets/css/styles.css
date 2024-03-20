@@ -4739,6 +4739,9 @@
 
 .ec-business-certification .file-group label span {
     color: var(--gt-gray-03);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .ec-business-certification hr {
@@ -6991,10 +6994,23 @@
     padding: 16px 24px;
 }
 
-.chat-write .input-group input {
+.chat-write .text-group textarea {
     border-radius: 10px;
     font-size: var(--gt-text-sm);
+    height: 46px;
 }
+
+.chat-write .text-group textarea::-webkit-scrollbar {
+    background: none;
+    border-radius: 100px;
+    width: 8px;
+}
+
+/* .chat-write .text-group textarea::-webkit-scrollbar-thumb {
+    background: var(--gt-gray-05);
+    border-radius: 100px;
+    width: 4px;
+} */
 
 .chat-write-bot {
     display: flex;
