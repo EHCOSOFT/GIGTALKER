@@ -1991,6 +1991,15 @@ h3.title {
     position: relative;
 }
 
+.header-top-right .btn-alarm.active span {
+    background: #FF65CE;
+    border-radius: 100px;
+    height: 5px;
+    position: absolute;
+    right: 0;
+    width: 5px;
+}
+
 .alarm-wrap {
     background: var(--gt-write);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
