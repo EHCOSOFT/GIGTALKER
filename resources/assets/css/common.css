@@ -2068,11 +2068,16 @@ h3.title {
     display: flex;
 }
 
-.alarm-area img {
-    border-radius: 100px;
+.alarm-area .user {
     flex: 0 0 auto;
-    height: 32px;
     margin: 0 12px 0 0;
+}
+
+.alarm-area .user .user-photo {
+    background-size: cover;
+    background-position: center center;
+    border-radius: 100px;
+    height: 32px;
     width: 32px;
 }
 
