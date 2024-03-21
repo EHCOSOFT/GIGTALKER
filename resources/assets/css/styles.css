@@ -2336,6 +2336,7 @@
 .info-box-top .product-desc {
     color: var(--gt-gray-01);
     font-size: 15px;
+    word-wrap: break-word;
 }
 
 .info-box-top .dropdown-group {
@@ -3830,8 +3831,11 @@
     padding: 16px;
 }
 
-.progress-cont-box .info-msg dt img {
+.progress-cont-box .info-msg dt .user-photo {
+    background-size: cover;
+    background-position: center center;
     border-radius: 100px;
+    height: 40px;
     width: 40px;
 }
 
@@ -5536,6 +5540,10 @@
     color: var(--gt-gray-04);
 }
 
+.ec-sell-item-info dl dd.warning {
+    color: var(--gt-warning);
+}
+
 /* 구매관리 상세 */
 .mypage-content>h2 {
     border-bottom: 1px solid var(--gt-gray-04);
@@ -6536,6 +6544,7 @@
 .chat-sidebar {
     flex: 0 0 auto;
     margin: 30px 0;
+    position: relative;
     width: 308px;
 }
 
@@ -6543,6 +6552,7 @@
     border-bottom: 1px solid #cccccc;
     display: flex;
     justify-content: space-between;
+    padding: 0 0 12px 0;
 }
 
 .chat-sidebar .dropdown-group {
@@ -6569,8 +6579,9 @@
     flex: 0 0 auto;
     height: 40px;
     gap: 12px;
-    margin: 30px 0;
+    margin: 0 0 12px 0;
     width: 308px;
+    z-index: 1;
 }
 
 .chat-search-area .input-group {
@@ -7158,6 +7169,7 @@
     line-height: 1.5;
     text-overflow: ellipsis;
     text-align: left;
+    word-break:break-all;
 }
 
 .expert-service-item-text p {
@@ -8535,6 +8547,16 @@
     width: 262px;
 }
 
+.product-img-group.error {
+    border: 1px solid var(--gt-error);
+}
+
+.error-msg {
+    color: var(--gt-error) !important;
+    font-size: var(--gt-text-sm) !important;
+    margin: 8px 0 0 0 !important;
+}
+
 .product-img-group input {
     display: none;
 }
@@ -8572,6 +8594,10 @@
     width: 262px;
 }
 
+.add-product-img-group.error {
+    border: 1px solid var(--gt-error);
+}
+
 .product-video-group {
     background-size: cover;
     background-position: center center;
@@ -8582,6 +8608,9 @@
     width: 262px;
 }
 
+.product-video-group.error {
+    border: 1px solid var(--gt-error);
+}
 .product-video-group input {
     display: none;
 }
