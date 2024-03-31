@@ -94,6 +94,8 @@
                                         data-modal-id="confirmModal">confirmModal</button>
                                     <button type="button" class="btn btn-sm btn-primary open-modal"
                                         data-modal-id="completeModal">completeModal</button>
+                                    <button type="button" class="btn btn-sm btn-primary open-modal"
+                                        data-modal-id="popupModal">popupModal</button>
                                 </div>
                             </td>
                         </tr>
@@ -715,7 +717,8 @@
                                             <a href="#" class="user off">
                                                 <!-- <div class="user-photo" style="background: url(img/sample/sample-02.png);">H</div> -->
                                                 <!-- comment : 공통 header 프로필도 img 태그로 되어 있어서 img 태그 주석처리 후 <div class="user-photo">A</div> 해당 태그 넣어주시면 텍스트와 함께 출력됩니다. -->
-                                                <div class="user-photo">A</div>ShaneA</a>
+                                                <div class="user-photo">A</div>ShaneA
+                                            </a>
                                             <span class="user-level">TOP</span>
                                         </div>
                                         <h5 class="product-name">고급스러운 홈페이지 같은 네이버 블로그/카페 제작합니다. 고급스러운 홈페이지 같은 네이버
@@ -1046,6 +1049,7 @@
     <div id="completeModal" class="gt-modal-wrap complete-modal">
         <div class="gt-modal-inner">
             <div class="gt-modal-content">
+                
                 <div class="gt-modal-body">
                     <img class="ico-complete" src="img/ico/i-complete-check.png" alt="">
                     <h1>제출완료</h1>
@@ -1061,7 +1065,30 @@
             </div>
         </div>
     </div>
-    <!-- E : cCompleteModal -->
+    <!-- E : CompleteModal -->
+
+    <!-- S : popupModal :: 팝업모달 -->
+    <div id="popupModal" class="gt-modal-wrap complete-modal popup-modal">
+        <div class="gt-modal-inner">
+            <div class="gt-modal-content">
+                <div class="gt-modal-header">
+                    <button type="button" class="btn-modal-close">
+                        <i class="ico i-modal-close"></i>
+                    </button>
+                </div>
+                <div class="gt-modal-body">
+                    <img src="img/sample/sample-04.png" alt="">
+                </div>
+                <div class="gt-modal-footer">
+                    <div class="check-group type2 sm">
+                        <input type="checkbox" id="check01">
+                        <label for="check01">오늘 하루 보지않기</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- E : popupModal -->
 
 
 

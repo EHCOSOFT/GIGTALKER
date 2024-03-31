@@ -1220,3 +1220,25 @@
     height: 45px;
     width: 120px;
 }
+
+/* popupModal */
+.popup-modal .gt-modal-header {
+    justify-content: flex-end;
+    
+}
+.popup-modal .gt-modal-header button {
+    width: auto;
+}
+
+.popup-modal .gt-modal-body {
+    margin: 0;
+    padding: 20px 0;
+}
+.popup-modal .gt-modal-body img {
+    width: 100%;
+}
+
+.popup-modal .gt-modal-footer {
+    justify-content: flex-start;
+    padding: 0;
+}
