@@ -2076,7 +2076,7 @@
 }
 
 .product-detail-detail .tab-content p {
-    color: var(--gt-gray-01);
+    color: var(--gt-gray-02);
     font-size: 15px;
 }
 
@@ -2122,8 +2122,8 @@
 }
 
 .product-detail-detail .tab-content h6 {
-    color: #555555;
-    font-size: var(--gt-text-md);
+    color: var(--gt-gray-02);
+    font-size: 15px;
     font-weight: 400;
 }
 
@@ -5487,6 +5487,7 @@
 }
 
 .mypage-content .ec-sell-item-bot {
+    cursor: pointer;
     gap: 20px;
     padding: 16px 36px 16px 20px;
 }
@@ -5715,7 +5716,7 @@
     height: 112px;
     position: absolute;
     left: -148px;
-    top: 84px;
+    top: 6px;
     width: 112px;
 }
 
@@ -6597,6 +6598,21 @@
     text-decoration: underline;
 }
 
+
+.chat-side-list {
+    max-height: calc(100vh - 294px);
+    overflow-y: scroll;
+}
+
+.chat-side-list::-webkit-scrollbar {
+    background: var(--gt-write);
+    width: 10px;
+}
+
+.chat-side-list::-webkit-scrollbar-thumb {
+    background: #D9D9D9;
+}
+
 .chat-side-item {
     align-items: center;
     cursor: pointer;
@@ -6796,6 +6812,7 @@
 
 .chat-list {
     height: 658px;
+    max-height: calc(100vh - 400px);
     overflow-y: scroll;
     margin: 8px;
 }
@@ -7070,7 +7087,19 @@
 .chat-info {
     flex: 0 0 auto;
     margin: 0 0 0 20px;
+    max-height: calc(100vh - 186px);
+    padding: 0 8px 0 0;
+    overflow-y: scroll;
     width: 220px;
+}
+
+.chat-info::-webkit-scrollbar {
+    background: var(--gt-write);
+    width: 10px;
+}
+
+.chat-info::-webkit-scrollbar-thumb {
+    background: #D9D9D9;
 }
 
 .chat-info-top {
@@ -7169,7 +7198,7 @@
     line-height: 1.5;
     text-overflow: ellipsis;
     text-align: left;
-    word-break:break-all;
+    word-break: break-all;
 }
 
 .expert-service-item-text p {
@@ -8611,6 +8640,7 @@
 .product-video-group.error {
     border: 1px solid var(--gt-error);
 }
+
 .product-video-group input {
     display: none;
 }

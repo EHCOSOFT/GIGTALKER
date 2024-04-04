@@ -115,7 +115,7 @@ $(document).ready(function () {
     <div class="container">
         <ul>
             <li class="all-catagory"><i class="ico i-catagory"></i>전체카테고리</li>
-            <li><a href="#">홈서비스</a></li>
+            <li><a href="#" class="router-link-active">홈서비스</a></li>
             <li><a href="#">비자/유학</a></li>
             <li><a href="#">법률/세금</a></li>
             <li><a href="#">여행/공항픽업</a></li>
