@@ -2167,7 +2167,7 @@ h3.title {
 .header-catagory {
     border-top: 1px solid var(--gt-gray-04);
     border-bottom: 1px solid var(--gt-gray-05);
-    padding: 8px 0;
+    /* padding: 8px 0; */
 }
 
 .header-catagory .container {
@@ -2182,7 +2182,25 @@ h3.title {
 
 .header-catagory ul li a {
     color: var(--gt-black-03);
+    display: block;
     font-size: var(--gt-text-md);
+    padding: 8px 0;
+    position: relative;
+}
+
+.header-catagory ul li a.router-link-active {
+    color: var(--gt-secondary);
+}
+
+.header-catagory ul li a.router-link-active::after {
+    background:  var(--gt-secondary);
+    bottom: 0;
+    content: '';
+    display: inline-block;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    width: 100%;
 }
 
 .all-catagory {

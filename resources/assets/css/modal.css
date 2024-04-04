@@ -793,7 +793,7 @@
 
 .qrcode-modal .gt-modal-content p {
     color: var(--gt-gray-02);
-    font-size: 20px;
+    font-size: 18px;
     margin: 8px 0 0 0;
 }
 
@@ -806,7 +806,7 @@
 
 .qrcode-modal dl dt {
     color: var(--gt-gray-02);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .qrcode-modal dl dd img {
@@ -1229,6 +1229,7 @@
 .popup-modal .gt-modal-header button {
     width: auto;
 }
+
 
 .popup-modal .gt-modal-body {
     margin: 0;
