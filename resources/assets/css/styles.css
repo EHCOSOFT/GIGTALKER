@@ -5492,6 +5492,12 @@
     padding: 16px 36px 16px 20px;
 }
 
+.mypage-content .ec-sell-item-bot a {
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+}
+
 .mypage-content .ec-sell-item-img {
     border-radius: 6px;
     height: 60px;
