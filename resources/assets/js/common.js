@@ -81,7 +81,7 @@ $(document).ready(function () {
                 </div>
             </li>
 
-            <li class="on"><a href="#"><i class="ico i-chat"></i></a></li>
+            <li class="on"><a href="#"><i class="ico i-chat active"><span></span></i></a></li>
             <li class="on"><a href="#"><i class="ico i-heart"></i></a></li>
             <li class="language open-modal" data-modal-id="languageModal"><i class="ico i-language"></i>한국어
             </li>

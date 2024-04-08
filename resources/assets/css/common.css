@@ -1865,7 +1865,7 @@ h3.title {
     font-weight: 400;
     justify-content: center;
     height: 46px;
-    width: 112px;
+    padding: 0 20px;
 }
 
 .custom-tab.selected {
@@ -1997,6 +1997,15 @@ h3.title {
     height: 5px;
     position: absolute;
     right: 0;
+    width: 5px;
+}
+
+.header-top-right .i-chat.active span {
+    background: #FF65CE;
+    border-radius: 100px;
+    height: 5px;
+    position: absolute;
+    right: -4px;
     width: 5px;
 }
 
