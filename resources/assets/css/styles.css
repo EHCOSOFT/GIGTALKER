@@ -2035,6 +2035,10 @@
     width: 56px;
 }
 
+.seller-profile .user-photo.none {
+    background: #f4f4f4;
+}
+
 .seller-info .seller-name {
     align-items: center;
     color: var(--gt-gray-01);
