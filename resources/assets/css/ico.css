@@ -475,3 +475,15 @@
     height: 12px;
     width: 12px;
 }
+
+.i-taxbill {
+    background: url(../img/ico/i-taxbill.png);
+    height: 20px;
+    width: 20px;
+}
+
+.i-check-p {
+    background: url(../img/ico/i-check-p.png);
+    height: 20px;
+    width: 20px;
+}
