@@ -1222,24 +1222,41 @@
 }
 
 /* popupModal */
+.popup-modal .gt-modal-content {
+    background: none;
+}
+
 .popup-modal .gt-modal-header {
     justify-content: flex-end;
-    
 }
+
 .popup-modal .gt-modal-header button {
     width: auto;
 }
 
-
 .popup-modal .gt-modal-body {
     margin: 0;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
 }
+
 .popup-modal .gt-modal-body img {
     width: 100%;
 }
 
 .popup-modal .gt-modal-footer {
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 0;
+}
+
+.popup-modal .check-group label {
+    color: var(--gt-write) !important;
+}
+
+.popup-modal .check-group label::before {
+    display: none;
+}
+
+.popup-modal a {
+    color: var(--gt-write);
+    font-size: var(--gt-text-sm);
 }
