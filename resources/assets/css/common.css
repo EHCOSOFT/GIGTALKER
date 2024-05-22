@@ -353,6 +353,10 @@ h6,
     flex-direction: row-reverse;
 }
 
+.mr-62 {
+    margin: 0 62px 0 auto !important;
+}
+
 /* **************************************** *
  * Common
  * **************************************** */
@@ -2233,7 +2237,7 @@ h3.title {
     position: absolute;
     left: 0;
     top: 32px;
-    width: 644px;
+    width: 940px;
     z-index: 500;
 }
 

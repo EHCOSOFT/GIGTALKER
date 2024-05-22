@@ -822,6 +822,7 @@ $(document).ready(function () {
       '">' +
       '<button type="button" class="btn-del-service"><i class="i i-x"></i>삭제</button>' +
       "</div>" +
+      "<p><span class='mr-62'>0 / 15 최대</span></p>"+
       "</div>" +
       "</div>";
 
