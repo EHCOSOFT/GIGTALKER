@@ -609,7 +609,8 @@ $(document).ready(function () {
       $(".swiper-button-next, .swiper-button-prev", this)
         .stop()
         .fadeTo(300, 1)
-        .css("visibility", "visible");
+        .css("visibility", "visible")
+        .css("display", "flex");
     },
     function () {
       $(".swiper-button-next, .swiper-button-prev", this)

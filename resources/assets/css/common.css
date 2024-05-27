@@ -2482,7 +2482,7 @@ h3.title {
     flex-direction: column;
     flex: 0 0 auto;
     gap: 8px;
-    max-width: 285px;
+    width: 285px;
     position: relative;
 }
 
