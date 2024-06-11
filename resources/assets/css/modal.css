@@ -970,6 +970,10 @@
     width: 128px;
 }
 
+.taxbill-info-modal input:disabled {
+    background: white !important;
+}
+
 /* 맞춤주문요청서(customOrderModal01/02) */
 .custom-order-modal .gt-modal-content {
     padding: 24px 28px;
