@@ -3796,6 +3796,18 @@
     padding: 24px 36px;
 }
 
+.progress-cont-box ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.progress-cont-box ul li {
+    border: 0;
+    font-size: 16px;
+}
+
 .manners-score {
     align-items: center;
     background: var(--gt-primary-bg);
