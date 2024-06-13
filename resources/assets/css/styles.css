@@ -3796,14 +3796,14 @@
     padding: 24px 36px;
 }
 
-.progress-cont-box ul {
+.progress-cont-box .account-number{
     display: flex;
     flex-direction: column;
     gap: 4px;
     width: 100%;
 }
 
-.progress-cont-box ul li {
+.progress-cont-box .account-number li {
     border: 0;
     font-size: 16px;
 }
