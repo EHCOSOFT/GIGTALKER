@@ -2472,6 +2472,8 @@
 .product-all-info dt {
     color: var(--gt-gray-01);
     font-size: var(--gt-text-lg);
+    width: 200px;
+    word-break: break-all;
 }
 
 .product-all-info dd {
@@ -3796,7 +3798,7 @@
     padding: 24px 36px;
 }
 
-.progress-cont-box .account-number{
+.progress-cont-box .account-number {
     display: flex;
     flex-direction: column;
     gap: 4px;
