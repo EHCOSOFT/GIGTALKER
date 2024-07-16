@@ -1416,6 +1416,10 @@
     background: none;
 }
 
+.product-filter .dropdown-group.catagory .dropdown-list li.active::before {
+    display: none;
+}
+
 /* 서비스 종류 */
 .product-filter .serivce {
     width: 140px;
