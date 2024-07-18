@@ -1413,7 +1413,6 @@
 
 .product-filter .dropdown-group.catagory .dropdown-list li.active {
     font-weight: bold;
-    background: none;
 }
 
 .product-filter .dropdown-group.catagory .dropdown-list li.active::before {
