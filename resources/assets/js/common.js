@@ -482,14 +482,25 @@ $(document).ready(function () {
   });
 
   // toggle
-  $('.toggle-group .toggle input[type="checkbox"]').change(function () {
-    var $toggleGroup = $(this).closest(".toggle-group");
-    if ($(this).is(":checked")) {
+ // 기본 상태 확인 및 설정
+ $('.toggle-group .toggle input[type="checkbox"]').each(function () {
+  var $toggleGroup = $(this).closest(".toggle-group");
+  if ($(this).is(":checked")) {
       $toggleGroup.addClass("active");
-    } else {
+  } else {
       $toggleGroup.removeClass("active");
-    }
-  });
+  }
+});
+
+// 변경 이벤트 핸들러 추가
+$('.toggle-group .toggle input[type="checkbox"]').change(function () {
+  var $toggleGroup = $(this).closest(".toggle-group");
+  if ($(this).is(":checked")) {
+      $toggleGroup.addClass("active");
+  } else {
+      $toggleGroup.removeClass("active");
+  }
+});
 
   // pie progress
   $(".circle").each(function () {
@@ -791,6 +802,11 @@ $(document).ready(function () {
       '<div class="input-group">' +
       '<div class="input-area">' +
       '<input type="text" placeholder="작업기간"><span>일</span>' +
+      "</div>" +
+      "</div>" +
+      '<div class="input-group">' +
+      '<div class="input-area">' +
+      '<input type="text" placeholder="작업시간"><span>시간</span>' +
       "</div>" +
       "</div>" +
       "</div>" +

@@ -1390,8 +1390,8 @@
     padding: 12px 0;
 }
 
-.product-filter .catagory {
-    width: 140px;
+.product-filter .dropdown-group {
+    flex: 0 0 auto;
 }
 
 .product-filter .dropdown-group .dropdown-list-wrap .dropdown-list {
@@ -1420,9 +1420,9 @@
 }
 
 /* 서비스 종류 */
-.product-filter .serivce {
+/* .product-filter .serivce {
     width: 140px;
-}
+} */
 
 .product-filter .dropdown-group.serivce .dropdown-list {
     padding: 0;
@@ -1469,9 +1469,9 @@
 }
 
 /* 전문가옵션 */
-.product-filter .expert {
+/* .product-filter .expert {
     width: 140px;
-}
+} */
 
 .product-filter .dropdown-group.expert .dropdown-list {
     padding: 0;
@@ -1490,9 +1490,9 @@
 }
 
 /* 예산 */
-.product-filter .budget {
+/* .product-filter .budget {
     width: 86px;
-}
+} */
 
 .product-filter .dropdown-group.budget .dropdown-list {
     padding: 0;
@@ -1513,9 +1513,9 @@
 }
 
 /* 서비스 가능 지역 */
-.product-filter .region {
+/* .product-filter .region {
     width: 148px;
-}
+} */
 
 .product-filter .dropdown-group.region .dropdown-list {
     padding: 28px 32px;
@@ -8491,8 +8491,12 @@
     gap: 8px;
 }
 
+.add-options .option-two .input-group:nth-child(2) {
+    width: 25%;
+}
+
 .add-options .option-two .input-group:last-child {
-    width: 114px;
+    width: 25%;
 }
 
 .add-options-wrap .btn-add-option {

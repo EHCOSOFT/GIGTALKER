@@ -1723,7 +1723,7 @@ h3.title {
     font-weight: 400;
     justify-content: flex-start;
     height: 40px;
-    padding: 0 16px;
+    padding: 0 40px 0 16px;
     position: relative;
     width: 100%;
 }
@@ -2206,7 +2206,7 @@ h3.title {
 }
 
 .header-catagory ul li a.router-link-active::after {
-    background:  var(--gt-secondary);
+    background: var(--gt-secondary);
     bottom: 0;
     content: '';
     display: inline-block;
@@ -2707,87 +2707,64 @@ h3.title {
 /* toggle */
 .toggle-group {
     display: flex;
-    width: 78px;
+    justify-content: center;
 }
 
 .toggle-group .toggle {
-    display: inline-block;
+    display: flex;
     height: 28px;
     position: relative;
-    width: 78px;
 }
 
 .toggle-group input {
-    display: noen;
+    display: none;
 }
 
 .toggle-group .slider {
     background: var(--gt-gray-05);
-    bottom: 0;
     border-radius: 100px;
     cursor: pointer;
-    left: 0;
-    position: absolute;
-    top: 0;
+    display: flex;
+    justify-content: flex-start;
     -webkit-transition: .4s;
     transition: .4s;
-    right: 0;
+    width: 120px;
 }
 
-.toggle-group .slider:before {
+.toggle-group.active .slider {
+    justify-content: flex-end;
+}
+
+.toggle-group .slider p {
     align-items: center;
     background: var(--gt-write);
     bottom: 4px;
     border: 1px solid var(--gt-gray-05);
     border-radius: 100px;
-    content: "OFF";
     color: var(--gt-gray-05);
-    font-size: var(--gt-text-mn);
     display: flex;
-    height: 26px;
+    font-size: var(--gt-text-mn);
+    height: 28px;
     justify-content: center;
-    left: 0px;
-    position: absolute;
-    top: 0;
-    -webkit-transition: .4s;
+    padding: 0 12px;
+    width: max-content;
     transition: .4s;
-    width: 54px;
 }
 
-.toggle-group.active .slider:before {
+.toggle-group .slider .on-text {
+    display: none;
+}
+
+.toggle-group.active .slider .off-text {
+    display: none;
+}
+
+.toggle-group.active .slider .on-text {
     border: 1px solid var(--gt-secondary);
-    content: 'ON';
+    display: flex;
+    left: 26px;
+    z-index: 0;
     color: var(--gt-secondary);
-}
-
-.toggle-group input:checked+.slider:before {
-    -webkit-transform: translateX(22px);
-    -ms-transform: translateX(22px);
-    transform: translateX(22px);
-}
-
-/* type2 */
-.toggle-group.type2 {
-    width: 96px;
-}
-
-.toggle-group.type2 .slider {
-    width: 96px;
-}
-
-.toggle-group.type2 .slider:before {
-    content: "접속 OFF";
-    width: 68px;
-}
-
-.toggle-group.type2.active .slider:before {
-    content: '접속 ON';
-}
-
-.toggle-group.type2 input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
 }
 
 /* progress */
