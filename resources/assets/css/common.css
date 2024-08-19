@@ -853,6 +853,7 @@ h3.title {
     display: flex;
     gap: 8px;
     position: relative;
+    width: 100%;
 }
 
 .input-area.vertical {
@@ -876,7 +877,8 @@ h3.title {
 }
 
 .input-group input[type=text],
-.input-group input[type=password] {
+.input-group input[type=password],
+.input-group input[type=number] {
     background: var(--gt-write);
     border: 1px solid var(--gt-gray-05);
     border-radius: 6px;
@@ -890,17 +892,20 @@ h3.title {
 }
 
 .input-group input[type=text]:focus,
-.input-group input[type=password]:focus {
+.input-group input[type=password]:focus,
+.input-group input[type=number]:focus {
     border: 1px solid var(--gt-gray-03);
 }
 
 .input-group input[type=text]::placeholder,
-.input-group input[type=password]::placeholder {
+.input-group input[type=password]::placeholder,
+.input-group input[type=number]::placeholder {
     color: #74767C;
 }
 
 .input-group input[type=text]:disabled,
-.input-group input[type=password]:disabled {
+.input-group input[type=password]:disabled,
+.input-group input[type=number]:disabled {
     background: var(--gt-gray-06);
     border: 1px solid var(--gt-gray-05);
     color: var(--gt-gray-03);
@@ -941,14 +946,16 @@ h3.title {
 
 /* mn */
 .input-group.mn input[type=text],
-.input-group.mn input[type=password] {
+.input-group.mn input[type=password],
+.input-group.mn input[type=number] {
     font-size: var(--gt-text-sm);
     height: 40px;
     padding: 0 12px;
 }
 
 .input-group.mn input[type=text]::placeholder,
-.input-group.mn input[type=password]::placeholder {
+.input-group.mn input[type=password]::placeholder,
+.input-group.mn input[type=number]::placeholder {
     color: #cccccc;
 }
 
