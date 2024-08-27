@@ -207,6 +207,7 @@
 }
 
 .product-detila-img-swiper-02 .swiper-slide {
+    background-size: contain !important;
     border-radius: 10px;
     height: 426px;
 }
@@ -243,11 +244,21 @@
     width: 100%;
 }
 
+.product-detila-img-swiper-02 .swiper-slide {
+    background: #f4f4f4;
+}
+
 .product-detila-img-swiper-02 .swiper-slide .product-video {
     border-radius: 10px;
     object-fit: fill;
     height: 426px;
     width: 100%;
+}
+
+.product-detila-img-swiper-02 .swiper-slide img {
+    height: 100%;
+    object-fit: cover;
+    width: auto;
 }
 
 .product-detail-swiper-01 {

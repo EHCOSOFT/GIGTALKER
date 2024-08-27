@@ -2774,6 +2774,10 @@ h3.title {
     color: var(--gt-secondary);
 }
 
+.toggle-group.type2 .slider {
+    width: 80px;
+}
+
 /* progress */
 .progress-group {
     align-items: center;
