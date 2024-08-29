@@ -1096,6 +1096,12 @@
     height: 652px;
 }
 
+.full-window-view-modal .product-detila-img-swiper-02 .swiper-slide img {
+    height: 652px;
+    object-fit: contain;
+    width: 100%;
+}
+
 /* 등록완료(fa-modal) */
 .fa-modal .gt-modal-content {
     padding: 32px;
