@@ -257,8 +257,8 @@
 
 .product-detila-img-swiper-02 .swiper-slide img {
     height: 100%;
-    object-fit: cover;
-    width: auto;
+    object-fit: contain;
+    width: 100%;
 }
 
 .product-detail-swiper-01 {
