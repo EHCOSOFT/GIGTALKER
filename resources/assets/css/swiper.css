@@ -245,6 +245,7 @@
 }
 
 .product-detila-img-swiper-02 .swiper-slide {
+    overflow: hidden;
     background: #f4f4f4;
 }
 
@@ -258,7 +259,7 @@
 .product-detila-img-swiper-02 .swiper-slide img {
     height: 100%;
     object-fit: contain;
-    width: 100%;
+    width: auto;
 }
 
 .product-detail-swiper-01 {
