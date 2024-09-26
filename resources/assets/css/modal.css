@@ -1348,3 +1348,69 @@
     font-weight: 400;
     text-align: left;
 }
+
+.pro-modal .gt-modal-content {
+    padding: 40px 60px;
+    width: 900px;
+}
+
+.pro-modal .gt-modal-header {
+    justify-content: center;
+}
+
+.pro-modal .gt-modal-title {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.pro-modal .gt-modal-header button {
+    position: absolute;
+    top: 20px;
+    right: 28px;
+}
+
+.pro-modal .gt-modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    margin: 40px 0 0 0;
+}
+
+.pro-info {
+    display: flex;
+}
+
+.pro-info .pro-info-text {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 50%;
+}
+
+.pro-info .pro-info-text ul {
+    padding: 0 0 0 20px;
+    list-style-type: disc;
+}
+
+.pro-info .pro-info-text ul li {
+    list-style-type: disc;
+    text-align: left;
+}
+
+.pro-info .pro-info-text p {
+    color: var(--gt-primary);
+}
+
+.pro-info.bottom .pro-info-text {
+    flex-direction: row;
+    gap: 16px;
+    width: 100%;
+}
+
+.pro-modal .gt-modal-body h1 {
+    color: var(--gt-primary);
+    font-size: 16px;
+    font-weight: 700;
+}
