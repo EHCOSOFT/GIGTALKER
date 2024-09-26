@@ -1362,6 +1362,10 @@ h3.title {
     max-width: 500px;
 }
 
+.select-group.w-50 {
+    width: 49% !important;
+}
+
 .select-group.max-width {
     max-width: 100%;
 }
@@ -1540,6 +1544,13 @@ h3.title {
 .date-group {
     display: flex;
     flex-direction: column;
+    gap: 8px;
+}
+
+.date-area {
+    align-items: center;
+    display: flex;
+    gap: 12px;
 }
 
 .date-group label {
@@ -1616,7 +1627,6 @@ h3.title {
 .date-group.error p {
     color: var(--gt-error);
     font-size: var(--gt-text-sm);
-    margin: 8px 0 0 0;
 }
 
 /* mn */
@@ -1700,6 +1710,87 @@ h3.title {
     font-size: 48px !important;
     font-weight: bold !important;
     height: 144px !important;
+}
+
+/* 포트폴리오 첨부파일 */
+.pp-file-group {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.pp-img-group {
+    position: relative;
+}
+
+.pp-img-group img {
+    border-radius: 6px;
+    width: 100%;
+}
+
+.pp-img-group button {
+    background: rgba(0, 0, 0, 0.80);
+    border: 0;
+    border-radius: 5px;
+    position: absolute;
+    height: 32px;
+    padding: 0 12px;
+    top: 20px;
+    right: 20px;
+}
+
+.pp-img-group button i {
+    height: 20px;
+    width: 20px;
+}
+
+.pp-file-upload {
+    align-items: center;
+    border-radius: 6px;
+    border: 1px dashed #D0D0D0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 22px 0;
+}
+
+.pp-file-upload p {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-lg);
+    font-weight: 400;
+}
+
+.pp-file-upload input {
+    display: none;
+}
+
+.pp-file-upload label {
+    border: 1px solid #999;
+    border-radius: 6px;
+    color: #5C5A54;
+    cursor: pointer;
+    font-size: var(--gt-text-lg);
+    font-weight: 500;
+    padding: 0 32px;
+}
+
+.pp-file-upload ul {
+    align-items: center;
+    display: flex !important;
+    flex-direction: column;
+    gap: 4px !important;
+    list-style: none !important;
+}
+
+.pp-file-upload ul li {
+    color: var(--gt-gray-01);
+    font-size: var(--gt-text-md);
+    font-weight: 400;
+    list-style: none !important;
+}
+
+.pp-file-upload ul li span {
+    color: var(--gt-info);
 }
 
 /* dropdown-group */
@@ -2620,7 +2711,7 @@ h3.title {
 
 .user-level {
     align-items: center;
-    color: var(--gt-gray-01);
+    color: #333;
     display: flex !important;
     font-size: var(--gt-text-sm);
     font-weight: bold;

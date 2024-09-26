@@ -1275,6 +1275,14 @@
     width: 40px;
 }
 
+.detail-etc .btn-declaration {
+    background: #EDF0F8;
+    border-radius: 12px;
+    border: 0;
+    height: 40px;
+    width: 40px;
+}
+
 .detail-header {
     border-top: 1px solid var(--gt-black-01);
     padding: 16px 0 28px 0;
@@ -1687,6 +1695,90 @@
     font-weight: 400;
 }
 
+/* 전체 포트폴리오 */
+.portfolio-category-wrap {
+    position: relative;
+}
+
+.portfolio-category-wrap::after {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, #FFF 41.5%);
+    content: '';
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 130px;
+    height: 60px;
+}
+
+.portfolio-category {
+    align-items: center;
+    display: flex;
+    gap: 14px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.portfolio-category::-webkit-scrollbar {
+    display: none;
+}
+
+.portfolio-category .btn-tab {
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    color: var(--gt-gray-03);
+    flex: 0 0 auto;
+    font-size: 14px;
+    font-weight: 400;
+    height: 48px;
+    padding: 0 12px;
+}
+
+.portfolio-category .btn-tab.active {
+    background: #7B78FF;
+    border-color: #7B78FF;
+    color: #fff;
+}
+
+.portfolio-category-wrap .btn-slide-right {
+    background: #ffffff;
+    border-radius: 100px;
+    border: 0;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.25);
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    z-index: 1;
+}
+
+.portfolio-none {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 100px 0;
+}
+
+.portfolio-none .portfolio-none-img {
+    align-items: center;
+    background: var(--gt-primary-bg);
+    border-radius: 1000px;
+    display: flex;
+    justify-content: center;
+    height: 260px;
+    width: 260px;
+}
+
+.portfolio-none p {
+    color: var(--gt-black-03);
+    font-size: 18px;
+    font-weight: 500;
+}
+
 /* **************************************** *
  * 고객센터
  * **************************************** */
@@ -2078,6 +2170,12 @@
 .seller-info .seller-review span {
     color: var(--gt-gray-03);
     font-weight: 400;
+}
+
+.seller-info .seller-review b {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0 0 0 4px;
 }
 
 .product-detail-detail .tabs {
@@ -2947,6 +3045,132 @@
     font-size: var(--gt-text-sm);
     margin: 0 4px 0 0;
     padding: 2px 6px;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.portfolio-img {
+    background: url(../img/sample/sample-05.png);
+    background-size: cover;
+    border-radius: 15px;
+    height: 176px;
+    position: relative;
+}
+
+.portfolio-img .btn-group {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+}
+
+.portfolio-img .btn-group button {
+    background: #ffffff;
+    border: 0;
+    border-radius: 6px;
+    color: #000;
+    font-size: 13px;
+    font-weight: 400;
+    height: 25px;
+    padding: 0 12px;
+}
+
+.portfolio-exp {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.portfolio-exp h3 {
+    align-items: center;
+    color: var(--gt-black-01);
+    display: flex;
+    font-size: var(--gt-text-lg);
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.portfolio-exp h3 span {
+    align-items: center;
+    color: #74767c;
+    font-size: var(--gt-text-lg);
+    font-weight: 600;
+    display: flex;
+    gap: 8px;
+}
+
+.portfolio-exp p {
+    color: var(--gt-gray-01);
+    display: -webkit-box;
+    font-size: var(--gt-text-md);
+    font-weight: 400;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.portfolio-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.portfolio-header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.portfolio-wrap hr {
+    background: #bdbdbd;
+    border: 1px solid #bdbdbd;
+    height: 1px;
+    opacity: 0.2;
+    margin: 0;
+}
+
+.portfolio-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.portflio-body-top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portflio-body-top h6 {
+    font-size: 24px;
+}
+
+.portfolio-body .ec-portfolio .row {
+    --bs-gutter-x: 30px;
+    --bs-gutter-y: 60px;
+}
+
+.portfolio-body .ec-portfolio .portfolio-img {
+    height: 240px;
+}
+
+.add-portfolio {
+    align-items: center;
+    border: 1px solid #c8c8c8;
+    border-radius: 15px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    height: 240px;
 }
 
 /* 판매관리 */
@@ -7739,6 +7963,44 @@
     width: 100%;
 }
 
+.expert-portfolio {
+    padding: 0 0 44px 0;
+}
+
+.expert-portfolio h6 {
+    color: var(--gt-gray-01);
+    font-size: 20px;
+    margin: 0 0 16px 0;
+}
+
+.portfolio-list .row {
+    --bs-gutter-x: 8px;
+    --bs-gutter-x: 8px;
+}
+
+.portfolio-list img {
+    border-radius: 6px;
+    width: 100%;
+}
+
+.pp-img-left {
+    height: 250px;
+}
+
+.pp-img-right {
+    height: 122px;
+}
+
+.pp-more {
+    align-items: center;
+    color: var(--gt-info);
+    font-size: var(--gt-text-lg);
+    font-weight: bold;
+    display: flex;
+    gap: 4px;
+    margin: 16px 0 0 0;
+}
+
 /* **************************************** *
  * 결제하기
  * **************************************** */
@@ -8790,8 +9052,10 @@
 }
 
 .m-header .btn-primary {
-    position: relative; /* Relative to its initial container */
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition for movement and fade */
+    position: relative;
+    /* Relative to its initial container */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    /* Smooth transition for movement and fade */
 }
 
 .m-fixed {
@@ -8799,15 +9063,16 @@
     position: fixed;
     width: 100%;
     z-index: 99;
-    opacity: 0; /* Start hidden */
-    pointer-events: none; 
-    transform: translateY(100vh); 
+    opacity: 0;
+    /* Start hidden */
+    pointer-events: none;
+    transform: translateY(100vh);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .m-fixed.active {
     opacity: 1;
-    pointer-events: auto; 
+    pointer-events: auto;
     transform: translateY(0);
 }
 

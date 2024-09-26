@@ -115,3 +115,14 @@ var productReviewSwiper = new Swiper(".product-review-swiper", {
     el: ".swiper-pagination",
   }
 });
+
+var portfolioDetailModal = new Swiper(".pp-detail-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 20, // 슬라이드 여백
+  slidesOffsetAfter: 0, // 왼쪽 여백
+  slidesOffsetBefore: 0, // 오른쪽 여백
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  }
+});

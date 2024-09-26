@@ -405,21 +405,57 @@ $(document).ready(function () {
   $(".open-modal").click(function () {
     var modalId = $(this).data("modal-id");
     $("#" + modalId).addClass("active");
-    // $("body").css("overflow", "hidden");
-    // 스크롤 이벤트 방지
+
+    // 활성화된 모달 수에 따라 z-index를 동적으로 설정하여 모달을 겹침
+    var activeModals = $(".gt-modal-wrap.active").length;
+    modalElement.css("z-index", 1000 + activeModals); // z-index 조정
+
+    // 활성화 클래스를 추가하여 모달을 표시
+    modalElement.addClass("active");
+
+    // 새로운 모달에 대해 스크롤 이벤트를 막음
     window.addEventListener("wheel", removeDefaultEvent, { passive: false });
   });
 
   // 모달 닫기 버튼 및 모달 바깥 영역 클릭 이벤트
   $(".btn-modal-close, .gt-modal-wrap").click(function () {
-    $(".gt-modal-wrap").removeClass("active");
-    // $("body").css("overflow", "auto");
-    window.removeEventListener("wheel", removeDefaultEvent);
+    var modalToClose = $(this).closest(".gt-modal-wrap");
+
+    // 최상위 모달만 닫기 (활성화된 모달만 제거)
+    modalToClose.removeClass("active");
+
+    // $(".gt-modal-wrap").removeClass("active");
+    // window.removeEventListener("wheel", removeDefaultEvent);
+
+    // 더 이상 활성화된 모달이 없으면 스크롤 방지 해제
+    if ($(".gt-modal-wrap.active").length === 0) {
+      window.removeEventListener("wheel", removeDefaultEvent);
+    }
+    // .pp-modal의 내부가 아닌 경우에만 모달을 닫음
+    // if (!$(this).closest('.pp-modal').length) {
+    //   $(".gt-modal-wrap").removeClass("active");
+    //   window.removeEventListener("wheel", removeDefaultEvent);
+    // }
+  });
+
+  // 모달 내용 내부 클릭 시 이벤트 전파 방지
+  $(".pp-modal").click(function (e) {
+    e.stopPropagation();
   });
 
   // 모달 내부 클릭 시 닫기 방지
-  $(".gt-modal-content").click(function (e) {
+  $(".gt-modal-content, .pp-modal").click(function (e) {
     e.stopPropagation();
+  });
+
+  // Swiper 버튼 클릭 시 모달 닫기 방지
+  $(".swiper-button-next, .swiper-button-prev").click(function (e) {
+    e.stopPropagation(); // Swiper 버튼 클릭 시 모달 닫기 방지
+  });
+
+  // 모달 내부의 특정 버튼 클릭 시 모달이 닫히지 않도록 이벤트 전파 차단
+  $(".btn-pink-heart, .btn-heart, .btn-share").click(function (e) {
+    e.stopPropagation(); // 이벤트 전파 차단
   });
 
   // 아코디언
@@ -482,25 +518,25 @@ $(document).ready(function () {
   });
 
   // toggle
- // 기본 상태 확인 및 설정
- $('.toggle-group .toggle input[type="checkbox"]').each(function () {
-  var $toggleGroup = $(this).closest(".toggle-group");
-  if ($(this).is(":checked")) {
+  // 기본 상태 확인 및 설정
+  $('.toggle-group .toggle input[type="checkbox"]').each(function () {
+    var $toggleGroup = $(this).closest(".toggle-group");
+    if ($(this).is(":checked")) {
       $toggleGroup.addClass("active");
-  } else {
+    } else {
       $toggleGroup.removeClass("active");
-  }
-});
+    }
+  });
 
-// 변경 이벤트 핸들러 추가
-$('.toggle-group .toggle input[type="checkbox"]').change(function () {
-  var $toggleGroup = $(this).closest(".toggle-group");
-  if ($(this).is(":checked")) {
+  // 변경 이벤트 핸들러 추가
+  $('.toggle-group .toggle input[type="checkbox"]').change(function () {
+    var $toggleGroup = $(this).closest(".toggle-group");
+    if ($(this).is(":checked")) {
       $toggleGroup.addClass("active");
-  } else {
+    } else {
       $toggleGroup.removeClass("active");
-  }
-});
+    }
+  });
 
   // pie progress
   $(".circle").each(function () {
@@ -839,7 +875,7 @@ $('.toggle-group .toggle input[type="checkbox"]').change(function () {
       '">' +
       '<button type="button" class="btn-del-service"><i class="i i-x"></i>삭제</button>' +
       "</div>" +
-      "<p><span class='mr-62'>0 / 15 최대</span></p>"+
+      "<p><span class='mr-62'>0 / 15 최대</span></p>" +
       "</div>" +
       "</div>";
 
@@ -1116,7 +1152,7 @@ $('.toggle-group .toggle input[type="checkbox"]').change(function () {
     var $commentEdit = $comment.find(".comment-edit");
 
     $commentText.hide();
-    $commentEdit.css("display","flex");
+    $commentEdit.css("display", "flex");
   });
 
   $(".btn-comment-edit-close").click(function () {
@@ -1142,6 +1178,118 @@ $('.toggle-group .toggle input[type="checkbox"]').change(function () {
   $(".btn-comment-del").click(function () {
     $(this).closest(".comment").remove();
   });
+
+  // 20240926 추가
+  // 포트폴리오
+  var $scrollContainer = $('.portfolio-category');
+  var scrollAmount = 300; // 스크롤 이동 거리
+
+  // 오른쪽 버튼 클릭 시 스크롤
+  $('.btn-slide-right').click(function () {
+    $scrollContainer.animate({
+      scrollLeft: $scrollContainer.scrollLeft() + scrollAmount
+    }, 300); // 300ms 동안 스크롤
+  });
+
+  // 마우스 드래그로 스크롤
+  var isMouseDown = false;
+  var startX;
+  var scrollLeft;
+
+  $scrollContainer.on('mousedown', function (e) {
+    isMouseDown = true;
+    startX = e.pageX - $scrollContainer.offset().left;
+    scrollLeft = $scrollContainer.scrollLeft();
+    $scrollContainer.addClass('active');
+  });
+
+  $(document).on('mouseup', function () {
+    isMouseDown = false;
+    $scrollContainer.removeClass('active');
+  });
+
+  $scrollContainer.on('mousemove', function (e) {
+    if (!isMouseDown) return;
+    e.preventDefault();
+    var x = e.pageX - $scrollContainer.offset().left;
+    var walk = (x - startX) * 2; // 스크롤 속도 조정
+    $scrollContainer.scrollLeft(scrollLeft - walk);
+  });
+
+  $('.btn-tab').click(function () {
+    $(this).toggleClass('active');
+  })
+
+  // 포트폴리오 등록
+  var maxFiles = 5; // 최대 5개의 파일
+  var uploadedFiles = 0; // 업로드된 파일 개수
+
+  // 파일을 드래그 앤 드롭 가능하도록 이벤트 설정
+  $('.pp-file-upload').on('dragover', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).addClass('dragging');
+  });
+
+  $('.pp-file-upload').on('dragleave', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).removeClass('dragging');
+  });
+
+  $('.pp-file-upload').on('drop', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).removeClass('dragging');
+
+    var files = e.originalEvent.dataTransfer.files;
+    handleFiles(files);
+  });
+
+  // input에서 파일이 선택되었을 때
+  $('#ppFileUpload').on('change', function () {
+    var files = this.files;
+    handleFiles(files);
+  });
+
+  // 파일 처리 함수
+  function handleFiles(files) {
+    var fileArray = Array.from(files);
+
+    fileArray.forEach(function (file) {
+      if (uploadedFiles >= maxFiles) {
+        alert("최대 " + maxFiles + "개의 파일만 업로드할 수 있습니다.");
+        return;
+      }
+
+      if (!file.type.startsWith('image/')) {
+        alert("이미지 파일만 업로드 가능합니다.");
+        return;
+      }
+
+      // 이미지 미리보기 생성
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        var imgHTML = `
+                  <div class="pp-img-group">
+                      <img src="${e.target.result}" alt="">
+                      <button type="button" class="remove-image"><i class="ico i-trash-w"></i></button>
+                  </div>
+              `;
+
+        $('.pp-upload-area').before(imgHTML); // 미리보기 이미지 업로드 영역 위로 추가
+        uploadedFiles++; // 업로드된 파일 수 증가
+
+        // 이미지 삭제 버튼에 이벤트 추가
+        $('.remove-image').last().on('click', function () {
+          $(this).closest('.pp-img-group').remove();
+          uploadedFiles--; // 삭제 시 파일 개수 감소
+        });
+      };
+
+      reader.readAsDataURL(file);
+    });
+  }
 });
 
 // 스크롤을 맨 아래로 내리는 함수

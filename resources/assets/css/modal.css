@@ -1270,3 +1270,81 @@
     color: var(--gt-write);
     font-size: var(--gt-text-sm);
 }
+
+/* 포트폴리오 상세 */
+
+.pp-detail-swiper-wrap {
+    height: 100vh;
+    position: relative;
+    width: 890px;
+}
+
+.pp-detail-swiper-wrap .swiper-slide {
+    padding: 58px 52px;
+}
+
+.pp-detail-wrap {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: calc(100vh - 100px);
+    gap: 20px;
+    width: 100%;
+}
+
+.pp-detail-wrap::-webkit-scrollbar {
+    background: none;
+    width: 10px;
+}
+
+.pp-detail-wrap::-webkit-scrollbar-thumb {
+    background: #D9D9D9;
+}
+
+.pp-detail-header {
+    border-bottom: 1px solid #BDBDBD;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 16px 0;
+    width: 100%;
+}
+
+.pp-detail-body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.pp-detail-body img {
+    width: 100%;
+}
+
+.pp-detail-body-top {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pp-detail-body-top h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.pp-detail-body-top p {
+    color: var(--gt-gray-03);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.pp-detail-body-top p span {
+    color: #000;
+    margin: 0 10px 0 0;
+}
+
+.pp-detail-body-top h6 {
+    color: var(--gt-gray-01);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+}

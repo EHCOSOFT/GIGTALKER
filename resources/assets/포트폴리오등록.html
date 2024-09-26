@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIGTALKER</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header-top type2">
+                <div class="container-md">
+                    <a href="" class="header-logo">
+                        <img src="img/logo.png" alt="">포트폴리오 등록
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="new-product-wrap">
+                <div class="container-md">
+                    <div class="product-input-area">
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>제목</h6>
+                                <p>프로젝트에 대한 명확하고 설명적인 이름을 만드세요.</p>
+                            </div>
+                            <div class="col-8">
+                                <div class="input-group error">
+                                    <input type="text" placeholder="제목을 작성해주세요.">
+                                    <p>오류메세지 입력<span>0 / 15 최대</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>설명</h6>
+                                <p>고객, 고객의 목표, 발생했던 어려움, 그리고 이를 어떻게 해결했는지에 대해 공유하세요.</p>
+                            </div>
+                            <div class="col-8">
+                                <div class="text-group md">
+                                    <textarea name="" id="" cols="30" rows="10"
+                                        placeholder="서비스의 제목을 작성해주세요"></textarea>
+                                    <p class="red"><span>0 / 1000 최대</span></p>
+                                    <!-- <p class="red">최소 10자 이상 50자 이하로 작성해주세요.<span>0 / 50 최대</span></p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>카테고리</h6>
+                                <p>서비스의 카테고리와 하위 카테고리를 선택하세요.</p>
+                            </div>
+                            <div class="col-8">
+                                <div class="product-category-group">
+                                    <div class="select-group">
+                                        <select name="" id="">
+                                            <option value="카테고리를 선택하세요" selected="selected">카테고리를 선택하세요</option>
+                                            <option value="한국어">한국어</option>
+                                            <option value="영어">영어</option>
+                                            <option value="중국어">중국어</option>
+                                            <option value="베트남어">베트남어</option>
+                                        </select>
+                                    </div>
+                                    <div class="select-group">
+                                        <select name="" id="">
+                                            <option value="카테고리를 선택하세요" selected="selected">카테고리를 선택하세요</option>
+                                            <option value="초보자">초보자</option>
+                                            <option value="기본회화가능">기본회화가능</option>
+                                            <option value="유창한">유창한</option>
+                                            <option value="현지어/이중언어">현지어/이중언어</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- <p class="red">계속하려면 카테고리와 하위 카테고리를 선택하세요.</p> -->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>참여율</h6>
+                            </div>
+                            <div class="col-8">
+                                <div class="product-category-group">
+                                    <div class="select-group w-50">
+                                        <select name="" id="">
+                                            <option value="대한민국" selected="selected">대한민국</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- <p class="red">계속하려면 지역을 작성해주세요.</p> -->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>참여기간</h6>
+                                <p>제작한 기간이나 제작에 참여한 기간을 선택해주세요.</p>
+                            </div>
+                            <div class="col-8">
+                                <div class="date-group error">
+                                    <div class="date-area">
+                                        <input type="date" date-placeholder="시작일" required="" aria-required="true">
+                                        <span>~</span>
+                                        <input type="date" date-placeholder="시작일" required="" aria-required="true">
+                                    </div>
+                                    <p>계속하려면 날짜를 선택하세요.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>첨부파일</h6>
+                                <p>업로드한 첫 번째 파일이 썸네일 미리보기로 설정됩니다.1024x768 크기, 종횡비 4:3을 권장합니다.<br>
+                                    파일은 최대 5개까지 업로드 가능합니다.</p>
+                            </div>
+                            <div class="col-8">
+                                <div class="pp-file-group">
+                                    <!-- <div class="pp-img-group">
+                                        <img src="img/sample/sample-10.png" alt="">
+                                        <button type="button"><i class="ico i-trash-w"></i></button>
+                                    </div> -->
+                                    <div class="pp-upload-area">
+                                        <div class="pp-file-upload">
+                                            <p>파일을 끌어다 여기에 놓거나</p>
+                                            <input type="file" id="ppFileUpload" multiple>
+                                            <label for="ppFileUpload">파일선택</label>
+                                            <ul>
+                                                <li>업로드 가능한 파일 : <span>jpg, jpeg, png, gif, mp4, avi</span></li>
+                                                <li>이미지 사이즈 : <span>가로 600픽셀 이상 x 세로 3000픽셀 이하</span></li>
+                                                <li>최대 크기 : <span>50MB</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="btn-group">
+                            <!-- <button type="button" class="btn btn-outline-gray">이전단계</button> -->
+                            <button type="button" class="btn btn-primary">등록하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- S : SCRIPT -->
+    <script src="lib/swiper-bundle.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+    <!-- E : SCRIPT-->
+</body>
+
+</html>
