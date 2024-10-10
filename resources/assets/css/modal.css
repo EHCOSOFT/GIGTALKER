@@ -1280,7 +1280,7 @@
 }
 
 .pp-detail-swiper-wrap .swiper-slide {
-    padding: 58px 52px;
+    padding: 58px 20px 58px 52px;
 }
 
 .pp-detail-wrap {
@@ -1288,6 +1288,8 @@
     flex-direction: column;
     overflow-y: scroll;
     height: calc(100vh - 100px);
+    margin: 20px 0 0 0;
+    padding: 0 20px 0 0;
     gap: 20px;
     width: 100%;
 }
