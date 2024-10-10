@@ -3146,6 +3146,8 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
 }
 
 .portflio-body-top h6 {
