@@ -1759,6 +1759,10 @@ h3.title {
     padding: 22px 0;
 }
 
+.pp-file-upload.error {
+    border-color: var(--gt-error);
+}
+
 .pp-file-upload p {
     color: var(--gt-gray-01);
     font-size: var(--gt-text-lg);
