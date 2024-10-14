@@ -1728,6 +1728,11 @@ h3.title {
     width: 100%;
 }
 
+.pp-img-group video {
+    border-radius: 6px;
+    width: 100%;
+}
+
 .pp-img-group button {
     background: rgba(0, 0, 0, 0.80);
     border: 0;
