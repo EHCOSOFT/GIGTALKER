@@ -1359,6 +1359,7 @@
 }
 
 .related-name {
+    align-items: flex-start;
     background: var(--gt-gray-06);
     border-radius: 6px;
     display: flex;
@@ -1366,14 +1367,23 @@
     padding: 12px 20px;
 }
 
+.related-name p {
+    color: var(--gt-gray-03);
+    font-size: var(--gt-text-lg);
+    font-weight: bold;
+    flex: 0 0 auto;
+}
+
+.related-name ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    row-gap: 12px;
+}
+
 .related-name li {
     color: var(--gt-gray-01);
     font-size: var(--gt-text-lg);
-}
-
-.related-name li:first-child {
-    color: var(--gt-gray-03);
-    font-weight: bold;
 }
 
 .cont-top p {
